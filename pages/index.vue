@@ -1,5 +1,5 @@
 <template>
-  <Tutorial />
+  <div>Welcome to Damilola Page.</div>
 </template>
 
 <script>
