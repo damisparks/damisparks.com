@@ -11,7 +11,20 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    // todo: add this as well later.
+    // darkSelector: '.dark',
+    extend: {
+      colors: {
+        // todo: to change this later.
+        primary: 'tbd',
+        secondary: 'tbd',
+        dark: 'dark',
+        linkExactActiveClass: 'tbd',
+      },
+      fontFamily: {
+        // todo: tbd
+      },
+    },
   },
   variants: {
     extend: {},
