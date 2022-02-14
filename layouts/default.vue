@@ -3,7 +3,7 @@
 		<div class="flex-auto">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<app-header />
-				<Nuxt class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" />
+				<Nuxt class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 nuxt" />
 			</div>
 		</div>
 		<app-footer />
@@ -32,5 +32,9 @@ html {
 *::after {
 	box-sizing: border-box;
 	margin: 0;
+}
+
+.nuxt {
+	transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
 }
 </style>
