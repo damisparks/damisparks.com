@@ -1,5 +1,5 @@
 <template>
-	<div class="relative overflow-hidden border">
+	<div class="relative overflow-hidden">
 		<header class="relative">
 			<nav
 				class="relative max-w-7xl mx-auto flex items-center justify-between"

@@ -1,12 +1,11 @@
 <template>
 	<main class="flex flex-col h-screen">
-		<app-header />
-		<div class="flex-auto border">
+		<div class="flex-auto">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<Nuxt />
+				<app-header />
+				<Nuxt class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" />
 			</div>
 		</div>
-
 		<app-footer />
 	</main>
 </template>
@@ -33,9 +32,5 @@ html {
 *::after {
 	box-sizing: border-box;
 	margin: 0;
-}
-
-* {
-	border: 1px solid blue;
 }
 </style>
