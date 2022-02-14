@@ -1,9 +1,11 @@
 <template>
-	<div>This is the landing page</div>
+	<div>
+		<h1>Portfolio</h1>
+	</div>
 </template>
 
 <script>
 export default {
-	name: 'IndexPage',
+	name: 'PortfolioPage',
 }
 </script>
