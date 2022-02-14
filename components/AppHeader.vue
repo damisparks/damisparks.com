@@ -15,6 +15,7 @@
 							</h1>
 						</nuxt-link>
 					</div>
+
 					<div class="space-x-8 flex">
 						<div v-for="{ name, url } in links" :key="name">
 							<nuxt-link
