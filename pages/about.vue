@@ -70,7 +70,7 @@
 							</div>
 							<a
 								class="block w-full py-3 px-5 text-center bg-ds-smokewhite border border-transparent rounded-md shadow-md text-base font-bold text-ds-primary sm:inline-block sm:w-auto"
-								href="//drive.google.com/drive/folders/1qNz2nqmZ5tn44KEEgg5IOkIqUC9SXBAc?usp=sharing"
+								href="//drive.google.com/uc?export=download&id=1qRSxju1bsJWOt098a9EXPpx8rOsgL-8m"
 								>View Resume</a
 							>
 						</div>

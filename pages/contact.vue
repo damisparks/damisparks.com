@@ -114,27 +114,6 @@
 							form although in general you will probably reach me quicker on
 							Twitter or LinkedIn.
 						</p>
-						<dl class="mt-8 space-y-6">
-							<dt><span class="sr-only">Email</span></dt>
-							<dd class="flex text-base text-ds-smokewhite">
-								<svg
-									class="flex-shrink-0 w-6 h-6 text-ds-smokewhite"
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
-									aria-hidden="true"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-									/>
-								</svg>
-								<span class="ml-3">damisparks@outlook.com</span>
-							</dd>
-						</dl>
 						<ul role="list" class="mt-8 flex space-x-12">
 							<li>
 								<a
@@ -281,5 +260,31 @@ import AppTitle from '~/components/AppTitle.vue'
 export default {
 	name: 'ContactPage',
 	components: { AppTitle },
+	data: () => {
+		return {
+			title: 'Contact DamiSparks',
+			description:
+				'Contact DamiSparks using the form or via Twitter or LinkedIn',
+		}
+	},
+	head() {
+		return {
+			title: this.title,
+			meta: [
+				{
+					hid: 'description',
+					name: 'description',
+					content: this.description,
+				},
+			],
+			link: [
+				{
+					hid: 'canonical',
+					rel: 'canonical',
+					href: `https://debbie.codes/contact`,
+				},
+			],
+		}
+	},
 }
 </script>

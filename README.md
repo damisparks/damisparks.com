@@ -4,14 +4,8 @@
 
 ## TOD0
 
-- [ ] Add Landing Page
-- [ ] Create a bio
-- [ ] Define Navbar items
-- [ ] Project || Project Page
 - [ ] Services Page
-- [ ] Add Navbar
 - [ ] Add Sidebar
-- [ ] Add Bio on page
 - [ ] add soicals
 - [ ] Add system, light and dark mode
 - [ ] connect it to my domain
@@ -19,3 +13,12 @@
 - [ ] Add Blog Tag like testing, entrepreneurship personal development etc
 - [ ] add Projects or product built
 - [ ] add breadcrumb
+- [ ] Add metadata to each page.
+
+## DONE
+
+- [x] Add Landing Page
+- [x] Create a bio
+- [x] Define Navbar items
+- [x] Add Navbar
+- [x] Add Bio on page
