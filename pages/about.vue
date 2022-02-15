@@ -68,10 +68,9 @@
 									heroes.
 								</p>
 							</div>
-							<span class="text-ds-teal block uppercase"> to add resume..</span>
 							<a
 								class="block w-full py-3 px-5 text-center bg-ds-smokewhite border border-transparent rounded-md shadow-md text-base font-bold text-ds-primary sm:inline-block sm:w-auto"
-								href="#"
+								href="//drive.google.com/drive/folders/1qNz2nqmZ5tn44KEEgg5IOkIqUC9SXBAc?usp=sharing"
 								>View Resume</a
 							>
 						</div>
@@ -79,6 +78,58 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- acheivement and awards starts -->
+		<div class="bg-white">
+			<div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+				<div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
+					<h1
+						class="text-3xl font-extrabold text-ds-primary tracking-tight sm:text-4xl"
+					>
+						Achievements
+					</h1>
+					<div class="lg:col-span-3">
+						<ul
+							role="list"
+							class="space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0"
+						>
+							<li v-for="(award, index) in awards" :key="index" class="sm:py-8">
+								<div
+									class="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0"
+								>
+									<div class="aspect-w-2 aspect-h-2">
+										<img
+											class="object-cover shadow-lg rounded-lg border border-t-ds-primary border-t-4"
+											:src="award.imageUrl"
+											:alt="award.name"
+										/>
+									</div>
+									<div class="sm:col-span-2">
+										<div class="space-y-4">
+											<div class="text-lg leading-6 font-bold space-y-1">
+												<a
+													:href="award.url"
+													target="_blank "
+													class="text-ds-teal"
+													>{{ award.name }}</a
+												>
+											</div>
+											<div class="text-lg">
+												<p class="text-gray-500">
+													{{ award.shortDescription }}
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- acheivement and awards ends -->
 	</div>
 </template>
 
@@ -87,5 +138,44 @@ import AppTitle from '~/components/AppTitle.vue'
 export default {
 	name: 'AboutPage',
 	components: { AppTitle },
+	data: () => {
+		return {
+			awards: [
+				{
+					name: 'Cloud Developer Nanodegree',
+					url: 'https://confirm.udacity.com/FUDFQLXD',
+					imageUrl:
+						'//s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/1454e7a8-3283-4289-b3fb-d7e441f913ee.svg',
+					shortDescription:
+						'Cloud Developer Nanodegree helps you with the fundamentals of cloud development and deployment with AWS. Then, build different apps leveraging microservices, Kubernetes clusters, and serverless application technology.',
+				},
+				{
+					name: 'Mentorship Nanodegree',
+					url: '//confirm.udacity.com/JKLELCJP',
+					imageUrl:
+						'//s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/a927a31e-9139-403f-9956-9ace9a96620d.svg',
+					shortDescription:
+						'Udacity Mentorship Nanodegree provides the knowledge and best practices to support students by providing comprehensive, personalised and timely technical support and feedback.',
+				},
+				{
+					name: 'Machine Learning Engineer Nanodegree',
+					url: '//confirm.udacity.com/JPPH5G4X',
+					imageUrl:
+						'//s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/912d7eb4-d692-4239-b869-dc1208e891f7.svg',
+					shortDescription: `Machine Learning Engineer Nanodegree help students learn the essential skills they need to perform well as machine learning engineer.
+					A graduate of this program will test Python code, build a Python package of their own, build predictive models using a variety of unsupervised and supervised machine learning techniques.`,
+				},
+				{
+					name: 'Introduction to Programming Nanodegree',
+					url: '//confirm.udacity.com/PEK6UQNW',
+					imageUrl:
+						'//s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/baac08cc-7290-4718-bb08-c5e2cf896eed.svg',
+					shortDescription: `Introduction to Programming Nanodegree gives the basics of programming through HTML, CSS, Python, and JavaScript.
+					Get extensive practice with hands-on exercises and projects that demonstrate your grasp of coding fundamentals and build confidence
+					in your ability to think and problem-solve like a programmer.`,
+				},
+			],
+		}
+	},
 }
 </script>
