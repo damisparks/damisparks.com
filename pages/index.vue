@@ -43,7 +43,7 @@
 			</svg>
 		</div>
 
-		<div class="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
+		<div class="relative pb-16 sm:pb-24 lg:pb-32">
 			<div class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
 				<div class="lg:grid lg:grid-cols-12 lg:gap-8">
 					<div
@@ -80,6 +80,16 @@
 						>
 							{{ me.shortDescription }}
 						</p>
+						<div
+							class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0"
+						>
+							<nuxt-link :to="{ name: 'about' }"
+								><span
+									class="p-3 bg-ds-primary text-white text-base leading-5 font-bold rounded-lg hover:shadow-lg"
+									>Learn More</span
+								></nuxt-link
+							>
+						</div>
 					</div>
 					<div
 						class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center"
@@ -148,7 +158,7 @@ export default {
 		return {
 			me: {
 				name: 'Dami Sparks',
-				role: ['CTO', 'Developer', 'Mentor'],
+				role: ['Developer', 'Mentor'],
 				shortDescription: `I'm Dami, a developer, mentor and technical writer based in Lisboa who's passionate about creating digital products and helping others find their passion to code. I'm all about combining innovative development and product thinking to bring ideas into reality.`,
 			},
 		}

@@ -15,7 +15,7 @@ module.exports = {
 				'ds-secondary': '#F7C860',
 				'ds-teal': '#5ac8d0',
 				'ds-gray': '#CCCCCC',
-				'ds-smokewhite': '#CCCCCC',
+				'ds-smokewhite': '#F1F2F8',
 				dark: 'dark',
 				linkExactActiveClass: 'tbd', // todo: to change this later.
 			},
@@ -27,7 +27,10 @@ module.exports = {
 	variants: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/aspect-ratio'),
+		require('@tailwindcss/forms'),
+	],
 
 	future: {
 		removeDeprecatedGapUtilities: true,

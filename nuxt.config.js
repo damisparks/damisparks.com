@@ -1,7 +1,8 @@
 export default {
+	target: 'static',
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	head: {
-		title: 'Dami Sparks | CTO, Software Engineer, Mentor & Educator',
+		title: 'Dami Sparks | Software Engineer, Mentor & Technical Writer',
 		htmlAttrs: {
 			lang: 'en',
 		},
@@ -23,6 +24,20 @@ export default {
 	// Auto import components: https://go.nuxtjs.dev/config-components
 	components: true,
 
+	/*
+	 ** Customize the progress-bar color
+	 */
+	loading: { color: '#fff' },
+
+	/**
+	 * Image provider
+	 */
+	image: {
+		cloudinary: {
+			baseURL: 'https://res.cloudinary.com/damisparks/image/upload/',
+		},
+	},
+
 	// Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
 	buildModules: [
 		// https://go.nuxtjs.dev/eslint
@@ -32,6 +47,7 @@ export default {
 		// https://go.nuxtjs.dev/tailwindcss
 		'@nuxtjs/tailwindcss',
 		'@nuxt/postcss8',
+		'@nuxt/image',
 	],
 
 	// Modules: https://go.nuxtjs.dev/config-modules

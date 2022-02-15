@@ -1,10 +1,10 @@
 <template>
 	<main class="flex flex-col h-screen">
 		<div class="flex-auto">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div>
 				<app-header />
-				<Nuxt class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 nuxt" />
 			</div>
+			<Nuxt class="nuxt" />
 		</div>
 		<app-footer />
 	</main>
