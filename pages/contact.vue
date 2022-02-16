@@ -119,6 +119,7 @@
 								<a
 									class="text-indigo-200 hover:text-indigo-100"
 									href="//twitter.com/DamiSparks"
+									rel="noopener noreferrer"
 								>
 									<span class="sr-only">Twitter</span>
 									<svg
@@ -262,7 +263,7 @@ export default {
 	components: { AppTitle },
 	data: () => {
 		return {
-			title: 'Contact DamiSparks',
+			title: 'Contact - DamiSparks',
 			description:
 				'Contact DamiSparks using the form or via Twitter or LinkedIn',
 		}

@@ -70,6 +70,7 @@
 							</div>
 							<a
 								class="block w-full py-3 px-5 text-center bg-ds-smokewhite border border-transparent rounded-md shadow-md text-base font-bold text-ds-primary sm:inline-block sm:w-auto"
+								rel="noopener noreferrer"
 								href="//drive.google.com/uc?export=download&id=1qRSxju1bsJWOt098a9EXPpx8rOsgL-8m"
 								>View Resume</a
 							>
@@ -110,6 +111,7 @@
 												<a
 													:href="award.url"
 													target="_blank "
+													rel="noopener noreferrer"
 													class="text-ds-teal"
 													>{{ award.name }}</a
 												>
@@ -140,6 +142,11 @@ export default {
 	components: { AppTitle },
 	data: () => {
 		return {
+			about: {
+				title: 'About Dami and his experience as a developer and mentor',
+				description:
+					'CTO at Actif, Cloud Developer, Freelancer, Knowledge and Code Reviewer at Udacity, Data Scientist at Lisbon Project, Demium AllStartup Weekend Winning Team',
+			},
 			awards: [
 				{
 					name: 'Cloud Developer Nanodegree',
@@ -173,6 +180,25 @@ export default {
 					shortDescription: `Introduction to Programming Nanodegree gives the basics of programming through HTML, CSS, Python, and JavaScript.
 					Get extensive practice with hands-on exercises and projects that demonstrate your grasp of coding fundamentals and build confidence
 					in your ability to think and problem-solve like a programmer.`,
+				},
+			],
+		}
+	},
+	head() {
+		return {
+			title: this.about.title,
+			meta: [
+				{
+					hid: 'description',
+					name: 'description',
+					content: this.about.description,
+				},
+			],
+			link: [
+				{
+					hid: 'canonical',
+					rel: 'canonical',
+					href: `https://damisparks.com/about`,
 				},
 			],
 		}
