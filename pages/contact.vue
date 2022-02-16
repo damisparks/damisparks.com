@@ -282,7 +282,7 @@ export default {
 				{
 					hid: 'canonical',
 					rel: 'canonical',
-					href: `https://debbie.codes/contact`,
+					href: `https://damisparks.com/contact`,
 				},
 			],
 		}
