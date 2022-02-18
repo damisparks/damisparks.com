@@ -3,7 +3,7 @@
 		<app-title>
 			<span class="text-ds-teal">Hi there!</span>
 		</app-title>
-		<div class="relative py-16">
+		<div class="relative py-16 md:px-4">
 			<div
 				class="hidden absolute top-0 inset-x-0 h-1/2 lg:block"
 				aria-hidden="true"
@@ -80,7 +80,56 @@
 			</div>
 		</div>
 
-		<!-- acheivement and awards starts -->
+		<!--  skills starts-->
+		<div class="bg-white">
+			<div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+				<div>
+					<h1
+						class="text-3xl font-extrabold text-ds-primary tracking-tight sm:text-4xl"
+					>
+						Skills
+					</h1>
+					<div
+						class="mt-4 sm:mt-8 md:mt-10 md:grid md:grid-cols-2 md:gap-x-8 xl:mt-0 xl:col-span-2"
+					>
+						<ul
+							v-for="(skill, index) in skills"
+							:key="index"
+							role="list"
+							class="divide-y divide-gray-200"
+						>
+							<li class="py-4 flex md:py-0 md:pb-4">
+								<svg
+									class="flex-shrink-0 h-8 w-8 text-ds-teal"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+									aria-hidden="true"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"
+									/>
+								</svg>
+								<span class="ml-3 text-base text-gray-500">
+									{{ skill.name }}
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  skills ends-->
+
+		<!-- services starts  -->
+		<!-- services I provide. -->
+		<!-- services ends -->
+
+		<!-- acheivement starts -->
 		<div class="bg-white">
 			<div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
 				<div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
@@ -130,8 +179,7 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- acheivement and awards ends -->
+		<!-- acheivement ends -->
 	</div>
 </template>
 
@@ -145,8 +193,25 @@ export default {
 			about: {
 				title: 'About Dami and his experience as a developer and mentor',
 				description:
-					'CTO at Actif, Cloud Developer, Freelancer, Knowledge and Code Reviewer at Udacity, Data Scientist at Lisbon Project, Demium AllStartup Weekend Winning Team',
+					'CTO at Actif, Cloud Developer, VueJS Developer, NuxtJS Developer, Freelancer, Knowledge and Code Reviewer at Udacity, Data Scientist at Lisbon Project, Demium AllStartup Weekend Winning Team',
 			},
+			skills: [
+				{ name: 'Javascript' },
+				{ name: 'Typescript' },
+				{ name: 'Python' },
+				{ name: 'VueJs' },
+				{ name: 'NuxtJS' },
+				{ name: 'NodeJS' },
+				{ name: 'ExpressJS' },
+				{ name: 'MongoDB & Postgre' },
+				{ name: 'Google Cloud' },
+				{ name: 'ServiceNow' },
+				{ name: 'Google Workspace' },
+				{ name: 'Google Firebase' },
+				{ name: 'Article Writing' },
+				{ name: 'Mentoring' },
+			],
+			services: [],
 			awards: [
 				{
 					name: 'Cloud Developer Nanodegree',

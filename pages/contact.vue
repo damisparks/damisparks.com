@@ -321,7 +321,7 @@ export default {
 	components: { AppTitle },
 	data: () => {
 		return {
-			title: 'Contact me',
+			title: 'Contact Me',
 			description:
 				'Contact DamiSparks using the form or via Twitter or LinkedIn',
 		}
