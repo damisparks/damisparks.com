@@ -14,6 +14,7 @@
 - [ ] add Projects or product built
 - [ ] add breadcrumb
 - [ ] Add metadata to each page.
+- [ ] Add Services Page / Or Add It to About
 
 ## DONE
 
@@ -22,3 +23,4 @@
 - [x] Define Navbar items
 - [x] Add Navbar
 - [x] Add Bio on page
+- [x] Add Skills to the About Page.
