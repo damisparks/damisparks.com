@@ -85,7 +85,7 @@
 						>
 							<nuxt-link :to="{ name: 'about' }"
 								><span
-									class="p-3 bg-ds-primary text-white text-base leading-5 font-bold rounded-lg hover:shadow-lg"
+									class="p-3 bg-ds-primary text-white text-base leading-5 font-bold rounded hover:shadow-lg"
 									>Learn More</span
 								></nuxt-link
 							>

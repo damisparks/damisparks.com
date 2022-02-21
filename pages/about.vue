@@ -26,7 +26,7 @@
 								<NuxtImg
 									class="object-cover object-center rounded-3xl shadow-2xl"
 									provider="cloudinary"
-									src="w_1000,ar_1:1,c_fill,g_auto/damisparks/dami.png"
+									src="w_1000,ar_1:1,c_fill,g_auto/damisparks.com/dami.png"
 									height="1078"
 									width="984"
 									quality="80"
@@ -69,7 +69,7 @@
 								</p>
 							</div>
 							<a
-								class="block w-full py-3 px-5 text-center bg-ds-smokewhite border border-transparent rounded-md shadow-md text-base font-bold text-ds-primary sm:inline-block sm:w-auto"
+								class="block w-full py-3 px-5 text-center bg-ds-smokewhite border border-transparent rounded shadow-md text-base font-bold text-ds-primary sm:inline-block sm:w-auto"
 								rel="noopener noreferrer"
 								href="//drive.google.com/uc?export=download&id=1qRSxju1bsJWOt098a9EXPpx8rOsgL-8m"
 								>View Resume</a
