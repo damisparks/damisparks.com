@@ -17,7 +17,7 @@
 			<div class="mt-6">
 				<nuxt-link
 					to="/"
-					class="inline-flex font-bold items-center px-4 py-2 border border-transparent text-sm rounded-md text-ds-smokewhite text-opacity-75 bg-ds-primary"
+					class="inline-flex font-bold items-center px-4 py-2 border border-transparent text-sm rounded text-ds-smokewhite text-opacity-75 bg-ds-primary"
 				>
 					Go back home
 				</nuxt-link>

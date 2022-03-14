@@ -7,12 +7,9 @@
 			>
 				<div class="flex items-center flex-1 py-4">
 					<div class="px-5">
-						<nuxt-link to="/">
+						<nuxt-link to="/" class="overflow-hidden">
 							<span class="sr-only">I'm DamiSparks</span>
-							<h1 class="p-2 rounded">
-								<span class="text-ds-primary font-light">Dami</span
-								><span class="text-ds-primary font-medium">Sparks</span>
-							</h1>
+							<app-logo />
 						</nuxt-link>
 					</div>
 
@@ -33,8 +30,10 @@
 </template>
 
 <script>
+import AppLogo from './AppLogo.vue'
 export default {
 	name: 'AppHeader',
+	components: { AppLogo },
 	data() {
 		return {
 			links: [

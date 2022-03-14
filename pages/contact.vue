@@ -235,7 +235,7 @@
 										name="your-name"
 										placeholder="Your name"
 										autocomplete="given-name"
-										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-primary border border-ds-gray rounded-md"
+										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-primary border border-ds-gray rounded"
 									/>
 								</div>
 							</div>
@@ -253,7 +253,7 @@
 										type="email"
 										autocomplete="email"
 										placeholder="Your email address"
-										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-primary border border-ds-gray rounded-md"
+										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-primary border border-ds-gray rounded"
 									/>
 								</div>
 							</div>
@@ -270,7 +270,7 @@
 										required
 										type="text"
 										name="subject"
-										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-primary border border-ds-gray rounded-md"
+										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-primary border border-ds-gray rounded"
 									/>
 								</div>
 							</div>
@@ -291,7 +291,7 @@
 										required
 										name="message"
 										rows="4"
-										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-primary border border-ds-gray rounded-md"
+										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-primary border border-ds-gray rounded"
 										aria-describedby="message-max"
 										placeholder="Write a message me"
 									></textarea>
@@ -300,7 +300,7 @@
 							<div class="sm:col-span-2 sm:flex sm:justify-end">
 								<button
 									type="submit"
-									class="mt-2 w-full inline-flex items-center justify-center px-6 py-2 border border-transparent rounded-md shadow-sm text-base font-bold text-ds-smokewhite bg-ds-primary hover:bg-ds-teal hover:text-ds-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ds-primary sm:w-auto"
+									class="mt-2 w-full inline-flex items-center justify-center px-6 py-2 border border-transparent rounded shadow-sm text-base font-bold text-ds-smokewhite bg-ds-primary hover:bg-ds-teal hover:text-ds-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ds-primary sm:w-auto"
 								>
 									Send
 								</button>
