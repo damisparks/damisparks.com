@@ -212,7 +212,6 @@ export default {
 				{ name: 'Mentoring' },
 				{ name: 'Freelancing' },
 			],
-			services: [],
 			awards: [
 				{
 					name: 'Digital Freelancer Nanodegree',
