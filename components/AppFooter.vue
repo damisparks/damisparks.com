@@ -77,6 +77,10 @@
 			<p class="mt-8 text-center text-base text-gray-400">
 				&copy; {{ new Date().getFullYear() }} DamiSparks. All rights reserved.
 			</p>
+			<p class="mt-4 italic text-center text-sm text-gray-400">
+				My logo was designed by
+				<a class="text-ds-teal" href="mailto:rubenfaria@live.com">Ruben</a>
+			</p>
 		</div>
 	</footer>
 </template>
