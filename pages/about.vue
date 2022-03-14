@@ -24,7 +24,7 @@
 								class="aspect-w-3 aspect-h-3 sm:aspect-w-1 sm:aspect-h-1 lg:aspect-w-1"
 							>
 								<NuxtImg
-									class="object-cover object-center rounded-3xl shadow-2xl"
+									class="object-cover object-center rounded-3xl shadow-2xl bg-white"
 									provider="cloudinary"
 									src="w_1000,ar_1:1,c_fill,g_auto/damisparks.com/dami.png"
 									height="1078"
@@ -90,7 +90,7 @@
 						Skills
 					</h1>
 					<div
-						class="mt-4 sm:mt-8 md:mt-10 md:grid md:grid-cols-2 md:gap-x-8 xl:mt-0 xl:col-span-2"
+						class="mt-4 sm:mt-8 md:mt-10 sm:grid sm:grid-cols-2 md:gap-x-8 xl:mt-0 xl:col-span-2"
 					>
 						<ul
 							v-for="(skill, index) in skills"
@@ -210,9 +210,18 @@ export default {
 				{ name: 'Google Firebase' },
 				{ name: 'Article Writing' },
 				{ name: 'Mentoring' },
+				{ name: 'Freelancing' },
 			],
 			services: [],
 			awards: [
+				{
+					name: 'Digital Freelancer Nanodegree',
+					url: 'https://confirm.udacity.com/G5KDSLSK',
+					imageUrl:
+						'https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/0e4e7509-edd9-44f2-b066-d8242a3fa1c6.svg',
+					shortDescription:
+						'Master the skills necessary to become a successful digital freelancer. Learn how to market your services to clients, scope projects and manage client relationships.',
+				},
 				{
 					name: 'Cloud Developer Nanodegree',
 					url: 'https://confirm.udacity.com/FUDFQLXD',

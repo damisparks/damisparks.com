@@ -39,9 +39,9 @@ export default {
 	components: { AppTitle, AppIntro },
 	data: () => {
 		return {
-			title: 'Project - Dami Sparks',
+			title: 'Projects - Dami Sparks',
 			description:
-				'Projects I have worked on. Here are some of the other projects I have worked on in the past — some still actively maintained, and others retired or on pause.',
+				'Explore our curated list of projects I have worked on. Here are some of the other projects I have worked on in the past — some still actively maintained, and others retired or on pause.',
 			intro: [
 				{
 					name: 'My main focus these days is Actif — a tech company focusing on improving the health of older people with fitness and cognitive programs.',
