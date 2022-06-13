@@ -9,6 +9,8 @@ After cloning it, make sure you `npm install` to install everything and start th
 
 ## TOD0
 
+- [ ] Migrate to Nuxt3
+- [ ] Update TailwindCSS to the latest version
 - [ ] Services Page
 - [ ] Add Sidebar
 - [ ] Add system, light and dark mode
