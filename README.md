@@ -1,6 +1,11 @@
 # Dami Sparks
 
-<!-- write a bio about myself here. -->
+This repository is my website which I built in NuxtJS.
+This repository is my sandbox for exploring new ideas and having fun. Feel free to look around and adapt whatever you like as the code is open-source, so if it helps, then great.
+
+The site is static, meaning the project can be hosted free on any hosting service such as Netlify.
+
+After cloning it, make sure you `npm install` to install everything and start the development server using `npm run dev`.
 
 ## TOD0
 
