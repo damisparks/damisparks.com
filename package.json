@@ -21,7 +21,7 @@
 		"*.**": "prettier --check --ignore-unknown"
 	},
 	"dependencies": {
-		"@tailwindcss/aspect-ratio": "0.4.0",
+		"@tailwindcss/aspect-ratio": "0.4.2",
 		"@tailwindcss/forms": "0.4.0",
 		"core-js": "^3.21.1",
 		"nuxt": "^2.15.8",
