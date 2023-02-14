@@ -17,7 +17,7 @@
 			<div class="mt-8 flex justify-center space-x-6">
 				<a
 					href="//twitter.com/DamiSparks"
-					class="text-gray-400 hover:text-gray-500"
+					class="text-gray-600 hover:text-gray-500"
 					target="_blank"
 					rel="nofollow noopener noreferrer"
 				>
@@ -38,7 +38,7 @@
 					href="//github.com/damisparks"
 					target="_blank"
 					rel="nofollow noopener noreferrer"
-					class="text-gray-400 hover:text-gray-500"
+					class="text-gray-600 hover:text-gray-500"
 				>
 					<span class="sr-only">GitHub</span>
 					<svg
@@ -56,7 +56,7 @@
 				</a>
 				<a
 					href="//www.linkedin.com/in/damisparks"
-					class="text-gray-400 hover:text-gray-500"
+					class="text-gray-600 hover:text-gray-500"
 					target="_blank"
 					rel="nofollow noopener noreferrer"
 				>
@@ -74,12 +74,16 @@
 					</svg>
 				</a>
 			</div>
-			<p class="mt-8 text-center text-base text-gray-400">
+			<p class="mt-8 text-center text-base text-gray-600">
 				&copy; {{ new Date().getFullYear() }} DamiSparks. All rights reserved.
 			</p>
-			<p class="mt-4 italic text-center text-sm text-gray-400">
+			<p class="mt-4 font-montserrat italic text-center text-sm text-gray-600">
 				My logo was designed by
-				<a class="text-ds-teal" href="mailto:rubenfaria@live.com">Ruben</a>
+				<a
+					class="text-ds-blue hover:opacity-90 font-bold"
+					href="mailto:rubenfaria@live.com"
+					>Ruben</a
+				>
 			</p>
 		</div>
 	</footer>
