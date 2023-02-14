@@ -157,11 +157,12 @@
 											<div class="text-lg leading-6 font-bold space-y-1">
 												<a
 													:href="award.url"
-													target="_blank "
+													target="_blank"
 													rel="noopener noreferrer"
-													class="text-ds-teal"
-													>{{ award.name }}</a
+													class="text-ds-blue hover:opacity-90"
 												>
+													{{ award.name }}
+												</a>
 											</div>
 											<div class="text-lg">
 												<p class="text-gray-500">
