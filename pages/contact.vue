@@ -7,7 +7,7 @@
 
 				<div class="grid grid-cols-1 lg:grid-cols-3">
 					<div
-						class="relative overflow-hidden py-10 px-6 bg-ds-primary sm:px-10 xl:p-12"
+						class="relative overflow-hidden py-10 px-6 bg-ds-blue sm:px-10 xl:p-12"
 					>
 						<div
 							class="absolute inset-0 pointer-events-none sm:hidden"
@@ -198,9 +198,7 @@
 
 					<!-- Contact form -->
 					<div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-						<h3 class="text-lg font-medium text-ds-primary">
-							Drop me a message
-						</h3>
+						<h3 class="text-lg font-medium text-ds-blue">Drop me a message</h3>
 						<form
 							id="contact_form"
 							name="contact"
@@ -235,7 +233,7 @@
 										name="your-name"
 										placeholder="Your name"
 										autocomplete="given-name"
-										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-primary border border-ds-gray rounded"
+										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-blue border border-ds-gray rounded"
 									/>
 								</div>
 							</div>
@@ -253,7 +251,7 @@
 										type="email"
 										autocomplete="email"
 										placeholder="Your email address"
-										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-primary border border-ds-gray rounded"
+										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-blue border border-ds-gray rounded"
 									/>
 								</div>
 							</div>
@@ -270,7 +268,7 @@
 										required
 										type="text"
 										name="subject"
-										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-primary border border-ds-gray rounded"
+										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-blue border border-ds-gray rounded"
 									/>
 								</div>
 							</div>
@@ -291,7 +289,7 @@
 										required
 										name="message"
 										rows="4"
-										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-primary border border-ds-gray rounded"
+										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-blue border border-ds-gray rounded"
 										aria-describedby="message-max"
 										placeholder="Write a message me"
 									></textarea>
@@ -300,7 +298,7 @@
 							<div class="sm:col-span-2 sm:flex sm:justify-end">
 								<button
 									type="submit"
-									class="mt-2 w-full inline-flex items-center justify-center px-6 py-2 border border-transparent rounded shadow-sm text-base font-bold text-ds-smokewhite bg-ds-primary hover:bg-ds-teal hover:text-ds-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ds-primary sm:w-auto"
+									class="mt-2 w-full inline-flex items-center justify-center px-6 py-2 border border-transparent rounded shadow-sm text-base font-bold text-ds-smokewhite bg-ds-blue hover:bg-ds-teal hover:text-ds-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ds-blue sm:w-auto"
 								>
 									Send
 								</button>
