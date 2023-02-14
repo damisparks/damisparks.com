@@ -49,7 +49,7 @@
 					<div
 						class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left"
 					>
-						<h1 class="space-y-3">
+						<h1 class="space-y-3 font-ds-sans">
 							<span
 								class="block text-sm capitalize tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base"
 								>Hi there!</span
@@ -76,7 +76,7 @@
 							</span>
 						</h1>
 						<p
-							class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
+							class="mt-3 text-base font-ds-mont text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
 						>
 							{{ me.shortDescription }}
 						</p>
@@ -158,8 +158,8 @@ export default {
 		return {
 			me: {
 				name: 'Dami Sparks',
-				role: ['Developer', 'Mentor'],
-				shortDescription: `I'm Dami, a developer, mentor and technical writer based in Lisboa who's passionate about creating digital products and helping others find their passion to code. I'm all about combining innovative development and product thinking to bring ideas into reality.`,
+				role: ['Digital Freelancer', 'Software Engineer'],
+				shortDescription: `I'm Dami, a digital freelancer, full-stack software and technical writer based in Lisboa who's passionate about creating digital products and helping others find their passion to code. I'm all about combining innovative development and product thinking to bring ideas into reality.`,
 			},
 		}
 	},
