@@ -21,7 +21,7 @@ export default {
 
 <style>
 html {
-	font-family: 'Open Sans', Poppins, sans-serif;
+	font-family: 'Open Sans', Montserrat, sans-serif;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	box-sizing: border-box;
