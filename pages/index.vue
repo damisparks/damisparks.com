@@ -57,7 +57,7 @@
 							<span
 								class="mt-1 space-y-2 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl"
 							>
-								<span class="block text-ds-primary">
+								<span class="block text-ds-blue">
 									I'm
 									<nuxt-link to="/">
 										<span>{{ me.name }}</span>
@@ -68,7 +68,7 @@
 										{{ item
 										}}<span
 											v-if="index !== me.role.length - 1"
-											class="text-ds-secondary"
+											class="text-ds-orange"
 											>.
 										</span>
 									</span>
@@ -85,7 +85,7 @@
 						>
 							<nuxt-link :to="{ name: 'about' }"
 								><span
-									class="p-3 bg-ds-primary text-white text-base leading-5 font-bold rounded hover:shadow-lg"
+									class="p-3 bg-ds-blue text-white text-base leading-5 font-bold rounded hover:shadow-lg"
 									>Learn More</span
 								></nuxt-link
 							>

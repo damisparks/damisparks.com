@@ -11,8 +11,8 @@ module.exports = {
 		// darkSelector: '.dark',
 		extend: {
 			colors: {
-				'ds-primary': '#304382',
-				'ds-secondary': '#F7C860',
+				'ds-blue': '#304382',
+				'ds-orange': '#F7C860',
 				'ds-teal': '#5ac8d0',
 				'ds-gray': '#CCCCCC',
 				'ds-smokewhite': '#F1F2F8',

@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<app-title>
-			<span class="text-ds-primary">Portfolio</span>
+			<span class="text-ds-blue">Portfolio</span>
 		</app-title>
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<app-intro class="mt-8">
@@ -18,7 +18,7 @@
 					:key="index"
 					class="space-y-1"
 				>
-					<h1 class="text-ds-primary text-xl font-semibold">
+					<h1 class="text-ds-blue text-xl font-semibold">
 						{{ project.title }}
 					</h1>
 					<p>{{ project.shortDescription }}</p>
