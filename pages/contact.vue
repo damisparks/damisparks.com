@@ -198,9 +198,7 @@
 
 					<!-- Contact form -->
 					<div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-						<h3 class="text-lg font-medium text-ds-blue">
-							Drop me a message
-						</h3>
+						<h3 class="text-lg font-medium text-ds-blue">Drop me a message</h3>
 						<form
 							id="contact_form"
 							name="contact"

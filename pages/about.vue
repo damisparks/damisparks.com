@@ -44,9 +44,7 @@
 							class="relative max-w-lg mx-auto py-12 px-4 space-y-6 sm:max-w-4xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"
 						>
 							<div class="space-y-4 sm:space-y-6">
-								<h2 class="text-3xl font-extrabold text-ds-orange">
-									I'm Dami
-								</h2>
+								<h2 class="text-3xl font-extrabold text-ds-orange">I'm Dami</h2>
 								<p class="text-lg text-white">
 									Damilola is the CTO and co-founder of Actif, a tech company
 									focusing on improving the health of older people with fitness
