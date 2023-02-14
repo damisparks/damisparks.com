@@ -8,7 +8,7 @@
 				class="hidden absolute top-0 inset-x-0 h-1/2 lg:block"
 				aria-hidden="true"
 			></div>
-			<div class="max-w-7xl mx-auto bg-ds-primary lg:bg-transparent lg:px-8">
+			<div class="max-w-7xl mx-auto bg-ds-blue lg:bg-transparent lg:px-8">
 				<div class="lg:grid lg:grid-cols-12">
 					<div
 						class="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent"
@@ -38,13 +38,13 @@
 					</div>
 
 					<div
-						class="relative bg-ds-primary py-6 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center"
+						class="relative bg-ds-blue py-6 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center"
 					>
 						<div
 							class="relative max-w-lg mx-auto py-12 px-4 space-y-6 sm:max-w-4xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"
 						>
 							<div class="space-y-4 sm:space-y-6">
-								<h2 class="text-3xl font-extrabold text-ds-secondary">
+								<h2 class="text-3xl font-extrabold text-ds-orange">
 									I'm Dami
 								</h2>
 								<p class="text-lg text-white">
@@ -69,7 +69,7 @@
 								</p>
 							</div>
 							<a
-								class="block w-full py-3 px-5 text-center bg-ds-smokewhite border border-transparent rounded shadow-md text-base font-bold text-ds-primary sm:inline-block sm:w-auto"
+								class="block w-full py-3 px-5 text-center bg-ds-smokewhite border border-transparent rounded shadow-md text-base font-bold text-ds-blue sm:inline-block sm:w-auto"
 								rel="noopener noreferrer"
 								href="//drive.google.com/uc?export=download&id=1qRSxju1bsJWOt098a9EXPpx8rOsgL-8m"
 								>View Resume</a
@@ -85,7 +85,7 @@
 			<div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
 				<div>
 					<h1
-						class="text-3xl font-extrabold text-ds-primary tracking-tight sm:text-4xl"
+						class="text-3xl font-extrabold text-ds-blue tracking-tight sm:text-4xl"
 					>
 						Skills
 					</h1>
@@ -134,7 +134,7 @@
 			<div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
 				<div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
 					<h1
-						class="text-3xl font-extrabold text-ds-primary tracking-tight sm:text-4xl"
+						class="text-3xl font-extrabold text-ds-blue tracking-tight sm:text-4xl"
 					>
 						Achievements
 					</h1>
@@ -149,7 +149,7 @@
 								>
 									<div class="aspect-w-2 aspect-h-2">
 										<img
-											class="object-cover shadow-lg rounded-lg border border-t-ds-primary border-t-4"
+											class="object-cover shadow-lg rounded-lg border border-t-ds-blue border-t-4"
 											:src="award.imageUrl"
 											:alt="award.name"
 										/>
