@@ -20,8 +20,8 @@ module.exports = {
 				linkExactActiveClass: 'tbd', // todo: to change this later.
 			},
 			fontFamily: {
-				'ds-sans': "'Open Sans', sans-serif",
-				'ds-mont': "'Montserrat', sans-serif",
+				opensans: "'Open Sans', sans-serif",
+				montserrat: ["'Montserrat', sans-serif"],
 			},
 		},
 	},
