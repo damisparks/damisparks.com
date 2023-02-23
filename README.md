@@ -7,7 +7,7 @@ The site is static, meaning the project can be hosted free on any hosting servic
 
 After cloning it, make sure you `npm install` to install everything and start the development server using `npm run dev`.
 
-## TOD0
+## TODO
 
 - [ ] Migrate to Nuxt3
 - [ ] Update TailwindCSS to the latest version
