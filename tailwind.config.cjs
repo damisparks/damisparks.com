@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
 		'./components/**/*.{js,vue,ts}',
@@ -5,10 +6,10 @@ module.exports = {
 		'./pages/**/*.vue',
 		'./plugins/**/*.{js,ts}',
 		'./nuxt.config.{js,ts}',
+		'./app.vue'
 	],
 	theme: {
-		// todo: add this as well later.
-		// darkSelector: '.dark',
+		darkSelector: 'class',
 		extend: {
 			colors: {
 				'ds-blue': '#304382',
@@ -17,24 +18,24 @@ module.exports = {
 				'ds-gray': '#CCCCCC',
 				'ds-smokewhite': '#F1F2F8',
 				dark: 'dark',
-				linkExactActiveClass: 'tbd', // todo: to change this later.
+				linkExactActiveClass: 'tbd' // todo: to change this later.
 			},
 			fontFamily: {
 				opensans: "'Open Sans', sans-serif",
-				montserrat: ["'Montserrat', sans-serif"],
-			},
-		},
+				montserrat: ["'Montserrat', sans-serif"]
+			}
+		}
 	},
 	variants: {
-		extend: {},
+		extend: {}
 	},
 	plugins: [
 		require('@tailwindcss/aspect-ratio'),
-		require('@tailwindcss/forms'),
+		require('@tailwindcss/forms')
 	],
 
 	future: {
 		removeDeprecatedGapUtilities: true,
-		purgeLayersByDefault: true,
-	},
+		purgeLayersByDefault: true
+	}
 }
