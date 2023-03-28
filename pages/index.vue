@@ -1,3 +1,11 @@
+<script lang="ts" setup>
+const me = ref({
+	name: 'Dami Sparks',
+	role: ['Digital Freelancer', 'Software Engineer'],
+	shortDescription: `I'm Dami, a digital freelancer, full-stack software and technical writer based in Lisboa who's passionate about creating digital products and helping others find their passion to code. I'm all about combining innovative development and product thinking to bring ideas into reality.`
+})
+</script>
+
 <template>
 	<div class="relative bg-white overflow-hidden">
 		<div class="hidden lg:block lg:absolute lg:inset-0" aria-hidden="true">
@@ -51,44 +59,40 @@
 					>
 						<h1 class="space-y-3 font-opensans">
 							<span
-								class="block text-sm capitalize tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base"
-								>Hi there!</span
-							>
-							<span
 								class="mt-1 space-y-2 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl"
 							>
 								<span class="block text-ds-blue">
 									I'm
-									<nuxt-link to="/">
+									<NuxtLink to="/">
 										<span>{{ me.name }}</span>
-									</nuxt-link>
+									</NuxtLink>
 								</span>
 								<span class="block text-ds-teal">
 									<span v-for="(item, index) in me.role" :key="index">
-										{{ item
-										}}<span
+										{{ item }}
+
+										<span
 											v-if="index !== me.role.length - 1"
-											class="text-ds-orange"
-											>.
-										</span>
+											class="h-4 w-4 inline-block rounded-full bg-ds-orange mr-2 lg:mr-3"
+										></span>
 									</span>
 								</span>
 							</span>
 						</h1>
 						<p
-							class="mt-3 text-base font-montserrat text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
+							class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
 						>
 							{{ me.shortDescription }}
 						</p>
 						<div
 							class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0"
 						>
-							<nuxt-link :to="{ name: 'about' }"
-								><span
+							<NuxtLink :to="{ name: 'about' }">
+								<span
 									class="p-3 bg-ds-blue text-white text-base leading-5 font-bold rounded hover:shadow-lg"
 									>Learn More</span
-								></nuxt-link
-							>
+								>
+							</NuxtLink>
 						</div>
 					</div>
 					<div
@@ -150,18 +154,3 @@
 		</div>
 	</div>
 </template>
-
-<script>
-export default {
-	name: 'IndexPage',
-	data: () => {
-		return {
-			me: {
-				name: 'Dami Sparks',
-				role: ['Digital Freelancer', 'Software Engineer'],
-				shortDescription: `I'm Dami, a digital freelancer, full-stack software and technical writer based in Lisboa who's passionate about creating digital products and helping others find their passion to code. I'm all about combining innovative development and product thinking to bring ideas into reality.`,
-			},
-		}
-	},
-}
-</script>
