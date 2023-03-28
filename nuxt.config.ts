@@ -37,7 +37,7 @@ export default defineNuxtConfig({
 			link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
 		}
 	},
-	modules: ['@nuxtjs/tailwindcss', '@nuxt/image-edge'],
+	modules: ['@nuxt/image-edge'],
 
 	// nuxt image configuration
 	image: {
