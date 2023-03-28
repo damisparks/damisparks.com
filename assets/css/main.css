@@ -1,10 +1,20 @@
-/* .layout-enter-active,
-.layout-leave-active, */
-/* .page-enter-active,
-.page-leave-active {
-	opacity: 0;
-	transform: translate(30px, 0);
-} */
+/* global font family */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+	html,
+	body {
+		font-family: 'Montserrat', sans-serif;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		box-sizing: border-box;
+	}
+}
+
 .page-enter-active,
 .page-leave-active {
 	transition-duration: 0.3s;
