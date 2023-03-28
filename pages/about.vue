@@ -1,8 +1,96 @@
+<script lang="ts" setup>
+const about = ref({
+	title: 'About Dami and his experience as a developer and mentor',
+	description:
+		'CTO at Actif, Cloud Developer, VueJS Developer, NuxtJS Developer, Freelancer, Knowledge and Code Reviewer at Udacity, Data Scientist at Lisbon Project, Demium AllStartup Weekend Winning Team'
+})
+
+const skills = ref([
+	{ name: 'Javascript' },
+	{ name: 'Typescript' },
+	{ name: 'Python' },
+	{ name: 'VueJs' },
+	{ name: 'NuxtJS' },
+	{ name: 'NodeJS' },
+	{ name: 'ExpressJS' },
+	{ name: 'MongoDB & Postgre' },
+	{ name: 'Google Cloud' },
+	{ name: 'ServiceNow' },
+	{ name: 'Google Workspace' },
+	{ name: 'Google Firebase' },
+	{ name: 'Article Writing' },
+	{ name: 'Mentoring' },
+	{ name: 'Freelancing' }
+])
+
+const awards = ref([
+	{
+		name: 'Digital Freelancer Nanodegree',
+		url: 'https://confirm.udacity.com/G5KDSLSK',
+		imageUrl:
+			'https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/0e4e7509-edd9-44f2-b066-d8242a3fa1c6.svg',
+		shortDescription:
+			'Master the skills necessary to become a successful digital freelancer. Learn how to market your services to clients, scope projects and manage client relationships.'
+	},
+	{
+		name: 'Cloud Developer Nanodegree',
+		url: 'https://confirm.udacity.com/FUDFQLXD',
+		imageUrl:
+			'//s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/1454e7a8-3283-4289-b3fb-d7e441f913ee.svg',
+		shortDescription:
+			'Cloud Developer Nanodegree helps you with the fundamentals of cloud development and deployment with AWS. Then, build different apps leveraging microservices, Kubernetes clusters, and serverless application technology.'
+	},
+	{
+		name: 'Mentorship Nanodegree',
+		url: '//confirm.udacity.com/JKLELCJP',
+		imageUrl:
+			'//s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/a927a31e-9139-403f-9956-9ace9a96620d.svg',
+		shortDescription:
+			'Udacity Mentorship Nanodegree provides the knowledge and best practices to support students by providing comprehensive, personalised and timely technical support and feedback.'
+	},
+	{
+		name: 'Machine Learning Engineer Nanodegree',
+		url: '//confirm.udacity.com/JPPH5G4X',
+		imageUrl:
+			'//s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/912d7eb4-d692-4239-b869-dc1208e891f7.svg',
+		shortDescription: `Machine Learning Engineer Nanodegree help students learn the essential skills they need to perform well as machine learning engineer.
+					A graduate of this program will test Python code, build a Python package of their own, build predictive models using a variety of unsupervised and supervised machine learning techniques.`
+	},
+	{
+		name: 'Introduction to Programming Nanodegree',
+		url: '//confirm.udacity.com/PEK6UQNW',
+		imageUrl:
+			'//s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/baac08cc-7290-4718-bb08-c5e2cf896eed.svg',
+		shortDescription: `Introduction to Programming Nanodegree gives the basics of programming through HTML, CSS, Python, and JavaScript.
+					Get extensive practice with hands-on exercises and projects that demonstrate your grasp of coding fundamentals and build confidence
+					in your ability to think and problem-solve like a programmer.`
+	}
+])
+
+useHead({
+	title: about.value.title,
+	meta: [
+		{
+			hid: 'description',
+			name: 'description',
+			content: about.value.description
+		}
+	],
+	link: [
+		{
+			hid: 'canonical',
+			rel: 'canonical',
+			href: `https://damisparks.com/about`
+		}
+	]
+})
+</script>
+
 <template>
 	<div>
-		<app-title>
+		<AppTitle>
 			<span class="text-ds-teal">Hi there!</span>
-		</app-title>
+		</AppTitle>
 		<div class="relative py-16 md:px-4">
 			<div
 				class="hidden absolute top-0 inset-x-0 h-1/2 lg:block"
@@ -14,7 +102,7 @@
 						class="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent"
 					>
 						<div
-							class="absolute inset-x-0 h-1/2 bg-white lg:hidden"
+							class="absolute inset-x-0 h-1/2 bg-white"
 							aria-hidden="true"
 						></div>
 						<div
@@ -24,6 +112,7 @@
 								class="aspect-w-3 aspect-h-3 sm:aspect-w-1 sm:aspect-h-1 lg:aspect-w-1"
 							>
 								<NuxtImg
+									loading="lazy"
 									class="object-cover object-center rounded-3xl shadow-2xl bg-white"
 									provider="cloudinary"
 									src="w_1000,ar_1:1,c_fill,g_auto/damisparks.com/dami.png"
@@ -181,99 +270,3 @@
 		<!-- acheivement ends -->
 	</div>
 </template>
-
-<script>
-import AppTitle from '~/components/AppTitle.vue'
-export default {
-	name: 'AboutPage',
-	components: { AppTitle },
-	data: () => {
-		return {
-			about: {
-				title: 'About Dami and his experience as a developer and mentor',
-				description:
-					'CTO at Actif, Cloud Developer, VueJS Developer, NuxtJS Developer, Freelancer, Knowledge and Code Reviewer at Udacity, Data Scientist at Lisbon Project, Demium AllStartup Weekend Winning Team',
-			},
-			skills: [
-				{ name: 'Javascript' },
-				{ name: 'Typescript' },
-				{ name: 'Python' },
-				{ name: 'VueJs' },
-				{ name: 'NuxtJS' },
-				{ name: 'NodeJS' },
-				{ name: 'ExpressJS' },
-				{ name: 'MongoDB & Postgre' },
-				{ name: 'Google Cloud' },
-				{ name: 'ServiceNow' },
-				{ name: 'Google Workspace' },
-				{ name: 'Google Firebase' },
-				{ name: 'Article Writing' },
-				{ name: 'Mentoring' },
-				{ name: 'Freelancing' },
-			],
-			awards: [
-				{
-					name: 'Digital Freelancer Nanodegree',
-					url: 'https://confirm.udacity.com/G5KDSLSK',
-					imageUrl:
-						'https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/0e4e7509-edd9-44f2-b066-d8242a3fa1c6.svg',
-					shortDescription:
-						'Master the skills necessary to become a successful digital freelancer. Learn how to market your services to clients, scope projects and manage client relationships.',
-				},
-				{
-					name: 'Cloud Developer Nanodegree',
-					url: 'https://confirm.udacity.com/FUDFQLXD',
-					imageUrl:
-						'//s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/1454e7a8-3283-4289-b3fb-d7e441f913ee.svg',
-					shortDescription:
-						'Cloud Developer Nanodegree helps you with the fundamentals of cloud development and deployment with AWS. Then, build different apps leveraging microservices, Kubernetes clusters, and serverless application technology.',
-				},
-				{
-					name: 'Mentorship Nanodegree',
-					url: '//confirm.udacity.com/JKLELCJP',
-					imageUrl:
-						'//s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/a927a31e-9139-403f-9956-9ace9a96620d.svg',
-					shortDescription:
-						'Udacity Mentorship Nanodegree provides the knowledge and best practices to support students by providing comprehensive, personalised and timely technical support and feedback.',
-				},
-				{
-					name: 'Machine Learning Engineer Nanodegree',
-					url: '//confirm.udacity.com/JPPH5G4X',
-					imageUrl:
-						'//s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/912d7eb4-d692-4239-b869-dc1208e891f7.svg',
-					shortDescription: `Machine Learning Engineer Nanodegree help students learn the essential skills they need to perform well as machine learning engineer.
-					A graduate of this program will test Python code, build a Python package of their own, build predictive models using a variety of unsupervised and supervised machine learning techniques.`,
-				},
-				{
-					name: 'Introduction to Programming Nanodegree',
-					url: '//confirm.udacity.com/PEK6UQNW',
-					imageUrl:
-						'//s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/baac08cc-7290-4718-bb08-c5e2cf896eed.svg',
-					shortDescription: `Introduction to Programming Nanodegree gives the basics of programming through HTML, CSS, Python, and JavaScript.
-					Get extensive practice with hands-on exercises and projects that demonstrate your grasp of coding fundamentals and build confidence
-					in your ability to think and problem-solve like a programmer.`,
-				},
-			],
-		}
-	},
-	head() {
-		return {
-			title: this.about.title,
-			meta: [
-				{
-					hid: 'description',
-					name: 'description',
-					content: this.about.description,
-				},
-			],
-			link: [
-				{
-					hid: 'canonical',
-					rel: 'canonical',
-					href: `https://damisparks.com/about`,
-				},
-			],
-		}
-	},
-}
-</script>

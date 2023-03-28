@@ -1,3 +1,10 @@
+<script setup lang="ts">
+const links = ref([
+	{ name: 'Portfolio', url: 'projects' },
+	{ name: 'About ', url: 'about' },
+	{ name: 'Contact', url: 'contact' }
+])
+</script>
 <template>
 	<footer class="bg-white">
 		<div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
@@ -6,12 +13,12 @@
 				aria-label="Footer"
 			>
 				<div v-for="{ name, url } in links" :key="name" class="px-5 py-2">
-					<nuxt-link
+					<NuxtLink
 						:to="{ name: url }"
 						class="text-base text-gray-500 hover:text-ds-teal"
 					>
 						{{ name }}
-					</nuxt-link>
+					</NuxtLink>
 				</div>
 			</nav>
 			<div class="mt-8 flex justify-center space-x-6">
@@ -88,18 +95,3 @@
 		</div>
 	</footer>
 </template>
-
-<script>
-export default {
-	name: 'AppFooter',
-	data: () => {
-		return {
-			links: [
-				{ name: 'About ', url: 'about' },
-				{ name: 'Portfolio', url: 'projects' },
-				{ name: 'Contact', url: 'contact' },
-			],
-		}
-	},
-}
-</script>

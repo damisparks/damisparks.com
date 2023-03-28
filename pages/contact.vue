@@ -1,6 +1,27 @@
+<script lang="ts" setup>
+const title = ref<string>('Contact Me')
+const description = ref<string>(
+	'Contact DamiSparks using the form or via Twitter or LinkedIn'
+)
+
+useHead({
+	title: title.value,
+	meta: [
+		{ key: 'description', name: 'description', content: description.value }
+	],
+	link: [
+		{
+			key: 'canonical',
+			rel: 'canonical',
+			href: `https://damisparks.com/contact`
+		}
+	]
+})
+</script>
+
 <template>
 	<div>
-		<app-title>{{ title }}</app-title>
+		<AppTitle>{{ title }}</AppTitle>
 		<div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
 			<div class="relative bg-white shadow-xl border">
 				<h2 class="sr-only">{{ title }}</h2>
@@ -115,32 +136,6 @@
 							Twitter or LinkedIn.
 						</p>
 						<ul role="list" class="mt-8 flex flex-col space-y-4">
-							<li>
-								<a
-									class="text-ds-smokewhite hover:text-indigo-100"
-									href="tel:+351930538431"
-								>
-									<span class="sr-only">Phone</span>
-									<div class="flex">
-										<svg
-											class="flex-shrink-0 w-6 h-6 text-indigo-200"
-											xmlns="http://www.w3.org/2000/svg"
-											fill="none"
-											viewBox="0 0 24 24"
-											stroke="currentColor"
-											aria-hidden="true"
-										>
-											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												stroke-width="2"
-												d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-											/>
-										</svg>
-										<span class="ml-3">+351 (930538431)</span>
-									</div>
-								</a>
-							</li>
 							<li>
 								<a
 									class="text-ds-smokewhite hover:text-indigo-100"
@@ -309,39 +304,4 @@
 			</div>
 		</div>
 	</div>
-	<!-- contact template ends -->
 </template>
-
-<script>
-import AppTitle from '~/components/AppTitle.vue'
-export default {
-	name: 'ContactPage',
-	components: { AppTitle },
-	data: () => {
-		return {
-			title: 'Contact Me',
-			description:
-				'Contact DamiSparks using the form or via Twitter or LinkedIn',
-		}
-	},
-	head() {
-		return {
-			title: `${this.title} - Dami Sparks`,
-			meta: [
-				{
-					hid: 'description',
-					name: 'description',
-					content: this.description,
-				},
-			],
-			link: [
-				{
-					hid: 'canonical',
-					rel: 'canonical',
-					href: `https://damisparks.com/contact`,
-				},
-			],
-		}
-	},
-}
-</script>
