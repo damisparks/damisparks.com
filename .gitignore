@@ -105,3 +105,8 @@ node_modules
 .output
 .env
 dist
+
+.nyc_output
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
