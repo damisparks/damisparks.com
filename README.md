@@ -48,8 +48,6 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 ## TOD0
 
-- [ ] Migrate to Nuxt3
-- [ ] Update TailwindCSS to the latest version
 - [ ] Services Page
 - [ ] Add Sidebar
 - [ ] Add system, light and dark mode
@@ -67,6 +65,8 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 ## DONE
 
+- [x] Migrate to Nuxt3
+- [x] Update TailwindCSS to the latest version
 - [x] Add Landing Page
 - [x] Create a bio
 - [x] Define Navbar items
