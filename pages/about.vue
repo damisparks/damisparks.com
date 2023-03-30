@@ -183,7 +183,7 @@ useHead({
 							v-for="(skill, index) in skills"
 							:key="index"
 							role="list"
-							class="divide-y divide-gray-200"
+							class="divide-y divide-zinc-200"
 						>
 							<li class="py-4 flex md:py-0 md:pb-4">
 								<svg
@@ -201,7 +201,7 @@ useHead({
 										d="M5 13l4 4L19 7"
 									/>
 								</svg>
-								<span class="ml-3 text-base text-gray-500">
+								<span class="ml-3 text-base text-zinc-500">
 									{{ skill.name }}
 								</span>
 							</li>
@@ -228,7 +228,7 @@ useHead({
 					<div class="lg:col-span-3">
 						<ul
 							role="list"
-							class="space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0"
+							class="space-y-12 sm:divide-y sm:divide-zinc-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0"
 						>
 							<li v-for="(award, index) in awards" :key="index" class="sm:py-8">
 								<div
@@ -254,7 +254,7 @@ useHead({
 												</a>
 											</div>
 											<div class="text-lg">
-												<p class="text-gray-500">
+												<p class="text-zinc-500">
 													{{ award.shortDescription }}
 												</p>
 											</div>

@@ -217,7 +217,7 @@ useHead({
 							<div>
 								<label
 									for="your-name"
-									class="block text-sm font-medium text-gray-900"
+									class="block text-sm font-medium text-zinc-900"
 									>Your name</label
 								>
 								<div class="mt-1">
@@ -228,14 +228,14 @@ useHead({
 										name="your-name"
 										placeholder="Your name"
 										autocomplete="given-name"
-										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-blue border border-ds-gray rounded"
+										class="py-3 px-4 block w-full shadow-sm text-zinc-900 focus:ring-ds-blue border border-ds-gray rounded"
 									/>
 								</div>
 							</div>
 							<div>
 								<label
 									for="email"
-									class="block text-sm font-medium text-gray-900"
+									class="block text-sm font-medium text-zinc-900"
 									>Email</label
 								>
 								<div class="mt-1">
@@ -246,7 +246,7 @@ useHead({
 										type="email"
 										autocomplete="email"
 										placeholder="Your email address"
-										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-blue border border-ds-gray rounded"
+										class="py-3 px-4 block w-full shadow-sm text-zinc-900 focus:ring-ds-blue border border-ds-gray rounded"
 									/>
 								</div>
 							</div>
@@ -254,7 +254,7 @@ useHead({
 							<div class="sm:col-span-2">
 								<label
 									for="subject"
-									class="block text-sm font-medium text-gray-900"
+									class="block text-sm font-medium text-zinc-900"
 									>Subject</label
 								>
 								<div class="mt-1">
@@ -263,7 +263,7 @@ useHead({
 										required
 										type="text"
 										name="subject"
-										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-blue border border-ds-gray rounded"
+										class="py-3 px-4 block w-full shadow-sm text-zinc-900 focus:ring-ds-blue border border-ds-gray rounded"
 									/>
 								</div>
 							</div>
@@ -271,10 +271,10 @@ useHead({
 								<div class="flex justify-between">
 									<label
 										for="message"
-										class="block text-sm font-medium text-gray-900"
+										class="block text-sm font-medium text-zinc-900"
 										>A message to me</label
 									>
-									<span id="message-max" class="text-sm text-gray-500"
+									<span id="message-max" class="text-sm text-zinc-500"
 										>Max. 500 characters</span
 									>
 								</div>
@@ -284,7 +284,7 @@ useHead({
 										required
 										name="message"
 										rows="4"
-										class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-ds-blue border border-ds-gray rounded"
+										class="py-3 px-4 block w-full shadow-sm text-zinc-900 focus:ring-ds-blue border border-ds-gray rounded"
 										aria-describedby="message-max"
 										placeholder="Write a message me"
 									></textarea>
