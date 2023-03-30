@@ -69,7 +69,7 @@ useHead({
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
 			<div v-for="{ name } in intro" :key="name">
 				<AppIntro class="mt-8">
-					<span class="text-gray-700 max-w-4xl">
+					<span class="text-zinc-700 max-w-4xl">
 						{{ name }}
 					</span>
 				</AppIntro>
@@ -86,7 +86,7 @@ useHead({
 					</h1>
 					<p>{{ project.shortDescription }}</p>
 					<a :href="project.url" class="block">
-						<span class="text-gray-500"><i>Check it out</i></span></a
+						<span class="text-zinc-500"><i>Check it out</i></span></a
 					>
 				</div>
 			</section>
