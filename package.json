@@ -23,7 +23,7 @@
 		"@nuxt/image-edge": "1.0.0-27919678.2f5b64b",
 		"@nuxtjs/eslint-config-typescript": "12.0.0",
 		"autoprefixer": "10.4.14",
-		"eslint": "8.36.0",
+		"eslint": "8.37.0",
 		"eslint-config-prettier": "8.8.0",
 		"eslint-plugin-prettier": "4.2.1",
 		"husky": "8.0.3",
