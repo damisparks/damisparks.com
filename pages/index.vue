@@ -30,7 +30,7 @@ const me = ref({
 							y="0"
 							width="4"
 							height="4"
-							class="text-gray-200"
+							class="text-zinc-200"
 							fill="currentColor"
 						/>
 					</pattern>
@@ -39,7 +39,7 @@ const me = ref({
 					y="72"
 					width="640"
 					height="640"
-					class="text-gray-50"
+					class="text-zinc-50"
 					fill="currentColor"
 				/>
 				<rect
@@ -80,7 +80,7 @@ const me = ref({
 							</span>
 						</h1>
 						<p
-							class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
+							class="mt-3 text-base text-zinc-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
 						>
 							{{ me.shortDescription }}
 						</p>
@@ -120,7 +120,7 @@ const me = ref({
 										y="0"
 										width="4"
 										height="4"
-										class="text-gray-200"
+										class="text-zinc-200"
 										fill="currentColor"
 									/>
 								</pattern>
@@ -129,7 +129,7 @@ const me = ref({
 								y="72"
 								width="640"
 								height="640"
-								class="text-gray-50"
+								class="text-zinc-50"
 								fill="currentColor"
 							/>
 							<rect
