@@ -46,31 +46,4 @@ npm run preview
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
-## TOD0
-
-- [ ] Services Page
-- [ ] Add Sidebar
-- [ ] Add system, light and dark mode
-- [ ] connect it to my domain
-- [ ] Add Blog Page
-- [ ] Add Blog Tag like testing, entrepreneurship personal development etc
-- [ ] add Projects or product built
-- [ ] add breadcrumb
-- [ ] Add metadata to each page.
-- [ ] Add Services Page / Or Add It to About
-
-## IN PROGRESS
-
-- [x] add soicals
-
-## DONE
-
-- [x] Migrate to Nuxt3
-- [x] Update TailwindCSS to the latest version
-- [x] Add Landing Page
-- [x] Create a bio
-- [x] Define Navbar items
-- [x] Add Navbar
-- [x] Add Bio on page
-- [x] Add Skills to the About Page.
-- [x] Add Brand logo
+The project has been migrated to [hmm 🧐 💡⚒️](https://github.com/users/damisparks/projects/1)
