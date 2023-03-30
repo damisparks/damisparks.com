@@ -15,7 +15,7 @@ const links = ref([
 				<div v-for="{ name, url } in links" :key="name" class="px-5 py-2">
 					<NuxtLink
 						:to="{ name: url }"
-						class="text-base text-gray-500 hover:text-ds-teal"
+						class="text-base text-zinc-500 hover:text-ds-teal"
 					>
 						{{ name }}
 					</NuxtLink>
@@ -24,7 +24,7 @@ const links = ref([
 			<div class="mt-8 flex justify-center space-x-6">
 				<a
 					href="//twitter.com/DamiSparks"
-					class="text-gray-600 hover:text-gray-500"
+					class="text-zinc-600 hover:text-zinc-500"
 					target="_blank"
 					rel="nofollow noopener noreferrer"
 				>
@@ -45,7 +45,7 @@ const links = ref([
 					href="//github.com/damisparks"
 					target="_blank"
 					rel="nofollow noopener noreferrer"
-					class="text-gray-600 hover:text-gray-500"
+					class="text-zinc-600 hover:text-zinc-500"
 				>
 					<span class="sr-only">GitHub</span>
 					<svg
@@ -63,7 +63,7 @@ const links = ref([
 				</a>
 				<a
 					href="//www.linkedin.com/in/damisparks"
-					class="text-gray-600 hover:text-gray-500"
+					class="text-zinc-600 hover:text-zinc-500"
 					target="_blank"
 					rel="nofollow noopener noreferrer"
 				>
@@ -81,11 +81,14 @@ const links = ref([
 					</svg>
 				</a>
 			</div>
-			<p class="mt-8 text-center text-base text-gray-600">
-				&copy; {{ new Date().getFullYear() }} DamiSparks. All rights reserved.
+			<p class="mt-8 text-center text-sm">
+				<!-- copyright -->
+				&copy; {{ new Date().getFullYear() }}
+				<NuxtLink to="/" class="text-zinc-500">DamiSparks</NuxtLink>, All rights
+				reserved.
 			</p>
-			<p class="mt-4 font-montserrat italic text-center text-sm text-gray-600">
-				My logo was designed by
+			<p class="mt-4 font-montserrat italic text-center text-sm text-zinc-600">
+				Logo design by
 				<a
 					class="text-ds-blue hover:opacity-90 font-bold"
 					href="mailto:rubenfaria@live.com"

@@ -25,7 +25,7 @@ const links = ref([
 						<div v-for="{ name, url } in links" :key="name">
 							<NuxtLink
 								:to="{ name: url }"
-								class="font-medium text-gray-700 hover:text-ds-teal"
+								class="font-medium text-zinc-700 hover:text-ds-teal"
 							>
 								{{ name }}
 							</NuxtLink>
