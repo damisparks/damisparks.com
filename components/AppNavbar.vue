@@ -4,5 +4,7 @@ import { links as navList } from '@/utils'
 <template>
 	<nav class="shadow-lg">
 		<AppNavList :nav-list="navList" />
+
+		<AppMobileNav :nav-list="navList" />
 	</nav>
 </template>

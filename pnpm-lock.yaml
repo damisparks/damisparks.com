@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': 17.5.1
   '@commitlint/config-conventional': 17.4.4
+  '@headlessui/vue': 1.7.12
   '@nuxt/eslint-config': 0.1.1
   '@nuxt/image-edge': 1.0.0-27919678.2f5b64b
   '@nuxtjs/eslint-config-typescript': 12.0.0
@@ -21,6 +22,7 @@ specifiers:
   tailwindcss: 3.3.0
 
 dependencies:
+  '@headlessui/vue': 1.7.12
   '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.3.0
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.3.0
 
@@ -964,6 +966,13 @@ packages:
     resolution: {integrity: sha512-x5vzdtOOGgFVDCUs81QRB2+liax8rFg3+7hqM+QhBG0/G3F1ZsoYl97UrqgHgQ9KKT7G6c4V+aTUCgu/n22v1A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@headlessui/vue/1.7.12:
+    resolution: {integrity: sha512-IV0k1I2I8Bj37HljFF231Y9cpldfiucf+inMCxA/VPoQT6UTxo0N/rb78CrogBxXNfsPxKmz3y/nlv+eRz6zvg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.2.0
+    dev: false
 
   /@humanwhocodes/config-array/0.11.8:
     resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}
