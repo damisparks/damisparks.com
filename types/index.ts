@@ -1,5 +1,7 @@
-export interface ISocialsNavigation {
+export interface INavLink {
 	name: string
-	iconKey: string
 	href: string
+}
+export interface ISocialsNavigation extends INavLink {
+	iconKey: string
 }
