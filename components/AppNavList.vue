@@ -10,8 +10,8 @@ defineProps<{ navList: INavLink[] }>()
 			:key="`navitems-${index}`"
 			:to="href"
 			:class="[
-				$route.path === href
-					? 'text-gradient'
+				$route.name === href
+					? 'text-ds-blue'
 					: 'text-zinc-700 dark:text-zinc-400',
 				'px-2 hover:text-zinc-900 dark:hover:text-zinc-200'
 			]"
