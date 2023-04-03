@@ -87,7 +87,7 @@ useHead({
 </script>
 
 <template>
-	<div>
+	<NuxtLayout>
 		<AppTitle>
 			<span class="text-ds-teal">Hi there!</span>
 		</AppTitle>
@@ -96,7 +96,7 @@ useHead({
 				class="hidden absolute top-0 inset-x-0 h-1/2 lg:block"
 				aria-hidden="true"
 			></div>
-			<div class="max-w-7xl mx-auto bg-ds-blue lg:bg-transparent lg:px-8">
+			<div class="max-w-7xl mx-auto lg:px-8">
 				<div class="lg:grid lg:grid-cols-12">
 					<div
 						class="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent"
@@ -127,19 +127,19 @@ useHead({
 					</div>
 
 					<div
-						class="relative bg-ds-blue py-6 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center"
+						class="relative py-6 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center"
 					>
 						<div
 							class="relative max-w-lg mx-auto py-12 px-4 space-y-6 sm:max-w-4xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"
 						>
 							<div class="space-y-4 sm:space-y-6">
 								<h2 class="text-3xl font-extrabold text-ds-orange">I'm Dami</h2>
-								<p class="text-lg text-white">
+								<p class="text-lg text-zinc-900">
 									Damilola is the CTO and co-founder of Actif, a tech company
 									focusing on improving the health of older people with fitness
 									and cognitive programs.
 								</p>
-								<p class="text-lg text-white">
+								<p class="text-lg text-zinc-900">
 									He is a Certified Mentor, Machine Learning Engineer and Cloud
 									Developer with experience in front-end and back-end design and
 									development. Over the last five years, He has gained expertise
@@ -147,7 +147,7 @@ useHead({
 									technical documentation, and mentoring others working for tech
 									companies like Udacity, Photoweb, PrimeIT, Fujitsu.
 								</p>
-								<p class="text-lg text-white">
+								<p class="text-lg text-zinc-900">
 									He hosted the Ask Me Anything Session organised by Udacity
 									Introduction to Programming Nanodegree. His Team won the
 									Demium AllStartup Weekend 2020. Damilola loves what he does,
@@ -268,5 +268,5 @@ useHead({
 			</div>
 		</div>
 		<!-- acheivement ends -->
-	</div>
+	</NuxtLayout>
 </template>
