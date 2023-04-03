@@ -4,11 +4,9 @@ import { links as navList } from '@/utils'
 <template>
 	<AppContainer>
 		<nav class="flex items-center justify-between">
-			<!-- <h1 class="text-ds-blue">
-			<span class="font-normal">Dami</span>
-			<span class="font-semibold">Sparks</span>
-		</h1> -->
-			<AppLogo />
+			<NuxtLink to="/">
+				<AppLogo />
+			</NuxtLink>
 			<div
 				class="border border-zinc-300/50 dark:border-zinc-900/60 rounded-full pl-2 lg:pl-4 pr-2 py-2 backdrop-blur-lg bg-zinc-100/50 dark:bg-zinc-800/50"
 			>
