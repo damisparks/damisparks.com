@@ -1,6 +1,6 @@
 <template>
 	<NuxtImg
-		class="h-14 w-auto sm:h-16"
+		class="inline-block h-14 w-14 rounded-lg"
 		provider="cloudinary"
 		width="512"
 		height="456"
