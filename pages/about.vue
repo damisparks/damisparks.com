@@ -87,16 +87,16 @@ useHead({
 </script>
 
 <template>
-	<div>
+	<NuxtLayout>
 		<AppTitle>
-			<span class="text-ds-teal">Hi there!</span>
+			<span class="text-ds-blue">About</span>
 		</AppTitle>
 		<div class="relative py-16 md:px-4">
 			<div
 				class="hidden absolute top-0 inset-x-0 h-1/2 lg:block"
 				aria-hidden="true"
 			></div>
-			<div class="max-w-7xl mx-auto bg-ds-blue lg:bg-transparent lg:px-8">
+			<div class="max-w-7xl mx-auto lg:px-8">
 				<div class="lg:grid lg:grid-cols-12">
 					<div
 						class="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent"
@@ -127,19 +127,19 @@ useHead({
 					</div>
 
 					<div
-						class="relative bg-ds-blue py-6 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center"
+						class="relative py-6 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center"
 					>
 						<div
 							class="relative max-w-lg mx-auto py-12 px-4 space-y-6 sm:max-w-4xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"
 						>
 							<div class="space-y-4 sm:space-y-6">
 								<h2 class="text-3xl font-extrabold text-ds-orange">I'm Dami</h2>
-								<p class="text-lg text-white">
+								<p class="text-lg text-zinc-900">
 									Damilola is the CTO and co-founder of Actif, a tech company
 									focusing on improving the health of older people with fitness
 									and cognitive programs.
 								</p>
-								<p class="text-lg text-white">
+								<p class="text-lg text-zinc-900">
 									He is a Certified Mentor, Machine Learning Engineer and Cloud
 									Developer with experience in front-end and back-end design and
 									development. Over the last five years, He has gained expertise
@@ -147,7 +147,7 @@ useHead({
 									technical documentation, and mentoring others working for tech
 									companies like Udacity, Photoweb, PrimeIT, Fujitsu.
 								</p>
-								<p class="text-lg text-white">
+								<p class="text-lg text-zinc-900">
 									He hosted the Ask Me Anything Session organised by Udacity
 									Introduction to Programming Nanodegree. His Team won the
 									Demium AllStartup Weekend 2020. Damilola loves what he does,
@@ -155,12 +155,12 @@ useHead({
 									heroes.
 								</p>
 							</div>
-							<a
+							<NuxtLink
 								class="block w-full py-3 px-5 text-center bg-ds-smokewhite border border-transparent rounded shadow-md text-base font-bold text-ds-blue sm:inline-block sm:w-auto"
-								rel="noopener noreferrer"
-								href="//drive.google.com/uc?export=download&id=1qRSxju1bsJWOt098a9EXPpx8rOsgL-8m"
-								>View Resume</a
+								to="//drive.google.com/uc?export=download&id=1qRSxju1bsJWOt098a9EXPpx8rOsgL-8m"
 							>
+								View Resume
+							</NuxtLink>
 						</div>
 					</div>
 				</div>
@@ -186,21 +186,10 @@ useHead({
 							class="divide-y divide-zinc-200"
 						>
 							<li class="py-4 flex md:py-0 md:pb-4">
-								<svg
+								<Icon
+									name="fluent:checkmark-24-filled"
 									class="flex-shrink-0 h-8 w-8 text-ds-teal"
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
-									aria-hidden="true"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M5 13l4 4L19 7"
-									/>
-								</svg>
+								/>
 								<span class="ml-3 text-base text-zinc-500">
 									{{ skill.name }}
 								</span>
@@ -268,5 +257,5 @@ useHead({
 			</div>
 		</div>
 		<!-- acheivement ends -->
-	</div>
+	</NuxtLayout>
 </template>
