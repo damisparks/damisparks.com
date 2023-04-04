@@ -48,6 +48,7 @@ onBeforeUnmount(() => {
 						<div class="md:hidden">
 							<AppMobileNav :nav-list="navList" />
 						</div>
+						<AppColorSwitch />
 					</div>
 				</div>
 			</nav>
