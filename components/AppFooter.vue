@@ -17,7 +17,7 @@
 			<p class="my-4 font-montserrat italic text-center text-sm text-zinc-600">
 				Logo by
 				<a
-					class="text-ds-blue hover:opacity-90 font-bold"
+					class="text-ds-blue dark:text-ds-teal hover:opacity-90 font-bold"
 					href="mailto:rubenfaria@live.com"
 				>
 					Ruben

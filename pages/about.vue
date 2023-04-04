@@ -89,7 +89,7 @@ useHead({
 <template>
 	<NuxtLayout>
 		<AppTitle>
-			<span class="text-ds-blue">About</span>
+			<span class="text-ds-blue dark:text-ds-teal">About</span>
 		</AppTitle>
 		<div class="relative py-16 md:px-4">
 			<div
