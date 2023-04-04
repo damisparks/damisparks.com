@@ -157,7 +157,7 @@ useHead({
 							</div>
 							<NuxtLink
 								class="block w-full py-3 px-5 text-center bg-ds-smokewhite border border-transparent rounded shadow-md text-base font-bold text-ds-blue sm:inline-block sm:w-auto"
-								to="//drive.google.com/uc?export=download&id=1qRSxju1bsJWOt098a9EXPpx8rOsgL-8m"
+								to="https://drive.google.com/uc?export=download&id=1qRSxju1bsJWOt098a9EXPpx8rOsgL-8m"
 							>
 								View Resume
 							</NuxtLink>
