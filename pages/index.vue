@@ -7,15 +7,13 @@ const me = ref({
 </script>
 
 <template>
-	<div class="pb-16 sm:pb-24 lg:pb-32">
-		<div class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
-			<div class="lg:grid lg:grid-cols-12 lg:gap-8">
-				<div
-					class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left"
-				>
+	<NuxtLayout>
+		<div class="mx-auto px-4 sm:px-6">
+			<AppHeroText>
+				<template #default>
 					<h1 class="space-y-3 font-opensans">
 						<span
-							class="mt-1 space-y-2 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl"
+							class="mt-1 space-y-2 block text-4xl tracking-tight font-bold sm:text-5xl xl:text-6xl"
 						>
 							<span class="block text-ds-blue">
 								I'm
@@ -35,23 +33,21 @@ const me = ref({
 							</span>
 						</span>
 					</h1>
-					<p
+				</template>
+				<template #description>
+					<span
 						class="mt-3 text-base text-zinc-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
 					>
 						{{ me.shortDescription }}
-					</p>
-					<div
-						class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0"
-					>
-						<NuxtLink :to="{ name: 'about' }">
-							<span
-								class="p-3 bg-ds-blue text-white text-base leading-5 font-bold rounded hover:shadow-lg"
-								>Learn More</span
-							>
-						</NuxtLink>
-					</div>
-				</div>
+					</span>
+				</template>
+			</AppHeroText>
+
+			<div class="mt-8 sm:max-w-lg sm:mx-auto text-center">
+				<NuxtLink :to="{ name: 'about' }" class="btn btn-ds-blue">
+					Learn More
+				</NuxtLink>
 			</div>
 		</div>
-	</div>
+	</NuxtLayout>
 </template>

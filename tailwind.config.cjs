@@ -41,7 +41,21 @@ module.exports = {
 	},
 	plugins: [
 		require('@tailwindcss/aspect-ratio'),
-		require('@tailwindcss/forms')
+		require('@tailwindcss/forms'),
+
+		// solution reference : https://github.com/tailwindlabs/tailwindcss-intellisense/issues/227
+		/** @type {import('tailwindcss/types/config').PluginCreator} */
+		({ addComponents }) => {
+			addComponents({
+				'.btn': {
+					'@apply text-base leading-5 font-semibold rounded hover:shadow-lg p-2':
+						{}
+				},
+				'.btn-ds-blue': {
+					'@apply bg-ds-blue text-white': {}
+				}
+			})
+		}
 	],
 
 	future: {
