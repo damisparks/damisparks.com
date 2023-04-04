@@ -46,4 +46,4 @@ npm run preview
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
-The project has been migrated to [hmm 🧐 💡⚒️](https://github.com/users/damisparks/projects/1)
+See Project Dashboard [hmm 🧐 💡⚒️](https://github.com/users/damisparks/projects/1)
