@@ -24,13 +24,13 @@ const projects = ref([
 	},
 	{
 		title: 'Nuxt-validate ',
-		url: '//www.npmjs.com/package/nuxt-validate',
+		url: 'https://www.npmjs.com/package/nuxt-validate',
 		shortDescription:
 			'A Simple Nuxt input validation module using vee-validate library. I am actively contributing to this project.'
 	},
 	{
 		title: 'TodoApp',
-		url: '//github.com/damisparks/todo_app',
+		url: 'https://github.com/damisparks/todo_app',
 		shortDescription: `
 				This app is a  Full Stack Todo App Using Vue.JS for the front end and Adonis.JS on the backend.
 				The app demonstrates the basic concepts in Vue.JS and AdonisJS. I am still maintaining the app. I have plans to update the app to Vue3.
@@ -38,7 +38,7 @@ const projects = ref([
 	},
 	{
 		title: 'How to become Microsoft Certified: Azure AI Engineer Associate',
-		url: '//github.com/damisparks/microsoft-azure-ai-engineer-associate',
+		url: 'https://github.com/damisparks/microsoft-azure-ai-engineer-associate',
 		shortDescription: `This resource is a draft of how I became certified, and I am glad to share my resources and notes to help others.
 					This resource aim at Cloud Solution Architects, Azure artificial intelligence designers, Azure Trainers and AI developers.
 					I am still maintaining it. However, I have not worked on it in a while.`
@@ -64,12 +64,12 @@ useHead({
 <template>
 	<NuxtLayout>
 		<AppTitle>
-			<span class="text-ds-blue">Projects</span>
+			<span class="text-ds-blue dark:text-ds-teal">Projects</span>
 		</AppTitle>
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
 			<div v-for="{ name } in intro" :key="name">
 				<AppIntro class="mt-8">
-					<span class="text-zinc-700 max-w-4xl">
+					<span class="text-zinc-700 dark:text-ds-smokewhite max-w-4xl">
 						{{ name }}
 					</span>
 				</AppIntro>
@@ -81,13 +81,15 @@ useHead({
 					:key="index"
 					class="space-y-1"
 				>
-					<h1 class="text-ds-blue text-xl font-semibold">
+					<h1 class="text-ds-blue dark:text-ds-teal text-xl font-semibold">
 						{{ project.title }}
 					</h1>
-					<p>{{ project.shortDescription }}</p>
-					<a :href="project.url" class="block">
-						<span class="text-zinc-500"><i>Check it out</i></span></a
-					>
+					<p class="text-zinc-500 dark:text-ds-smokewhite">
+						{{ project.shortDescription }}
+					</p>
+					<NuxtLink :to="project.url" class="block">
+						<span class="text-zinc-500"> <i>Check it out</i></span>
+					</NuxtLink>
 				</div>
 			</section>
 		</div>

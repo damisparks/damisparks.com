@@ -3,7 +3,7 @@
 		class="rounded-lg border-2 border-white dark:border-zinc-400 shadow-md group-hover:shadow-xl transition-shadow duration-100 shrink-0"
 	>
 		<NuxtImg
-			class="inline-block h-14 w-14"
+			class="inline-block h-14 w-14 rounded-md"
 			provider="cloudinary"
 			width="512"
 			height="456"
