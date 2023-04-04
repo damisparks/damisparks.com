@@ -62,7 +62,7 @@ useHead({
 </script>
 
 <template>
-	<div>
+	<NuxtLayout>
 		<AppTitle>
 			<span class="text-ds-blue">Projects</span>
 		</AppTitle>
@@ -91,5 +91,5 @@ useHead({
 				</div>
 			</section>
 		</div>
-	</div>
+	</NuxtLayout>
 </template>

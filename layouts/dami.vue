@@ -1,6 +1,5 @@
 <template>
-	<main class="h-screen flex flex-col">
-		<!-- page ring -->
+	<div>
 		<div class="fixed inset-0 flex justify-center sm:px-8">
 			<div class="flex w-full max-w-7xl lg:px-8">
 				<div
@@ -8,17 +7,14 @@
 				/>
 			</div>
 		</div>
-
-		<AppNavbar />
-
-		<!-- main -->
-		<main class="flex-auto">
-			<AppContainer>
-				<slot />
-			</AppContainer>
-		</main>
-
-		<!-- footer -->
-		<AppFooter />
-	</main>
+		<div class="relative">
+			<AppNavbar />
+			<main>
+				<AppContainer>
+					<slot />
+				</AppContainer>
+			</main>
+			<AppFooter />
+		</div>
+	</div>
 </template>
