@@ -155,12 +155,12 @@ useHead({
 									heroes.
 								</p>
 							</div>
-							<a
+							<NuxtLink
 								class="block w-full py-3 px-5 text-center bg-ds-smokewhite border border-transparent rounded shadow-md text-base font-bold text-ds-blue sm:inline-block sm:w-auto"
-								rel="noopener noreferrer"
-								href="//drive.google.com/uc?export=download&id=1qRSxju1bsJWOt098a9EXPpx8rOsgL-8m"
-								>View Resume</a
+								to="//drive.google.com/uc?export=download&id=1qRSxju1bsJWOt098a9EXPpx8rOsgL-8m"
 							>
+								View Resume
+							</NuxtLink>
 						</div>
 					</div>
 				</div>
@@ -186,21 +186,10 @@ useHead({
 							class="divide-y divide-zinc-200"
 						>
 							<li class="py-4 flex md:py-0 md:pb-4">
-								<svg
+								<Icon
+									name="fluent:checkmark-24-filled"
 									class="flex-shrink-0 h-8 w-8 text-ds-teal"
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
-									aria-hidden="true"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M5 13l4 4L19 7"
-									/>
-								</svg>
+								/>
 								<span class="ml-3 text-base text-zinc-500">
 									{{ skill.name }}
 								</span>
