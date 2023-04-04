@@ -11,28 +11,26 @@ const me = ref({
 		<div class="mx-auto px-4 sm:px-6">
 			<AppHeroText>
 				<template #default>
-					<h1 class="space-y-3 font-opensans">
-						<span
-							class="mt-1 space-y-2 block text-4xl tracking-tight font-bold sm:text-5xl xl:text-6xl"
-						>
-							<span class="block text-ds-blue">
-								I'm
-								<NuxtLink to="/">
-									<span>{{ me.name }}</span>
-								</NuxtLink>
-							</span>
-							<span class="block text-ds-teal">
-								<span v-for="(item, index) in me.role" :key="index">
-									{{ item }}
+					<span
+						class="mt-1 block text-4xl tracking-tight font-bold sm:text-5xl xl:text-6xl space-y-3 font-opensans"
+					>
+						<span class="block text-ds-blue">
+							I'm
+							<NuxtLink to="/">
+								<span>{{ me.name }}</span>
+							</NuxtLink>
+						</span>
+						<span class="block text-ds-teal">
+							<span v-for="(item, index) in me.role" :key="index">
+								{{ item }}
 
-									<span
-										v-if="index !== me.role.length - 1"
-										class="h-4 w-4 inline-block rounded-full bg-ds-orange mr-2 lg:mr-3"
-									></span>
-								</span>
+								<span
+									v-if="index !== me.role.length - 1"
+									class="h-4 w-4 inline-block rounded-full bg-ds-orange mr-2 lg:mr-3"
+								></span>
 							</span>
 						</span>
-					</h1>
+					</span>
 				</template>
 				<template #description>
 					<span
