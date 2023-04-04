@@ -43,14 +43,9 @@ const me = ref({
 				</template>
 			</AppHeroText>
 
-			<div
-				class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0"
-			>
-				<NuxtLink :to="{ name: 'about' }">
-					<span
-						class="p-3 bg-ds-blue text-white text-base leading-5 font-bold rounded hover:shadow-lg"
-						>Learn More</span
-					>
+			<div class="mt-8 sm:max-w-lg sm:mx-auto text-center">
+				<NuxtLink :to="{ name: 'about' }" class="btn btn-ds-blue">
+					Learn More
 				</NuxtLink>
 			</div>
 		</div>
