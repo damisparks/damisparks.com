@@ -21,6 +21,7 @@
 		"@commitlint/config-conventional": "17.4.4",
 		"@nuxt/eslint-config": "0.1.1",
 		"@nuxt/image-edge": "1.0.0-27919678.2f5b64b",
+		"@nuxtjs/color-mode": "3.2.0",
 		"@nuxtjs/eslint-config-typescript": "12.0.0",
 		"autoprefixer": "10.4.14",
 		"eslint": "8.37.0",

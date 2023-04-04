@@ -37,7 +37,7 @@ export default defineNuxtConfig({
 			link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
 		}
 	},
-	modules: ['@nuxt/image-edge', 'nuxt-icon'],
+	modules: ['@nuxt/image-edge', 'nuxt-icon', '@nuxtjs/color-mode'],
 
 	// nuxt image configuration
 	image: {
@@ -53,5 +53,10 @@ export default defineNuxtConfig({
 			tailwindcss: {},
 			autoprefixer: {}
 		}
+	},
+
+	// https://color-mode.nuxtjs.org/
+	colorMode: {
+		classSuffix: ''
 	}
 })
