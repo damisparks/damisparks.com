@@ -14,7 +14,7 @@ const me = ref({
 					<span
 						class="mt-1 block text-4xl tracking-tight font-bold sm:text-5xl xl:text-6xl space-y-3 font-opensans"
 					>
-						<span class="block text-ds-blue">
+						<span class="block text-ds-blue dark:text-ds-blue-accent-400">
 							I'm
 							<NuxtLink to="/">
 								<span>{{ me.name }}</span>
@@ -34,7 +34,7 @@ const me = ref({
 				</template>
 				<template #description>
 					<span
-						class="mt-3 text-base text-zinc-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
+						class="mt-3 text-base text-zinc-500 dark:text-ds-smokewhite sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
 					>
 						{{ me.shortDescription }}
 					</span>
