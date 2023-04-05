@@ -29,18 +29,20 @@ defineProps<{ navList: INavLink[] }>()
 			<MenuItems
 				class="absolute right-0 z-10 mt-4 w-48 origin-top-right rounded-xl bg-white dark:bg-black shadow-lg ring-1 ring-black dark:ring-white ring-opacity-5 dark:ring-opacity-5 focus:outline-none"
 			>
-				<div class="px-2 py-2 w-full">
+				<div class="px-2 w-full">
 					<MenuItem
 						v-for="({ href, name }, index) in navList"
 						:key="`app-mobile-nav-${index}`"
-						v-slot="{ close }"
+						v-slot="{ close, active }"
+						class="my-1"
 					>
 						<NuxtLink
 							:class="[
+								active ? 'bg-ds-blue-accent-100/60 dark:bg-zinc-900' : '',
 								$route.name === href
-									? 'bg-ds-blue-accent-200  dark:bg-zinc-900 text-zinc-900 dark:text-zinc-200'
+									? 'bg-ds-blue-accent-200  dark:bg-zinc-700 text-zinc-900 dark:text-zinc-300'
 									: 'text-zinc-900 dark:text-zinc-200',
-								'group block w-full items-center rounded-xl text-sm'
+								'group block w-full items-center rounded-lg text-sm'
 							]"
 							:to="href"
 						>

@@ -27,7 +27,6 @@ module.exports = {
 				'ds-teal': '#5ac8d0',
 				'ds-gray': '#CCCCCC',
 				'ds-smokewhite': '#F1F2F8',
-				dark: 'dark',
 				linkExactActiveClass: 'tbd' // todo: to change this later.
 			},
 			fontFamily: {

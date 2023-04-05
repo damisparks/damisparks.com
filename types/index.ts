@@ -5,3 +5,10 @@ export interface INavLink {
 export interface ISocialsNavigation extends INavLink {
 	iconKey: string
 }
+
+export interface IAchievement {
+	name: string
+	url: string
+	src: string
+	description: string
+}

@@ -4,7 +4,7 @@
 	>
 		<div class="flex flex-col gap-9">
 			<h1
-				class="text-center font-display font-light leading-snug text-3xl md:text-4xl lg:text-5xl text-zinc-700 dark:text-zinc-300"
+				class="text-center font-opensans font-light leading-snug text-3xl md:text-4xl lg:text-5xl text-zinc-800 dark:text-zinc-100"
 			>
 				<slot>
 					<!-- hero title content -->

@@ -11,7 +11,7 @@ export default defineNuxtConfig({
 					hid: 'description',
 					name: 'description',
 					content:
-						'Damilola is the CTO and co-founder of Actif, a tech company focusing on improving the health of older people with fitness and cognitive programs. He is a Certified Mentor, Machine Learning Engineer and Cloud Developer with vast experience in front-end and back-end design and development.'
+						'Dami is the CTO and co-founder of Actif, a tech company focusing on improving the health of older people with fitness and cognitive programs. He is a Certified Mentor, Machine Learning Engineer and Cloud Developer with vast experience in front-end and back-end design and development.'
 				},
 				{ name: 'format-detection', content: 'telephone=no' },
 				{ property: 'og:site_name', content: 'DamiSparks' },
@@ -25,13 +25,13 @@ export default defineNuxtConfig({
 					key: 'og:title',
 					property: 'og:title',
 					content:
-						'Damilola loves what he does. He help others find their passion to code by making the complicated awesomely simple and empowering them to become their heroes.'
+						'Dami loves what he does. He help others find their passion to code by making the complicated awesomely simple and empowering them to become their heroes.'
 				},
 				{
 					key: 'og:description',
 					property: 'og:description',
 					content:
-						'Damilola is the CTO and co-founder of Actif, a tech company focusing on improving the health of older people with fitness and cognitive programs. He is a Certified Mentor, Machine Learning Engineer and Cloud Developer with vast experience in front-end and back-end design and development.'
+						'Dami is the CTO and co-founder of Actif, a tech company focusing on improving the health of older people with fitness and cognitive programs. He is a Certified Mentor, Machine Learning Engineer and Cloud Developer with vast experience in front-end and back-end design and development.'
 				}
 			],
 			link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
