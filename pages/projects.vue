@@ -63,18 +63,23 @@ useHead({
 
 <template>
 	<NuxtLayout>
-		<AppTitle>
-			<span class="text-ds-blue dark:text-ds-teal">Projects</span>
-		</AppTitle>
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-			<div v-for="{ name } in intro" :key="name">
-				<AppIntro class="mt-8">
-					<span class="text-zinc-700 dark:text-ds-smokewhite max-w-4xl">
-						{{ name }}
-					</span>
-				</AppIntro>
-			</div>
+		<AppTitle>Projects</AppTitle>
 
+		<header class="max-w-2xl mx-auto mt-16 md:mt-32">
+			<h1
+				class="text-4xl font-opensans font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-center sm:text-5xl"
+			>
+				Things I’ve built trying to put my dent in the universe.
+			</h1>
+			<h2
+				class="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400 sm:text-center"
+			>
+				<p v-for="{ name } in intro" :key="name">
+					{{ name }}
+				</p>
+			</h2>
+		</header>
+		<div class="max-w-7xl mx-auto space-y-6">
 			<section class="max-w-2xl mx-auto space-y-6 mt-12">
 				<div
 					v-for="(project, index) in projects"
@@ -87,8 +92,11 @@ useHead({
 					<p class="text-zinc-500 dark:text-ds-smokewhite">
 						{{ project.shortDescription }}
 					</p>
-					<NuxtLink :to="project.url" class="block">
-						<span class="text-zinc-500"> <i>Check it out</i></span>
+					<NuxtLink
+						:to="project.url"
+						class="block hover:underline text-zinc-600 dark:text-zinc-400"
+					>
+						<i>Check it out</i>
 					</NuxtLink>
 				</div>
 			</section>
