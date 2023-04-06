@@ -1,4 +1,3 @@
-<script setup lang="ts"></script>
 <template>
 	<AppContainer>
 		<div class="relative">
