@@ -9,7 +9,6 @@ const validationSchema = object({
 	subject: string().required()
 })
 const { handleSubmit } = useForm({ validationSchema })
-const name = ref('')
 
 const onContact = handleSubmit(values => {
 	console.log(values)
@@ -17,6 +16,38 @@ const onContact = handleSubmit(values => {
 </script>
 <template>
 	<form class="rounded-lg shadow-lg p-4" @submit="onContact">
-		<AppInput v-model="name" type="text" name="name" placeholder="Your name" />
+		<fieldset>
+			<label
+				for="your-name"
+				class="block text-sm font-medium text-zinc-500 dark:text-zinc-400"
+			>
+				Your name
+			</label>
+			<AppTextInput
+				id="your-name"
+				class="border-0"
+				required
+				type="text"
+				name="your-name"
+				placeholder="Your name"
+				autocomplete="given-name"
+			/>
+		</fieldset>
+		<fieldset>
+			<label
+				for="email"
+				class="block text-sm font-medium text-zinc-500 dark:text-zinc-400"
+			>
+				Email
+			</label>
+			<AppTextInput
+				id="email"
+				required
+				name="email"
+				type="email"
+				autocomplete="email"
+				placeholder="Your email address"
+			/>
+		</fieldset>
 	</form>
 </template>
