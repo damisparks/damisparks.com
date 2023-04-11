@@ -15,7 +15,7 @@ const onContact = handleSubmit(values => {
 })
 </script>
 <template>
-	<form class="rounded-lg shadow-lg p-4" @submit="onContact">
+	<form class="rounded-lg shadow-lg p-4 space-y-6" @submit="onContact">
 		<fieldset>
 			<label
 				for="your-name"
@@ -25,12 +25,12 @@ const onContact = handleSubmit(values => {
 			</label>
 			<AppTextInput
 				id="your-name"
-				class="border-0"
 				required
 				type="text"
 				name="your-name"
 				placeholder="Your name"
 				autocomplete="given-name"
+				class="mt-1"
 			/>
 		</fieldset>
 		<fieldset>
@@ -47,6 +47,22 @@ const onContact = handleSubmit(values => {
 				type="email"
 				autocomplete="email"
 				placeholder="Your email address"
+				class="mt-1"
+			/>
+		</fieldset>
+		<fieldset>
+			<label
+				for="subject"
+				class="block text-sm font-medium text-zinc-500 dark:text-zinc-400"
+			>
+				Subject
+			</label>
+			<AppTextInput
+				id="subject"
+				required
+				type="text"
+				name="subject"
+				class="mt-1"
 			/>
 		</fieldset>
 	</form>
