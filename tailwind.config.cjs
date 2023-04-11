@@ -57,7 +57,7 @@ module.exports = {
 						{}
 				},
 				'.btn-ds-blue': {
-					'@apply bg-ds-blue text-white': {}
+					'@apply bg-ds-blue text-white dark:bg-ds-orange dark:text-ds-blue': {}
 				},
 				'.app-input-label': {
 					'@apply block text-sm font-medium text-zinc-500 dark:text-zinc-400':
