@@ -58,6 +58,10 @@ module.exports = {
 				},
 				'.btn-ds-blue': {
 					'@apply bg-ds-blue text-white': {}
+				},
+				'.app-input-label': {
+					'@apply block text-sm font-medium text-zinc-500 dark:text-zinc-400':
+						{}
 				}
 			})
 		}

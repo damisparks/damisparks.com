@@ -18,12 +18,7 @@ const onContact = handleSubmit(values => {
 <template>
 	<form class="rounded-lg shadow-lg p-4 space-y-6" @submit="onContact">
 		<fieldset>
-			<label
-				for="your-name"
-				class="block text-sm font-medium text-zinc-500 dark:text-zinc-400"
-			>
-				Your name
-			</label>
+			<label for="your-name" class="app-input-label"> Your name </label>
 			<AppTextInput
 				id="your-name"
 				required
@@ -35,12 +30,7 @@ const onContact = handleSubmit(values => {
 			/>
 		</fieldset>
 		<fieldset>
-			<label
-				for="email"
-				class="block text-sm font-medium text-zinc-500 dark:text-zinc-400"
-			>
-				Email
-			</label>
+			<label for="email" class="app-input-label"> Email </label>
 			<AppTextInput
 				id="email"
 				required
@@ -52,12 +42,7 @@ const onContact = handleSubmit(values => {
 			/>
 		</fieldset>
 		<fieldset>
-			<label
-				for="subject"
-				class="block text-sm font-medium text-zinc-500 dark:text-zinc-400"
-			>
-				Subject
-			</label>
+			<label for="subject" class="app-input-label"> Subject </label>
 			<AppTextInput
 				id="subject"
 				required
@@ -68,12 +53,19 @@ const onContact = handleSubmit(values => {
 			/>
 		</fieldset>
 		<fieldset>
+			<div class="flex justify-between">
+				<label for="message" class="app-input-label"> A message to me </label>
+				<span id="message-max" class="text-sm text-zinc-500">
+					Max. 500 characters
+				</span>
+			</div>
 			<AppTextarea
 				id="message"
 				v-model="message"
 				required
 				name="message"
 				rows="4"
+				class="mt-1"
 			/>
 		</fieldset>
 	</form>
