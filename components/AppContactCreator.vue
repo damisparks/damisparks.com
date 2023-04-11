@@ -62,6 +62,7 @@ const onContact = handleSubmit(values => {
 				required
 				type="text"
 				name="subject"
+				placeholder="Your subject"
 				class="mt-1"
 			/>
 		</fieldset>
