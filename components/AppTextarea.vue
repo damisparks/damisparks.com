@@ -34,5 +34,3 @@ const isEmptyMode = computed(() => !filled.value && !hasError.value)
 		@input="onInput"
 	></textarea>
 </template>
-
-<!-- ring-zinc-900/10 -->
