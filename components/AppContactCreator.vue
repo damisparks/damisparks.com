@@ -10,6 +10,7 @@ const validationSchema = object({
 })
 const { handleSubmit } = useForm({ validationSchema })
 
+const message = ref('')
 const onContact = handleSubmit(values => {
 	console.log(values)
 })
@@ -64,6 +65,15 @@ const onContact = handleSubmit(values => {
 				name="subject"
 				placeholder="Your subject"
 				class="mt-1"
+			/>
+		</fieldset>
+		<fieldset>
+			<AppTextarea
+				id="message"
+				v-model="message"
+				required
+				name="message"
+				rows="4"
 			/>
 		</fieldset>
 	</form>
