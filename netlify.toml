@@ -1,3 +1,9 @@
+[context.production.environment]
+  PNPM_FLAGS = "--shamefully-hoist"
+
 [build]
-  command = "npm run generate --modern"
+  command = "npm run build"
   publish = "dist"
+
+[context.branch-deploy.environment]
+  PNPM_FLAGS = "--shamefully-hoist"
