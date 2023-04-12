@@ -1,8 +1,22 @@
 <script lang="ts" setup>
+import { ISocialsNavigation } from '@/types'
+
 const title = ref<string>('Contact Me')
 const description = ref<string>(
 	'Contact DamiSparks using the form or via Twitter or LinkedIn'
 )
+const socials: ISocialsNavigation[] = [
+	{
+		iconKey: 'uil:linkedin',
+		href: 'https://www.linkedin.com/in/damisparks',
+		name: 'Dami Sparks'
+	},
+	{
+		iconKey: 'uil:twitter',
+		href: 'https://www.twitter.com/DamiSparks',
+		name: '@damisparks'
+	}
+]
 
 useHead({
 	title: title.value,
@@ -20,15 +34,17 @@ useHead({
 </script>
 
 <template>
-	<div>
+	<NuxtLayout>
 		<AppTitle>{{ title }}</AppTitle>
 		<div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-			<div class="relative bg-white shadow-xl border">
+			<div
+				class="relative shadow-lg rounded-md overflow-hidden dark:border border-zinc-700"
+			>
 				<h2 class="sr-only">{{ title }}</h2>
 
 				<div class="grid grid-cols-1 lg:grid-cols-3">
 					<div
-						class="relative overflow-hidden py-10 px-6 bg-ds-blue sm:px-10 xl:p-12"
+						class="relative overflow-hidden py-10 px-6 bg-ds-blue dark:bg-zinc-700 sm:px-10 xl:p-12"
 					>
 						<div
 							class="absolute inset-0 pointer-events-none sm:hidden"
@@ -131,69 +147,36 @@ useHead({
 						</div>
 						<h3 class="text-lg font-medium text-white">Contact information</h3>
 						<p class="mt-6 text-base text-ds-smokewhite max-w-3xl">
-							Hey there. If you are looking to reach out to me you can use this
-							form although in general you will probably reach me quicker on
-							Twitter or LinkedIn.
+							Hey there. If you want to contact me, you can use this form. You
+							will probably reach me quicker on Twitter or LinkedIn.
 						</p>
 						<ul role="list" class="mt-8 flex flex-col space-y-4">
-							<li>
-								<a
+							<li v-for="item in socials" :key="`socials-${item.name}`">
+								<NuxtLink
 									class="text-ds-smokewhite hover:text-indigo-100"
-									href="mailto:damisparks@outlook.com"
+									:to="item.href"
 									rel="noopener noreferrer"
+									target="_blank"
 								>
-									<span class="sr-only">Email</span>
+									<span class="sr-only">{{ item.name }}</span>
 									<div class="flex">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
+										<Icon
+											:name="item.iconKey"
 											class="h-6 w-6"
-											fill="none"
-											viewBox="0 0 24 24"
-											stroke="currentColor"
-										>
-											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												stroke-width="2"
-												d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-											/>
-										</svg>
-										<span class="ml-3">damisparks@outlook.com</span>
+											aria-hidden="true "
+										/>
+										<span class="ml-3">{{ item.name }}</span>
 									</div>
-								</a>
-							</li>
-							<li>
-								<a
-									class="text-ds-smokewhite hover:text-indigo-100"
-									href="//twitter.com/DamiSparks"
-									rel="noopener noreferrer"
-								>
-									<span class="sr-only">Twitter</span>
-									<div class="flex">
-										<svg
-											width="24"
-											height="24"
-											viewBox="0 0 24 24"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-											class="w-6 h-6"
-											aria-hidden="true"
-										>
-											<path
-												d="M7.548 22.501c9.056 0 14.01-7.503 14.01-14.01 0-.213 0-.425-.015-.636A10.02 10.02 0 0024 5.305a9.828 9.828 0 01-2.828.776 4.94 4.94 0 002.165-2.724 9.867 9.867 0 01-3.127 1.195 4.929 4.929 0 00-8.391 4.491A13.98 13.98 0 011.67 3.9a4.928 4.928 0 001.525 6.573A4.887 4.887 0 01.96 9.855v.063a4.926 4.926 0 003.95 4.827 4.917 4.917 0 01-2.223.084 4.93 4.93 0 004.6 3.42A9.88 9.88 0 010 20.289a13.941 13.941 0 007.548 2.209"
-												fill="currentColor"
-											/>
-										</svg>
-										<span class="ml-3">@damisparks</span>
-									</div>
-								</a>
+								</NuxtLink>
 							</li>
 						</ul>
 					</div>
 
 					<!-- Contact form -->
 					<div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-						<h3 class="text-lg font-medium text-ds-blue">Drop me a message</h3>
+						<h3 class="text-lg font-medium text-ds-blue dark:text-ds-orange">
+							Drop me a message
+						</h3>
 						<form
 							id="contact_form"
 							name="contact"
@@ -204,7 +187,6 @@ useHead({
 							class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
 						>
 							<input type="hidden" name="form-name" value="contact" />
-
 							<!--  spam prevention starts -->
 							<p class="hidden">
 								<label>
@@ -214,94 +196,65 @@ useHead({
 							</p>
 							<!--  spam prevention ends -->
 
-							<div>
-								<label
-									for="your-name"
-									class="block text-sm font-medium text-zinc-900"
-									>Your name</label
-								>
-								<div class="mt-1">
-									<input
-										id="your-name"
-										required
-										type="text"
-										name="your-name"
-										placeholder="Your name"
-										autocomplete="given-name"
-										class="py-3 px-4 block w-full shadow-sm text-zinc-900 focus:ring-ds-blue border border-ds-gray rounded"
-									/>
-								</div>
-							</div>
-							<div>
-								<label
-									for="email"
-									class="block text-sm font-medium text-zinc-900"
-									>Email</label
-								>
-								<div class="mt-1">
-									<input
-										id="email"
-										required
-										name="email"
-										type="email"
-										autocomplete="email"
-										placeholder="Your email address"
-										class="py-3 px-4 block w-full shadow-sm text-zinc-900 focus:ring-ds-blue border border-ds-gray rounded"
-									/>
-								</div>
-							</div>
-
-							<div class="sm:col-span-2">
-								<label
-									for="subject"
-									class="block text-sm font-medium text-zinc-900"
-									>Subject</label
-								>
-								<div class="mt-1">
-									<input
-										id="subject"
-										required
-										type="text"
-										name="subject"
-										class="py-3 px-4 block w-full shadow-sm text-zinc-900 focus:ring-ds-blue border border-ds-gray rounded"
-									/>
-								</div>
-							</div>
-							<div class="sm:col-span-2">
+							<fieldset>
+								<label for="your-name" class="app-input-label">Your name</label>
+								<AppTextInput
+									id="your-name"
+									required
+									type="text"
+									name="your-name"
+									placeholder="Your name"
+									autocomplete="given-name"
+									class="mt-1"
+								/>
+							</fieldset>
+							<fieldset>
+								<label for="email" class="app-input-label">Email</label>
+								<AppTextInput
+									id="email"
+									required
+									name="email"
+									type="email"
+									autocomplete="email"
+									placeholder="Your email address"
+									class="mt-1"
+								/>
+							</fieldset>
+							<fieldset class="sm:col-span-2">
+								<label for="subject" class="app-input-label">Subject</label>
+								<AppTextInput
+									id="subject"
+									required
+									type="text"
+									name="subject"
+									placeholder="Your subject"
+									class="mt-1"
+								/>
+							</fieldset>
+							<fieldset class="sm:col-span-2">
 								<div class="flex justify-between">
-									<label
-										for="message"
-										class="block text-sm font-medium text-zinc-900"
-										>A message to me</label
-									>
-									<span id="message-max" class="text-sm text-zinc-500"
-										>Max. 500 characters</span
-									>
+									<label for="message" class="app-input-label">
+										A message to me
+									</label>
+									<span id="message-max" class="text-sm text-zinc-500">
+										Max. 500 characters
+									</span>
 								</div>
-								<div class="mt-1">
-									<textarea
-										id="message"
-										required
-										name="message"
-										rows="4"
-										class="py-3 px-4 block w-full shadow-sm text-zinc-900 focus:ring-ds-blue border border-ds-gray rounded"
-										aria-describedby="message-max"
-										placeholder="Write a message me"
-									></textarea>
-								</div>
-							</div>
-							<div class="sm:col-span-2 sm:flex sm:justify-end">
-								<button
-									type="submit"
-									class="mt-2 w-full inline-flex items-center justify-center px-6 py-2 border border-transparent rounded shadow-sm text-base font-bold text-ds-smokewhite bg-ds-blue hover:bg-ds-teal hover:text-ds-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ds-blue sm:w-auto"
-								>
-									Send
-								</button>
-							</div>
+								<AppTextarea
+									id="message"
+									required
+									name="message"
+									rows="4"
+									class="mt-1"
+								/>
+							</fieldset>
+							<button type="submit" class="btn btn-ds-blue">
+								Send Message
+							</button>
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</NuxtLayout>
 </template>
