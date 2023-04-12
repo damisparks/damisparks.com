@@ -6,10 +6,10 @@ dependencies:
     version: 1.7.12(vue@3.2.47)
   '@tailwindcss/aspect-ratio':
     specifier: 0.4.2
-    version: 0.4.2(tailwindcss@3.3.1)
+    version: 0.4.2(tailwindcss@3.3.0)
   '@tailwindcss/forms':
     specifier: 0.5.3
-    version: 0.5.3(tailwindcss@3.3.1)
+    version: 0.5.3(tailwindcss@3.3.0)
 
 devDependencies:
   '@commitlint/cli':
@@ -46,8 +46,8 @@ devDependencies:
     specifier: 8.0.3
     version: 8.0.3
   lint-staged:
-    specifier: 13.2.1
-    version: 13.2.1
+    specifier: 13.2.0
+    version: 13.2.0
   nuxt:
     specifier: ^3.2.2
     version: 3.2.2(@types/node@18.15.11)(eslint@8.37.0)(typescript@4.9.5)
@@ -61,8 +61,8 @@ devDependencies:
     specifier: 2.8.7
     version: 2.8.7
   tailwindcss:
-    specifier: 3.3.1
-    version: 3.3.1(postcss@8.4.21)(ts-node@10.9.1)
+    specifier: 3.3.0
+    version: 3.3.0(postcss@8.4.21)(ts-node@10.9.1)
 
 packages:
 
@@ -1555,21 +1555,21 @@ packages:
     resolution: {integrity: sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==}
     dev: true
 
-  /@tailwindcss/aspect-ratio@0.4.2(tailwindcss@3.3.1):
+  /@tailwindcss/aspect-ratio@0.4.2(tailwindcss@3.3.0):
     resolution: {integrity: sha512-8QPrypskfBa7QIMuKHg2TA7BqES6vhBrDLOv8Unb6FcFyd3TjKbc6lcmb9UPQHxfl24sXoJ41ux/H7qQQvfaSQ==}
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
-      tailwindcss: 3.3.1(postcss@8.4.21)(ts-node@10.9.1)
+      tailwindcss: 3.3.0(postcss@8.4.21)(ts-node@10.9.1)
     dev: false
 
-  /@tailwindcss/forms@0.5.3(tailwindcss@3.3.1):
+  /@tailwindcss/forms@0.5.3(tailwindcss@3.3.0):
     resolution: {integrity: sha512-y5mb86JUoiUgBjY/o6FJSFZSEttfb3Q5gllE4xoKjAAD+vBrnIhE4dViwUuow3va8mpH4s9jyUbUbrRGoRdc2Q==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 3.3.1(postcss@8.4.21)(ts-node@10.9.1)
+      tailwindcss: 3.3.0(postcss@8.4.21)(ts-node@10.9.1)
     dev: false
 
   /@trysound/sax@0.2.0:
@@ -4760,8 +4760,8 @@ packages:
   /lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
-  /lint-staged@13.2.1:
-    resolution: {integrity: sha512-8gfzinVXoPfga5Dz/ZOn8I2GOhf81Wvs+KwbEXQn/oWZAvCVS2PivrXfVbFJc93zD16uC0neS47RXHIjXKYZQw==}
+  /lint-staged@13.2.0:
+    resolution: {integrity: sha512-GbyK5iWinax5Dfw5obm2g2ccUiZXNGtAS4mCbJ0Lv4rq6iEtfBSjOYdcbOtAIFtM114t0vdpViDDetjVTSd8Vw==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -6972,8 +6972,8 @@ packages:
       tslib: 2.5.0
     dev: true
 
-  /tailwindcss@3.3.1(postcss@8.4.21)(ts-node@10.9.1):
-    resolution: {integrity: sha512-Vkiouc41d4CEq0ujXl6oiGFQ7bA3WEhUZdTgXAhtKxSy49OmKs8rEfQmupsfF0IGW8fv2iQkp1EVUuapCFrZ9g==}
+  /tailwindcss@3.3.0(postcss@8.4.21)(ts-node@10.9.1):
+    resolution: {integrity: sha512-hOXlFx+YcklJ8kXiCAfk/FMyr4Pm9ck477G0m/us2344Vuj355IpoEDB5UmGAsSpTBmr+4ZhjzW04JuFXkb/fw==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
