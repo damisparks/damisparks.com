@@ -1,28 +1,28 @@
 <template>
-	<footer class="bg-white">
-		<div
-			class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8"
-		>
-			<div class="flex justify-center space-x-6 md:order-2">
-				<AppSocials />
+	<AppContainer>
+		<footer>
+			<div class="py-12">
+				<div class="flex justify-center space-x-6 md:order-2">
+					<AppSocials />
+				</div>
+				<div class="mt-8 md:order-1 md:mt-0">
+					<p class="mt-8 text-center text-sm leading-5">
+						<!-- copyright -->
+						&copy; {{ new Date().getFullYear() }}
+						<NuxtLink to="/" class="text-zinc-500">DamiSparks</NuxtLink>, All
+						rights reserved.
+					</p>
+				</div>
 			</div>
-			<div class="mt-8 md:order-1 md:mt-0">
-				<p class="mt-8 text-center text-sm leading-5">
-					<!-- copyright -->
-					&copy; {{ new Date().getFullYear() }}
-					<NuxtLink to="/" class="text-zinc-500">DamiSparks</NuxtLink>, All
-					rights reserved.
-				</p>
-			</div>
-		</div>
-		<p class="my-4 font-montserrat italic text-center text-sm text-zinc-600">
-			Logo by
-			<a
-				class="text-ds-blue hover:opacity-90 font-bold"
-				href="mailto:rubenfaria@live.com"
-			>
-				Ruben
-			</a>
-		</p>
-	</footer>
+			<p class="my-4 font-montserrat italic text-center text-sm text-zinc-600">
+				Logo by
+				<a
+					class="text-ds-blue dark:text-ds-teal hover:opacity-90 font-bold"
+					href="mailto:rubenfaria@live.com"
+				>
+					Ruben
+				</a>
+			</p>
+		</footer>
+	</AppContainer>
 </template>
