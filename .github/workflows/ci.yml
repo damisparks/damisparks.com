@@ -36,7 +36,7 @@ jobs:
           check-latest: true
 
       - name: Install dependencies 👨🏻‍💻
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Building for production 🛠️
         run: pnpm run build
