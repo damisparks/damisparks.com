@@ -4,6 +4,7 @@
 [build]
   command = "npm run build"
   publish = "dist"
+  environment = { PNPM_FLAGS = "--shamefully-hoist" }
 
 [context.branch-deploy.environment]
   PNPM_FLAGS = "--shamefully-hoist"
