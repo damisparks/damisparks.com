@@ -36,8 +36,8 @@ module.exports = {
 				linkExactActiveClass: 'tbd' // todo: to change this later.
 			},
 			fontFamily: {
-				opensans: "'Open Sans', sans-serif",
-				montserrat: ["'Montserrat', sans-serif"]
+				montserrat: ["'Montserrat', sans-serif"],
+				firasans: ["'Fira Sans', sans-serif"]
 			}
 		}
 	},
@@ -53,14 +53,14 @@ module.exports = {
 		({ addComponents }) => {
 			addComponents({
 				'.btn': {
-					'@apply text-base leading-5 font-semibold rounded hover:shadow-lg p-2':
+					'@apply text-base leading-5 font-semibold rounded hover:shadow-lg p-2 font-firasans':
 						{}
 				},
 				'.btn-ds-blue': {
 					'@apply bg-ds-blue text-white dark:bg-ds-orange dark:text-ds-blue': {}
 				},
 				'.app-input-label': {
-					'@apply block text-sm font-medium text-zinc-500 dark:text-zinc-400':
+					'@apply block text-sm font-medium font-firasans text-zinc-500 dark:text-zinc-400':
 						{}
 				}
 			})
