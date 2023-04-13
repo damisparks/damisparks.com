@@ -12,11 +12,11 @@ const me = ref({
 			<AppHeroText>
 				<template #default>
 					<span
-						class="mt-1 block text-4xl tracking-tight font-bold sm:text-5xl xl:text-6xl space-y-3 font-opensans"
+						class="mt-1 block text-4xl tracking-tight font-bold sm:text-5xl xl:text-6xl space-y-3 font-firasans"
 					>
 						<span class="block text-ds-blue dark:text-ds-blue-accent-400">
 							I'm
-							<NuxtLink to="/">
+							<NuxtLink to="/" class="font-montserrat">
 								<span>{{ me.name }}</span>
 							</NuxtLink>
 						</span>
