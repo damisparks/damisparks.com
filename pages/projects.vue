@@ -63,16 +63,17 @@ useHead({
 
 <template>
 	<NuxtLayout>
-		<AppTitle>Projects</AppTitle>
-
+		<AppPageHeader>
+			<AppTitle>Projects</AppTitle>
+		</AppPageHeader>
 		<header class="max-w-2xl mx-auto mt-16 md:mt-32">
 			<h1
-				class="text-4xl font-opensans font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-center sm:text-5xl"
+				class="text-4xl font-montserrat font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-center sm:text-5xl"
 			>
 				Things I’ve built trying to put my dent in the universe.
 			</h1>
 			<h2
-				class="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400 sm:text-center"
+				class="mt-6 space-y-7 text-base font-firasans text-zinc-600 dark:text-zinc-400 sm:text-center"
 			>
 				<p v-for="{ name } in intro" :key="name">
 					{{ name }}
@@ -80,7 +81,7 @@ useHead({
 			</h2>
 		</header>
 		<div class="max-w-7xl mx-auto space-y-6">
-			<section class="max-w-2xl mx-auto space-y-6 mt-12">
+			<section class="max-w-2xl mx-auto space-y-6 mt-12 font-firasans">
 				<div
 					v-for="(project, index) in projects"
 					:key="index"
