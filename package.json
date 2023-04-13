@@ -40,7 +40,7 @@
 		"*.**": "prettier --check --ignore-unknown"
 	},
 	"dependencies": {
-		"@headlessui/vue": "1.7.12",
+		"@headlessui/vue": "1.7.13",
 		"@tailwindcss/aspect-ratio": "0.4.2",
 		"@tailwindcss/forms": "0.5.3"
 	}
