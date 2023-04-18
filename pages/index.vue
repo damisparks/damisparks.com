@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 const me = ref({
 	name: 'Dami Sparks',
-	role: ['Digital Freelancer', 'Software Engineer'],
-	shortDescription: `I'm Dami, a digital freelancer, full-stack software and technical writer based in Lisboa who's passionate about creating digital products and helping others find their passion to code. I'm all about combining innovative development and product thinking to bring ideas into reality.`
+	role: ['Digital Freelancer', 'Full-Stack Software Engineer', 'Mentor'],
+	shortDescription: `I'm a digital freelance full-stack NodeJS engineer, mentor and technical writer passionate about crafting solid and scalable digital products and helping others find their passion for coding. I'm all about combining innovative development and product thinking to bring ideas into reality.`
 })
 </script>
 
@@ -25,15 +25,19 @@ const me = ref({
 							✋🏾
 						</span>
 						<span
-							class="block text-ds-teal text-4xl tracking-tight font-bold sm:text-5xl xl:text-6xl space-y-3 font-montserrat"
+							class="block my-2 font-montserrat text-zinc-500 dark:text-ds-smokewhite"
+						>
+							Are you looking for ?
+						</span>
+						<span
+							class="block text-ds-teal text-3xl tracking-tight font-bold sm:text-4xl xl:text-5xl space-y-3 font-montserrat"
 						>
 							<span v-for="(item, index) in me.role" :key="index">
+								<span v-if="index !== me.role.length - 1 && index !== 0">
+									,
+								</span>
+								<span v-if="index === me.role.length - 1" class="ml-2">&</span>
 								{{ item }}
-
-								<span
-									v-if="index !== me.role.length - 1"
-									class="h-4 w-4 inline-block rounded-full bg-ds-orange mr-2 lg:mr-3"
-								></span>
 							</span>
 						</span>
 					</span>
