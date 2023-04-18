@@ -164,7 +164,7 @@ useHead({
 										<Icon
 											:name="item.iconKey"
 											class="h-6 w-6"
-											aria-hidden="true "
+											aria-hidden="true"
 										/>
 										<span class="ml-3">{{ item.name }}</span>
 									</div>

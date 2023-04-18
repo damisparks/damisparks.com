@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
 	app: {
 		head: {
-			title: 'Dami Sparks | Software Engineer, Mentor, Technical Writer & more',
+			title:
+				'Dami Sparks | Full-Stack Software Developer, Mentor, Technical Writer & more',
 			titleTemplate: '%s - Dami Sparks',
 			meta: [
 				{ charset: 'utf-8' },
