@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ISocialsNavigation } from '@/types'
 
-const title = ref<string>('Contact Me')
+const title = ref<string>('Want to get in touch?')
 const description = ref<string>(
 	'Contact DamiSparks using the form or via Twitter or LinkedIn'
 )
@@ -35,13 +35,14 @@ useHead({
 
 <template>
 	<NuxtLayout>
-		<AppTitle>{{ title }}</AppTitle>
-		<div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+		<AppPageHeader>
+			<AppTitle>{{ title }}</AppTitle>
+		</AppPageHeader>
+		<div class="max-w-7xl mx-auto py-16 sm:py-24 sm:px-6 lg:px-8 font-firasans">
 			<div
 				class="relative shadow-lg rounded-md overflow-hidden dark:border border-zinc-700"
 			>
 				<h2 class="sr-only">{{ title }}</h2>
-
 				<div class="grid grid-cols-1 lg:grid-cols-3">
 					<div
 						class="relative overflow-hidden py-10 px-6 bg-ds-blue dark:bg-zinc-700 sm:px-10 xl:p-12"
@@ -163,7 +164,7 @@ useHead({
 										<Icon
 											:name="item.iconKey"
 											class="h-6 w-6"
-											aria-hidden="true "
+											aria-hidden="true"
 										/>
 										<span class="ml-3">{{ item.name }}</span>
 									</div>

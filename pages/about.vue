@@ -3,9 +3,11 @@ import { awards as achievements } from '@/utils'
 </script>
 <template>
 	<NuxtLayout>
-		<AppTitle>About</AppTitle>
+		<AppPageHeader>
+			<AppTitle>Meet Dami</AppTitle>
+		</AppPageHeader>
 		<div class="relative mt-16">
-			<div class="mx-auto max-w-2xl lg:max-w-5xl">
+			<div class="mx-auto max-w-2xl lg:max-w-5xl font-firasans">
 				<div
 					class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12"
 				>
@@ -72,7 +74,7 @@ import { awards as achievements } from '@/utils'
 						Achievements
 					</h2>
 
-					<div class="grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-6">
+					<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-3 sm:gap-6">
 						<!-- achievement card -->
 						<AppAchievementCard
 							v-for="achievement in achievements"

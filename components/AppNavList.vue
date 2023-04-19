@@ -12,7 +12,7 @@ defineProps<{ navList: INavLink[] }>()
 			:class="[
 				$route.name === href
 					? 'text-ds-blue dark:text-ds-orange'
-					: 'text-zinc-700 dark:text-zinc-400',
+					: 'text-zinc-600 dark:text-zinc-400',
 				'px-2 hover:text-zinc-900 dark:hover:text-zinc-200'
 			]"
 		>
