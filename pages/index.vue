@@ -1,15 +1,16 @@
 <script lang="ts" setup>
 const me = ref({
-	name: 'Dami Sparks',
-	role: ['Digital Freelancer', 'Full-Stack Developer', 'Mentor'],
+	name: 'Dami',
 	shortDescription: `I'm a digital freelance full-stack developer, mentor and technical writer passionate about crafting solid and scalable digital products and helping others find their passion for coding. I'm all about combining innovative development and product thinking to bring ideas into reality.`,
-	want: 'Are you looking for a freelance Vue.js developer? 🔎',
+	title: 'Freelance Vue.js Fullstack Developer for Hire',
+	role: 'Vue.js Fullstack Software Developer | Mentor | Digital Freelancer',
 	wantCriteria: [
-		'Support to craft a complex web and mobile application to your needs?',
-		'A hybrid developer with frontend expertise with cross-discipline competencies in backend development, testing, continuous integration and development, and cloud computing?',
-		'A developer who focuses on clean, high-quality, scalable and well-documented code?',
-		'A developer who delivers products timely within the budget?'
-	]
+		'A skilled Vue.js developer to build responsive and user-friendly interfaces for your web applications',
+		'Expertise in integrating Vue.js with RESTful APIs and deploying on cloud platforms like AWS, Azure and Google Cloud',
+		'A reliable and experienced freelance developer who can deliver scalable applications timely within the budget for clients across various industries',
+		'A developer who focuses on clean, high-quality and well-documented code'
+	],
+	specialisation: `I specialise in frontend and backend development, testing, data science, and cloud computing. So let's work together to bring your project to life.`
 })
 </script>
 
@@ -21,7 +22,7 @@ const me = ref({
 					<h1
 						class="text-4xl font-normal tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl"
 					>
-						{{ me.want }}
+						{{ me.title }}
 					</h1>
 				</div>
 			</header>
@@ -38,7 +39,7 @@ const me = ref({
 					<ul class="text-left space-y-7">
 						<li
 							v-for="(cr, idx) in me.wantCriteria"
-							:key="`wantCriteria-${idx}`"
+							:key="`wantcriteria-${idx}`"
 						>
 							<span
 								class="font-firasans text-base font-normal text-zinc-600 dark:text-zinc-400 tracking-tight"
@@ -54,9 +55,47 @@ const me = ref({
 					</ul>
 				</div>
 			</section>
-			<div class="mt-8 sm:max-w-lg sm:mx-auto text-center">
-				<NuxtLink :to="{ name: 'about' }" class="btn btn-ds-blue">
-					Learn More
+			<section>
+				<hr class="my-10 h-px border-0 bg-zinc-200 dark:bg-zinc-300" />
+
+				<div class="flex flex-col gap-10 pt-12 sm:flex-row">
+					<NuxtImg
+						loading="lazy"
+						class="aspect-[4/5] w-56 flex-none rounded-2xl object-cover"
+						provider="cloudinary"
+						src="/damisparks.com/ds-portrait-tiny.webp"
+						height="800"
+						width="800"
+						format="webp"
+						alt="dami sparks omifare"
+					/>
+					<div class="max-w-xl flex-auto">
+						<h3
+							class="text-lg font-firasans font-semibold leading-8 tracking-tight text-zinc-800 dark:text-zinc-100"
+						>
+							I am {{ me.name }}
+						</h3>
+						<p class="text-base leading-7 text-zinc-600 dark:text-zinc-400">
+							{{ me.role }}
+						</p>
+						<p
+							class="mt-6 text-base leading-7 text-zinc-600 dark:text-zinc-400"
+						>
+							{{ me.specialisation }}
+						</p>
+						<div role="list" class="mt-6 flex gap-x-6">
+							<AppSocials />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="mt-16 sm:max-w-lg sm:mx-auto text-center">
+				<NuxtLink
+					:to="{ name: 'contact' }"
+					class="btn btn-ds-blue font-firasans font-semibold w-full block"
+				>
+					Let's talk
 				</NuxtLink>
 			</div>
 		</div>
