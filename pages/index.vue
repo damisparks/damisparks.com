@@ -97,7 +97,8 @@ const me = ref({
 					:to="{ name: 'contact' }"
 					class="btn btn-ds-blue font-firasans font-semibold w-full block"
 				>
-					Let's talk
+					<Icon name="fa6-solid:laptop-code" class="h-6 w-5 mr-3" />
+					<span>Hire me</span>
 				</NuxtLink>
 			</div>
 		</div>
