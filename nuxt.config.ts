@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
 	app: {
 		head: {
-			title: 'Dami Sparks | Software Engineer, Mentor, Technical Writer & more',
+			title:
+				'Dami Sparks | Full-Stack Software Developer, Mentor, Technical Writer & more',
 			titleTemplate: '%s - Dami Sparks',
 			meta: [
 				{ charset: 'utf-8' },
@@ -34,7 +35,21 @@ export default defineNuxtConfig({
 						'Dami is the CTO and co-founder of Actif, a tech company focusing on improving the health of older people with fitness and cognitive programs. He is a Certified Mentor, Machine Learning Engineer and Cloud Developer with vast experience in front-end and back-end design and development.'
 				}
 			],
-			link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+			link: [
+				{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+				{
+					rel: 'preconnect',
+					href: 'https://fonts.googleapis.com'
+				},
+				{
+					rel: 'preconnect',
+					href: 'https://fonts.gstatic.com'
+				},
+				{
+					href: 'https://fonts.googleapis.com/css2?Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Fira+Sans:ital,wght@0,100;0,400;0,600;0,700;1,400&display=swap',
+					rel: 'stylesheet'
+				}
+			]
 		}
 	},
 	modules: ['@nuxt/image-edge', 'nuxt-icon', '@nuxtjs/color-mode'],

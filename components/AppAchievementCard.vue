@@ -27,7 +27,7 @@ defineProps<{ achievement: IAchievement }>()
 					<p>{{ achievement.description }}</p>
 				</div>
 				<a
-					class="border-t border-zinc-300 font-opensans pt-2 text-xs uppercase no-underline tracking-wide"
+					class="border-t border-zinc-300 font-firasans pt-2 text-xs uppercase no-underline tracking-wide"
 				>
 					Udacity
 				</a>
