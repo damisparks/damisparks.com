@@ -73,7 +73,9 @@ const me = ref({
 						<h3
 							class="text-lg font-firasans font-semibold leading-8 tracking-tight text-zinc-800 dark:text-zinc-100"
 						>
-							I am {{ me.name }}
+							<NuxtLink :to="{ name: 'about' }" class="underline">
+								I am {{ me.name }}
+							</NuxtLink>
 						</h3>
 						<p class="text-base leading-7 text-zinc-600 dark:text-zinc-400">
 							{{ me.role }}
