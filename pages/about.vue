@@ -69,9 +69,9 @@ import { awards as achievements } from '@/utils'
 				<!-- achievement & milestones -->
 				<div>
 					<h2
-						class="uppercase tracking-widest font-light text-zinc-800 dark:text-ds-orange my-6"
+						class="uppercase text-xl sm:text-2xl md:text-3xl tracking-widest font-light text-zinc-800 dark:text-ds-orange my-6"
 					>
-						Achievements
+						achievements
 					</h2>
 
 					<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-3 sm:gap-6">

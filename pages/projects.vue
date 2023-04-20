@@ -95,9 +95,10 @@ useHead({
 					</p>
 					<NuxtLink
 						:to="project.url"
-						class="block hover:underline text-zinc-600 dark:text-zinc-400"
+						class="block hover:underline text-zinc-600 dark:text-zinc-400 hover:dark:text-ds-orange-darker hover:text-ds-teal"
 					>
-						<i>Check it out</i>
+						<Icon name="heroicons:link-20-solid" class="h-5 w-5 mr-2" />
+						<span><i>Check it out</i></span>
 					</NuxtLink>
 				</div>
 			</section>
