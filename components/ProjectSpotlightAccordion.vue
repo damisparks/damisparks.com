@@ -17,13 +17,22 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 					class="h-8 w-8"
 				/>
 			</DisclosureButton>
-			<DisclosurePanel
-				class="px-4 pb-4 text-sm text-zinc-500 dark:text-ds-smokewhite"
+			<transition
+				enter-active-class="transition duration-100 ease-out"
+				enter-from-class="transform scale-95 opacity-0"
+				enter-to-class="transform scale-100 opacity-100"
+				leave-active-class="transition duration-75 ease-out"
+				leave-from-class="transform scale-100 opacity-100"
+				leave-to-class="transform scale-95 opacity-0"
 			>
-				<hr class="mb-4 h-px border-0 bg-zinc-400 dark:bg-zinc-200" />
+				<DisclosurePanel
+					class="px-4 pb-4 text-sm text-zinc-500 dark:text-ds-smokewhite"
+				>
+					<hr class="mb-4 h-px border-0 bg-zinc-400 dark:bg-zinc-200" />
 
-				<slot name="content">Content go here</slot>
-			</DisclosurePanel>
+					<slot name="content">Content go here</slot>
+				</DisclosurePanel>
+			</transition>
 		</Disclosure>
 	</div>
 </template>
