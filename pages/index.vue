@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { projectSpotlight as spotlights } from '@/utils'
 const me = ref({
 	name: 'Dami',
 	shortDescription: `I'm a digital freelance full-stack developer, mentor and technical writer passionate about crafting solid and scalable digital products and helping others find their passion for coding. I'm all about combining innovative development and product thinking to bring ideas into reality.`,
@@ -90,17 +91,93 @@ const me = ref({
 						</div>
 					</div>
 				</div>
+				<div class="mt-16 sm:max-w-lg sm:mx-auto text-center">
+					<NuxtLink
+						:to="{ name: 'contact' }"
+						class="btn btn-ds-blue font-firasans font-semibold w-full block"
+					>
+						<Icon name="fa6-solid:laptop-code" class="h-6 w-5 mr-3" />
+						<span>Hire me</span>
+					</NuxtLink>
+				</div>
 			</section>
 
-			<div class="mt-16 sm:max-w-lg sm:mx-auto text-center">
-				<NuxtLink
-					:to="{ name: 'contact' }"
-					class="btn btn-ds-blue font-firasans font-semibold w-full block"
+			<hr class="my-10 h-px border-0 bg-zinc-200 dark:bg-zinc-300" />
+			<section>
+				<p
+					class="uppercase text-xl sm:text-2xl md:text-3xl tracking-widest font-light text-zinc-800 dark:text-ds-orange my-6"
 				>
-					<Icon name="fa6-solid:laptop-code" class="h-6 w-5 mr-3" />
-					<span>Hire me</span>
-				</NuxtLink>
-			</div>
+					project spotlights
+				</p>
+
+				<div v-for="(spot, idx) in spotlights" :key="`spotlights-${idx}`">
+					<ProjectSpotlightAccordion>
+						<template #header>
+							<span class="text-sm sm:text-base max-w-xs">
+								{{ spot.description }}
+							</span>
+						</template>
+						<template #content>
+							<div>
+								<NuxtLink
+									class="text-zinc-600 dark:text-zinc-400"
+									:to="spot.client.website"
+									target="_blank"
+								>
+									<span class="font-bold mr-2">Client:</span>
+									<span
+										class="hover:underline hover:dark:text-ds-orange-darker hover:text-ds-teal"
+									>
+										<Icon name="heroicons:link-20-solid" class="h-5 w-5" />
+										{{ spot.client.name }}
+									</span>
+								</NuxtLink>
+								<div class="mt-3">
+									<p
+										class="text-base text-zinc-800 dark:text-zinc-100 font-semibold capitalize"
+									>
+										main contributions:
+									</p>
+									<ul
+										class="list-disc list-inside text-sm text-zinc-600 dark:text-zinc-400"
+									>
+										<li
+											v-for="(ct, cIdx) in spot.contributions"
+											:key="`contributions-${cIdx}`"
+											class="py-2"
+										>
+											{{ ct }}
+										</li>
+									</ul>
+								</div>
+								<div class="mt-3">
+									<p
+										class="text-base text-zinc-800 dark:text-zinc-100 font-semibold capitalize mb-1"
+									>
+										tech stack:
+									</p>
+									<ul class="flex flex-wrap gap-2">
+										<li
+											v-for="(st, sIdx) in spot.techStack"
+											:key="`techStack-${sIdx}`"
+										>
+											<span
+												class="inline-flex items-center gap-x-1.5 rounded-md px-2 py-1 text-xs bg-indigo-100 dark:bg-ds-blue-accent-200 text-ds-blue font-firasans"
+											>
+												<Icon
+													name="fluent:circle-16-filled"
+													class="h-2 w-2 fill-ds-blue-accent-500"
+												/>
+												{{ st }}
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</template>
+					</ProjectSpotlightAccordion>
+				</div>
+			</section>
 		</div>
 	</NuxtLayout>
 </template>
