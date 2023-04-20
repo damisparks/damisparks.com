@@ -7,7 +7,7 @@ defineProps<{ navList: INavLink[] }>()
 	<Menu as="div" class="relative inline-block text-left z-10">
 		<div>
 			<MenuButton
-				class="inline-flex w-full border rounded-full p-2 text-zinc-500 border-zinc-500 hover:bg-white hover:text-zinc-900 hover:border-zinc-900 active:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-700 focus-visible:ring-opacity-75"
+				class="inline-flex w-full border rounded-full p-2 text-zinc-500 border-zinc-500 hover:bg-white hover:text-zinc-900 hover:border-zinc-900 active:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-700 focus-visible:ring-opacity-75"
 			>
 				<span class="sr-only">Menu</span>
 				<Icon
