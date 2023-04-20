@@ -12,3 +12,15 @@ export interface IAchievement {
 	src: string
 	description: string
 }
+
+export interface ISpotlightClient {
+	name: string
+	website: string
+}
+export interface IProjectSpotlightItem {
+	description: string
+	client: ISpotlightClient
+	url: string
+	contributions: string[]
+	techStack: string[]
+}

@@ -4,7 +4,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 
 <template>
 	<div
-		class="mx-auto w-full max-w-md rounded-lg bg-zinc-100 dark:bg-zinc-700 shadow-sm"
+		class="mx-auto w-full max-w-md rounded-lg bg-zinc-100 dark:bg-zinc-700 shadow-sm font-firasans"
 	>
 		<Disclosure v-slot="{ open }">
 			<DisclosureButton
@@ -26,7 +26,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 				leave-to-class="transform scale-95 opacity-0"
 			>
 				<DisclosurePanel
-					class="px-4 pb-4 text-sm text-zinc-500 dark:text-ds-smokewhite"
+					class="px-4 pb-4 text-zinc-500 dark:text-ds-smokewhite"
 				>
 					<hr class="mb-4 h-px border-0 bg-zinc-400 dark:bg-zinc-200" />
 

@@ -1,3 +1,5 @@
+import { IProjectSpotlightItem } from '@/types'
+
 const links = [
 	{ name: 'Projects', href: 'projects' },
 	{ name: 'About ', href: 'about' },
@@ -43,4 +45,43 @@ const awards = [
 	}
 ]
 
-export { links, awards }
+const projectSpotlight: IProjectSpotlightItem[] = [
+	{
+		description:
+			'Elder Care Solution with Adaptive Exercises and Facilities Management',
+		client: {
+			name: 'Actifage LDA',
+			website: 'https://www.actif.online/'
+		},
+		url: 'https://pro.actif.online/login',
+		contributions: [
+			'Design and develop the user interface from scratch using Nuxt.js and Vuex.',
+			'Design and develop the RESTful APIs using Node.js and other technologies such as Express to allow communication between the client and server',
+			'Migrate the platform from Nuxt2 to Vue3 and Vuex to Pinia.',
+			'Co-founder and CTO.',
+			'Introduce frontend unit tests based on cypress.',
+			'Manage and develop database schema and queries using NoSQL databases like MongoDB or relational databases like MySQL or PostgreSQL.',
+			'Test and debug code to ensure it meets quality standards and works as expected.',
+			'Implement continuous integration and deployment to deliver changes to production as fast as possible.',
+			'Manage application deployment on cloud platforms like AWS, Azure and Google Cloud.'
+		],
+
+		techStack: [
+			'Nuxt',
+			' Vue 3',
+			'Vuex',
+			'Pinia',
+			'TypeScript',
+			'JavaScript',
+			'Vite',
+			'Cypress',
+			'Express',
+			'MongoDB',
+			'Firebase',
+			'Google Cloud',
+			'Microsoft Azure'
+		]
+	}
+]
+
+export { links, awards, projectSpotlight }
