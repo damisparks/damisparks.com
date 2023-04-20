@@ -81,6 +81,65 @@ const projectSpotlight: IProjectSpotlightItem[] = [
 			'Google Cloud',
 			'Microsoft Azure'
 		]
+	},
+	{
+		description: 'Elder Care Solution with Adaptive Exercises for Individuals.',
+		client: {
+			name: 'Actifage LDA',
+			website: 'https://www.actif.online/'
+		},
+		url: 'https://me.actif.online/login',
+		contributions: [
+			'Design and develop the user interface using Vue3, Composition API and Pinia.',
+			'Design and develop the RESTful APIs using Express running on Node.js to allow communication between the user interface and server.',
+			'Develop a forum using web sockets for real-time communication.',
+			'Co-founder and CTO.',
+			'Introduce frontend unit tests based on cypress.',
+			'Manage and develop database schema and queries using NoSQL databases like MongoDB.',
+			'Test and debug code to ensure it meets quality standards and works as expected.',
+			'Implement continuous integration and deployment to deliver changes to production as fast as possible.',
+			'Manage application deployment on cloud platforms like AWS.'
+		],
+		techStack: [
+			'Vue 3',
+			'Pinia',
+			'Highchart',
+			'Socket.io',
+			'Web Audio and Video API',
+			'TypeScript',
+			'JavaScript',
+			'Vite',
+			'Cypress',
+			'Express',
+			'MongoDB',
+			'Firebase',
+			'Google Cloud',
+			'Microsoft Azure'
+		]
+	},
+	{
+		description: 'Actif Blog',
+		client: {
+			name: 'Actifage LDA',
+			website: 'https://www.actif.online/'
+		},
+		url: 'https://actif.online/blog',
+		contributions: [
+			'Design and develop the blog using Nuxt2 and Vuex.',
+			'Integrate Strapi (Open source Node.js Headless CMS) with the blog.',
+			'Deploy blog to Google Cloud.',
+			'Set up DNS mapping for the blog.',
+			'Develop image rescaling and compression algorithm for blog media and deploy on Google Cloud Function.'
+		],
+		techStack: [
+			'Nuxt',
+			'Vuex',
+			'TypeScript',
+			'JavaScript',
+			'Python',
+			'Postgre SQL',
+			'Google Cloud Function'
+		]
 	}
 ]
 
