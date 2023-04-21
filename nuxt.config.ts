@@ -52,6 +52,7 @@ export default defineNuxtConfig({
 			]
 		}
 	},
+
 	modules: ['@nuxt/image-edge', 'nuxt-icon', '@nuxtjs/color-mode'],
 
 	// nuxt image configuration
@@ -73,5 +74,14 @@ export default defineNuxtConfig({
 	// https://color-mode.nuxtjs.org/
 	colorMode: {
 		classSuffix: ''
+	},
+
+	// https://nuxt.com/docs/guide/directory-structure/composables
+	imports: {
+		dirs: [
+			// Scan top-level modules
+			'use',
+			'use/**'
+		]
 	}
 })
