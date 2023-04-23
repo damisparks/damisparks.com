@@ -62,6 +62,12 @@ module.exports = {
 				'.app-input-label': {
 					'@apply block text-sm font-medium font-firasans text-zinc-500 dark:text-zinc-400':
 						{}
+				},
+				'.app-h2': {
+					'@apply text-zinc-800 dark:text-zinc-100 font-montserrat': {}
+				},
+				'.app-text': {
+					'@apply text-zinc-600 dark:text-zinc-400 font-firasans': {}
 				}
 			})
 		}
