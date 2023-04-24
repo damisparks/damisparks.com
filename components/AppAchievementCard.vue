@@ -10,9 +10,7 @@ defineProps<{ achievement: IAchievement }>()
 		>
 			<div
 				class="bg-blend-multiply bg-cover h-48 bg-ds-blue/10 dark:bg-ds-blue-accent-100"
-				style="
-					background-image: url(https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/0e4e7509-edd9-44f2-b066-d8242a3fa1c6.svg);
-				"
+				:style="{ backgroundImage: `url(${achievement.src})` }"
 			></div>
 			<div class="p-4 flex-1 flex flex-col">
 				<NuxtLink
