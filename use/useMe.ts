@@ -36,8 +36,8 @@ const capitalizeWords = (str: string): string => {
 }
 
 /**
- * Returns an object with utility functions for working with text.
- * @returns An object with a `capitalizeText` function.
+ * A custom hook that returns an object with utility functions for working with text.
+ * @returns An object with `capitalizeText` and `capitalizeWords` functions.
  */
 
 export function useMe() {
