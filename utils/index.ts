@@ -10,7 +10,7 @@ const awards = [
 	{
 		name: 'Digital Freelancer Nanodegree',
 		url: 'https://confirm.udacity.com/G5KDSLSK',
-		src: 'https:https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/0e4e7509-edd9-44f2-b066-d8242a3fa1c6.svg',
+		src: 'https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/0e4e7509-edd9-44f2-b066-d8242a3fa1c6.svg',
 		description:
 			'Master the skills necessary to become a successful digital freelancer. Learn how to market your services to clients, scope projects and manage client relationships.'
 	},
