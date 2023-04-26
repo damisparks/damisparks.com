@@ -7,6 +7,10 @@
 				</div>
 				<div class="mt-8 md:order-1 md:mt-0">
 					<p class="mt-8 text-center text-sm leading-5">
+						<NuxtLink to="/privacy" class="text-zinc-500 mr-3">
+							Privacy Policy
+						</NuxtLink>
+
 						<!-- copyright -->
 						&copy; {{ new Date().getFullYear() }}
 						<NuxtLink to="/" class="text-zinc-500">DamiSparks</NuxtLink>, All
