@@ -27,37 +27,37 @@ useHead({
 		</AppPageHeader>
 		<section class="space-y-6 mt-4">
 			<article>
-				<p class="app-text">
+				<p class="app-text-content">
 					This Privacy Policy outlines how the website, Damisparks collects,
 					uses, and protects your personal information. The website protects
 					your privacy and keeps your personal info confidential.
 				</p>
 			</article>
 			<article>
-				<h2 class="text-2xl font-bold app-h2">
+				<h2 class="text-2xl font-bold app-heading">
 					Information Collection and Use
 				</h2>
-				<p class="app-text mb-3">
+				<p class="app-text-content mb-3">
 					The website may collect personal information such as your name, email
 					address, phone number, and other contact details that you provide when
 					you contact the developer. This information is collected to respond to
 					your inquiries and provide services.
 				</p>
-				<p class="app-text">
+				<p class="app-text-content">
 					The website may also collect non-personal information such as browser
 					type, IP address, and other technical information. This information is
 					collected to improve the website's performance and user experience.
 				</p>
 			</article>
 			<article>
-				<h2 class="text-2xl font-bold app-h2">
+				<h2 class="text-2xl font-bold app-heading">
 					Information Sharing and Disclosure
 				</h2>
-				<p class="app-text mb-3">
+				<p class="app-text-content mb-3">
 					The website does not share or disclose your personal information to
 					any third party without your consent except as required by law.
 				</p>
-				<p class="app-text">
+				<p class="app-text-content">
 					The website may use third-party service providers such as Google
 					Analytics to track usage and analytics. In addition, these service
 					providers may collect non-personal information on behalf of the
@@ -66,8 +66,8 @@ useHead({
 			</article>
 
 			<article>
-				<h2 class="text-2xl font-bold app-h2">Data Security</h2>
-				<p class="app-text">
+				<h2 class="text-2xl font-bold app-heading">Data Security</h2>
+				<p class="app-text-content">
 					The website takes reasonable measures to protect your personal
 					information from unauthorised access, use, or disclosure. However, no
 					transmission over the internet can be guaranteed to be 100% secure.
@@ -78,16 +78,18 @@ useHead({
 			</article>
 
 			<article>
-				<h2 class="text-2xl font-bold app-h2">Cookies</h2>
-				<p class="app-text">
+				<h2 class="text-2xl font-bold app-heading">Cookies</h2>
+				<p class="app-text-content">
 					The website may use cookies to enhance user experience and track
 					website usage. By using the website, you consent to the use of
 					cookies.
 				</p>
 			</article>
 			<article>
-				<h2 class="text-2xl font-bold app-h2">Changes to the Privacy Policy</h2>
-				<p class="app-text">
+				<h2 class="text-2xl font-bold app-heading">
+					Changes to the Privacy Policy
+				</h2>
+				<p class="app-text-content">
 					The website reserves the right to change this Privacy Policy at
 					anytime and for any reason. Any changes or modifications will be
 					effective immediately upon posting the updated Privacy Policy on the
@@ -97,8 +99,8 @@ useHead({
 				</p>
 			</article>
 			<article>
-				<h2 class="text-2xl font-bold app-h2">Contact Information</h2>
-				<p class="app-text">
+				<h2 class="text-2xl font-bold app-heading">Contact Information</h2>
+				<p class="app-text-content">
 					If you have any questions or concerns about this Privacy Policy, don't
 					hesitate to contact me at
 					<a
