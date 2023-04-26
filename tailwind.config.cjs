@@ -6,7 +6,8 @@ module.exports = {
 		'./pages/**/*.vue',
 		'./plugins/**/*.{js,ts}',
 		'./nuxt.config.{js,ts}',
-		'./app.vue'
+		'./app.vue',
+		'./error.vue'
 	],
 	darkMode: 'class',
 	theme: {
@@ -63,10 +64,10 @@ module.exports = {
 					'@apply block text-sm font-medium font-firasans text-zinc-500 dark:text-zinc-400':
 						{}
 				},
-				'.app-h2': {
+				'.app-heading': {
 					'@apply text-zinc-800 dark:text-zinc-100 font-montserrat': {}
 				},
-				'.app-text': {
+				'.app-text-content': {
 					'@apply text-zinc-600 dark:text-zinc-400 font-firasans': {}
 				}
 			})
