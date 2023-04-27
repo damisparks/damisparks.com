@@ -52,7 +52,8 @@ export default defineNuxtConfig({
 			]
 		}
 	},
-	modules: ['@nuxt/image-edge', 'nuxt-icon', '@nuxtjs/color-mode'],
+
+	modules: ['@nuxt/image-edge', 'nuxt-icon', '@nuxtjs/color-mode', 'nuxt-gtag'],
 
 	// nuxt image configuration
 	image: {
@@ -60,6 +61,14 @@ export default defineNuxtConfig({
 			baseURL: 'https://res.cloudinary.com/damisparks/image/upload/'
 		}
 	},
+
+	runtimeConfig: {
+		publicGtagId: ''
+	},
+	// https://nuxt.com/modules/gtag
+	// gtag: {
+	// 	initialConsent:
+	// },
 
 	// https://tailwindcss.com/docs/guides/nuxtjs#3
 	css: ['~/assets/css/main.css'],
@@ -73,5 +82,14 @@ export default defineNuxtConfig({
 	// https://color-mode.nuxtjs.org/
 	colorMode: {
 		classSuffix: ''
+	},
+
+	// https://nuxt.com/docs/guide/directory-structure/composables
+	imports: {
+		dirs: [
+			// Scan top-level modules
+			'use',
+			'use/**'
+		]
 	}
 })
