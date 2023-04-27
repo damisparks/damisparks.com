@@ -1,10 +1,13 @@
 <script lang="ts" setup>
 import { ISocialsNavigation } from '@/types'
-
-const title = ref<string>('Want to get in touch?')
+const pageTitle = ref<string>('Contact')
 const description = ref<string>(
-	'Contact DamiSparks using the form or via Twitter or LinkedIn'
+	'Get in touch with Dami Sparks for custom web development, mobile development, UI/UX design, and more. Fill out the contact form or reach out on social media'
 )
+const pageKeyword = ref(
+	'Dami Sparks, Contact, Web Development, Mobile Development, UI/UX Design, Custom Web Applications, E-commerce Development, CMS Development, Cross-Platform Development, Progressive Web Applications, Single Page Applications, Server-Side Rendering, Front-end Development, Back-end Development, Database Development, Vue.js, Nuxt.js, JavaScript, Node.js, Express.js, MongoDB, MySQL, PostgreSQL, RESTful APIs, AWS, Azure, Google Cloud, Social Media'
+)
+
 const socials: ISocialsNavigation[] = [
 	{
 		iconKey: 'uil:linkedin',
@@ -19,9 +22,10 @@ const socials: ISocialsNavigation[] = [
 ]
 
 useHead({
-	title: title.value,
+	title: pageTitle.value,
 	meta: [
-		{ key: 'description', name: 'description', content: description.value }
+		{ name: 'description', content: description.value },
+		{ name: 'keywords', content: pageKeyword }
 	],
 	link: [
 		{
@@ -36,13 +40,13 @@ useHead({
 <template>
 	<NuxtLayout>
 		<AppPageHeader>
-			<AppTitle>{{ title }}</AppTitle>
+			<AppTitle>Want to get in touch?</AppTitle>
 		</AppPageHeader>
 		<div class="max-w-7xl mx-auto py-16 sm:py-24 sm:px-6 lg:px-8 font-firasans">
 			<div
 				class="relative shadow-lg rounded-md overflow-hidden dark:border border-zinc-700"
 			>
-				<h2 class="sr-only">{{ title }}</h2>
+				<h2 class="sr-only">Want to get in touch?</h2>
 				<div class="grid grid-cols-1 lg:grid-cols-3">
 					<div
 						class="relative overflow-hidden py-10 px-6 bg-ds-blue dark:bg-zinc-700 sm:px-10 xl:p-12"
