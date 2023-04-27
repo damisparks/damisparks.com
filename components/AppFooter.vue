@@ -28,5 +28,6 @@
 				</a>
 			</p>
 		</footer>
+		<CookieConsent />
 	</AppContainer>
 </template>
