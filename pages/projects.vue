@@ -1,7 +1,10 @@
 <script lang="ts" setup>
-const title = ref<string>('Projects')
-const description = ref<string>(
-	'Explore our curated list of projects I have worked on. Here are some of the other projects I have worked on in the past — some still actively maintained, and others retired or on pause.'
+const pageTitle = ref('Projects')
+const description = ref(
+	`Explore Dami Sparks' portfolio of previous projects, including custom web applications, e-commerce development, CMS development, and more.`
+)
+const keywords = ref(
+	'Dami Sparks, Projects, Portfolio, Web Development, Mobile Development, Custom Web Applications, E-commerce Development, CMS Development, UI/UX Design, Cross-Platform Development, Progressive Web Applications, Single Page Applications, Server-Side Rendering, Front-end Development, Back-end Development, Database Development, Vue.js, Nuxt.js, JavaScript, Node.js, Express.js, MongoDB, MySQL, PostgreSQL, RESTful APIs, AWS, Azure, Google Cloud'
 )
 const intro = ref([
 	{
@@ -15,7 +18,7 @@ const intro = ref([
 	}
 ])
 
-const projects = ref([
+const projectList = ref([
 	{
 		title: 'Actif',
 		url: 'https://www.actif.online/',
@@ -45,11 +48,11 @@ const projects = ref([
 	}
 ])
 
-// page title
 useHead({
-	title: title.value,
+	title: pageTitle.value,
 	meta: [
-		{ key: 'description', name: 'description', content: description.value }
+		{ name: 'description', content: description },
+		{ name: 'keywords', content: keywords }
 	],
 	link: [
 		{
@@ -83,7 +86,7 @@ useHead({
 		<div class="max-w-7xl mx-auto space-y-6">
 			<section class="max-w-2xl mx-auto space-y-6 mt-12 font-firasans">
 				<div
-					v-for="(project, index) in projects"
+					v-for="(project, index) in projectList"
 					:key="index"
 					class="space-y-1"
 				>
