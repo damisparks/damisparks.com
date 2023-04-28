@@ -3,8 +3,8 @@ export default defineNuxtConfig({
 	app: {
 		head: {
 			title:
-				'Dami Sparks | Freelance Full-Stack Developer, Fractional CTO, Mentor,and Technical Writer',
-			titleTemplate: '%s - Dami Sparks',
+				'Freelance Full-Stack Developer, Fractional CTO, Mentor,and Technical Writer',
+			titleTemplate: '%s | Dami Sparks',
 			meta: [
 				{ charset: 'utf-8' },
 				{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
