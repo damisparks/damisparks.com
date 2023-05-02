@@ -1,9 +1,10 @@
 import { IProjectSpotlightItem } from '@/types'
+const me = useMe()
 
 const links = [
-	{ name: 'Projects', href: 'projects' },
-	{ name: 'About ', href: 'about' },
-	{ name: 'Contact', href: 'contact' }
+	{ name: 'Projects', href: 'projects', id: me.uniqueId() },
+	{ name: 'About ', href: 'about', id: me.uniqueId() },
+	{ name: 'Contact', href: 'contact', id: me.uniqueId() }
 ]
 
 const awards = [
