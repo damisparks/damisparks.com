@@ -4,7 +4,7 @@
  * @returns The input string with the first letter capitalized.
  * @throws {TypeError} If the input is not a string.
  */
-export const capitalizeText = (text = ''): string => {
+const capitalizeText = (text = ''): string => {
 	if (typeof text !== 'string') {
 		throw new TypeError('Input must be a string.')
 	}
@@ -36,13 +36,25 @@ const capitalizeWords = (str: string): string => {
 }
 
 /**
- * A custom hook that returns an object with utility functions for working with text.
- * @returns An object with `capitalizeText` and `capitalizeWords` functions.
+ * Generates a unique identifier string using a combination of a random number and the current date.
+ * The resulting string is 13 characters long, consisting of 8 random alphanumeric characters and 5 digits of the current timestamp.
+ * @returns {string} A unique identifier string.
+ */
+const uniqueId = (): string => {
+	const randomString = Math.random().toString(36).substring(2, 10)
+	const timestampString = Date.now().toString(36).substring(2)
+	return `${randomString}${timestampString}`
+}
+
+/**
+ * A custom composable that returns an object with utility functions for working with text and generating unique IDs.
+ * @returns An object with `capitalizeText`, `capitalizeWords`, and `uniqueId` functions.
  */
 
 export function useMe() {
 	return {
 		capitalizeText,
-		capitalizeWords
+		capitalizeWords,
+		uniqueId
 	}
 }
