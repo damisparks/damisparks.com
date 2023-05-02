@@ -8,6 +8,7 @@ export interface ISocialsNavigation extends INavLink {
 }
 
 export interface IAchievement {
+	id: string
 	name: string
 	url: string
 	src: string
