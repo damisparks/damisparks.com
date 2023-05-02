@@ -31,8 +31,8 @@ defineProps<{ navList: INavLink[] }>()
 			>
 				<div class="px-2 w-full">
 					<MenuItem
-						v-for="({ href, name }, index) in navList"
-						:key="`app-mobile-nav-${index}`"
+						v-for="{ href, name, id } in navList"
+						:key="`app-mobile-nav-${id}`"
 						v-slot="{ close, active }"
 						class="my-1"
 					>
