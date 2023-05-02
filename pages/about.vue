@@ -90,7 +90,7 @@ import { awards as achievements } from '@/utils'
 						<!-- achievement card -->
 						<AppAchievementCard
 							v-for="achievement in achievements"
-							:key="`achievements-${achievement.name}`"
+							:key="`achievements-${achievement.id}`"
 							:achievement="achievement"
 						/>
 					</div>
