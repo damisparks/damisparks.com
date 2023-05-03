@@ -69,6 +69,10 @@ module.exports = {
 				},
 				'.app-text-content': {
 					'@apply text-zinc-600 dark:text-zinc-400 font-firasans': {}
+				},
+				'.app-text-gradient': {
+					'@apply text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 dark:from-yellow-400 dark:to-pink-600':
+						{}
 				}
 			})
 		}
