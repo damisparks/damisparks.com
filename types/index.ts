@@ -1,3 +1,5 @@
+type IPortforlioItemType = 'project' | 'open-source'
+
 export interface INavLink {
 	name: string
 	href: string
@@ -25,4 +27,12 @@ export interface IProjectSpotlightItem {
 	url: string
 	contributions: string[]
 	techStack: string[]
+}
+
+export interface IPortfolioItem {
+	id: string
+	name: string
+	description: string
+	websiteUrl: string
+	type: IPortforlioItemType
 }

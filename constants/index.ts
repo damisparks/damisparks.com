@@ -1,4 +1,9 @@
-import { IAchievement, INavLink, IProjectSpotlightItem } from '@/types'
+import {
+	IAchievement,
+	INavLink,
+	IPortfolioItem,
+	IProjectSpotlightItem
+} from '@/types'
 const me = useMe()
 
 const links: INavLink[] = [
@@ -149,4 +154,72 @@ const projectSpotlight: IProjectSpotlightItem[] = [
 	}
 ]
 
-export { links, awards, projectSpotlight }
+const projects: IPortfolioItem[] = [
+	{
+		id: me.uniqueId(),
+		name: 'Actifage LDA',
+		websiteUrl: 'https://www.actif.online/',
+		description:
+			'A tech company focusing on empowering older adults through exercise, anytime and everywhere.',
+		type: 'project'
+	},
+
+	{
+		id: me.uniqueId(),
+		name: 'Nuxt-validate ',
+		websiteUrl: 'https://www.npmjs.com/package/nuxt-validate',
+		description:
+			'A Simple Nuxt input validation module using vee-validate library. I am actively contributing to this project.',
+		type: 'open-source'
+	},
+	{
+		id: me.uniqueId(),
+		name: 'TodoApp',
+		websiteUrl: 'https://github.com/damisparks/todo_app',
+		description: `
+				This app is a  Full Stack Todo App Using Vue.JS for the front end and Adonis.JS on the backend.
+				The app demonstrates the basic concepts in Vue.JS and AdonisJS. I am still maintaining the app. I have plans to update the app to Vue3.
+				`,
+		type: 'open-source'
+	},
+	{
+		id: me.uniqueId(),
+		name: 'How to become Microsoft Certified: Azure AI Engineer Associate',
+		websiteUrl:
+			'https://github.com/damisparks/microsoft-azure-ai-engineer-associate',
+		description: `This resource is a draft of how I became certified, and I am glad to share my resources and notes to help others.
+					This resource aim at Cloud Solution Architects, Azure artificial intelligence designers, Azure Trainers and AI developers.
+					I am still maintaining it. However, I have not worked on it in a while.`,
+		type: 'open-source'
+	},
+	{
+		id: me.uniqueId(),
+		name: 'Actifage LDA',
+		description:
+			'Elder Care Solution with Adaptive Exercises and Facilities Management',
+		websiteUrl: 'https://pro.actif.online/login',
+		type: 'project'
+	},
+	{
+		id: me.uniqueId(),
+		name: 'Actifage LDA',
+		description: 'Elder Care Solution with Adaptive Exercises for Individuals.',
+		websiteUrl: 'https://me.actif.online/login',
+		type: 'project'
+	},
+	{
+		id: me.uniqueId(),
+		name: '@nuxtjs/eslint-module',
+		description: 'ESLint module for Nuxt.js',
+		websiteUrl: 'https://github.com/nuxt-modules/eslint',
+		type: 'open-source'
+	},
+	{
+		id: me.uniqueId(),
+		name: '@nuxtjs/google-fonts',
+		description: 'Google Fonts module for NuxtJS',
+		websiteUrl: 'https://github.com/nuxt-modules/google-fonts',
+		type: 'open-source'
+	}
+]
+export { links, awards, projectSpotlight, projects }

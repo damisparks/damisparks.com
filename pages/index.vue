@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { projectSpotlight as spotlights } from '@/utils'
+import { projectSpotlight as spotlights } from '@/constants'
 const me = ref({
 	name: 'Dami',
 	shortDescription: `I'm a digital freelance full-stack developer, mentor and technical writer passionate about crafting solid and scalable digital products and helping others find their passion for coding. I'm all about combining innovative development and product thinking to bring ideas into reality.`,
