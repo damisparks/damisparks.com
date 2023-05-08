@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { awards as achievements } from '@/utils'
+import { awards as achievements } from '@/constants'
 </script>
 <template>
 	<NuxtLayout>

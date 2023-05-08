@@ -8,13 +8,16 @@ const pageKeyword = ref(
 	'Dami Sparks, Contact, Web Development, Mobile Development, UI/UX Design, Custom Web Applications, E-commerce Development, CMS Development, Cross-Platform Development, Progressive Web Applications, Single Page Applications, Server-Side Rendering, Front-end Development, Back-end Development, Database Development, Vue.js, Nuxt.js, JavaScript, Node.js, Express.js, MongoDB, MySQL, PostgreSQL, RESTful APIs, AWS, Azure, Google Cloud, Social Media'
 )
 
+const me = useMe()
 const socials: ISocialsNavigation[] = [
 	{
+		id: me.uniqueId(),
 		iconKey: 'uil:linkedin',
 		href: 'https://www.linkedin.com/in/damisparks',
 		name: 'Dami Sparks'
 	},
 	{
+		id: me.uniqueId(),
 		iconKey: 'uil:twitter',
 		href: 'https://www.twitter.com/DamiSparks',
 		name: '@damisparks'
