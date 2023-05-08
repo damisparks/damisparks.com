@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { links as navList } from '@/utils'
+import { links as navList } from '@/constants'
 
 const showNavbar = ref<boolean>(true)
 const lastScrollPosition = ref<number>(0)
