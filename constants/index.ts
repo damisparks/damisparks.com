@@ -157,7 +157,7 @@ const projectSpotlight: IProjectSpotlightItem[] = [
 const projects: IPortfolioItem[] = [
 	{
 		id: me.uniqueId(),
-		name: 'Actifage LDA',
+		name: 'Actifage LDA | Actif Online',
 		websiteUrl: 'https://www.actif.online/',
 		description:
 			'A tech company focusing on empowering older adults through exercise, anytime and everywhere.',
@@ -187,14 +187,12 @@ const projects: IPortfolioItem[] = [
 		name: 'How to become Microsoft Certified: Azure AI Engineer Associate',
 		websiteUrl:
 			'https://github.com/damisparks/microsoft-azure-ai-engineer-associate',
-		description: `This resource is a draft of how I became certified, and I am glad to share my resources and notes to help others.
-					This resource aim at Cloud Solution Architects, Azure artificial intelligence designers, Azure Trainers and AI developers.
-					I am still maintaining it. However, I have not worked on it in a while.`,
+		description: `Here are notes and resources I used for those pursuing certification in Cloud Solution Architecture, Azure AI, and development. Happy to share.`,
 		type: 'open-source'
 	},
 	{
 		id: me.uniqueId(),
-		name: 'Actifage LDA',
+		name: 'Actifage LDA | Actif for Professionals',
 		description:
 			'Elder Care Solution with Adaptive Exercises and Facilities Management',
 		websiteUrl: 'https://pro.actif.online/login',
@@ -202,7 +200,7 @@ const projects: IPortfolioItem[] = [
 	},
 	{
 		id: me.uniqueId(),
-		name: 'Actifage LDA',
+		name: 'Actifage LDA | Actif for Individuals',
 		description: 'Elder Care Solution with Adaptive Exercises for Individuals.',
 		websiteUrl: 'https://me.actif.online/login',
 		type: 'project'
