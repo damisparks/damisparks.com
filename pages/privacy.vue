@@ -104,10 +104,10 @@ useHead({
 					If you have any questions or concerns about this Privacy Policy, don't
 					hesitate to contact me at
 					<a
-						href="mailto:damisparks@outlook.com"
+						href="mailto:rethinkwithdami@gmail.com"
 						class="text-ds-blue dark:text-ds-teal hover:opacity-90 font-bold"
 					>
-						damisparks@outlook.com
+						rethinkwithdami@gmail.com
 					</a>
 					or through the contact information provided on the website.
 				</p>
