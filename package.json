@@ -17,7 +17,7 @@
 		"prepare": "husky install"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "17.6.5",
+		"@commitlint/cli": "17.6.6",
 		"@commitlint/config-conventional": "17.6.5",
 		"@nuxt/eslint-config": "0.1.1",
 		"@nuxt/image-edge": "1.0.0-28101255.bece998",
