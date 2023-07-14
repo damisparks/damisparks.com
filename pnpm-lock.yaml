@@ -1,15 +1,19 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@headlessui/vue':
     specifier: 1.7.14
     version: 1.7.14(vue@3.2.47)
   '@tailwindcss/aspect-ratio':
     specifier: 0.4.2
-    version: 0.4.2(tailwindcss@3.3.2)
+    version: 0.4.2(tailwindcss@3.3.3)
   '@tailwindcss/forms':
     specifier: 0.5.3
-    version: 0.5.3(tailwindcss@3.3.2)
+    version: 0.5.3(tailwindcss@3.3.3)
 
 devDependencies:
   '@commitlint/cli':
@@ -64,8 +68,8 @@ devDependencies:
     specifier: 2.8.8
     version: 2.8.8
   tailwindcss:
-    specifier: 3.3.2
-    version: 3.3.2(ts-node@10.9.1)
+    specifier: 3.3.3
+    version: 3.3.3(ts-node@10.9.1)
 
 packages:
 
@@ -1658,21 +1662,21 @@ packages:
     resolution: {integrity: sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==}
     dev: true
 
-  /@tailwindcss/aspect-ratio@0.4.2(tailwindcss@3.3.2):
+  /@tailwindcss/aspect-ratio@0.4.2(tailwindcss@3.3.3):
     resolution: {integrity: sha512-8QPrypskfBa7QIMuKHg2TA7BqES6vhBrDLOv8Unb6FcFyd3TjKbc6lcmb9UPQHxfl24sXoJ41ux/H7qQQvfaSQ==}
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
-      tailwindcss: 3.3.2(ts-node@10.9.1)
+      tailwindcss: 3.3.3(ts-node@10.9.1)
     dev: false
 
-  /@tailwindcss/forms@0.5.3(tailwindcss@3.3.2):
+  /@tailwindcss/forms@0.5.3(tailwindcss@3.3.3):
     resolution: {integrity: sha512-y5mb86JUoiUgBjY/o6FJSFZSEttfb3Q5gllE4xoKjAAD+vBrnIhE4dViwUuow3va8mpH4s9jyUbUbrRGoRdc2Q==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 3.3.2(ts-node@10.9.1)
+      tailwindcss: 3.3.3(ts-node@10.9.1)
     dev: false
 
   /@trysound/sax@0.2.0:
@@ -6038,7 +6042,7 @@ packages:
       lilconfig: 2.1.0
       postcss: 8.4.24
       ts-node: 10.9.1(@types/node@18.15.11)(typescript@4.9.5)
-      yaml: 2.2.1
+      yaml: 2.2.2
 
   /postcss-merge-longhand@5.1.7(postcss@8.4.24):
     resolution: {integrity: sha512-YCI9gZB+PLNskrK0BB3/2OzPnGhPkBEwmwhfYk1ilBHYVAZB7/tkTHFBAnCrvBBOmeYyMYw3DMjT55SyxMBzjQ==}
@@ -7090,8 +7094,8 @@ packages:
       tslib: 2.5.0
     dev: true
 
-  /tailwindcss@3.3.2(ts-node@10.9.1):
-    resolution: {integrity: sha512-9jPkMiIBXvPc2KywkraqsUfbfj+dHDb+JPWtSJa9MLFdrPyazI7q6WX2sUrm7R9eVR7qqv3Pas7EvQFzxKnI6w==}
+  /tailwindcss@3.3.3(ts-node@10.9.1):
+    resolution: {integrity: sha512-A0KgSkef7eE4Mf+nKJ83i75TMyq8HqY3qmFIJSWy8bNt0v1lG7jUcpGpoTFxAwYcWOphcTBLPPJg+bDfhDf52w==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -7115,7 +7119,6 @@ packages:
       postcss-load-config: 4.0.1(postcss@8.4.24)(ts-node@10.9.1)
       postcss-nested: 6.0.1(postcss@8.4.24)
       postcss-selector-parser: 6.0.11
-      postcss-value-parser: 4.2.0
       resolve: 1.22.2
       sucrase: 3.32.0
     transitivePeerDependencies:
@@ -7922,14 +7925,9 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /yaml@2.2.1:
-    resolution: {integrity: sha512-e0WHiYql7+9wr4cWMx3TVQrNwejKaEe7/rHNmQmqRjazfOP5W8PB6Jpebb5o6fIapbz9o9+2ipcaTM2ZwDI6lw==}
-    engines: {node: '>= 14'}
-
   /yaml@2.2.2:
     resolution: {integrity: sha512-CBKFWExMn46Foo4cldiChEzn7S7SRV+wqiluAb6xmueD/fGyRHIhX8m14vVGgeFWjN540nKCNVj6P21eQjgTuA==}
     engines: {node: '>= 14'}
-    dev: true
 
   /yargs-parser@20.2.9:
     resolution: {integrity: sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==}
