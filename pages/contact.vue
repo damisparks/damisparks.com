@@ -29,13 +29,6 @@ useHead({
 	meta: [
 		{ name: 'description', content: description.value },
 		{ name: 'keywords', content: pageKeyword }
-	],
-	link: [
-		{
-			key: 'canonical',
-			rel: 'canonical',
-			href: `https://damisparks.com/contact`
-		}
 	]
 })
 </script>
