@@ -10,13 +10,6 @@ useHead({
 	title: capitalizeWords(cookiePolicy.name),
 	meta: [
 		{ key: 'description', name: 'description', content: cookiePolicy.content }
-	],
-	link: [
-		{
-			key: 'canonical',
-			rel: 'canonical',
-			href: `https://damisparks.com/cookie-policy`
-		}
 	]
 })
 </script>
