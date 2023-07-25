@@ -1,49 +1,8 @@
-# Dami Sparks
+**[damisparks.com](http://damisparks.com)**
 
-This repository is my website which I built in Nuxt3.
-This repository is my sandbox for exploring new ideas and having fun. Feel free to look around and adapt whatever you like as the code is open-source, so if it helps, then great.
+This is the code and content for my personal website, built in [Nuxt](https://nuxt.com/).
 
-The site is static, meaning the project can be hosted free on any hosting service such as Netlify.
+> **NOTE**
+> I utilise this website as a testing ground for experimenting with new ideas, features, tools, and concepts. I recommend refraining from copying any code directly from this site.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-See Project Dashboard [hmm 🧐 💡⚒️](https://github.com/users/damisparks/projects/1)
+Following [Anthony Fu's example](https://github.com/antfu/antfu.me), the code is licensed under <a href='./LICENSE'>MIT</a>, and my words and original images are licensed under <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a>.
