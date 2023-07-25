@@ -21,6 +21,12 @@ const socials: ISocialsNavigation[] = [
 		iconKey: 'uil:twitter',
 		href: 'https://www.twitter.com/DamiSparks',
 		name: '@damisparks'
+	},
+	{
+		id: me.uniqueId(),
+		iconKey: 'fluent:mail-16-filled',
+		href: 'mailto:rethinkwithdami@gmail.com',
+		name: 'rethinkwithdami@gmail.com'
 	}
 ]
 
