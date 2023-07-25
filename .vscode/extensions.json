@@ -1,8 +1,8 @@
 {
 	"recommendations": [
-		"Vue.volar",
-		"Vue.vscode-typescript-vue-plugin",
-		// ESLint support.
-		"dbaeumer.vscode-eslint"
+		"vue.volar",
+		"vue.vscode-typescript-vue-plugin",
+		"dbaeumer.vscode-eslint",
+		"github.vscode-github-actions"
 	]
 }
