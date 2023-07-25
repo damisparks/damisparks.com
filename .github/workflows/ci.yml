@@ -12,26 +12,14 @@ on:
 
 jobs:
   ci:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: [18]
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout 🛎
-        uses: actions/checkout@master
-
-      - name: Pnpm Setup
-        uses: pnpm/action-setup@v2.2.4
+      - uses: actions/checkout@v3
+      - run: corepack enable
+      - uses: actions/setup-node@v3
         with:
-          version: 7
-
-      - name: Setup node env 🏗
-        uses: actions/setup-node@v3.7.0
-        with:
-          node-version: ${{ matrix.node }}
+          node-version: '18'
           cache: 'pnpm'
           check-latest: true
 
