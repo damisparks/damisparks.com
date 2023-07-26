@@ -21,8 +21,8 @@ useHead({
 	title: pageTitle.value,
 	meta: [
 		{ name: 'description', content: description },
-		{ name: 'keywords', content: keywords }
-	]
+		{ name: 'keywords', content: keywords },
+	],
 })
 </script>
 
