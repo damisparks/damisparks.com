@@ -7,7 +7,7 @@ module.exports = {
 		'./plugins/**/*.{js,ts}',
 		'./nuxt.config.{js,ts}',
 		'./app.vue',
-		'./error.vue'
+		'./error.vue',
 	],
 	darkMode: 'class',
 	theme: {
@@ -23,7 +23,7 @@ module.exports = {
 					600: '#5D75C3',
 					700: '#445FB8',
 					800: '#3A519D',
-					900: '#23254C'
+					900: '#23254C',
 				},
 				'ds-orange': '#F7C860',
 				'ds-orange-darker': '#E7CE8C',
@@ -34,16 +34,16 @@ module.exports = {
 				'ds-tertiary-darker': '#B6696A',
 				'ds-smokewhite': '#E8ECF4',
 				'ds-gray-light': '#E1E2E5',
-				linkExactActiveClass: 'tbd' // todo: to change this later.
+				linkExactActiveClass: 'tbd', // todo: to change this later.
 			},
 			fontFamily: {
 				montserrat: ["'Montserrat', sans-serif"],
-				firasans: ["'Fira Sans', sans-serif"]
-			}
-		}
+				firasans: ["'Fira Sans', sans-serif"],
+			},
+		},
 	},
 	variants: {
-		extend: {}
+		extend: {},
 	},
 	plugins: [
 		require('@tailwindcss/aspect-ratio'),
@@ -55,31 +55,32 @@ module.exports = {
 			addComponents({
 				'.btn': {
 					'@apply text-base leading-5 font-semibold rounded hover:shadow-lg p-2 font-firasans':
-						{}
+						{},
 				},
 				'.btn-ds-blue': {
-					'@apply bg-ds-blue text-white dark:bg-ds-orange dark:text-ds-blue': {}
+					'@apply bg-ds-blue text-white dark:bg-ds-orange dark:text-ds-blue':
+						{},
 				},
 				'.app-input-label': {
 					'@apply block text-sm font-medium font-firasans text-zinc-500 dark:text-zinc-400':
-						{}
+						{},
 				},
 				'.app-heading': {
-					'@apply text-zinc-800 dark:text-zinc-100 font-montserrat': {}
+					'@apply text-zinc-800 dark:text-zinc-100 font-montserrat': {},
 				},
 				'.app-text-content': {
-					'@apply text-zinc-600 dark:text-zinc-400 font-firasans': {}
+					'@apply text-zinc-600 dark:text-zinc-400 font-firasans': {},
 				},
 				'.app-text-gradient': {
 					'@apply text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 dark:from-yellow-400 dark:to-pink-600':
-						{}
-				}
+						{},
+				},
 			})
-		}
+		},
 	],
 
 	future: {
 		removeDeprecatedGapUtilities: true,
-		purgeLayersByDefault: true
-	}
+		purgeLayersByDefault: true,
+	},
 }

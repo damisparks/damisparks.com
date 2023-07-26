@@ -3,14 +3,14 @@ const { capitalizeWords } = useMe()
 const cookiePolicy = reactive({
 	name: 'privacy policy',
 	content: `
-	Learn how Dami Sparks uses cookies on their website to enhance user experience and track website usage. Our cookie policy provides clear information about the types of cookies used, how they are used, and how you can control and manage your cookie preferences. By continuing to browse the site, you consent to the use of cookies. Contact Dami Sparks for any questions or concerns about our cookie policy.`
+	Learn how Dami Sparks uses cookies on their website to enhance user experience and track website usage. Our cookie policy provides clear information about the types of cookies used, how they are used, and how you can control and manage your cookie preferences. By continuing to browse the site, you consent to the use of cookies. Contact Dami Sparks for any questions or concerns about our cookie policy.`,
 })
 
 useHead({
 	title: capitalizeWords(cookiePolicy.name),
 	meta: [
-		{ key: 'description', name: 'description', content: cookiePolicy.content }
-	]
+		{ key: 'description', name: 'description', content: cookiePolicy.content },
+	],
 })
 </script>
 <template>

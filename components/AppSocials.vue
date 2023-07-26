@@ -4,10 +4,10 @@ const socials: ISocialsNavigation[] = [
 	{
 		iconKey: 'uil:linkedin',
 		href: '//www.linkedin.com/in/damisparks',
-		name: 'LinkedIn'
+		name: 'LinkedIn',
 	},
 	{ iconKey: 'uil:github', href: '//github.com/damisparks', name: 'GitHub' },
-	{ iconKey: 'uil:twitter', href: '//twitter.com/DamiSparks', name: 'Twitter' }
+	{ iconKey: 'uil:twitter', href: '//twitter.com/DamiSparks', name: 'Twitter' },
 ]
 </script>
 

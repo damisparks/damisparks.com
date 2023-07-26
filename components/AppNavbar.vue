@@ -28,7 +28,7 @@ onBeforeUnmount(() => {
 	<div
 		:class="[
 			showNavbar ? 'translate-y-0' : '-translate-y-full',
-			'transform-gpu transition-transform duration-500 sticky top-0 z-50'
+			'transform-gpu transition-transform duration-500 sticky top-0 z-50',
 		]"
 	>
 		<AppContainer class="pt-2">
