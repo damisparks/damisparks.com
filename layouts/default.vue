@@ -12,13 +12,13 @@
 		<AppNavbar />
 
 		<!-- main -->
-		<main class="flex-auto">
-			<AppContainer>
-				<slot />
-			</AppContainer>
-		</main>
+		<div class="flex-auto">
+			<AppContainer><slot /></AppContainer>
+		</div>
 
-		<!-- footer -->
-		<AppFooter />
+		<div>
+			<!-- footer -->
+			<AppFooter />
+		</div>
 	</main>
 </template>
