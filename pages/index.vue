@@ -9,9 +9,9 @@ const me = ref({
 		'A skilled Vue.js developer to build responsive and user-friendly interfaces for your web applications',
 		'Expertise in integrating Vue.js with RESTful APIs and deploying on cloud platforms like AWS, Azure and Google Cloud',
 		'A reliable and experienced freelance developer who can deliver scalable applications timely within the budget for clients across various industries',
-		'A developer who focuses on clean, high-quality and well-documented code'
+		'A developer who focuses on clean, high-quality and well-documented code',
 	],
-	specialisation: `I specialise in frontend and backend development, testing, data science, and cloud computing. So let's work together to bring your project to life.`
+	specialisation: `I specialise in frontend and backend development, testing, data science, and cloud computing. So let's work together to bring your project to life.`,
 })
 </script>
 
