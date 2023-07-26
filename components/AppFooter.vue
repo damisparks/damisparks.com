@@ -1,31 +1,35 @@
+<script lang="ts" setup>
+const year = new Date().getFullYear()
+</script>
 <template>
 	<AppContainer>
 		<footer>
-			<div class="py-12">
+			<div class="py-4">
 				<div class="flex justify-center space-x-6 md:order-2">
 					<AppSocials />
 				</div>
 				<div class="mt-8 md:order-1 md:mt-0">
-					<p class="mt-8 text-center text-sm leading-5">
-						<NuxtLink to="/privacy" class="text-zinc-500 mr-3">
-							Privacy Policy
+					<p class="text-center text-sm app-text-content">
+						<NuxtLink
+							class="underline"
+							to="https://creativecommons.org/licenses/by-sa/4.0/"
+						>
+							CC BY-SA 4.0
 						</NuxtLink>
-
-						<!-- copyright -->
-						&copy; {{ new Date().getFullYear() }}
-						<NuxtLink to="/" class="text-zinc-500">DamiSparks</NuxtLink>, All
-						rights reserved.
+						&copy; 2019-{{ year }} Dami Sparks
 					</p>
 				</div>
 			</div>
 			<p class="my-4 font-montserrat italic text-center text-sm text-zinc-600">
-				Logo by
-				<a
-					class="text-ds-blue dark:text-ds-teal hover:opacity-90 font-bold"
-					href="mailto:rubenfaria@live.com"
-				>
-					Ruben
-				</a>
+				<small>
+					Logo Designed by
+					<a
+						class="text-ds-blue dark:text-ds-teal hover:opacity-90 font-bold"
+						href="mailto:rubenfaria@live.com"
+					>
+						Ruben
+					</a>
+				</small>
 			</p>
 		</footer>
 		<CookieConsent />
