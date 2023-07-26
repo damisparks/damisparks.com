@@ -14,28 +14,28 @@ const socials: ISocialsNavigation[] = [
 		id: me.uniqueId(),
 		iconKey: 'uil:linkedin',
 		href: 'https://www.linkedin.com/in/damisparks',
-		name: 'Dami Sparks'
+		name: 'Dami Sparks',
 	},
 	{
 		id: me.uniqueId(),
 		iconKey: 'uil:twitter',
 		href: 'https://www.twitter.com/DamiSparks',
-		name: '@damisparks'
+		name: '@damisparks',
 	},
 	{
 		id: me.uniqueId(),
 		iconKey: 'fluent:mail-16-filled',
 		href: 'mailto:rethinkwithdami@gmail.com',
-		name: 'rethinkwithdami@gmail.com'
-	}
+		name: 'rethinkwithdami@gmail.com',
+	},
 ]
 
 useHead({
 	title: pageTitle.value,
 	meta: [
 		{ name: 'description', content: description.value },
-		{ name: 'keywords', content: pageKeyword }
-	]
+		{ name: 'keywords', content: pageKeyword },
+	],
 })
 </script>
 
@@ -160,7 +160,7 @@ useHead({
 						<ul role="list" class="mt-8 flex flex-col space-y-4">
 							<li v-for="item in socials" :key="`socials-${item.name}`">
 								<NuxtLink
-									class="text-ds-smokewhite hover:text-indigo-100"
+									class="text-ds-smokewhite hover:text-indigo-100 flex items-center"
 									:to="item.href"
 									rel="noopener noreferrer"
 									target="_blank"
