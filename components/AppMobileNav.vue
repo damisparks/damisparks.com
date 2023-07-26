@@ -42,7 +42,7 @@ defineProps<{ navList: INavLink[] }>()
 								$route.name === href
 									? 'bg-ds-blue-accent-200  dark:bg-zinc-700 text-zinc-900 dark:text-zinc-300'
 									: 'text-zinc-900 dark:text-zinc-200',
-								'group block w-full items-center rounded-lg text-sm'
+								'group block w-full items-center rounded-lg text-sm',
 							]"
 							:to="href"
 						>

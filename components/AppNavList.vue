@@ -13,7 +13,7 @@ defineProps<{ navList: INavLink[] }>()
 				$route.name === href
 					? 'app-heading'
 					: 'text-zinc-600 dark:text-zinc-400',
-				'px-2 hover:text-zinc-900 dark:hover:text-zinc-200'
+				'px-2 hover:text-zinc-900 dark:hover:text-zinc-200',
 			]"
 		>
 			{{ name }}

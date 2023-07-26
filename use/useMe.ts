@@ -55,6 +55,6 @@ export function useMe() {
 	return {
 		capitalizeText,
 		capitalizeWords,
-		uniqueId
+		uniqueId,
 	}
 }
