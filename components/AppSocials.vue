@@ -1,13 +1,26 @@
 <script setup lang="ts">
 import { ISocialsNavigation } from '@/types'
+const me = useMe()
 const socials: ISocialsNavigation[] = [
 	{
+		id: me.uniqueId(),
 		iconKey: 'uil:linkedin',
 		href: '//www.linkedin.com/in/damisparks',
 		name: 'LinkedIn',
 	},
-	{ iconKey: 'uil:github', href: '//github.com/damisparks', name: 'GitHub' },
-	{ iconKey: 'uil:twitter', href: '//twitter.com/DamiSparks', name: 'Twitter' },
+
+	{
+		id: me.uniqueId(),
+		iconKey: 'uil:github',
+		href: '//github.com/damisparks',
+		name: 'GitHub',
+	},
+	{
+		id: me.uniqueId(),
+		iconKey: 'uil:twitter',
+		href: '//twitter.com/DamiSparks',
+		name: 'Twitter',
+	},
 ]
 </script>
 
