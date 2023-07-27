@@ -55,7 +55,13 @@ export default defineNuxtConfig({
 		},
 	},
 
-	modules: ['@nuxt/image', 'nuxt-icon', '@nuxtjs/color-mode', 'nuxt-gtag'],
+	modules: [
+		'@nuxt/image',
+		'nuxt-icon',
+		'@nuxtjs/color-mode',
+		'nuxt-gtag',
+		'@nuxt/content',
+	],
 
 	// nuxt image configuration
 	image: {
