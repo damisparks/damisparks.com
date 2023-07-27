@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+definePageMeta({ title: 'Blog' })
+</script>
 <template>
 	<NuxtLayout name="blog">
 		<header class="relative">
@@ -15,5 +17,3 @@
 		</header>
 	</NuxtLayout>
 </template>
-
-<style scoped></style>
