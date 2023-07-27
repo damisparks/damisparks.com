@@ -10,6 +10,7 @@ const links: INavLink[] = [
 	{ name: 'Projects', href: 'projects', id: me.uniqueId() },
 	{ name: 'About ', href: 'about', id: me.uniqueId() },
 	{ name: 'Contact', href: 'contact', id: me.uniqueId() },
+	{ name: 'Blog', href: 'blog', id: me.uniqueId() },
 ]
 
 const awards: IAchievement[] = [

@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="lg:max-w-3xl mx-auto pt-8 lg:pt-16 content-visibility-auto contain-intrinsic-size-[auto_400px] border"
+		class="lg:max-w-3xl mx-auto pt-8 lg:pt-16 content-visibility-auto contain-intrinsic-size-[auto_400px]"
 	>
 		<div class="flex flex-col gap-9">
 			<h1
