@@ -2,9 +2,7 @@
 export default defineNuxtConfig({
 	app: {
 		head: {
-			title:
-				'Freelance Full-Stack Developer, Fractional CTO, Mentor,and Technical Writer',
-			titleTemplate: '%s | Dami Sparks',
+			htmlAttrs: { lang: 'en' },
 			meta: [
 				{ charset: 'utf-8' },
 				{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -57,7 +55,13 @@ export default defineNuxtConfig({
 		},
 	},
 
-	modules: ['@nuxt/image', 'nuxt-icon', '@nuxtjs/color-mode', 'nuxt-gtag'],
+	modules: [
+		'@nuxt/image',
+		'nuxt-icon',
+		'@nuxtjs/color-mode',
+		'nuxt-gtag',
+		'@nuxt/content',
+	],
 
 	// nuxt image configuration
 	image: {
