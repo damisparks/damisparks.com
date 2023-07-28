@@ -2,8 +2,18 @@
 definePageMeta({ title: 'Blog' })
 
 const { data: entries } = useAsyncData('blogentries', () => {
-	return queryContent('/blog').find()
+	return queryContent('/blog').only(['title', 'date', '_path']).find()
 })
+
+const computedDate = (date: string) => {
+	if (!date) return
+	const d = new Date(date)
+	return d.toLocaleDateString('en-US', {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric',
+	})
+}
 </script>
 <template>
 	<NuxtLayout name="blog">
@@ -20,19 +30,25 @@ const { data: entries } = useAsyncData('blogentries', () => {
 			</div>
 		</header>
 		<!-- <pre>{{ entries }}</pre> -->
-		<div
+		<section
 			class="grid grid-cols-1 space-y-6 sm:space-y-0 sm:grid-cols-2 sm:gap-6 py-4"
 		>
-			<article v-for="{ path, title, date } in entries" :key="path">
-				<div
-					class="shadow-sm p-4 rounded bg-zinc-200/90 text-zinc-700 dark:text-zinc-300 dark:bg-zinc-700/90"
-				>
+			<NuxtLink
+				v-for="{ _path, title, date } in entries"
+				:key="_path"
+				:to="_path"
+				:title="title"
+				class="shadow-sm p-4 rounded bg-zinc-200/90 text-zinc-700 dark:text-zinc-300 dark:bg-zinc-700/90 space-y-1"
+			>
+				<article>
 					<span class="text-sm">
-						<time :datetime="date" class="text-zinc-500">{{ date }}</time>
+						<time :datetime="date" class="text-zinc-500">
+							{{ computedDate(date) }}
+						</time>
 					</span>
 					<p>{{ title }}</p>
-				</div>
-			</article>
-		</div>
+				</article>
+			</NuxtLink>
+		</section>
 	</NuxtLayout>
 </template>
