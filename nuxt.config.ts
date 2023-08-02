@@ -4,6 +4,7 @@ export default defineNuxtConfig({
 	nitro: {
 		preset: 'service-worker',
 	},
+
 	app: {
 		head: {
 			htmlAttrs: { lang: 'en' },
