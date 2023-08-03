@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@headlessui/vue':
     specifier: 1.7.14
@@ -13,8 +17,8 @@ dependencies:
 
 devDependencies:
   '@commitlint/cli':
-    specifier: 17.6.5
-    version: 17.6.5
+    specifier: 17.6.7
+    version: 17.6.7
   '@commitlint/config-conventional':
     specifier: 17.6.5
     version: 17.6.5
@@ -385,8 +389,8 @@ packages:
       mime: 3.0.0
     dev: true
 
-  /@commitlint/cli@17.6.5:
-    resolution: {integrity: sha512-3PQrWr/uo6lzF5k7n5QuosCYnzaxP9qGBp3jhWP0Vmsa7XA6wrl9ccPqfQyXpSbQE3zBROVO3TDqgPKe4tfmLQ==}
+  /@commitlint/cli@17.6.7:
+    resolution: {integrity: sha512-nzZmfO5KIOupYppn1MsnYX/80I+KDlxiwkks3CJT0XT+t34UgqGi3eSyEuzgcIjPlORk5/GMaAEiys78iLfGMg==}
     engines: {node: '>=v14'}
     hasBin: true
     dependencies:
@@ -3753,7 +3757,7 @@ packages:
     dependencies:
       debug: 3.2.7
       is-core-module: 2.12.1
-      resolve: 1.22.3
+      resolve: 1.22.2
     transitivePeerDependencies:
       - supports-color
     dev: true
