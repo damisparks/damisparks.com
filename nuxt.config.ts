@@ -1,5 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+	// https://content.nuxtjs.org/guide/recipes/sitemap
+	nitro: {
+		prerender: {
+			routes: ['/sitemap.xml'],
+		},
+	},
 	app: {
 		head: {
 			htmlAttrs: { lang: 'en' },
