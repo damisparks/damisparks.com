@@ -18,7 +18,7 @@ const socials: ISocialsNavigation[] = [
 	},
 	{
 		id: me.uniqueId(),
-		iconKey: 'uil:twitter',
+		iconKey: 'ri:twitter-x-fill',
 		href: 'https://www.twitter.com/DamiSparks',
 		name: '@damisparks',
 	},
