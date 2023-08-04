@@ -31,7 +31,7 @@ useHead({
 		<AppPageHeader>
 			<AppTitle>Projects</AppTitle>
 		</AppPageHeader>
-		<header class="max-w-2xl mx-auto mt-16 md:mt-32">
+		<section class="max-w-2xl mx-auto mt-16 md:mt-32">
 			<h1
 				class="text-4xl font-montserrat font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-center sm:text-5xl"
 			>
@@ -40,10 +40,10 @@ useHead({
 			<h2
 				class="mt-6 space-y-7 text-base font-firasans text-zinc-600 dark:text-zinc-400 sm:text-center"
 			>
-				My main focus these days is Actif — a tech company focusing on improving
-				the health of older people with fitness and cognitive programs
+				My main focus these days is building scalable digital products for my
+				clients. I also work on open-source projects in my spare time.
 			</h2>
-		</header>
+		</section>
 
 		<section class="max-w-7xl mx-auto space-y-6">
 			<div class="max-w-2xl mx-auto space-y-6 mt-12 font-firasans">

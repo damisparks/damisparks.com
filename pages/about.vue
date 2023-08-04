@@ -14,8 +14,11 @@
 		<AppPageHeader>
 			<AppTitle>Meet Dami</AppTitle>
 		</AppPageHeader>
-		<main>
-			<ContentDoc path="about" />
+		<main class="max-w-7xl mx-auto">
+			<div class="max-w-2xl mx-auto">
+				<hr class="my-4 h-px border-0 bg-zinc-200 dark:bg-zinc-300" />
+				<ContentDoc path="about" />
+			</div>
 		</main>
 	</NuxtLayout>
 </template>
