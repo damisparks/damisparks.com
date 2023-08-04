@@ -9,7 +9,7 @@ He is a passionate open-source enthusiast and a Vue.js & Nuxt full-stack develop
 
 He aims to craft solid and scalable digital products while helping others find their passion for coding. He is all about combining innovative development and critical thinking to make ideas a reality.
 
-His passion lies in curiosity by envisioning ideas and turning them into reality. You can find my [complete projects list here](/projects).
+His passion lies in curiosity by envisioning ideas and turning them into reality. You can find his [complete projects list here](/projects).
 
 He is deeply involved in the vibrant open-source community by contributing to [Nuxt-validate](https://github.com/lewyuburi/nuxt-validate), [@nuxtjs/eslint-module](https://github.com/nuxt-modules/eslint), [@nuxtjs/google-fonts](https://github.com/nuxt-modules/google-fonts) and more.
 
