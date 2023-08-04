@@ -175,16 +175,6 @@ const projects: IPortfolioItem[] = [
 	},
 	{
 		id: me.uniqueId(),
-		name: 'TodoApp',
-		websiteUrl: 'https://github.com/damisparks/todo_app',
-		description: `
-				This app is a  Full Stack Todo App Using Vue.JS for the front end and Adonis.JS on the backend.
-				The app demonstrates the basic concepts in Vue.JS and AdonisJS. I am still maintaining the app. I have plans to update the app to Vue3.
-				`,
-		type: 'open-source',
-	},
-	{
-		id: me.uniqueId(),
 		name: 'How to become Microsoft Certified: Azure AI Engineer Associate',
 		websiteUrl:
 			'https://github.com/damisparks/microsoft-azure-ai-engineer-associate',
@@ -218,6 +208,13 @@ const projects: IPortfolioItem[] = [
 		name: '@nuxtjs/google-fonts',
 		description: 'Google Fonts module for NuxtJS',
 		websiteUrl: 'https://github.com/nuxt-modules/google-fonts',
+		type: 'open-source',
+	},
+	{
+		id: me.uniqueId(),
+		name: '@nuxtjs/pwa',
+		description: 'Zero config PWA solution for Nuxt.js',
+		websiteUrl: 'https://github.com/nuxt-community/pwa-module',
 		type: 'open-source',
 	},
 ]
