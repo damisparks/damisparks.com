@@ -45,7 +45,6 @@
 	},
 	"dependencies": {
 		"@headlessui/vue": "1.7.14",
-		"@nuxt/kit": "3.6.5",
 		"@tailwindcss/aspect-ratio": "0.4.2",
 		"@tailwindcss/forms": "0.5.3"
 	}
