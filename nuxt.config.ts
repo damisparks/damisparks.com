@@ -1,9 +1,25 @@
+import { useNuxt } from '@nuxt/kit'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	// https://content.nuxtjs.org/guide/recipes/sitemap
 	nitro: {
 		prerender: {
 			routes: ['/sitemap.xml'],
+		},
+	},
+	// https://nuxt.com/docs/guide/going-further/hooks
+	hooks: {
+		'components:extend': components => {
+			/**
+			 * @description This code ensures that we can run our markdown renderer on the client side in development mode (for HMR).
+			 * @see https://github.com/danielroe/roe.dev/blob/main/nuxt.config.ts
+			 */
+			const nuxt = useNuxt()
+			for (const comp of components) {
+				if (comp.pascalName === 'StaticMarkdownRenderer' && nuxt.options.dev) {
+					comp.mode = 'all'
+				}
+			}
 		},
 	},
 	app: {

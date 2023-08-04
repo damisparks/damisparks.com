@@ -3,7 +3,6 @@ import { projectSpotlight as spotlights } from '@/constants'
 const me = ref({
 	name: 'Dami',
 	shortDescription: `I'm a digital freelance full-stack developer, mentor and technical writer passionate about crafting solid and scalable digital products and helping others find their passion for coding. I'm all about combining innovative development and product thinking to bring ideas into reality.`,
-	title: 'Freelance Vue.js Fullstack Developer for Hire',
 	role: 'Vue.js Fullstack Software Developer | Mentor | Digital Freelancer',
 	wantCriteria: [
 		'A skilled Vue.js developer to build responsive and user-friendly interfaces for your web applications',
@@ -18,15 +17,15 @@ const me = ref({
 <template>
 	<NuxtLayout>
 		<div class="sm:py-24 sm:px-6 lg:px-8">
-			<header class="mt-8">
-				<div class="mx-auto max-w-2xl lg:max-w-5xl">
-					<h1
-						class="text-4xl font-normal tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl"
-					>
-						{{ me.title }}
-					</h1>
-				</div>
+			<header class="leading-none mt-[5vw] mb-[1vw]">
+				<h1
+					class="text-2xl font-normal tracking-tight text-zinc-800 dark:text-zinc-100"
+				>
+					Welcome!
+				</h1>
 			</header>
+
+			<StaticMarkdownRenderer path="/" />
 
 			<section class="space-y-7 pt-8 lg:pt-16 mx-auto max-w-2xl lg:max-w-5xl">
 				<div>
@@ -59,17 +58,7 @@ const me = ref({
 			<section>
 				<hr class="my-10 h-px border-0 bg-zinc-200 dark:bg-zinc-300" />
 
-				<div class="flex flex-col gap-10 pt-12 sm:flex-row">
-					<NuxtImg
-						loading="lazy"
-						class="aspect-[4/5] w-56 flex-none rounded-2xl object-cover"
-						provider="cloudinary"
-						src="/damisparks.com/ds-portrait-tiny.webp"
-						height="800"
-						width="800"
-						format="webp"
-						alt="dami sparks omifare"
-					/>
+				<div class="flex flex-col gap-10 sm:flex-row">
 					<div class="max-w-xl flex-auto">
 						<h3
 							class="text-lg font-firasans font-semibold leading-8 tracking-tight text-zinc-800 dark:text-zinc-100"
