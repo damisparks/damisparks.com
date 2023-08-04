@@ -13,6 +13,6 @@ Read more 👉🏾[About me](/about)
 
 When I'm not coding, I indulge in music. I play the drum 🥁 and guitar 🎸, fueling my creativity and inspiring my development journey. I also enjoy playing tennis and dancing, seeking inspiration from the world around me.
 
-If you like my work or you're looking for a skilled [Vue.js](https://vuejs.org) developer to work on your project, He is available for freelance projects, mentorship opportunities, and technical writing engagements. Let's work together to bring your project to life and make a lasting impact.
+Suppose you like my work or you're looking for a [Vue.js](https://vuejs.org) developer to work on your project. In that case, He is available for freelance projects, mentorship opportunities, and technical writing engagements. Let's work together to bring your project to life and make a lasting impact.
 
-Find him on his socials
+Find him on his socials.
