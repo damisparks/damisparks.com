@@ -12,7 +12,7 @@
 		<AppNavbar />
 
 		<!-- main -->
-		<div class="flex-auto">
+		<div class="flex-auto py-4 sm:py-8 lg:px-8">
 			<AppContainer><slot /></AppContainer>
 		</div>
 
