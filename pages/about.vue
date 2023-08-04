@@ -12,9 +12,7 @@
 			/>
 		</Head>
 		<AppPageHeader>
-			<header>
-				<AppTitle>Meet Dami</AppTitle>
-			</header>
+			<AppTitle>Meet Dami</AppTitle>
 		</AppPageHeader>
 		<main>
 			<ContentDoc path="about" />
