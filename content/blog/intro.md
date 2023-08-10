@@ -6,6 +6,8 @@ tags:
 description: It has been a while since I worked on my blog. Now, I have made it a goal to get back to it.
 ---
 
+## A short intro to my blog
+
 Hey there ✋🏾!
 It's been a while since I've written on my blog, but I'm excited to get back into it. I had to take a break because I was busy with my startup, Actif, but I left in June 2023.
 
