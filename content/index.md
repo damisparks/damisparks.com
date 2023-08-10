@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: Home
-=======
 title: Blog
->>>>>>> main
 description: Fractional CTO | Passionate Open Source Enthusiast | Vue.js & Nuxt Fullstack Developer | Mentor | Technical Writer
 ---
 
