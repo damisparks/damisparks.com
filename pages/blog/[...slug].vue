@@ -7,5 +7,6 @@ const { data: post } = useAsyncData(`content-${path}`, () => {
 <template>
 	<NuxtLayout name="blog">
 		<ContentRenderer v-if="post" :value="post" />
+		{{ post }}
 	</NuxtLayout>
 </template>

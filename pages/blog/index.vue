@@ -29,7 +29,6 @@ const computedDate = (date: string) => {
 				</h1>
 			</div>
 		</header>
-		<!-- <pre>{{ entries }}</pre> -->
 		<section
 			class="grid grid-cols-1 space-y-6 sm:space-y-0 sm:grid-cols-2 sm:gap-6 py-4"
 		>

@@ -7,6 +7,8 @@ tags:
 description: In this article, I will show you how to provision a Node app on Amazon EKS using Terraform.
 ---
 
+# How to provision a Node app on Amazon EKS using Terraform
+
 I am writing this article to show you how to provision a Node app on Amazon EKS using Terraform. I got the idea from an interview for a Senior Node Backend Engineer position at an AWS company. The question is to create a Node app on Amazon EKS using Terraform. I had never used Terraform before, so I had to learn it from scratch. I found it very interesting and decided to write an article about it.
 
 In this article, I am assuming you know about [AWS EKS](https://aws.amazon.com/eks/), [Terraform](https://www.terraform.io/) and how to set them up. If you don't, I recommend you read about them before reading this article.
