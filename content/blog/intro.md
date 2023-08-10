@@ -7,6 +7,6 @@ description: It has been a while since I worked on my blog. Now, I have made it 
 ---
 
 Hey there ✋🏾!
-It's been a while since I've written on my blog, but I'm excited to get back into it. I had to take a break because I was busy with my startup, Actif, but I left in June 2023.
+It's been a while since I've written on my blog, but I'm excited to get back into it. I had to take a break because I was busy with my startup, [Actif](https://www.actif.online), but I left in June 2023.
 
 The startup experience taught me to focus more on what users want, so I will start posting an article every two weeks, starting with this one. I'll cover various topics, but I want to share my experiences and thoughts with you. I am looking forward to connecting with you through my posts!
