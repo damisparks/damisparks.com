@@ -3,6 +3,7 @@ const route = useRoute()
 const { data: post } = useAsyncData(`content-${route.path}`, () => {
 	return queryContent().where({ _path: route.path }).findOne()
 })
+route.meta.title = post.value?.title
 </script>
 <template>
 	<NuxtLayout name="blog">

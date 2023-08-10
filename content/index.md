@@ -1,5 +1,5 @@
 ---
-title: Dami Sparks
+title: Blog
 description: Fractional CTO | Passionate Open Source Enthusiast | Vue.js & Nuxt Fullstack Developer | Mentor | Technical Writer
 ---
 
