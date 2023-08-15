@@ -8,7 +8,17 @@ route.meta.title = post.value?.title
 <template>
 	<NuxtLayout name="blog">
 		<main>
-			<ContentRenderer v-if="post" :value="post" />
+			<h1
+				class="app-heading bg-zinc-100 dark:text-zinc-300 dark:bg-black font-normal text-xl md:text-2xl"
+			>
+				{{ post?.title }}
+			</h1>
+			<div>
+				<AppTime :date="post?.date" />
+			</div>
+			<section class="mt-4">
+				<ContentRenderer v-if="post" :value="post" />
+			</section>
 		</main>
 	</NuxtLayout>
 </template>
