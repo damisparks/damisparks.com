@@ -1,5 +1,11 @@
 <script setup lang="ts">
 const { capitalizeWords } = useMe()
+const consented = useCookie('ds-ds_gdpr_consent', { sameSite: 'lax' })
+
+const setConsent = (choice: boolean) => {
+	consented.value = JSON.stringify(choice)
+	if (choice) useGtagConsent(choice)
+}
 const cookiePolicy = reactive({
 	name: 'privacy policy',
 	content: `
@@ -36,6 +42,14 @@ useHead({
 					you contact the developer. This information is collected to respond to
 					your inquiries and provide services.
 				</p>
+				<button
+					v-if="typeof consented === 'undefined'"
+					type="button"
+					class="btn bg-ds-smokewhite text-ds-blue shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-ds-blue-accent-200 mb-2 rounded-md"
+					@click="setConsent(false)"
+				>
+					Do not track
+				</button>
 				<p class="app-text-content">
 					The website may also collect non-personal information such as browser
 					type, IP address, and other technical information. This information is
