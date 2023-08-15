@@ -80,10 +80,6 @@ export default defineNuxtConfig({
 	runtimeConfig: {
 		publicGtagId: '',
 	},
-	// https://nuxt.com/modules/gtag
-	// gtag: {
-	// 	initialConsent:
-	// },
 
 	// https://tailwindcss.com/docs/guides/nuxtjs#3
 	css: ['~/assets/css/main.css'],
