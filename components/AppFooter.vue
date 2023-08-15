@@ -17,6 +17,9 @@ const year = new Date().getFullYear()
 							CC BY-SA 4.0
 						</NuxtLink>
 						&copy; 2019-{{ year }} Dami Sparks
+						<NuxtLink class="underline" :to="{ name: 'privacy' }">
+							Privacy Policy
+						</NuxtLink>
 					</p>
 				</div>
 			</div>
@@ -32,6 +35,5 @@ const year = new Date().getFullYear()
 				</small>
 			</p>
 		</footer>
-		<CookieConsent />
 	</AppContainer>
 </template>
