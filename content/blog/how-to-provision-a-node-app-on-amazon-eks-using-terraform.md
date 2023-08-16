@@ -38,7 +38,7 @@ So, I started by creating a folder `terraform-provison-eks` to encapsulate the f
 
 Open the new folder and create a file named `variables.tf`, add the following Terraform code to define our Terraform variables:
 
-```terraform
+```hcl
 variable "region" {
   description = "AWS region"
  type = string
@@ -52,7 +52,7 @@ This file defines the region we will create the Amazon EKS cluster. The default 
 
 Next, create a file named `terraform.tf` and open it. Add the following content to the file.
 
-```terraform
+```hcl
 terraform {
   required_providers {
     aws = {
@@ -91,7 +91,7 @@ terraform {
 
 In the `terraform-provison-eks` folder, create a new file named `vpc.tf`. Open the new file and add the following content.
 
-```terraform
+```hcl
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
   version = "3.14.2"
@@ -126,7 +126,7 @@ module "vpc" {
 
 In the `terraform-provison-eks` folder, create a new file named `eks-cluster.tf`. Open the new file and add the following content to configure the AWS EKS cluster:
 
-```terraform
+```hcl
 module "eks" {
   source = "terraform-aws-modules/eks/aws"
   version = "19.0.4"
@@ -175,7 +175,7 @@ Up next, we will create `main.ts` file
 
 In the `terraform-provison-eks` folder, create a new file named `main.tf`. Open the new file and add the following content:
 
-```terraform
+```hcl
 provider "kubernetes" {
   host = module.eks.cluster_endpoint
   cluster_ca_certificate = base64decode(module.eks.cluster_certificate_authority_data)
@@ -206,7 +206,7 @@ Now, let us create the `outputs.tf`
 
 In the `terraform-provison-eks` folder, create a new file named `outputs.tf`. Open the new file and add the following content:
 
-```terraform
+```hcl
 output "cluster_name" {
   description = "Amazon Web Service EKS Cluster Name"
   value = module.eks.cluster_name

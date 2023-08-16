@@ -80,9 +80,9 @@ export default defineNuxtConfig({
 
 	content: {
 		highlight: {
-			preload: ['zsh', 'vim'],
+			preload: ['zsh', 'hcl'],
 			theme: {
-				default: 'monokai',
+				default: 'github-light',
 				dark: 'github-dark',
 			},
 		},
