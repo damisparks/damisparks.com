@@ -22,8 +22,16 @@ withDefaults(
 				<small class="mr-2" :class="copied ? 'text-green-600' : ''">
 					{{ copied ? 'Copied' : 'Copy' }}
 				</small>
-				<button role="button" @click="copy(code)">
-					<Icon name="fluent:copy-20-regular" class="h-6 w-6 cursor-pointer" />
+				<button role="button" title="Copy" @click="copy(code)">
+					<Icon
+						:name="
+							copied
+								? 'fluent:clipboard-checkmark-20-regular'
+								: 'fluent:clipboard-20-regular'
+						"
+						class="h-6 w-6 cursor-pointer"
+						:class="copied ? 'text-green-600' : ''"
+					/>
 				</button>
 			</span>
 			<p v-else class="px-2 py-1 text-sm">
