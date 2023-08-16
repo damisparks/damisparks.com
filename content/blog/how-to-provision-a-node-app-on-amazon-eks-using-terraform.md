@@ -248,4 +248,4 @@ terraform init
 
 The command will output the following in your console. Yours might be different. However, at the time of writing, this was my output.
 
-![terraform init output](https://res.cloudinary.com/damisparks/image/upload/v1692182195/damisparks.com/blog/terraform-init-output.png)
+![terraform init output](/img/terraform-init-output.png){height="372" width="706"}
