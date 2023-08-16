@@ -21,12 +21,68 @@ Below are some of the resources I used to learn about AWS EKS and Terraform:
 
 ## The Question I Was Asked During the Interview
 
-1. Time is of the essence, you have 1 hour.
-2. You will have to:
-   1. Provision an EKS cluster within a VPC (virtual private cloud) in AWS using Terraform
-   2. Create a basic HelloWorld application
-   3. Have your app up and running in EKS
-   4. The deployed application should be accessible through the public traffic.
-   5. Application could be developed with either Flask or Node
+I was given one hour to finish it.
+The task goes thus:
+
+- Provision an EKS cluster within a VPC (virtual private cloud) in AWS using Terraform
+- Create a basic HelloWorld application
+- Have your app up and running in EKS
+- The deployed application should be accessible through the public traffic.
+- Application could be developed with either Flask or Node
 
 ## The Solution
+
+So, I started by creating a folder `terraform-provison-eks` to encapsulate the files and scripts.
+
+### Create a `variables.tf` file
+
+Open the new folder and create a file named `variables.tf`, add the following Terraform code to define our Terraform variables:
+
+```
+variable "region" {
+  description = "AWS region"
+ type = string
+ default = "eu-west-1"
+}
+```
+
+This file defines the region we will create the Amazon EKS cluster. The default region is `eu-west-1`.
+
+### Create a `terraform.tf` file
+
+Next, create a file named `terraform.tf` and open it. Add the following content to the file.
+
+```
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "~> 4.46.0"
+    }
+
+    random = {
+      source = "hashicorp/random"
+      version = "~> 3.4.3"
+    }
+
+    tls = {
+      source = "hashicorp/tls"
+      version = "~> 4.0.4"
+    }
+
+    cloudinit = {
+      source = "hashicorp/cloudinit"
+      version = "~> 2.2.0"
+    }
+
+    kubernetes = {
+      source = "hashicorp/kubernetes"
+      version = "~> 2.16.1"
+    }
+  }
+
+  required_version = "~> 1.3"
+}
+```
+
+This file defines the Terraform AWS provider, allowing Terraform infrastructure-as-code (IaC) to interact with the AWS cloud. Terraform will use the AWS provider from `hashicorp/aws`.
