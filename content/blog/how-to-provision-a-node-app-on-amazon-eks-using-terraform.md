@@ -38,7 +38,7 @@ So, I started by creating a folder `terraform-provison-eks` to encapsulate the f
 
 Open the new folder and create a file named `variables.tf`, add the following Terraform code to define our Terraform variables:
 
-```
+```terraform
 variable "region" {
   description = "AWS region"
  type = string
@@ -52,7 +52,7 @@ This file defines the region we will create the Amazon EKS cluster. The default 
 
 Next, create a file named `terraform.tf` and open it. Add the following content to the file.
 
-```
+```terraform
 terraform {
   required_providers {
     aws = {
@@ -91,7 +91,7 @@ terraform {
 
 In the `terraform-provison-eks` folder, create a new file named `vpc.tf`. Open the new file and add the following content.
 
-```
+```terraform
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
   version = "3.14.2"
@@ -126,7 +126,7 @@ module "vpc" {
 
 In the `terraform-provison-eks` folder, create a new file named `eks-cluster.tf`. Open the new file and add the following content to configure the AWS EKS cluster:
 
-```
+```terraform
 module "eks" {
   source = "terraform-aws-modules/eks/aws"
   version = "19.0.4"
@@ -168,3 +168,84 @@ module "eks" {
 ```
 
 > Terraform will use the `terraform-aws-modules/eks/aws` module to configure and provision the AWS EKS cluster. It will create a `t3.small` instance type for the `eks_managed_node_groups`.
+
+Up next, we will create `main.ts` file
+
+### Create a `main.tf` file
+
+In the `terraform-provison-eks` folder, create a new file named `main.tf`. Open the new file and add the following content:
+
+```terraform
+provider "kubernetes" {
+  host = module.eks.cluster_endpoint
+  cluster_ca_certificate = base64decode(module.eks.cluster_certificate_authority_data)
+}
+
+provider "aws" {
+  region = "eu-west-1"
+  profile= "damisparks"
+}
+
+data "aws_availability_zones" "available" {}
+
+locals {
+  cluster_name = "demo-eks-${random_string.suffix.result}"
+}
+
+resource "random_string" "suffix" {
+  length = 8
+  special = false
+}
+```
+
+> This file defines the AWS Cloud availability zones and the AWS EKS Cluster name.
+
+Now, let us create the `outputs.tf`
+
+### Create `outputs.tf` file
+
+In the `terraform-provison-eks` folder, create a new file named `outputs.tf`. Open the new file and add the following content:
+
+```terraform
+output "cluster_name" {
+  description = "Amazon Web Service EKS Cluster Name"
+  value = module.eks.cluster_name
+}
+
+output "cluster_endpoint" {
+  description = "Endpoint for Amazon Web Service EKS "
+  value = module.eks.cluster_endpoint
+}
+
+output "region" {
+  description = "Amazon Web Service EKS Cluster region"
+  value = var.region
+}
+
+
+output "cluster_security_group_id" {
+  description = "Security group ID for the Amazon Web Service EKS Cluster "
+  value = module.eks.cluster_security_group_id
+}
+```
+
+This file defines the outputs to be displayed in your terminal after running the Terraform commands. Using the following files, Terraform will output the
+
+- **cluster_name**
+- **cluster_endpoint**
+- **region**
+- and **cluster_security_group_id**.
+
+Let’s run the Terraform commands to create and provision the Amazon EKS cluster using Terraform. We will start with the `terraform init` command.
+
+### Terraform init command
+
+This command will initialise the Terraform AWS EKS modules and the Terraform backend. It will download the modules from the [Terraform registry](https://registry.terraform.io/terraform-aws-modules/eks/aws). It will also download and install the AWS EKS provider plugins from the `hashicorp/aws`:
+
+```zsh
+terraform init
+```
+
+The command will output the following in your console. Yours might be different. However, at the time of writing, this was my output.
+
+![terraform init output](https://res.cloudinary.com/damisparks/image/upload/v1692182195/damisparks.com/blog/terraform-init-output.png)
