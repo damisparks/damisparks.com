@@ -12,6 +12,12 @@ withDefaults(
 	}>(),
 	{ code: '', language: null, filename: null, highlights: () => [], meta: null }
 )
+
+const toggleIcon = computed(() =>
+	copied.value
+		? 'fluent:clipboard-checkmark-20-regular'
+		: 'fluent:clipboard-20-regular'
+)
 </script>
 <template>
 	<div class="rounded border my-4 relative min-h-[1rem] overflow-hidden">
@@ -24,11 +30,7 @@ withDefaults(
 				</small>
 				<button role="button" title="Copy" @click="copy(code)">
 					<Icon
-						:name="
-							copied
-								? 'fluent:clipboard-checkmark-20-regular'
-								: 'fluent:clipboard-20-regular'
-						"
+						:name="toggleIcon"
 						class="h-6 w-6 cursor-pointer"
 						:class="copied ? 'text-green-600' : ''"
 					/>

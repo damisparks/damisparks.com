@@ -6,7 +6,7 @@ const lastScrollPosition = ref<number>(0)
 
 const onScroll = () => {
 	const currentScrollPosition =
-		window.pageYOffset || document.documentElement.scrollTop
+		window.scrollY || document.documentElement.scrollTop
 	// Momentum scrolling on iOS can cause the scroll position to be negative
 	if (currentScrollPosition < 0) return
 	// add 60px delay

@@ -35,5 +35,6 @@ const year = new Date().getFullYear()
 				</small>
 			</p>
 		</footer>
+		<AppScrollUp />
 	</AppContainer>
 </template>
