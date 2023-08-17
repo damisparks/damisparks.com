@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { useClipboard } from '@vueuse/core'
-const { copy, copied, isSupported } = useClipboard()
-
 withDefaults(
 	defineProps<{
 		code?: string
@@ -12,36 +9,16 @@ withDefaults(
 	}>(),
 	{ code: '', language: null, filename: null, highlights: () => [], meta: null }
 )
-
-const toggleIcon = computed(() =>
-	copied.value
-		? 'fluent:clipboard-checkmark-20-regular'
-		: 'fluent:clipboard-20-regular'
-)
 </script>
 <template>
 	<div class="rounded border my-4 relative min-h-[1rem] overflow-hidden">
 		<div
 			class="flex flex-col items-end justify-center min-h-[1.5rem] bg-zinc-200 dark:bg-zinc-700"
 		>
-			<span v-if="isSupported" class="p-1">
-				<small class="mr-2" :class="copied ? 'text-green-600' : ''">
-					{{ copied ? 'Copied' : 'Copy' }}
-				</small>
-				<button role="button" title="Copy" @click="copy(code)">
-					<Icon
-						:name="toggleIcon"
-						class="h-6 w-6 cursor-pointer"
-						:class="copied ? 'text-green-600' : ''"
-					/>
-				</button>
-			</span>
-			<p v-else class="px-2 py-1 text-sm">
-				Your browser does not support Clipboard API
-			</p>
+			<AppCopyContent :content="code" />
 		</div>
 		<hr class="h-px border-0 bg-zinc-200 dark:bg-zinc-300" />
-		<div class="p-2 overflow-auto">
+		<div class="p-2 overflow-auto max-h-[600px] lg:max-h-[800px]">
 			<slot />
 		</div>
 	</div>
