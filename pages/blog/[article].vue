@@ -25,6 +25,5 @@ route.meta.title = post.value.title
 				<ContentRenderer :value="post" />
 			</section>
 		</main>
-		<div>Content not found</div>
 	</NuxtLayout>
 </template>
