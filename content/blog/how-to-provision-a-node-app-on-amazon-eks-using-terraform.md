@@ -246,6 +246,55 @@ This command will initialise the Terraform AWS EKS modules and the Terraform bac
 terraform init
 ```
 
-The command will output the following in your console. Yours might be different. However, at the time of writing, this was my output.
+The following will be output in your console. Your output may vary. However, this was my output at the time of writing.
 
 ![terraform init output](/img/terraform-init-output.png){height="372" width="706"}
+Next, we run the terraform plan command
+
+### Terraform plan command
+
+The `terraform plan` command shows the changes Terraform will make to your AWS infrastructure defined in the files before applying them. It helps you review and confirm changes before applying them.
+
+```zsh
+terraform plan
+```
+
+The following will be output in your console. Your output may vary. However, this was my output at the time of writing.
+
+![terraform plan](/img/terraform-plan.png){height="372" width="706"}
+Next, we will apply our terraform configuration
+
+### Terraform apply command
+
+The `terraform apply` command provisions the AWS EKS Cluster and all resources defined in the Terraform files.
+
+```zsh
+terraform apply
+```
+
+Terraform prompts for confirmation to provision AWS resources. Review and type **"yes"** to allow provisioning of AWS resources, including creation of an AWS EKS cluster.
+We will talk about the how to check the information o f your AWS EKS cluster in the next section.
+
+### Checking the information of your AWS EKS cluster
+
+To view the AWS EKS Cluster information, type this command into your terminal:
+
+```zsh
+kubectl cluster-info
+```
+
+![terraform plan](/img/kubectl-cluster-info.png){height="372" width="706"}
+Next, we will talk about how to visualise the resources using the AWS Management Console.
+
+### Visualise EKS cluster and resources using AWS Management Console
+
+Log in to your AWS Management Console to view the AWS EKS cluster and resources.
+Kindly search for the following services and resources.
+
+- AWS EKS Cluster
+- Route Tables
+- Internet Gateways
+- VPC
+- Subnets
+
+The services should be visible.
