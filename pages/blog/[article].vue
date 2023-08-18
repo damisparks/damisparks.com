@@ -9,7 +9,7 @@ route.meta.title = post.value?.title
 	<NuxtLayout name="blog">
 		<main>
 			<h1
-				class="app-heading bg-zinc-100 dark:text-zinc-300 dark:bg-black font-normal text-xl md:text-2xl"
+				class="app-heading font-normal text-[2em] tracking-tight mt-10 mb-4 border-b-2 pb-2 border-zinc-200 dark:border-zinc-300"
 			>
 				{{ post?.title }}
 			</h1>
