@@ -1,7 +1,7 @@
 <template>
 	<h3
 		:id="id"
-		class="text-xl mt-6 mb-4 font-bold text-zinc-600 dark:text-zinc-300"
+		class="text-xl mt-6 mb-4 font-bold text-zinc-600 dark:text-zinc-300 tracking-tight"
 	>
 		<a v-if="id && generate" :href="`#${id}`">
 			<slot />
