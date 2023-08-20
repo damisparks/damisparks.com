@@ -47,6 +47,22 @@ const uniqueId = (): string => {
 }
 
 /**
+ * Formats a given date string into the format "Mon DD, YYYY".
+ * @param date - The input date string in ISO format (e.g., "2021-01-31").
+ * @returns A formatted date string in the format "Mon DD, YYYY", or an empty string if the input date is falsy.
+ */
+const formdateDate = (date: string) => {
+	if (!date) return ''
+	const d = new Date(date)
+	const options: Intl.DateTimeFormatOptions = {
+		year: 'numeric',
+		month: 'short',
+		day: 'numeric',
+	}
+	return new Intl.DateTimeFormat('en-US', options).format(d)
+}
+
+/**
  * A custom composable that returns an object with utility functions for working with text and generating unique IDs.
  * @returns An object with `capitalizeText`, `capitalizeWords`, and `uniqueId` functions.
  */
@@ -56,5 +72,6 @@ export function useMe() {
 		capitalizeText,
 		capitalizeWords,
 		uniqueId,
+		formdateDate,
 	}
 }

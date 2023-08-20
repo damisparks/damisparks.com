@@ -68,6 +68,7 @@ export default defineNuxtConfig({
 		'@nuxtjs/color-mode',
 		'nuxt-gtag',
 		'@nuxt/content',
+		'@vueuse/nuxt',
 	],
 
 	// nuxt image configuration
@@ -77,12 +78,23 @@ export default defineNuxtConfig({
 		},
 	},
 
+	content: {
+		highlight: {
+			preload: ['zsh', 'hcl', 'yaml'],
+			theme: {
+				default: 'github-light',
+				dark: 'github-dark',
+			},
+		},
+	},
+
 	runtimeConfig: {
 		publicGtagId: '',
 	},
 
 	// https://tailwindcss.com/docs/guides/nuxtjs#3
 	css: ['~/assets/css/main.css'],
+
 	postcss: {
 		plugins: {
 			tailwindcss: {},
