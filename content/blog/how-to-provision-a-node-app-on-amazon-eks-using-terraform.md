@@ -298,3 +298,95 @@ Kindly search for the following services and resources.
 - Subnets
 
 The services should be visible.
+
+At this junction, we must interact with our cluster using `kubectl`.
+I assume you understand the Kubernetes cluster setup and how YAML files can be created to handle the deployment of pods and expose them to consumers. Moving forward, we’ll use the Kubernetes command-line tool, `kubectl`, to interact with our cluster.
+
+### Interacting With Your Cluster
+
+- [**Install** `kubectl`](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
+- [**Set up** `aws-iam-authenticator`](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html)
+- [**Set up** `kubeconfig`](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html)
+
+Next we load the files and deploy them in the next section.
+
+### Create `deployment` folder
+
+Here, create a new folder named `deployment` inside the `terraform-provison-eks` folder.
+Inside the `deployment` folder, we create two files. First
+
+### Create a `deployment.yaml` file
+
+Create a new file named `deployment.yaml` inside the `deployment` folder.
+Add the following content in the file.
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-node-app
+  labels:
+    app: simple-node-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: simple-node-app
+  template:
+    metadata:
+      labels:
+        app: simple-node-app
+    spec:
+      containers:
+        - name: simple-node
+          image: damisparks/simple-node
+          ports:
+            - containerPort: 80
+```
+
+This file used to define and manage the deployment of application pods within a Kubernetes cluster. It specifies the desired state of the application, including the number of replicas, container images, and other configuration settings.
+
+### Create a `service.yaml` file
+
+Create a new file named `service.yaml` inside the `deployment` folder.
+Add the following content in the file.
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: simple-node-app
+  labels:
+    run: simple-node-app
+spec:
+  ports:
+    - port: 80
+      protocol: TCP
+  selector:
+    run: simple-node-app
+```
+
+The file is used to define how to expose and make a set of pods (typically managed by a deployment) accessible within a Kubernetes cluster. It defines the networking rules, such as port mapping, load balancing, and service discovery, for the pods.
+
+If you are here, you made it to the last section. I credit your patience and persistence. That is awesome.
+
+### Loading and deploy YAML files
+
+In this section, we load the files and deploy them. Run the following command. They are:
+
+```zsh
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+```
+
+Finally, I added the last section to give useful commands.
+
+### Further Commands
+
+`kubectl` provides a wide range of commands to interact with Kubernetes. The following are some basic commands that we can use to interact with our current cluster.
+
+- `kubectl get pods` - show the pods in the cluster
+- `kubectl describe services` - show the services in the cluster
+- `kubectl cluster-info` - display information about the cluster
+
+That is all guys. Thank you for reading through
