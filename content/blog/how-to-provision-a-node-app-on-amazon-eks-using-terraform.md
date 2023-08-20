@@ -339,7 +339,7 @@ spec:
     spec:
       containers:
         - name: simple-node
-          image: damisparks/simple-node
+          image: damisparks/simple-node # image to a simple node app i created
           ports:
             - containerPort: 80
 ```
