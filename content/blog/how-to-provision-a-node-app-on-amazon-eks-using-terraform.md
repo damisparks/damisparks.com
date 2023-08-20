@@ -375,8 +375,8 @@ If you are here, you made it to the last section. I credit your patience and per
 In this section, we load the files and deploy them. Run the following command. They are:
 
 ```zsh
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
+kubectl apply -f deployment/deployment.yaml
+kubectl apply -f deployment/service.yaml
 ```
 
 Finally, I added the last section to give useful commands.
