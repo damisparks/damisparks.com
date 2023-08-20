@@ -389,4 +389,20 @@ Finally, I added the last section to give useful commands.
 - `kubectl describe services` - show the services in the cluster
 - `kubectl cluster-info` - display information about the cluster
 
+### Additional Reading
+
+The following are some additional information on interacting with Kubernetes
+
+- [Kubernetes Cheatsheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+- [`kubectl` Overview](https://kubernetes.io/docs/reference/kubectl/overview/)
+- [Kubernetes API](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
+- [`kubectl` Documentation](https://kubectl.docs.kubernetes.io/)
+
+### Reference
+
+The artilce wouldn't be possible without these references. I learnt a lot from them.
+
+- [Udacity AWS Developer Nanodegree](https://www.udacity.com/course/cloud-developer-nanodegree--nd9990)
+- [How to Create an Amazon Elastic Kubernetes Service Cluster using Terraform](https://sweetcode.io/how-to-create-an-amazon-elastic-kubernetes-service-cluster-using-terraform/)
+
 That is all guys. Thank you for reading through
