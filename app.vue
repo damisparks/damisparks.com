@@ -16,6 +16,32 @@ useHead({
 		class: 'font-firasans h-full antialiased',
 	},
 })
+
+if (process.server) {
+	const PATH_RE = createRegExp(
+		exactly(char.times.any().and(charNotIn('/')))
+			.as('path')
+			.and(exactly('/').optionally())
+			.at.lineEnd()
+	)
+
+	const { path = '/' } = route.fullPath.match(PATH_RE)?.groups ?? {}
+	const url = `https://damisparks.com${path}`
+
+	useServerSeoMeta({
+		ogUrl: url,
+		ogTitle: (route.meta.title as string) || 'Dami Sparks',
+		description:
+			(route.meta.description as string) ||
+			'The personal website of Dami Sparks - Freelance Full-Stack Developer, Fractional CTO, Mentor & Technical Writer.He founded Actif, an Age-tech SaaS startup and continues contributing to the European developer community.',
+		ogDescription:
+			(route.meta.description as string) ||
+			'The personal website of Dami Sparks - Freelance Full-Stack Developer, Fractional CTO, Mentor & Technical Writer. He founded Actif, an Age-tech SaaS startup and continues contributing to the European developer community.',
+		twitterCard: 'summary_large_image',
+		twitterCreator: '@damisparks',
+		twitterSite: '@damisparks',
+	})
+}
 </script>
 <template>
 	<div>
