@@ -13,35 +13,11 @@ export default defineNuxtConfig({
 			meta: [
 				{ charset: 'utf-8' },
 				{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-				{
-					name: 'description',
-					content:
-						'Dami Sparks - Freelance Full-Stack Developer, Mentor, Technical Writer and Fractional CTO',
-				},
+				{ name: 'format-detection', content: 'telephone=no' },
 				{
 					name: 'keywords',
 					content:
 						'Vue.js, Nuxt.js, Full-Stack Development, Technical Writing, Mentorship, Innovative Development, Product Thinking, Scalable Digital Products, Responsive Web Application Interfaces, User-Friendly Design, RESTful API Integration, Cloud Platform Deployment, Timely Delivery, Affordable Pricing, Clean Code, High-Quality Code, Well-Documented Code, Client Satisfaction, Industry Expertise, Agile Development, Test-Driven Development, DevOps, Front-end Development, Back-end Development, Database Development, Web Development, Mobile Development, Custom Web Applications, E-commerce Development, CMS Development, UI/UX Design, Cross-Platform Development, Progressive Web Applications, Single Page Applications, Server-Side Rendering, SEO Optimization, Google Analytics, Social Media Integration, Payment Gateway Integration, Security, Software Architecture, Technical Consulting, Project Management, Startup Development, MVP Development, API Design, Technical SEO, Content Creation, Technical Marketing, Growth Hacking, Digital Strategy, Branding, Product Design, User Research, User Testing, Accessibility',
-				},
-				{ name: 'format-detection', content: 'telephone=no' },
-				{ property: 'og:site_name', content: 'DamiSparks' },
-				{ key: 'og:type', property: 'og:type', content: 'website' },
-				{
-					key: 'og:url',
-					property: 'og:url',
-					content: 'https://damisparks.com',
-				},
-				{
-					key: 'og:title',
-					property: 'og:title',
-					content:
-						'Dami loves what he does. He help others find their passion to code by making the complicated awesomely simple and empowering them to become their heroes.',
-				},
-				{
-					key: 'og:description',
-					property: 'og:description',
-					content:
-						'Dami is the CTO and co-founder of Actif, a tech company focusing on improving the health of older people with fitness and cognitive programs. He is a Certified Mentor, Machine Learning Engineer and Cloud Developer with vast experience in front-end and back-end design and development.',
 				},
 			],
 			link: [
@@ -69,6 +45,7 @@ export default defineNuxtConfig({
 		'nuxt-gtag',
 		'@nuxt/content',
 		'@vueuse/nuxt',
+		'magic-regexp/nuxt',
 	],
 
 	// nuxt image configuration
