@@ -15,7 +15,9 @@ withDefaults(
 		<div
 			class="flex flex-col items-end justify-center min-h-[1.5rem] bg-zinc-200 dark:bg-zinc-700"
 		>
-			<AppCopyContent :content="code" />
+			<ClientOnly>
+				<AppCopyContent :content="code" />
+			</ClientOnly>
 		</div>
 		<hr class="h-px border-0 bg-zinc-200 dark:bg-zinc-300" />
 		<div class="p-2 overflow-auto max-h-[600px] lg:max-h-[800px]">
