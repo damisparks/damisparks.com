@@ -1,8 +1,19 @@
 <script lang="ts" setup>
 const route = useRoute()
-const { data: post } = await useAsyncData(`content-${route.path}`, () => {
-	return queryContent('/blog').where({ _path: route.path }).findOne()
-})
+
+const slug = route.params.article
+if (!slug) navigateTo('/blog')
+
+const path = computed(() =>
+	route.path.replace(/(index)?\.json$/, '').replace(/\/$/, '')
+)
+
+const { data: post } = await useAsyncData(
+	path.value,
+	() =>
+		((process.server || process.dev) as true) &&
+		queryContent(path.value).where({ _path: route.path }).findOne()
+)
 
 if (!post.value) {
 	throw createError({ statusCode: 404, fatal: true })
