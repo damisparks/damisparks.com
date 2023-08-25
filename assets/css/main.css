@@ -12,20 +12,6 @@
 	}
 }
 
-.page-enter-active,
-.page-leave-active {
-	transition-duration: 0.3s;
-	transition-property: opacity;
-	transition-timing-function: ease;
-}
-
-.layout-enter,
-.layout-leave-active,
-.page-enter,
-.page-leave-active {
-	opacity: 0;
-}
-
 a:not([href]) {
 	opacity: 0.5;
 	pointer-events: none;
