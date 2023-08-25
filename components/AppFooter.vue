@@ -8,7 +8,7 @@ const year = new Date().getFullYear()
 				<div class="flex justify-center space-x-6 md:order-2">
 					<AppSocials />
 				</div>
-				<div class="mt-8 md:order-1 md:mt-0">
+				<div class="mt-8 md:order-1">
 					<p class="text-center text-sm app-text-content">
 						<NuxtLink
 							class="underline"
