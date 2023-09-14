@@ -31,7 +31,7 @@
 		"eslint-plugin-prettier": "4.2.1",
 		"husky": "8.0.3",
 		"lint-staged": "13.2.2",
-		"nuxt": "3.2.2",
+		"nuxt": "3.7.3",
 		"nuxt-gtag": "0.5.7",
 		"nuxt-icon": "0.4.1",
 		"postcss": "8.4.26",
