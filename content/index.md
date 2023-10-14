@@ -1,5 +1,4 @@
 ---
-title: Blog
 description: The personal website of Dami Sparks - Fractional CTO | Passionate Open Source Enthusiast | Vue.js & Nuxt Fullstack Developer | Mentor | Technical Writer. He founded Actif, an Age-tech SaaS startup and continues contributing to the European developer community.
 ---
 
