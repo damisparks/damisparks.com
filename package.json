@@ -18,7 +18,7 @@
 	},
 	"devDependencies": {
 		"@commitlint/cli": "17.6.5",
-		"@commitlint/config-conventional": "17.6.5",
+		"@commitlint/config-conventional": "17.7.0",
 		"@nuxt/content": "2.7.2",
 		"@nuxt/eslint-config": "0.1.1",
 		"@nuxt/image": "1.0.0-rc.1",
