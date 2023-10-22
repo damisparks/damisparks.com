@@ -4,8 +4,7 @@ export default defineNuxtConfig({
 	nitro: {
 		prerender: {
 			crawlLinks: true,
-			routes: ['/sitemap.xml', '/robots.txt'],
-			ignore: ['404'],
+			routes: ['/sitemap.xml'],
 		},
 	},
 
