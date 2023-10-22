@@ -1,5 +1,8 @@
 {
 	// https://nuxt.com/docs/guide/concepts/typescript
 	"extends": "./.nuxt/tsconfig.json",
-	"types": ["@nuxt/types", "@nuxt/image"]
+	"types": ["@nuxt/types", "@nuxt/image"],
+	"typeAcquisition": {
+		"enable": false
+	}
 }

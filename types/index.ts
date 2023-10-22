@@ -1,15 +1,15 @@
 type IPortforlioItemType = 'project' | 'open-source'
 
-export interface INavLink {
+export type INavLink = {
 	name: string
 	href: string
 	id: string
 }
-export interface ISocialsNavigation extends INavLink {
+export type ISocialsNavigation = {
 	iconKey: string
-}
+} & INavLink
 
-export interface IAchievement {
+export type IAchievement = {
 	id: string
 	name: string
 	url: string
@@ -17,11 +17,11 @@ export interface IAchievement {
 	description: string
 }
 
-export interface ISpotlightClient {
+export type ISpotlightClient = {
 	name: string
 	website: string
 }
-export interface IProjectSpotlightItem {
+export type IProjectSpotlightItem = {
 	description: string
 	client: ISpotlightClient
 	url: string
@@ -29,7 +29,7 @@ export interface IProjectSpotlightItem {
 	techStack: string[]
 }
 
-export interface IPortfolioItem {
+export type IPortfolioItem = {
 	id: string
 	name: string
 	description: string
