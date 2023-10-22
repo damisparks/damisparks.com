@@ -10,7 +10,12 @@
 const eslintConfig = {
 	root: true,
 	extends: ['@nuxtjs/eslint-config-typescript', 'plugin:prettier/recommended'],
-	// plugin: ['prettier']
+	overrides: [
+		{
+			files: ['*.mdx', '*.md'],
+			extends: 'plugin:mdx/recommended',
+		},
+	],
 }
 
 module.exports = eslintConfig
