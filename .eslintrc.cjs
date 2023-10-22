@@ -1,4 +1,11 @@
+// @ts-check
+
 'use strict'
+
+/**
+ * ESLint config.
+ * @satisfies {import("eslint").Linter.Config}
+ */
 
 const eslintConfig = {
 	root: true,
