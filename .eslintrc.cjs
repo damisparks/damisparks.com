@@ -2,6 +2,7 @@
 
 'use strict'
 
+/** @type {import('eslint').ESLint.ConfigData}  */
 /**
  * ESLint config.
  * @satisfies {import("eslint").Linter.Config}
