@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@headlessui/vue':
     specifier: 1.7.16
@@ -70,8 +74,8 @@ devDependencies:
     specifier: 3.7.4
     version: 3.7.4(@types/node@20.8.7)(eslint@8.51.0)(typescript@5.2.2)
   nuxt-gtag:
-    specifier: 0.5.7
-    version: 0.5.7
+    specifier: 1.1.1
+    version: 1.1.1
   nuxt-icon:
     specifier: 0.4.1
     version: 0.4.1(vue@3.3.6)
@@ -6989,8 +6993,8 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
 
-  /nuxt-gtag@0.5.7:
-    resolution: {integrity: sha512-Q6NRndEJ0phEfKdS4uLy3hpVBkgWGnG5KJ2dhVyCmbLXcfakkmf19f2WJ5uM2yUOg8rAkYgDjRb9XyAfE+okuA==}
+  /nuxt-gtag@1.1.1:
+    resolution: {integrity: sha512-AkTK++e4vFHyoc04GcRx7dQvx9xchVLav/YAP3aM6oL/ZkZtW50M0/2re4zmPWjeu36ckbpcOHJrj+zptQIMyw==}
     dependencies:
       '@nuxt/kit': 3.8.0
       defu: 6.1.2
@@ -9917,7 +9921,3 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
