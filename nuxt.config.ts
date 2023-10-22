@@ -3,7 +3,9 @@ export default defineNuxtConfig({
 	// https://content.nuxtjs.org/guide/recipes/sitemap
 	nitro: {
 		prerender: {
-			routes: ['/sitemap.xml'],
+			crawlLinks: true,
+			routes: ['/sitemap.xml', '/robots.txt'],
+			ignore: ['404'],
 		},
 	},
 

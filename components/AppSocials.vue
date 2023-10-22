@@ -5,20 +5,20 @@ const socials: ISocialsNavigation[] = [
 	{
 		id: me.uniqueId(),
 		iconKey: 'uil:linkedin',
-		href: '//www.linkedin.com/in/damisparks',
+		href: 'https://www.linkedin.com/in/damisparks',
 		name: 'LinkedIn',
 	},
 
 	{
 		id: me.uniqueId(),
 		iconKey: 'uil:github',
-		href: '//github.com/damisparks',
+		href: 'https://www.github.com/damisparks',
 		name: 'GitHub',
 	},
 	{
 		id: me.uniqueId(),
 		iconKey: 'ri:twitter-x-fill',
-		href: '//twitter.com/DamiSparks',
+		href: 'https://www.twitter.com/DamiSparks',
 		name: 'Twitter',
 	},
 ]
