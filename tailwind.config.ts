@@ -1,5 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss'
+
+export default {
 	content: [
 		'./components/**/*.{js,vue,ts}',
 		'./layouts/**/*.vue',
@@ -51,7 +52,9 @@ module.exports = {
 
 		// solution reference : https://github.com/tailwindlabs/tailwindcss-intellisense/issues/227
 		/** @type {import('tailwindcss/types/config').PluginCreator} */
-		({ addComponents }) => {
+
+		({ addComponents }: any) => {
+			/** * @type {import('tailwindcss/types/config').PluginAPI} */
 			addComponents({
 				'.btn': {
 					'@apply text-base leading-5 font-semibold rounded hover:shadow-lg p-2 font-firasans':
@@ -78,9 +81,4 @@ module.exports = {
 			})
 		},
 	],
-
-	future: {
-		removeDeprecatedGapUtilities: true,
-		purgeLayersByDefault: true,
-	},
-}
+} satisfies Config
