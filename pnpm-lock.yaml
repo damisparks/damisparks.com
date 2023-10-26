@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@headlessui/vue':
     specifier: 1.7.16
@@ -73,8 +77,8 @@ devDependencies:
     specifier: 0.5.7
     version: 0.5.7
   nuxt-icon:
-    specifier: 0.4.1
-    version: 0.4.1(vue@3.3.6)
+    specifier: 0.6.0
+    version: 0.6.0(vue@3.3.6)
   postcss:
     specifier: 8.4.31
     version: 8.4.31
@@ -7000,8 +7004,8 @@ packages:
       - supports-color
     dev: true
 
-  /nuxt-icon@0.4.1(vue@3.3.6):
-    resolution: {integrity: sha512-QTpxewOgLfdPx2uwHhoU5XQ4AtQ9N31ifbwnbn4Sx5NM+W2slNfGq1eEKmUl0CpSUAhGEdKbzd5CjA3c7dVa1Q==}
+  /nuxt-icon@0.6.0(vue@3.3.6):
+    resolution: {integrity: sha512-yFhdd1inv8z4soCF8HZphVMn0wJJN+5m+ZHs1QQblrdxXJDV7UuZeTjN6Fy8VDHfWbZJm6coXSQrK483kU+ipA==}
     dependencies:
       '@iconify/vue': 4.1.1(vue@3.3.6)
       '@nuxt/kit': 3.8.0
@@ -9917,7 +9921,3 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
