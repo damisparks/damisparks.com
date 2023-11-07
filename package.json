@@ -35,7 +35,7 @@
 		"lint-staged": "14.0.1",
 		"nuxt": "3.7.4",
 		"nuxt-gtag": "0.5.7",
-		"nuxt-icon": "0.4.1",
+		"nuxt-icon": "0.6.3",
 		"postcss": "8.4.31",
 		"prettier": "2.8.8",
 		"sitemap": "7.1.1",
