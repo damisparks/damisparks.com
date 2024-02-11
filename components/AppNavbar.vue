@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import { provideUseId } from '@headlessui/vue'
 import { links as navList } from '@/constants'
+
+provideUseId(() => useId())
 
 const showNavbar = ref<boolean>(true)
 const lastScrollPosition = ref<number>(0)

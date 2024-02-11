@@ -44,7 +44,7 @@ defineProps<{ navList: INavLink[] }>()
 									: 'text-zinc-900 dark:text-zinc-200',
 								'group block w-full items-center rounded-lg text-sm',
 							]"
-							:to="href"
+							:to="{ name: href }"
 						>
 							<span class="truncate px-4 py-2 block" @click="close">
 								{{ name }}
