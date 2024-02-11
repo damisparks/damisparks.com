@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import { provideUseId } from '@headlessui/vue'
 const route = useRoute()
+
+provideUseId(() => useId())
 
 useHead({
 	title: () => (route.meta.title as string) || '',

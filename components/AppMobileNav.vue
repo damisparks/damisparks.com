@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
-import { INavLink } from '@/types'
+import { type INavLink } from '@/types'
 defineProps<{ navList: INavLink[] }>()
 </script>
 <template>
@@ -44,7 +44,7 @@ defineProps<{ navList: INavLink[] }>()
 									: 'text-zinc-900 dark:text-zinc-200',
 								'group block w-full items-center rounded-lg text-sm',
 							]"
-							:to="href"
+							:to="{ name: href }"
 						>
 							<span class="truncate px-4 py-2 block" @click="close">
 								{{ name }}
