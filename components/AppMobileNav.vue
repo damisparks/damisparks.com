@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
-import { INavLink } from '@/types'
+import { type INavLink } from '@/types'
 defineProps<{ navList: INavLink[] }>()
 </script>
 <template>

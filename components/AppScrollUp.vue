@@ -16,15 +16,17 @@ buttonOpacity.value = Math.min(1, (scroll.value - 300) / 300)
 </script>
 
 <template>
-	<button
-		class="fixed right-3 bottom-3 w-10 h-10 rounded-full transition duration-300 z-50 print:hidden shadow"
-		:style="`backdrop-filter: blur(${(1 - buttonOpacity) * 10}px);
+	<ClientOnly>
+		<button
+			class="fixed right-3 bottom-3 w-10 h-10 rounded-full transition duration-300 z-50 print:hidden shadow"
+			:style="`backdrop-filter: blur(${(1 - buttonOpacity) * 10}px);
             background-color: rgba(240, 240, 240, ${buttonOpacity});
             backdrop-blur: blur(${(1 - buttonOpacity) * 10}px);
             visibility: ${scroll > 300 ? 'visible' : 'hidden'};
             `"
-		@click="gotoTop"
-	>
-		<Icon name="fluent:arrow-up-20-regular" />
-	</button>
+			@click="gotoTop"
+		>
+			<Icon name="fluent:arrow-up-20-regular" />
+		</button>
+	</ClientOnly>
 </template>

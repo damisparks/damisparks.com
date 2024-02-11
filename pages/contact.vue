@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ISocialsNavigation } from '@/types'
+import { type ISocialsNavigation } from '@/types'
 const pageTitle = ref<string>('Contact')
 const description = ref<string>(
 	'Get in touch with Dami Sparks for custom web development, mobile development, UI/UX design, and more. Fill out the contact form or reach out on social media'

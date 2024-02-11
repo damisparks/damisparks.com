@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ISocialsNavigation } from '@/types'
+import { type ISocialsNavigation } from '@/types'
 const me = useMe()
 const socials: ISocialsNavigation[] = [
 	{

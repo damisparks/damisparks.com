@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { INavLink } from '@/types'
+import { type INavLink } from '@/types'
 defineProps<{ navList: INavLink[] }>()
 </script>
 
