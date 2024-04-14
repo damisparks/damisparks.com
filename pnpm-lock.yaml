@@ -52,9 +52,6 @@ devDependencies:
   '@types/eslint':
     specifier: 8.56.9
     version: 8.56.9
-  '@types/node':
-    specifier: 20.12.7
-    version: 20.12.7
   autoprefixer:
     specifier: 10.4.19
     version: 10.4.19(postcss@8.4.38)

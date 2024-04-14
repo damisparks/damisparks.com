@@ -1,5 +1,5 @@
 import defaultTheme from 'tailwindcss/defaultTheme'
-import type { Config } from 'tailwindcss'
+import type { Confi./src/themem 'tailwindcss'
 import theme from './theme'
 
 export default {

@@ -24,7 +24,6 @@
 		"@nuxtjs/color-mode": "3.4.0",
 		"@nuxtjs/eslint-config-typescript": "12.1.0",
 		"@types/eslint": "8.56.9",
-		"@types/node": "20.12.7",
 		"autoprefixer": "10.4.19",
 		"eslint": "9.0.0",
 		"eslint-config-prettier": "9.1.0",
