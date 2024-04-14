@@ -5,6 +5,7 @@ const onSetColorMode = () =>
 		? (colorMode.preference = 'dark')
 		: (colorMode.preference = 'light')
 </script>
+
 <template>
 	<button
 		aria-label="ColorMode"

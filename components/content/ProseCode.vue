@@ -10,6 +10,7 @@ withDefaults(
 	{ code: '', language: null, filename: null, highlights: () => [], meta: null }
 )
 </script>
+
 <template>
 	<div class="rounded border my-4 relative min-h-[1rem] overflow-hidden">
 		<div
