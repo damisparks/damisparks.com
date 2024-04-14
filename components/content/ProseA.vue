@@ -11,6 +11,7 @@ defineProps({
 	},
 })
 </script>
+
 <template>
 	<NuxtLink
 		:href="href"

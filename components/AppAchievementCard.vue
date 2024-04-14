@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { IAchievement } from '@/types'
+import type { IAchievement } from '@/types'
+
 defineProps<{ achievement: IAchievement }>()
 </script>
 
@@ -11,7 +12,7 @@ defineProps<{ achievement: IAchievement }>()
 			<div
 				class="bg-blend-multiply bg-cover h-48 bg-ds-blue/10 dark:bg-ds-blue-accent-100"
 				:style="{ backgroundImage: `url(${achievement.src})` }"
-			></div>
+			/>
 			<div class="p-4 flex-1 flex flex-col">
 				<NuxtLink
 					:to="achievement.url"

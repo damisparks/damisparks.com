@@ -19,6 +19,7 @@ useHead({
 	],
 })
 </script>
+
 <template>
 	<NuxtLayout>
 		<AppPageHeader>

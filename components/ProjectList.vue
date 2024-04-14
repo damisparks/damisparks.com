@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { IPortfolioItem } from '@/types'
+import type { IPortfolioItem } from '@/types'
 
 defineProps<{ projects: IPortfolioItem[] }>()
 </script>
+
 <template>
 	<div v-for="project in projects" :key="project.id" class="space-y-1">
 		<h1 class="text-ds-blue dark:text-ds-teal text-xl font-semibold">

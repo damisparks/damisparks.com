@@ -24,6 +24,7 @@ onBeforeUnmount(() => {
 	window.removeEventListener('scroll', onScroll)
 })
 </script>
+
 <template>
 	<div
 		:class="[

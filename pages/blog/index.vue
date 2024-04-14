@@ -5,6 +5,7 @@ const { data: entries } = useAsyncData('blogentries', () => {
 	return queryContent('/blog').only(['title', 'date', '_path']).find()
 })
 </script>
+
 <template>
 	<NuxtLayout name="blog">
 		<header class="relative">
@@ -31,7 +32,9 @@ const { data: entries } = useAsyncData('blogentries', () => {
 			>
 				<article>
 					<AppTime :date="date" />
-					<p class="tracking-tight">{{ title }}</p>
+					<p class="tracking-tight">
+						{{ title }}
+					</p>
 				</article>
 			</NuxtLink>
 		</section>

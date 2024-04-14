@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import { ISocialsNavigation } from '@/types'
+import type { ISocialsNavigation } from '@/types'
+
 const pageTitle = ref<string>('Contact')
 const description = ref<string>(
 	'Get in touch with Dami Sparks for custom web development, mobile development, UI/UX design, and more. Fill out the contact form or reach out on social media'
@@ -80,8 +81,8 @@ useHead({
 										y2="814.66"
 										gradientUnits="userSpaceOnUse"
 									>
-										<stop stop-color="#fff"></stop>
-										<stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+										<stop stop-color="#fff" />
+										<stop offset="1" stop-color="#fff" stop-opacity="0" />
 									</linearGradient>
 								</defs>
 							</svg>
@@ -113,8 +114,8 @@ useHead({
 										y2="735.66"
 										gradientUnits="userSpaceOnUse"
 									>
-										<stop stop-color="#fff"></stop>
-										<stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+										<stop stop-color="#fff" />
+										<stop offset="1" stop-color="#fff" stop-opacity="0" />
 									</linearGradient>
 								</defs>
 							</svg>
@@ -146,8 +147,8 @@ useHead({
 										y2="1032.66"
 										gradientUnits="userSpaceOnUse"
 									>
-										<stop stop-color="#fff"></stop>
-										<stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+										<stop stop-color="#fff" />
+										<stop offset="1" stop-color="#fff" stop-opacity="0" />
 									</linearGradient>
 								</defs>
 							</svg>
