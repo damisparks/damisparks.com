@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
-import { INavLink } from '@/types'
+import type { INavLink } from '@/types'
+
 defineProps<{ navList: INavLink[] }>()
 </script>
+
 <template>
 	<Menu as="div" class="relative inline-block text-left z-10">
 		<div>

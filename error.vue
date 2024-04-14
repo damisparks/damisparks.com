@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 const { capitalizeWords } = useMe()
 </script>
+
 <template>
 	<div
 		class="min-h-screen relative bg-zinc-100 text-zinc-700 dark:text-zinc-300 dark:bg-black"

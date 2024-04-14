@@ -39,16 +39,6 @@ export default defineNuxtConfig({
 		},
 	},
 
-	modules: [
-		'@nuxt/image',
-		'nuxt-icon',
-		'@nuxtjs/color-mode',
-		'nuxt-gtag',
-		'@nuxt/content',
-		'@vueuse/nuxt',
-		'magic-regexp/nuxt',
-	],
-
 	// nuxt image configuration
 	image: {
 		cloudinary: {
@@ -60,8 +50,8 @@ export default defineNuxtConfig({
 		highlight: {
 			preload: ['zsh', 'hcl', 'yaml'],
 			theme: {
-				default: 'github-light',
-				dark: 'github-dark',
+				default: 'one-dark-pro',
+				dark: 'one-dark-pro',
 			},
 		},
 	},
@@ -72,6 +62,12 @@ export default defineNuxtConfig({
 
 	// https://tailwindcss.com/docs/guides/nuxtjs#3
 	css: ['~/assets/css/main.css'],
+
+	eslint: {
+		config: {
+			stylistic: true,
+		},
+	},
 
 	postcss: {
 		plugins: {
@@ -93,4 +89,15 @@ export default defineNuxtConfig({
 			'use/**',
 		],
 	},
+
+	modules: [
+		'@nuxt/image',
+		'nuxt-icon',
+		'@nuxtjs/color-mode',
+		'nuxt-gtag',
+		'@nuxt/content',
+		'@vueuse/nuxt',
+		'magic-regexp/nuxt',
+		'@nuxt/eslint',
+	],
 })

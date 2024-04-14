@@ -10,7 +10,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 			<DisclosureButton
 				class="flex w-full justify-between rounded-lg p-4 text-left font-medium text-lg text-zinc-800 dark:text-zinc-100 hover:text-zinc-900 focus:outline-none focus-visible:ring focus-visible:ring-zinc-500 focus-visible:ring-opacity-75"
 			>
-				<slot name="header">Header</slot>
+				<slot name="header"> Header </slot>
 				<Icon
 					name="fluent:chevron-circle-up-16-regular"
 					:class="open ? 'rotate-180 transform' : ''"
@@ -30,7 +30,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 				>
 					<hr class="mb-4 h-px border-0 bg-zinc-400 dark:bg-zinc-200" />
 
-					<slot name="content">Content go here</slot>
+					<slot name="content"> Content go here </slot>
 				</DisclosurePanel>
 			</transition>
 		</Disclosure>

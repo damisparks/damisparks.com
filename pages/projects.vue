@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { projects } from '@/constants'
-import { IPortfolioItem } from '@/types'
+import type { IPortfolioItem } from '@/types'
+
 const pageTitle = ref('Projects')
 const description = ref(
 	`Explore Dami Sparks' portfolio of previous projects, including custom web applications, e-commerce development, CMS development, and more.`

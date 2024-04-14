@@ -7,7 +7,7 @@
 			<span
 				class="bg-white app-heading dark:bg-zinc-800 px-3 text-xl font-semibold leading-6 text-zinc-900"
 			>
-				<slot></slot>
+				<slot />
 			</span>
 		</div>
 	</div>

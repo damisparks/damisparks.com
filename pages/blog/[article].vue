@@ -11,7 +11,7 @@ const path = computed(() =>
 const { data: post } = await useAsyncData(
 	path.value,
 	() =>
-		((process.server || process.dev) as true) &&
+		((import.meta.server || import.meta.dev) as true) &&
 		queryContent(path.value).where({ _path: route.path }).findOne()
 )
 
@@ -21,6 +21,7 @@ if (!post.value) {
 
 route.meta.title = post.value.title
 </script>
+
 <template>
 	<NuxtLayout name="blog">
 		<main v-if="post">

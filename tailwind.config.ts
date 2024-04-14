@@ -1,3 +1,4 @@
+import defaultTheme from 'tailwindcss/defaultTheme'
 import type { Config } from 'tailwindcss'
 import theme from './theme'
 
@@ -18,8 +19,12 @@ export default {
 				...theme,
 			},
 			fontFamily: {
-				montserrat: ["'Montserrat', sans-serif"],
-				firasans: ["'Fira Sans', sans-serif"],
+				firasans: ['Fira Sans', 'sans-serif', ...defaultTheme.fontFamily.sans],
+				montserrat: [
+					'Montserrat',
+					'sans-serif',
+					...defaultTheme.fontFamily.sans,
+				],
 			},
 		},
 	},

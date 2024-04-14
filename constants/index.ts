@@ -1,9 +1,10 @@
-import {
+import type {
 	IAchievement,
 	INavLink,
 	IPortfolioItem,
 	IProjectSpotlightItem,
 } from '@/types'
+
 const me = useMe()
 
 const links: INavLink[] = [
