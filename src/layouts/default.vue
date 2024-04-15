@@ -1,24 +1,11 @@
 <template>
-	<main class="h-screen flex flex-col">
-		<!-- page ring -->
-		<div class="fixed inset-0 flex justify-center sm:px-8">
-			<div class="flex w-full max-w-7xl lg:px-8">
-				<div
-					class="w-full bg-white ring-1 ring-zinc-200/50 dark:bg-zinc-800 dark:ring-zinc-500/20"
-				/>
-			</div>
-		</div>
-
+	<div class="h-screen flex flex-col mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
 		<AppNavbar />
-
-		<!-- main -->
-		<div class="flex-auto py-4 sm:py-8 lg:px-8">
-			<AppContainer><slot /></AppContainer>
+		<div class="flex-auto mx-auto mt-12">
+			<slot />
 		</div>
-
 		<div>
-			<!-- footer -->
 			<AppFooter />
 		</div>
-	</main>
+	</div>
 </template>

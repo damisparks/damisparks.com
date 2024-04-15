@@ -5,7 +5,10 @@ tags:
   - aws
 
 description: In this article, I will show you how to provision a Node app on Amazon EKS using Terraform.
+cover: /unsplash/photo-1537884944318-390069bb8665
 ---
+
+# How to provision a Node app on Amazon EKS using Terraform
 
 I am writing this article to show you how to provision a Node app on Amazon EKS using Terraform. I got the idea from an interview for a Senior Node Backend Engineer position at an AWS company. The question is to create a Node app on Amazon EKS using Terraform. I had never used Terraform before, so I had to learn it from scratch. I found it very interesting and decided to write an article about it.
 
@@ -173,7 +176,8 @@ Up next, we will create `main.ts` file
 
 ### Create a `main.tf` file
 
-In the `terraform-provison-eks` folder, create a new file named `main.tf`. Open the new file and add the following content:
+In the `terraform-provison-eks` folder, create a new file named `main.tf`.
+Open the new file and add the following content:
 
 ```hcl
 provider "kubernetes" {
@@ -248,7 +252,7 @@ terraform init
 
 The following will be output in your console. Your output may vary. However, this was my output at the time of writing.
 
-<img width="706" height="372" src="/img/terraform-init-output.png" alt="terraform init output">
+<!-- <img width="706" height="372" src="/img/terraform-init-output.png" alt="terraform init output"> -->
 
 Next, we run the terraform plan command
 
@@ -262,7 +266,7 @@ terraform plan
 
 The following will be output in your console. Your output may vary. However, this was my output at the time of writing.
 
-<img width="706" height="372" src="/img/terraform-plan.png" alt="terraform plan">
+<!-- <img width="706" height="372" src="/img/terraform-plan.png" alt="terraform plan"> -->
 
 Next, we will apply our terraform configuration
 
@@ -285,7 +289,8 @@ To view the AWS EKS Cluster information, type this command into your terminal:
 kubectl cluster-info
 ```
 
-<img width="706" height="372" src="/img/kubectl-cluster-info.png" alt="terraform plan">
+<!-- <img width="706" height="372" src="/img/kubectl-cluster-info.png" alt="terraform plan"> -->
+
 Next, we will talk about how to visualise the resources using the AWS Management Console.
 
 ### Visualise EKS cluster and resources using AWS Management Console

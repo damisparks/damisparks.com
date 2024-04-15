@@ -8,7 +8,7 @@ He aims to craft solid and scalable digital products while helping others find t
 
 His passion lies in curiosity by envisioning ideas and turning them into reality. You can find my [complete projects list here](/projects) including [@nuxtjs/eslint-module](https://github.com/nuxt-modules/eslint), [@nuxtjs/google-fonts](https://github.com/nuxt-modules/google-fonts).
 
-Read more 👉🏾[About me](/about)
+Check out 👉🏾[on my bio](/bio).
 
 When I'm not coding, I indulge in music. I play the drum 🥁 and guitar 🎸, fueling my creativity and inspiring my development journey. I also enjoy playing tennis and dancing, seeking inspiration from the world around me.
 

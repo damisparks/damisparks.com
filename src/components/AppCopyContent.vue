@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useClipboard } from '@vueuse/core'
-
 const { copy, copied, isSupported } = useClipboard()
 defineProps<{ content: string }>()
 const toggleIcon = computed(() =>
@@ -9,7 +8,6 @@ const toggleIcon = computed(() =>
 		: 'fluent:clipboard-20-regular'
 )
 </script>
-
 <template>
 	<span v-if="isSupported" class="p-1">
 		<button role="button" title="Copy" @click="copy(content)">

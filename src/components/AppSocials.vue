@@ -1,39 +1,28 @@
 <script setup lang="ts">
-import type { ISocialsNavigation } from '@/types'
-
-const me = useMe()
-const socials: ISocialsNavigation[] = [
-	{
-		id: me.uniqueId(),
-		iconKey: 'uil:linkedin',
-		href: 'https://www.linkedin.com/in/damisparks',
-		name: 'LinkedIn',
-	},
-
-	{
-		id: me.uniqueId(),
-		iconKey: 'uil:github',
-		href: 'https://www.github.com/damisparks',
-		name: 'GitHub',
-	},
-	{
-		id: me.uniqueId(),
-		iconKey: 'ri:twitter-x-fill',
-		href: 'https://www.twitter.com/DamiSparks',
-		name: 'Twitter',
-	},
-]
+import navigation from '@/data/navigation'
+type SocialPropsType = { iconSize?: string; showText?: boolean }
+const props = withDefaults(defineProps<SocialPropsType>(), { iconSize: '' })
 </script>
-
 <template>
-	<a
-		v-for="item in socials"
-		:key="item.name"
-		:href="item.href"
-		class="text-zinc-400 hover:text-zinc-500"
-		target="_blank"
-	>
-		<span class="sr-only">{{ item.name }}</span>
-		<Icon :name="item.iconKey" class="h-6 w-6" aria-hidden="true" />
-	</a>
+	<div class="space-x-2">
+		<NuxtLink
+			v-for="nav in navigation.socials"
+			external
+			:key="nav.name"
+			:to="nav.href"
+			:title="nav.name"
+		>
+			<span
+				class="dark:text-color-dark-default text-color inline-flex items-center"
+			>
+				<Icon :name="nav.iconKey" :size="props.iconSize" />
+				<span
+					v-if="props.showText"
+					class="ml-1 border-b border-divider hover:border-color-light-muted"
+				>
+					{{ nav.name }}
+				</span>
+			</span>
+		</NuxtLink>
+	</div>
 </template>

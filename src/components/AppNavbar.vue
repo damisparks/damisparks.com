@@ -1,58 +1,61 @@
 <script setup lang="ts">
-import { links as navList } from '@/constants'
+import nav from '@/ui.config/nav'
+import navigation from '@/data/navigation'
 
-const showNavbar = ref<boolean>(true)
-const lastScrollPosition = ref<number>(0)
+const navClasses = computed(() => [
+	nav.height,
+	nav.base,
+	nav.position,
+	nav.background,
+	nav.backdrop,
+	nav.paddingX,
+])
 
-const onScroll = () => {
-	const currentScrollPosition =
-		window.scrollY || document.documentElement.scrollTop
-	// Momentum scrolling on iOS can cause the scroll position to be negative
-	if (currentScrollPosition < 0) return
-	// add 60px delay
-	if (Math.abs(currentScrollPosition - lastScrollPosition.value) < 60) return
-	// show if scrolling up
-	showNavbar.value = currentScrollPosition < lastScrollPosition.value
-	lastScrollPosition.value = currentScrollPosition
-}
+const github = computed(() =>
+	navigation.socials.find(item => item.name === 'GitHub')
+)
 
-onMounted(() => {
-	window.addEventListener('scroll', onScroll)
-})
+const navTextClasses = computed(() => [nav.inner.font, nav.inner.textSize])
 
-onBeforeUnmount(() => {
-	window.removeEventListener('scroll', onScroll)
-})
+const route = useRoute()
 </script>
-
 <template>
-	<div
-		:class="[
-			showNavbar ? 'translate-y-0' : '-translate-y-full',
-			'transform-gpu transition-transform duration-500 sticky top-0 z-50',
-		]"
-	>
-		<AppContainer class="pt-2">
-			<nav class="flex items-center justify-between">
-				<NuxtLink to="/">
-					<AppLogo />
-				</NuxtLink>
-				<div
-					class="border border-zinc-300/50 dark:border-zinc-900/60 rounded-full pl-2 lg:pl-4 pr-2 py-2 backdrop-blur-lg bg-zinc-100/50 dark:bg-zinc-800/50"
+	<nav :class="navClasses">
+		<!-- TODO: add logo or svg -->
+		<NuxtLink to="/">DS</NuxtLink>
+		<ul :class="nav.inner.base">
+			<li v-for="item in navigation.navItems" :key="item.name">
+				<NuxtLink
+					:to="item.href"
+					:class="[
+						...navTextClasses,
+						route.path === item.href ? 'underline' : '',
+					]"
 				>
-					<div class="flex items-center gap-4">
-						<div class="hidden md:block">
-							<AppNavList :nav-list="navList" />
-						</div>
-
-						<!-- mobile nav -->
-						<div class="md:hidden">
-							<AppMobileNav :nav-list="navList" />
-						</div>
-						<AppColorSwitch />
-					</div>
-				</div>
-			</nav>
-		</AppContainer>
-	</div>
+					{{ item.name }}
+				</NuxtLink>
+			</li>
+			<li>
+				<NuxtLink external :to="github?.href" :title="github?.name">
+					<span class="dark:text-color-dark-default text-color">
+						<Icon size="24px" :name="github?.iconKey as string" />
+					</span>
+				</NuxtLink>
+			</li>
+			<li>
+				<ColorSwitch />
+			</li>
+		</ul>
+	</nav>
 </template>
+
+/* TODO: fix the issue when rolling later. */
+<!-- <style scoped>
+.bg-image {
+  background-image: linear-gradient(
+    rgb(245, 245, 247) calc(114px),
+    rgb(255, 255, 255) 0%
+  );
+  background-color: rgba(0, 0, 0, 0);
+}
+</style> -->

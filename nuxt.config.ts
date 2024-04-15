@@ -1,7 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	devtools: { enabled: true },
-		// https://color-mode.nuxtjs.org/
+
+	routeRules: {
+		'/projects': { redirect: '/work' }, // 307 (temp redirect)
+		// '/old-page': { redirect: { to: '/new-page', statusCode: 301 } }, // 301 (perm redirect)
+	},
+	// https://color-mode.nuxtjs.org/
 	colorMode: {
 		classSuffix: '',
 	},
@@ -19,28 +24,27 @@ export default defineNuxtConfig({
 			stylistic: true,
 		},
 	},
-	// https://content.nuxtjs.org/guide/recipes/sitemap
-	nitro: {
-		prerender: {
-			crawlLinks: true,
-			routes: ['/sitemap.xml'],
-		},
-	},
 
-	app: {
-		head: {
-			htmlAttrs: { lang: 'en' },
-			title: 'Dami Sparks',
-		},
-	},
-
-	// nuxt image configuration
+	// https://image.nuxt.com/get-started/configuration
 	image: {
-		cloudinary: {
-			baseURL: 'https://res.cloudinary.com/damisparks/image/upload/',
+		quality: 80,
+		domains: ['images.unsplash.com'],
+		alias: {
+			unsplash: 'https://images.unsplash.com',
 		},
 	},
 
+	// https://github.com/nuxt/fonts
+	fonts: {
+		google: {
+			families: [
+				{ name: 'Fira Sans', weight: ['300', '400', '500'] },
+				{ name: 'Montserrat', weight: ['300', '400', '500'] },
+			],
+		},
+	},
+
+	// https://content.nuxt.com/get-started/installation
 	content: {
 		highlight: {
 			preload: ['zsh', 'hcl', 'yaml'],
@@ -51,27 +55,22 @@ export default defineNuxtConfig({
 		},
 	},
 
-	runtimeConfig: {
-		publicGtagId: '',
-	},
-
 	// https://nuxt.com/docs/guide/directory-structure/composables
 	imports: {
 		dirs: [
 			// Scan top-level modules
-			'use',
-			'use/**',
+			'composables',
+			'composables/**',
 		],
 	},
 
 	modules: [
-		'@nuxt/image',
+		'@nuxt/eslint',
+		'@nuxt/fonts',
 		'nuxt-icon',
 		'@nuxtjs/color-mode',
-		'nuxt-gtag',
 		'@nuxt/content',
+		'@nuxt/image',
 		'@vueuse/nuxt',
-		'magic-regexp/nuxt',
-		'@nuxt/eslint',
 	],
 })

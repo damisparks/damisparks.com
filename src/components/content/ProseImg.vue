@@ -27,7 +27,7 @@ const refinedSrc = computed(() => {
 			:alt="alt"
 			:width="width"
 			:height="height"
-			class="pointer-events-none object-cover group-hover:opacity-75 rounded-[10px] shadow"
+			class="pointer-events-none w-full h-full object-cover group-hover:opacity-75 rounded-[10px] shadow"
 		/>
 	</div>
 </template>

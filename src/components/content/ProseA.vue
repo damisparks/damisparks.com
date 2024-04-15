@@ -11,12 +11,11 @@ defineProps({
 	},
 })
 </script>
-
 <template>
 	<NuxtLink
 		:href="href"
 		:target="target"
-		class="hover:underline text-zinc-950 font-firasans font-medium dark:text-white"
+		class="hover:underline text-color font-firasans font-medium dark:text-white"
 	>
 		<slot />
 	</NuxtLink>

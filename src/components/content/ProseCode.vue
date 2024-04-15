@@ -10,9 +10,10 @@ withDefaults(
 	{ code: '', language: null, filename: null, highlights: () => [], meta: null }
 )
 </script>
-
 <template>
-	<div class="rounded border my-4 relative min-h-[1rem] overflow-hidden">
+	<div
+		class="rounded border border-divider rounded-md my-4 relative min-h-[1rem] overflow-hidden"
+	>
 		<div
 			class="flex flex-col items-end justify-center min-h-[1.5rem] bg-zinc-200 dark:bg-zinc-700"
 		>

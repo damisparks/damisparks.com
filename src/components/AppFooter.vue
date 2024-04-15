@@ -1,41 +1,24 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 const year = new Date().getFullYear()
 </script>
-
 <template>
-	<AppContainer>
-		<footer>
-			<div class="py-4">
-				<div class="flex justify-center space-x-6 md:order-2">
-					<AppSocials />
-				</div>
-				<div class="mt-8 md:order-1">
-					<p class="text-center text-sm app-text-content">
-						<NuxtLink
-							class="underline"
-							to="https://creativecommons.org/licenses/by-sa/4.0/"
-						>
-							CC BY-SA 4.0
-						</NuxtLink>
-						&copy; 2019-{{ year }} Dami Sparks
-						<NuxtLink class="underline" :to="{ name: 'privacy' }">
-							Privacy Policy
-						</NuxtLink>
-					</p>
-				</div>
-			</div>
-			<p class="my-4 font-montserrat italic text-center text-sm text-zinc-600">
-				<small>
-					Logo Designed by
-					<a
-						class="text-ds-blue dark:text-ds-teal hover:opacity-90 font-bold"
-						href="mailto:rubenfaria@live.com"
-					>
-						Ruben
-					</a>
-				</small>
+	<footer class="bg-background dark:bg-background-dark pb-8 pt-16">
+		<hr class="text-divider dark:text-divider-dark pt-6" />
+		<div
+			class="flex flex-col sm:flex-row sm:justify-between space-y-2 sm:space-y-0"
+		>
+			<p class="body-compact-small">
+				<span class="text-color-light-muted dark:text-color-dark-muted"
+					>&copy; Dami Sparks {{ year }} | Software Engineer |
+				</span>
+				<NuxtLink
+					to="https://creativecommons.org/licenses/by-sa/4.0/"
+					class="hover:underline"
+				>
+					CC BY-SA 4.0
+				</NuxtLink>
 			</p>
-		</footer>
-		<AppScrollUp />
-	</AppContainer>
+			<AppSocials />
+		</div>
+	</footer>
 </template>

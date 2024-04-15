@@ -1,7 +1,7 @@
 <template>
 	<h3
 		:id="id"
-		class="text-xl mt-6 mb-4 font-bold text-zinc-600 dark:text-zinc-300 tracking-tight"
+		class="text-xl mt-6 mb-4 font-medium text-color dark:text-foreground-dark-default tracking-tight"
 	>
 		<a v-if="id && generate" :href="`#${id}`">
 			<slot />
@@ -12,7 +12,6 @@
 
 <script setup lang="ts">
 import { useRuntimeConfig } from '#imports'
-
 defineProps<{ id?: string }>()
 const heading = 3
 const { anchorLinks } = useRuntimeConfig().public.content
