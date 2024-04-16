@@ -12,7 +12,7 @@ import { showcase } from '@/data/work'
 				:to="item.websiteUrl"
 				class="flex flex-col"
 			>
-				<dt class="text-sm font-normal leading-6 text-color-light-muted">
+				<dt class="text-sm font-normal leading-6">
 					{{ item.description }}
 				</dt>
 				<dd

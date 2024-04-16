@@ -62,7 +62,9 @@ function slug(name: string) {
 						>
 							{{ item.name }}
 						</div>
-						<div class="text-sm font-normal leading-6 text-color-light-muted">
+						<div
+							class="text-sm font-normal leading-6 text-gray-300 dark:text-gray-400"
+						>
 							{{ item.description }}
 						</div>
 					</NuxtLink>

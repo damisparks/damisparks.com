@@ -1,6 +1,6 @@
 export default {
 	base: '',
-	background: 'bg-white dark:bg-background-dark',
+	background: 'bg-white dark:bg-gray-900',
 	rounded: 'rounded-md',
 	shadow: 'shadow-md',
 	divider: 'divide-y divide-gray-300 dark:divide-gray-700',

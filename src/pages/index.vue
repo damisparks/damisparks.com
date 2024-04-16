@@ -41,7 +41,7 @@
 			<p class="text-sm">
 				Read more about me on my 👉🏾
 				<NuxtLink
-					class="border-b border-divider hover:border-color-light-muted"
+					class="border-b border-divider hover:border-gray-300"
 					to="/bio"
 				>
 					bio
@@ -49,7 +49,7 @@
 			</p>
 			<p>Find me on</p>
 			<AppSocials show-text icon-size="16px" />
-			<p class="text-color-light-muted inline-flex">
+			<p class="text-gray-300 dark:text-gray-400 inline-flex">
 				Or mail me at
 				<span class="ml-2 inline-flex items-center">
 					rethinkwithdami<Icon name="carbon:at" size="20px" />gmail.com

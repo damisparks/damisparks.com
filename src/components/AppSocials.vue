@@ -12,13 +12,11 @@ const props = withDefaults(defineProps<SocialPropsType>(), { iconSize: '' })
 			:to="nav.href"
 			:title="nav.name"
 		>
-			<span
-				class="dark:text-color-dark-default text-color inline-flex items-center"
-			>
+			<span class="inline-flex items-center">
 				<Icon :name="nav.iconKey" :size="props.iconSize" />
 				<span
 					v-if="props.showText"
-					class="ml-1 border-b border-divider hover:border-color-light-muted"
+					class="ml-1 border-b border-gray-300 hover:border-gray-500 dark:border-gray-700"
 				>
 					{{ nav.name }}
 				</span>

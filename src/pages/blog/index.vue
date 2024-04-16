@@ -26,7 +26,7 @@ const { data: articles } = useAsyncData('articles', () => {
 			>
 				<li v-for="article in articles" :key="article.title" class="relative">
 					<div
-						class="group aspect-h-7 aspect-w-10 shadow block w-full overflow-hidden rounded-lg bg-background focus-within:ring-2 focus-within:ring-divider focus-within:ring-offset-2 focus-within:ring-offset-divider"
+						class="group aspect-h-7 aspect-w-10 shadow block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-divider focus-within:ring-offset-2 focus-within:ring-offset-divider"
 					>
 						<NuxtImg
 							:src="article.cover"
@@ -49,7 +49,7 @@ const { data: articles } = useAsyncData('articles', () => {
 						<span class="uppercase">{{ article.tags[0] }}</span>
 					</AppBadge>
 					<p
-						class="pointer-events-none font-montserrat mt-2 block text-sm font-medium text-color dark:text-color-dark"
+						class="pointer-events-none font-montserrat mt-2 block text-sm font-medium"
 					>
 						{{ article.title }}
 					</p>

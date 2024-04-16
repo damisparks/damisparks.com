@@ -37,9 +37,7 @@ const route = useRoute()
 			</li>
 			<li>
 				<NuxtLink external :to="github?.href" :title="github?.name">
-					<span class="dark:text-color-dark-default text-color">
-						<Icon size="24px" :name="github?.iconKey as string" />
-					</span>
+					<Icon size="24px" :name="github?.iconKey as string" />
 				</NuxtLink>
 			</li>
 			<li>

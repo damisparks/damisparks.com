@@ -9,7 +9,7 @@ const generate =
 <template>
 	<h2
 		:id="id"
-		class="text-3xl sm:text-4xl text-color dark:text-color-dark-default font-medium font-montserrat mt-2 mb-4 tracking-tight"
+		class="text-3xl sm:text-4xl font-medium font-montserrat mt-2 mb-4 tracking-tight"
 	>
 		<a v-if="id && generate" :href="`#${id}`">
 			<slot />

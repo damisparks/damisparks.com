@@ -29,7 +29,7 @@ export default {
 		},
 	},
 	variant: {
-		flat: 'bg-{color} dark:bg-{color}-400 text-white dark:text-color-dark-default',
+		flat: 'bg-{color} dark:bg-{color}-400 text-white dark:text-{color}-400',
 		outline:
 			'text-{color} dark:text-{color}-400 ring-1 ring-inset ring-{color} dark:ring-{color}-400',
 		subtle:

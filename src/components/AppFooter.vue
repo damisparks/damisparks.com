@@ -2,13 +2,13 @@
 const year = new Date().getFullYear()
 </script>
 <template>
-	<footer class="bg-background dark:bg-background-dark pb-8 pt-16">
+	<footer class="bg-gray-100 dark:bg-black pb-8 pt-16">
 		<hr class="text-gray-300 dark:text-gray-700 pt-6" />
 		<div
 			class="flex flex-col sm:flex-row sm:justify-between space-y-2 sm:space-y-0"
 		>
 			<p class="body-compact-small">
-				<span class="text-color-light-muted dark:text-color-dark-muted"
+				<span class="text-gray-500 dark:text-gray-400"
 					>&copy; Dami Sparks {{ year }} | Software Engineer |
 				</span>
 				<NuxtLink
