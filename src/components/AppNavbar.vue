@@ -23,7 +23,7 @@ const route = useRoute()
 	<nav :class="navClasses">
 		<!-- TODO: add logo or svg -->
 		<NuxtLink to="/">DS</NuxtLink>
-		<ul :class="nav.inner.base">
+		<ul class="flex items-center gap-4">
 			<li v-for="item in navigation.navItems" :key="item.name">
 				<NuxtLink
 					:to="item.href"
@@ -37,10 +37,10 @@ const route = useRoute()
 			</li>
 			<li>
 				<NuxtLink external :to="github?.href" :title="github?.name">
-					<Icon size="24px" :name="github?.iconKey as string" />
+					<Icon size="20px" :name="github?.iconKey as string" />
 				</NuxtLink>
 			</li>
-			<li>
+			<li class="flex">
 				<ColorSwitch />
 			</li>
 		</ul>
