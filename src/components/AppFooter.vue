@@ -3,7 +3,7 @@ const year = new Date().getFullYear()
 </script>
 <template>
 	<footer class="bg-background dark:bg-background-dark pb-8 pt-16">
-		<hr class="text-divider dark:text-divider-dark pt-6" />
+		<hr class="text-gray-300 dark:text-gray-700 pt-6" />
 		<div
 			class="flex flex-col sm:flex-row sm:justify-between space-y-2 sm:space-y-0"
 		>

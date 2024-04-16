@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss'
 import defaultTheme from 'tailwindcss/defaultTheme'
-import palette from './src/theme/palette'
 import plugin from 'tailwindcss/plugin'
+import themeOptions from './src/theme'
 const srcDir: string = './src'
 
 export default {
@@ -16,8 +16,8 @@ export default {
 	],
 	darkMode: 'class',
 	theme: {
-		colors: {
-			...palette,
+		extend: {
+     ...themeOptions,
 		},
 		fontFamily: {
 			firasans: ['Fira Sans', 'sans-serif', ...defaultTheme.fontFamily.sans],

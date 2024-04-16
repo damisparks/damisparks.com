@@ -3,8 +3,8 @@ export default {
 	background: 'bg-white dark:bg-background-dark',
 	rounded: 'rounded-md',
 	shadow: 'shadow-md',
-	divider: 'divide-y divide-divider dark:divide-divider-dark',
-	ring: 'ring-1 ring-divider dark:ring-divider-dark',
+	divider: 'divide-y divide-gray-300 dark:divide-gray-700',
+	ring: 'ring-1 ring-gray-300 dark:ring-gray-700',
 	body: {
 		base: '',
 		background: '',
