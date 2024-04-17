@@ -8,7 +8,7 @@ useHead({
 			: 'Dami Sparks - Freelance Full-Stack Developer, Mentor, Technical Writer and Fractional CTO',
 	bodyAttrs: {
 		class:
-			'flex h-full flex-col font-firasans bg-gray-100 text-gray-700 dark:text-gray-300 dark:bg-black',
+			'flex h-full flex-col bg-white text-gray-700 dark:text-gray-300 dark:bg-black',
 	},
 	htmlAttrs: {
 		lang: 'en',

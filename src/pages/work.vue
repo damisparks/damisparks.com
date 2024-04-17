@@ -21,7 +21,7 @@ function slug(name: string) {
 			<p
 				class="text-center font-montserrat font-medium text-xl leading-7 lg:leading-8 lg:text-2xl py-8"
 			>
-				✨ Things I&#39;ve built trying to put my dent in the universe ✨
+				✨ Things I&#39;ve built trying to put my dent in the universe 🔨
 			</p>
 		</section>
 		<section class="max-w-5xl mx-auto">
@@ -53,7 +53,7 @@ function slug(name: string) {
 					<NuxtLink
 						v-for="item in all[key]"
 						:key="item.name"
-						class="p-4 rounded-lg hover:bg-foreground-hover col-span-1"
+						class="p-4 rounded-lg hover:bg-gray-50 col-span-1"
 						:to="item.websiteUrl"
 						external
 					>

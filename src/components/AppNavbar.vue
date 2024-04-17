@@ -23,7 +23,7 @@ const route = useRoute()
 	<nav :class="navClasses">
 		<!-- TODO: add logo or svg -->
 		<NuxtLink to="/">DS</NuxtLink>
-		<ul class="flex items-center gap-4">
+		<ul :class="nav.inner.base">
 			<li v-for="item in navigation.navItems" :key="item.name">
 				<NuxtLink
 					:to="item.href"
@@ -50,10 +50,10 @@ const route = useRoute()
 /* TODO: fix the issue when rolling later. */
 <!-- <style scoped>
 .bg-image {
-  background-image: linear-gradient(
-    rgb(245, 245, 247) calc(114px),
-    rgb(255, 255, 255) 0%
-  );
-  background-color: rgba(0, 0, 0, 0);
+	background-image: linear-gradient(
+		rgb(245, 245, 247) calc(114px),
+		rgb(255, 255, 255) 0%
+	);
+	background-color: rgba(0, 0, 0, 0);
 }
 </style> -->

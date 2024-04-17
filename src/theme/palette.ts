@@ -14,7 +14,4 @@ export default {
 			default: HSLA_240_25_98,
 		},
 	},
-	nav: {
-		DEFAULT: 'rgba(250, 250, 252, .8)',
-	},
 }

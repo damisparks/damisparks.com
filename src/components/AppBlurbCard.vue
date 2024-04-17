@@ -1,5 +1,5 @@
 <template>
-	<div class="p-4 text-sm hover:bg-foreground-hover">
+	<div class="p-4 text-sm hover:bg-gray-50">
 		<slot />
 	</div>
 </template>
