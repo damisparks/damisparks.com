@@ -2,14 +2,40 @@
 const year = new Date().getFullYear()
 </script>
 <template>
-	<footer class="pb-8 pt-16">
-		<hr class="text-gray-300 dark:text-gray-700 pt-6" />
+	<footer class="pt-16 pb-8">
+		<div class="lg:flex lg:items-center lg:justify-between">
+			<div class="max-w-md">
+				<h3
+					class="text-base font-montserrat font-medium leading-6 text-gray-900"
+				>
+					Let's inspire growth together
+				</h3>
+				<p class="mt-2 text-sm leading-6 text-gray-600">
+					Feel free to reach out if you're looking for a software engineer, have
+					a question or just want to connect 📭
+				</p>
+				<p>
+					<NuxtLink
+						to="mailto:rethinkwithdami@gmail.com"
+						class="text-sm text-blue-500 dark:text-blue-400"
+						external
+					>
+						rethinkwithdami@gmail.com
+					</NuxtLink>
+				</p>
+			</div>
+		</div>
 		<div
-			class="flex flex-col sm:flex-row sm:justify-between space-y-2 sm:space-y-0"
+			class="mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between"
 		>
-			<p class="body-compact-small">
-				<span class="text-gray-500 dark:text-gray-400"
-					>&copy; Dami Sparks {{ year }} | Software Engineer |
+			<div class="flex md:order-2">
+				<AppSocials />
+			</div>
+			<p
+				class="body-compact-small mt-8 text-gray-500 dark:text-gray-700 md:order-1 md:mt-0"
+			>
+				<span class="text-gray-500 dark:text-gray-400">
+					&copy; Dami Sparks {{ year }} | Software Engineer |
 				</span>
 				<NuxtLink
 					to="https://creativecommons.org/licenses/by-sa/4.0/"
@@ -18,7 +44,6 @@ const year = new Date().getFullYear()
 					CC BY-SA 4.0
 				</NuxtLink>
 			</p>
-			<AppSocials />
 		</div>
 	</footer>
 </template>
