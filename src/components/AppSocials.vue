@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import navigation from '@/data/navigation'
 type SocialPropsType = { iconSize?: string; showText?: boolean }
-const props = withDefaults(defineProps<SocialPropsType>(), { iconSize: '24px' })
+const props = withDefaults(defineProps<SocialPropsType>(), { iconSize: '20px' })
 </script>
 <template>
 	<div class="space-x-6">

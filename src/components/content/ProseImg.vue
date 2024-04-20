@@ -21,13 +21,13 @@ const refinedSrc = computed(() => {
 </script>
 
 <template>
-	<div class="group aspect-[706/372] rounded-[10px] block overflow-clip">
+	<div class="group rounded-[10px] block overflow-clip">
 		<img
 			:src="refinedSrc"
 			:alt="alt"
 			:width="width"
 			:height="height"
-			class="pointer-events-none w-full h-full object-cover group-hover:opacity-75 rounded-[10px] shadow"
+			class="pointer-events-none w-full h-full object-cover group-hover:opacity-75 rounded-md shadow"
 		/>
 	</div>
 </template>

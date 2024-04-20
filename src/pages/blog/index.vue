@@ -15,7 +15,7 @@ const { data: articles } = useAsyncData('articles', () => {
 		<header>
 			<AppTopBlurb>
 				<AppBlurb>
-					<p>Articles I have written</p>
+					<p>Articles I have written ✍🏾</p>
 				</AppBlurb>
 			</AppTopBlurb>
 		</header>
