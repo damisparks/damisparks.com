@@ -20,15 +20,15 @@
 			>
 				✨ Things I&#39;ve built trying to put my dent in the universe ✨
 			</p>
-			<div class="inline-flex space-x-4">
+			<div class="inline-flex items-center space-x-4">
 				<NuxtLink
-					class="rounded-md bg-button hover:bg-button-hover text-white px-2.5 py-1.5"
+					class="rounded-md bg-primary-500 text-white hover:bg-primary-600 px-2.5 py-1.5"
 					to="/projects"
 				>
 					All works
 				</NuxtLink>
 				<NuxtLink
-					class="rounded-md hover:bg-button-outlined-hover text-color px-2.5 py-1.5 ring-1 ring-inset ring-divider hover:ring-color"
+					class="rounded-md shadow-sm px-2.5 py-1.5 bg-transparent text-primary-500 ring-1 ring-inset ring-primary-500 focus:ring-1 focus:ring-primary-500 hover:text-primary-600 hover:border-primary-600"
 					to="/bio"
 				>
 					Read my bio

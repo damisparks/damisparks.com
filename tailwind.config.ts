@@ -17,7 +17,9 @@ export default {
 	darkMode: 'class',
 	theme: {
 		extend: {
-     ...themeOptions,
+			colors: {
+			 ...themeOptions,
+		 }
 		},
 		fontFamily: {
 			firasans: ['Fira Sans', 'sans-serif', ...defaultTheme.fontFamily.sans],
