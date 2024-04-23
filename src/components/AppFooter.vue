@@ -5,9 +5,7 @@ const year = new Date().getFullYear()
 	<footer class="pt-16 pb-8">
 		<div class="lg:flex lg:items-center lg:justify-between">
 			<div class="max-w-md">
-				<h3
-					class="text-base font-montserrat font-medium leading-6 text-gray-900"
-				>
+				<h3 class="text-base font-montserrat font-medium leading-6">
 					Let's inspire growth together
 				</h3>
 				<p class="mt-2 text-sm leading-6 text-gray-600">

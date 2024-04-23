@@ -6,59 +6,49 @@ definePageMeta({
 
 const { data: articles } = useAsyncData('articles', () => {
 	return queryContent('/blog')
-		.only(['title', 'date', '_path', 'cover', 'tags'])
+		.only(['title', 'date', '_path', 'cover', 'tags', 'description'])
 		.find()
 })
 </script>
 <template>
-	<div class="space-y-12">
-		<header>
-			<AppTopBlurb>
-				<AppBlurb>
-					<p>Articles I have written ✍🏾</p>
-				</AppBlurb>
-			</AppTopBlurb>
-		</header>
-		<section>
-			<ul
-				role="list"
-				class="grid grid-cols gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
+	<div class="space-y-12 py-8">
+		<div class="mx-auto max-w-2xl">
+			<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+				<span class="mr-2">📑</span>Articles
+			</h2>
+			<p class="mt-2 text-lg leading-8 text-gray-600">
+				The articles I have written
+			</p>
+			<div
+				class="mt-10 space-y-16 border-t border-gray-200 pt-8 sm:mt-8 sm:pt-8"
 			>
-				<li v-for="article in articles" :key="article.title" class="relative">
-					<div
-						class="group aspect-h-7 aspect-w-10 shadow block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-divider focus-within:ring-offset-2 focus-within:ring-offset-divider"
-					>
-						<NuxtImg
-							:src="article.cover"
-							:alt="article.title"
-							class="pointer-events-none object-cover group-hover:opacity-75"
-						/>
-						<NuxtLink
-							:key="article._path"
-							:to="article._path"
-							:title="article.title"
-						>
-							<span class="sr-only">View details for {{ article.title }}</span>
+				<article v-for="article in articles" :key="article._path">
+					<div class="flex items-center gap-x-4 text-xs">
+						<AppTime :date="article.date" />
+						<NuxtLink :to="article._path">
+							<AppBadge
+								variant="subtle"
+								:color="article.tags[0] === 'personal' ? 'primary' : 'accent'"
+							>
+								{{ article.tags[0] }}
+							</AppBadge>
 						</NuxtLink>
 					</div>
-
-					<AppBadge
-						class="mt-2"
-						:color="article.tags[0] === 'personal' ? 'primary' : 'accent'"
-					>
-						<span class="uppercase">{{ article.tags[0] }}</span>
-					</AppBadge>
-					<p
-						class="pointer-events-none font-montserrat mt-2 block text-sm font-medium"
-					>
-						{{ article.title }}
-					</p>
-					<AppTime
-						:date="article.date"
-						class="pointer-events-none font-medium"
-					/>
-				</li>
-			</ul>
-		</section>
+					<div class="group relative">
+						<h3
+							class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+						>
+							<NuxtLink :to="article._path">
+								<span class="absolute inset-0" />
+								{{ article.title }}
+							</NuxtLink>
+						</h3>
+						<p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+							{{ article.description }}
+						</p>
+					</div>
+				</article>
+			</div>
+		</div>
 	</div>
 </template>

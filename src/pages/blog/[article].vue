@@ -23,7 +23,7 @@ route.meta.title = post.value.title
 <template>
 	<main>
 		<AppContainer>
-			<ContentRenderer :value="post" />
+			<ContentRenderer :value="post!" />
 		</AppContainer>
 	</main>
 </template>

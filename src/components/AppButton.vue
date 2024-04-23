@@ -4,15 +4,18 @@ import button from '@/ui.config/button'
 type ButtonPropsTypes = {
 	disabled?: boolean
 	label?: string
+	color?: keyof typeof button.color
 }
 
 const props = withDefaults(defineProps<ButtonPropsTypes>(), {
 	disabled: false,
+	color: 'primary',
 })
 
-const buttonClasses = computed(() => {
-	return button.disabled
-})
+const buttonClasses = computed(() => [
+	button.disabled,
+	button.color[props.color],
+])
 </script>
 
 <template>

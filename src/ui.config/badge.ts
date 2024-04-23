@@ -13,18 +13,18 @@ export default {
 	},
 	color: {
 		black: {
-			flat: 'text-white dark:text-color bg-black dark:bg-white',
+			flat: 'text-white dark:text-gray-300 bg-black dark:bg-white',
 		},
 		primary: {
-			flat: 'text-white dark:text-white bg-primary dark:bg-primary',
+			flat: 'text-white dark:text-white bg-primary-500 dark:bg-primary-500',
 			subtle:
-				'bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10 text-primary dark:text-primary-400 ring-1 ring-inset ring-primary dark:ring-primary-400 ring-opacity-25 dark:ring-opacity-25',
-			soft: 'bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10 text-primary dark:text-primary-400',
+				'bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10 text-primary-500 dark:text-primary-400 ring-1 ring-inset ring-primary-500 dark:ring-primary-400 ring-opacity-25 dark:ring-opacity-25',
+			soft: 'bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10 text-primary-500 dark:text-primary-400',
 		},
 		accent: {
-			flat: 'text-color dark:text-color bg-accent dark:bg-accent',
+			flat: 'dark:text-gray-300 bg-accent-500 dark:bg-accent-500',
 			subtle:
-				'bg-accent-50 dark:bg-accent-400 dark:bg-opacity-10 text-accent-500 dark:text-accent-400 ring-1 ring-inset ring-accent dark:ring-accent-400 ring-opacity-25 dark:ring-opacity-25',
+				'bg-accent-50 dark:bg-accent-400 dark:bg-opacity-10 text-accent-500 dark:text-accent-400 ring-1 ring-inset ring-accent-500 dark:ring-accent-400 ring-opacity-25 dark:ring-opacity-25',
 			soft: 'bg-accent-50 dark:bg-accent-400 dark:bg-opacity-10 text-accent-500 dark:text-accent-400',
 		},
 	},
