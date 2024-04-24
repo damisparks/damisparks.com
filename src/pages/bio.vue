@@ -1,7 +1,8 @@
-<script setup lang="ts"></script>
 <template>
-	<div>
-		Bio
-		<ContentDoc path="bio" />
-	</div>
+	<NuxtLayout>
+		<div>
+			Bio
+			<ContentDoc path="bio" />
+		</div>
+	</NuxtLayout>
 </template>

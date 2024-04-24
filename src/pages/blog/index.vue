@@ -1,7 +1,7 @@
 <script setup lang="ts">
 definePageMeta({
 	title: 'Blog',
-	description: 'Articles I have written',
+	description: 'The articles I have written',
 })
 
 const { data: articles } = useAsyncData('articles', () => {
@@ -11,14 +11,16 @@ const { data: articles } = useAsyncData('articles', () => {
 })
 </script>
 <template>
-	<div class="space-y-12 py-8">
-		<div class="mx-auto max-w-2xl">
-			<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-				<span class="mr-2">📑</span>Articles
-			</h2>
-			<p class="mt-2 text-lg leading-8 text-gray-600">
-				The articles I have written
-			</p>
+	<NuxtLayout name="blog">
+		<div class="space-y-12 py-8">
+			<div>
+				<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+					<span class="mr-2">📑</span>Articles
+				</h2>
+				<p class="mt-2 text-lg leading-8 text-gray-600">
+					The articles I have written
+				</p>
+			</div>
 			<div
 				class="mt-10 space-y-16 border-t border-gray-200 pt-8 sm:mt-8 sm:pt-8"
 			>
@@ -50,5 +52,5 @@ const { data: articles } = useAsyncData('articles', () => {
 				</article>
 			</div>
 		</div>
-	</div>
+	</NuxtLayout>
 </template>
