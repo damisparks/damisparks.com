@@ -1,14 +1,15 @@
 <template>
 	<div class="h-screen flex flex-col">
-		<!--  mx-auto max-w-2xl px-4 md:px-6 lg:px-8 -->
 		<AppNavbar />
-		<AppContainer>
-			<div class="flex-auto mt-12">
+		<div class="flex-auto mt-12">
+			<AppContainer>
 				<slot />
-			</div>
-			<div>
+			</AppContainer>
+		</div>
+		<div>
+			<AppContainer>
 				<AppFooter />
-			</div>
-		</AppContainer>
+			</AppContainer>
+		</div>
 	</div>
 </template>

@@ -1,6 +1,6 @@
 export default {
 	base: 'flex items-center justify-between',
-	paddingX: 'px-4 md:px-6 lg:px-8 mx-auto',
+	wrapper: 'flex items-center justify-between',
 	position: 'fixed w-full z-50',
 	height: 'h-11 max-h-11',
 	background: 'bg-gray-200/50 dark:bg-gray-800/50',

@@ -9,7 +9,6 @@ const navClasses = computed(() => [
 	nav.position,
 	nav.background,
 	nav.backdrop,
-	nav.paddingX,
 ])
 
 const github = computed(() =>
@@ -18,10 +17,11 @@ const github = computed(() =>
 const navTextClasses = computed(() => [nav.inner.font, nav.inner.textSize])
 </script>
 <template>
-	<div>
-		<AppContainer>
-			<nav :class="navClasses">
-				<!-- TODO: add logo or svg -->
+	<nav :class="navClasses">
+		<AppContainer class="w-full">
+			<!-- TODO: add logo or svg -->
+
+			<div :class="nav.wrapper">
 				<NuxtLink to="/">DS</NuxtLink>
 				<ul :class="nav.inner.base">
 					<li v-for="item in navigation.navItems" :key="item.name">
@@ -44,7 +44,7 @@ const navTextClasses = computed(() => [nav.inner.font, nav.inner.textSize])
 						<ColorSwitch />
 					</li>
 				</ul>
-			</nav>
+			</div>
 		</AppContainer>
-	</div>
+	</nav>
 </template>
