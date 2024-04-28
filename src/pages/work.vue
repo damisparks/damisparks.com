@@ -4,6 +4,12 @@ import { all } from '@/data/work'
 function slug(name: string) {
 	return name.toLowerCase().replace(/\s/g, '-')
 }
+
+definePageMeta({
+	title: 'Work',
+	description:
+		"Things I've built or collaborated on trying to put my dent in the universe.",
+})
 </script>
 <template>
 	<div class="space-y-12">
