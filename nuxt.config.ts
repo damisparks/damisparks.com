@@ -1,9 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	devtools: { enabled: true },
+		// https://content.nuxtjs.org/guide/recipes/sitemap
+	nitro: {
+		prerender: {
+			crawlLinks: true,
+			routes: ['/sitemap.xml'],
+		},
+	},
 
 	routeRules: {
 		'/projects': { redirect: '/work' }, // 307 (temp redirect)
+		'/about': { redirect: {to: '/bio', statusCode: 301}},
 		// '/old-page': { redirect: { to: '/new-page', statusCode: 301 } }, // 301 (perm redirect)
 	},
 	// https://color-mode.nuxtjs.org/
@@ -76,5 +84,6 @@ export default defineNuxtConfig({
 		'@nuxt/content',
 		'@nuxt/image',
 		'@vueuse/nuxt',
+		'@nuxtjs/sitemap'
 	],
 })

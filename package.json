@@ -17,6 +17,7 @@
     "@tailwindcss/aspect-ratio": "0.4.2",
     "@vueuse/nuxt": "10.9.0",
     "nuxt": "^3.11.1",
+    "sitemap": "7.1.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
@@ -25,6 +26,7 @@
     "@commitlint/config-conventional": "19.1.0",
     "@nuxt/eslint": "0.3.0-beta.6",
     "@nuxtjs/color-mode": "3.3.3",
+    "@nuxtjs/sitemap": "5.1.4",
     "autoprefixer": "10.4.19",
     "eslint": "8.57.0",
     "nuxt-gtag": "2.0.5",
