@@ -21,7 +21,5 @@ if (!post.value) {
 route.meta.title = post.value.title
 </script>
 <template>
-	<NuxtLayout name="blog">
-		<ContentRenderer :value="post!" />
-	</NuxtLayout>
+	<ContentRenderer :value="post!" />
 </template>

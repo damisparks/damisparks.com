@@ -1,8 +1,6 @@
 <template>
-	<NuxtLayout>
-		<div>
-			Bio
-			<ContentDoc path="bio" />
-		</div>
-	</NuxtLayout>
+	<div>
+		Bio
+		<ContentDoc path="bio" />
+	</div>
 </template>
