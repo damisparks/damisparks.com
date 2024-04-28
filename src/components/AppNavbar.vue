@@ -22,9 +22,9 @@ const navTextClasses = computed(() => [nav.inner.font, nav.inner.textSize])
 		<AppContainer class="w-full">
 			<div :class="nav.wrapper">
 				<NuxtLink to="/">
-					<pre class="text-sm text-primary-500 inline-flex">
+					<pre class="inline-flex">
 						<small>{{ '<' }}</small>
-						<small>damisparks</small>
+						<small class="text-sm text-primary-500">damisparks</small>
 						<small>{{ '/>' }}</small>
 					</pre>
 				</NuxtLink>
