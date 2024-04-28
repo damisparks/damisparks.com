@@ -5,7 +5,7 @@ export default {
 			flat: 'bg-primary-500 text-white hover:bg-primary-600',
 		},
 		gray: {
-			flat: 'bg-gray-500 text-white hover:bg-gray-600',
+			flat: 'bg-zinc-500 text-white hover:bg-zinc-600',
 		},
 	}
 }

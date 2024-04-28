@@ -16,7 +16,7 @@ const props = withDefaults(defineProps<SocialPropsType>(), { iconSize: '20px' })
 				<Icon :name="nav.iconKey" :size="props.iconSize" />
 				<span
 					v-if="props.showText"
-					class="ml-1 text-gray-400 hover:text-gray-500 dark:border-gray-700"
+					class="ml-1 text-zinc-400 hover:text-zinc-500 dark:border-zinc-700"
 				>
 					{{ nav.name }}
 				</span>

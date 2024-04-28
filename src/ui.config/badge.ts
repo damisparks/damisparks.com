@@ -13,7 +13,7 @@ export default {
 	},
 	color: {
 		black: {
-			flat: 'text-white dark:text-gray-300 bg-black dark:bg-white',
+			flat: 'text-white dark:text-zinc-300 bg-black dark:bg-white',
 		},
 		primary: {
 			flat: 'text-white dark:text-white bg-primary-500 dark:bg-primary-500',
@@ -22,7 +22,7 @@ export default {
 			soft: 'bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10 text-primary-500 dark:text-primary-400',
 		},
 		accent: {
-			flat: 'dark:text-gray-300 bg-accent-500 dark:bg-accent-500',
+			flat: 'dark:text-zinc-300 bg-accent-500 dark:bg-accent-500',
 			subtle:
 				'bg-accent-50 dark:bg-accent-400 dark:bg-opacity-10 text-accent-500 dark:text-accent-400 ring-1 ring-inset ring-accent-500 dark:ring-accent-400 ring-opacity-25 dark:ring-opacity-25',
 			soft: 'bg-accent-50 dark:bg-accent-400 dark:bg-opacity-10 text-accent-500 dark:text-accent-400',

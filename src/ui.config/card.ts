@@ -1,10 +1,10 @@
 export default {
 	base: '',
-	background: 'bg-white dark:bg-gray-900',
+	background: 'bg-white dark:bg-zinc-900',
 	rounded: 'rounded-md',
 	shadow: 'shadow-md',
-	divider: 'divide-y divide-gray-300 dark:divide-gray-700',
-	ring: 'ring-1 ring-gray-300 dark:ring-gray-700',
+	divider: 'divide-y divide-zinc-300 dark:divide-zinc-700',
+	ring: 'ring-1 ring-zinc-300 dark:ring-zinc-700',
 	body: {
 		base: '',
 		background: '',

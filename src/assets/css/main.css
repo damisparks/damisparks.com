@@ -39,6 +39,7 @@
 	font-variant-position: normal;
 	font-variation-settings: normal;
 	text-rendering: optimizeLegibility;
+	--text-stroke-color: #aaa;
 }
 
 a:not([href]) {

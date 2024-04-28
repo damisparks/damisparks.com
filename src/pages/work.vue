@@ -38,7 +38,7 @@ function slug(name: string) {
 				>
 					<span
 						:style="{
-							'-webkit-text-stroke': '#AAA',
+							'-webkit-text-stroke': 'var(--text-stroke-color)',
 							'-webkit-text-stroke-width': '1.5px',
 							color: 'transparent',
 						}"
@@ -51,7 +51,7 @@ function slug(name: string) {
 					<NuxtLink
 						v-for="item in all[key]"
 						:key="item.name"
-						class="p-4 rounded-lg hover:bg-gray-50 col-span-1"
+						class="p-4 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-900 col-span-1"
 						:to="item.websiteUrl"
 						external
 					>
@@ -61,7 +61,7 @@ function slug(name: string) {
 							{{ item.name }}
 						</div>
 						<div
-							class="text-sm font-normal leading-6 text-gray-300 dark:text-gray-400"
+							class="text-sm font-normal leading-6 text-zinc-500 dark:text-zinc-400"
 						>
 							{{ item.description }}
 						</div>
