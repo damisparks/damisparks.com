@@ -1,69 +1,60 @@
-import defaultTheme from 'tailwindcss/defaultTheme'
 import type { Config } from 'tailwindcss'
-import theme from './theme'
+import defaultTheme from 'tailwindcss/defaultTheme'
+import plugin from 'tailwindcss/plugin'
+import themeOptions from './src/theme'
+const srcDir: string = './src'
 
 export default {
 	content: [
-		'./components/**/*.{js,vue,ts}',
-		'./layouts/**/*.vue',
-		'./pages/**/*.vue',
-		'./plugins/**/*.{js,ts}',
-		'./nuxt.config.{js,ts}',
-		'./app.vue',
-		'./error.vue',
+		`${srcDir}/components/**/*.{js,vue,ts}`,
+		`${srcDir}/layouts/**/*.vue`,
+		`${srcDir}/pages/**/*.vue`,
+		`${srcDir}/plugins/**/*.{js,ts}`,
+		`${srcDir}/app.vue`,
+		`${srcDir}/error.vue`,
+		`${srcDir}/ui.config/**/*.{js,vue,ts}`,
 	],
 	darkMode: 'class',
 	theme: {
 		extend: {
 			colors: {
-				...theme,
-			},
-			fontFamily: {
-				firasans: ['Fira Sans', 'sans-serif', ...defaultTheme.fontFamily.sans],
-				montserrat: [
-					'Montserrat',
-					'sans-serif',
-					...defaultTheme.fontFamily.sans,
-				],
-			},
+			 ...themeOptions,
+		 }
+		},
+		fontFamily: {
+			firasans: ['Fira Sans', 'sans-serif', ...defaultTheme.fontFamily.sans],
+			montserrat: ['Montserrat', 'sans-serif', ...defaultTheme.fontFamily.sans],
+		},
+		fontWeight: {
+			light: '300',
+			normal: '400',
+			medium: '500',
+		},
+		borderRadius: {
+			xl: `calc(var(--radius) + 4px)`,
+			lg: `var(--radius)`,
+			md: `calc(var(--radius) - 2px)`,
+			sm: 'calc(var(--radius) - 4px)',
+			full: 'calc(9999px)',
 		},
 	},
-	variants: {
-		extend: {},
-	},
+	/** @type {import('tailwindcss/plugin')} */
 	plugins: [
-		require('@tailwindcss/aspect-ratio'),
-		require('@tailwindcss/forms'),
-
-		// solution reference : https://github.com/tailwindlabs/tailwindcss-intellisense/issues/227
-		/** @type {import('tailwindcss/types/config').PluginCreator} */
-
-		({ addComponents }: any) => {
-			/** * @type {import('tailwindcss/types/config').PluginAPI} */
+		plugin(({ addComponents }) => {
 			addComponents({
-				'.btn': {
-					'@apply text-base leading-5 font-semibold rounded hover:shadow-lg p-2 font-firasans':
+				'.body-compact-small': {
+					'@apply text-sm font-normal font-firasans leading-4 tracking-[-0.12px]':
 						{},
 				},
-				'.btn-ds-blue': {
-					'@apply bg-ds-blue text-white dark:bg-ds-orange dark:text-ds-blue':
-						{},
-				},
-				'.app-input-label': {
-					'@apply block text-sm font-medium font-firasans text-zinc-500 dark:text-zinc-400':
-						{},
-				},
-				'.app-heading': {
-					'@apply text-zinc-800 dark:text-zinc-100 font-montserrat': {},
+				'.caption': {
+					'@apply text-xs font-normal font-firasans tracking-[0.4px]': {},
 				},
 				'.app-text-content': {
 					'@apply text-zinc-600 dark:text-zinc-400 font-firasans': {},
 				},
-				'.app-text-gradient': {
-					'@apply text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 dark:from-yellow-400 dark:to-pink-600':
-						{},
-				},
 			})
-		},
+		}),
+
+		require('@tailwindcss/aspect-ratio'),
 	],
 } satisfies Config
