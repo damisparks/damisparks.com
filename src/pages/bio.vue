@@ -5,8 +5,7 @@ definePageMeta({
 })
 </script>
 <template>
-	<div>
-		Bio
+	<div class="py-8">
 		<ContentDoc path="bio" />
 	</div>
 </template>
