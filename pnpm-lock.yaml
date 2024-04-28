@@ -49,6 +49,9 @@ devDependencies:
   eslint:
     specifier: 8.57.0
     version: 8.57.0
+  nuxt-gtag:
+    specifier: 2.0.5
+    version: 2.0.5
   nuxt-icon:
     specifier: 0.6.10
     version: 0.6.10(nuxt@3.11.1)(vite@5.2.7)(vue@3.4.21)
@@ -6461,6 +6464,18 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.3
+
+  /nuxt-gtag@2.0.5:
+    resolution: {integrity: sha512-RX/52eXufjly/Y7PJKRLGLBQhI73SnmzcLoI4pjEJIVsEVpIXJLkAwHtKY3HvU8KiV0ai4UE3Cn1xB6ncoiFaA==}
+    dependencies:
+      '@nuxt/kit': 3.11.1
+      defu: 6.1.4
+      pathe: 1.1.2
+      ufo: 1.5.3
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
 
   /nuxt-icon@0.6.10(nuxt@3.11.1)(vite@5.2.7)(vue@3.4.21):
     resolution: {integrity: sha512-S9zHVA66ox4ZSpMWvCjqKZC4ZogC0s2z3vZs+M4D95YXGPEXwxDZu+insMKvkbe8+k7gvEmtTk0eq3KusKlxiw==}
