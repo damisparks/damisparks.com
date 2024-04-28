@@ -3,6 +3,7 @@ import nav from '@/ui.config/nav'
 import navigation from '@/data/navigation'
 
 const route = useRoute()
+const img = useImage()
 const navClasses = computed(() => [
 	nav.height,
 	nav.base,
@@ -19,10 +20,14 @@ const navTextClasses = computed(() => [nav.inner.font, nav.inner.textSize])
 <template>
 	<nav :class="navClasses">
 		<AppContainer class="w-full">
-			<!-- TODO: add logo or svg -->
-
 			<div :class="nav.wrapper">
-				<NuxtLink to="/">DS</NuxtLink>
+				<NuxtLink to="/">
+					<pre class="text-sm text-primary-500 inline-flex">
+						<small>{{ '<' }}</small>
+						<small>damisparks</small>
+						<small>{{ '/>' }}</small>
+					</pre>
+				</NuxtLink>
 				<ul :class="nav.inner.base">
 					<li v-for="item in navigation.navItems" :key="item.name">
 						<NuxtLink
