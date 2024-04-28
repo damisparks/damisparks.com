@@ -55,6 +55,10 @@ export default defineNuxtConfig({
 		},
 	},
 
+	runtimeConfig: {
+		publicGtagId: '',
+	},
+
 	// https://nuxt.com/docs/guide/directory-structure/composables
 	imports: {
 		dirs: [
