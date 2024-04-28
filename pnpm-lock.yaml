@@ -20,6 +20,9 @@ dependencies:
   '@vueuse/nuxt':
     specifier: 10.9.0
     version: 10.9.0(nuxt@3.11.1)(vue@3.4.21)
+  magic-regexp:
+    specifier: 0.8.0
+    version: 0.8.0
   nuxt:
     specifier: ^3.11.1
     version: 3.11.1(@types/node@20.11.30)(@unocss/reset@0.59.4)(eslint@8.57.0)(floating-vue@5.2.2)(typescript@5.4.5)(unocss@0.59.4)(vite@5.2.7)
@@ -6284,7 +6287,7 @@ packages:
     resolution: {integrity: sha512-lOSLWdE156csDYwCTIGiAymOLN7Epu/TU5e/oAnISZfU6qP+pgjkE+xbVjVn3yLPKN8n1G2yIAYTAM5KRk6/ow==}
     dependencies:
       estree-walker: 3.0.3
-      magic-string: 0.30.8
+      magic-string: 0.30.10
       mlly: 1.6.1
       regexp-tree: 0.1.27
       type-level-regexp: 0.1.17

@@ -84,6 +84,7 @@ export default defineNuxtConfig({
 		'@nuxt/content',
 		'@nuxt/image',
 		'@vueuse/nuxt',
-		'@nuxtjs/sitemap'
+		'@nuxtjs/sitemap',
+		'magic-regexp/nuxt',
 	],
 })
