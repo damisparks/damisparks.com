@@ -13,10 +13,12 @@ const { data: articles } = useAsyncData('articles', () => {
 <template>
 	<div class="space-y-12 py-8">
 		<div>
-			<h2 class="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
+			<h2
+				class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-300 sm:text-4xl"
+			>
 				<span class="mr-2">📑</span>Articles
 			</h2>
-			<p class="mt-2 text-lg leading-8 text-zinc-600">
+			<p class="mt-2 text-lg leading-8 text-zinc-600 dark:text-zinc-400">
 				The articles I have written
 			</p>
 		</div>
@@ -35,14 +37,16 @@ const { data: articles } = useAsyncData('articles', () => {
 				</div>
 				<div class="group relative">
 					<h3
-						class="mt-3 text-lg font-semibold leading-6 text-zinc-900 group-hover:text-zinc-600"
+						class="mt-3 text-lg font-semibold leading-6 text-zinc-900 dark:text-zinc-300 group-hover:text-zinc-400"
 					>
 						<NuxtLink :to="article._path">
 							<span class="absolute inset-0" />
 							{{ article.title }}
 						</NuxtLink>
 					</h3>
-					<p class="mt-5 line-clamp-3 text-sm leading-6 text-zinc-600">
+					<p
+						class="mt-5 line-clamp-3 text-sm leading-6 text-zinc-600 dark:text-zinc-400"
+					>
 						{{ article.description }}
 					</p>
 				</div>
