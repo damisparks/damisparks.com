@@ -7,6 +7,24 @@ export default defineNuxtConfig({
 			crawlLinks: true,
 			routes: ['/sitemap.xml'],
 		},
+		hooks: {
+      'prerender:generate' (route) {
+        if (route.fileName)
+          route.fileName = route.fileName.replace(
+            /(\.\w{3})\/index.html$/,
+            '$1',
+          )
+
+        if (route.fileName?.endsWith('.html') && route.contents) {
+          route.contents = route.contents.replace(/(src|href|srcset)="\/_ipx[^"]+"/g, r => r.replaceAll('//', '/'))
+        }
+
+        if (route.error) {
+          console.error(route.route, route.error, route)
+          process.exit(1)
+        }
+      },
+		}
 	},
 
 	routeRules: {
