@@ -3,9 +3,9 @@
 		<section>
 			<AppTopBlurb>
 				<AppBlurb>
-					Dami
-					<span style="color: hsla(217, 89%, 61%, 1)">envisions</span> ideas and
-					<span style="color: hsla(328, 100%, 54%, 1)">turns</span> them into
+					I
+					<span style="color: hsla(217, 89%, 61%, 1)">envision</span> ideas and
+					<span style="color: hsla(328, 100%, 54%, 1)">turn</span> them into
 					scalable digital products while
 					<span style="color: hsla(136, 53%, 43%, 1)">igniting</span> a passion
 					for coding in
