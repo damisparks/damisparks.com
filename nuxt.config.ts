@@ -30,7 +30,9 @@ export default defineNuxtConfig({
 	routeRules: {
 		'/projects': { redirect: '/work' }, // 307 (temp redirect)
 		'/about': { redirect: {to: '/bio', statusCode: 301}},
-		'/work': { redirect: {to: '/articles', statusCode: 301}},
+		'/blog': { redirect: { to: '/articles', statusCode: 301 } },
+		'/blog/how-to-provision-a-node-app-on-amazon-eks-using-terraform': { redirect: { to: '/articles/how-to-provision-a-node-app-on-amazon-eks-using-terraform', statusCode: 301 } },
+		'/blog/intro': { redirect: { to: '/articles/intro', statusCode: 301 } },
 		// '/old-page': { redirect: { to: '/new-page', statusCode: 301 } }, // 301 (perm redirect)
 	},
 	// https://color-mode.nuxtjs.org/
