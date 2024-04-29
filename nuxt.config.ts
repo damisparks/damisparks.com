@@ -30,6 +30,7 @@ export default defineNuxtConfig({
 	routeRules: {
 		'/projects': { redirect: '/work' }, // 307 (temp redirect)
 		'/about': { redirect: {to: '/bio', statusCode: 301}},
+		'/work': { redirect: {to: '/articles', statusCode: 301}},
 		// '/old-page': { redirect: { to: '/new-page', statusCode: 301 } }, // 301 (perm redirect)
 	},
 	// https://color-mode.nuxtjs.org/
