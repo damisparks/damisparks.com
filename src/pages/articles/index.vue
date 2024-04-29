@@ -1,11 +1,11 @@
 <script setup lang="ts">
 definePageMeta({
-	title: 'Blog',
+	title: 'Articles',
 	description: 'The articles I have written',
 })
 
 const { data: articles } = useAsyncData('articles', () => {
-	return queryContent('/blog')
+	return queryContent('/articles')
 		.only(['title', 'date', '_path', 'cover', 'tags', 'description'])
 		.find()
 })
