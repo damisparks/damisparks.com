@@ -22,8 +22,8 @@ export default {
 			href: '/work',
 		},
 		{
-			name: 'Blog',
-			href: '/blog',
+			name: 'Articles',
+			href: '/articles',
 		},
 	],
 }
