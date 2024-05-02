@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { showcase } from '@/data/work'
+const threeShowcase = showcase.slice(0, 3)
+const moreShowcase = showcase.slice(3)
+</script>
 <template>
 	<div class="space-y-4 slide-enter">
 		<section>
@@ -33,6 +38,38 @@
 				</NuxtLink>
 			</div>
 			<AppBlurbList />
+		</section>
+		<section>
+			<div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+				<div class="space-y-6">
+					<p class="uppercase">featured work</p>
+					<div v-for="item in threeShowcase" :key="item.id">
+						<NuxtLink
+							class="grid grid-cols-6 gap-3 items-center"
+							:to="item.websiteUrl"
+							external
+						>
+							<NuxtImg
+								class="object-cover col-span-2 object-center w-full h-16 rounded-md"
+								:src="item.imageUrl"
+								:alt="item.name"
+							/>
+							<div class="col-span-4">
+								{{ item.name }}
+							</div>
+						</NuxtLink>
+					</div>
+				</div>
+				<NuxtLink :to="moreShowcase[0].websiteUrl" external class="h-fit">
+					<NuxtImg
+						class="object-cover w-full rounded-md border border-gray-100"
+						:src="moreShowcase[0].imageUrl"
+					/>
+					<p class="py-4 font-normal">
+						{{ moreShowcase[0].name }}
+					</p>
+				</NuxtLink>
+			</div>
 		</section>
 	</div>
 </template>
