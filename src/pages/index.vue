@@ -45,7 +45,7 @@ const moreShowcase = showcase.slice(3)
 					<p class="uppercase">featured work</p>
 					<div v-for="item in threeShowcase" :key="item.id">
 						<NuxtLink
-							class="grid grid-cols-6 gap-3 items-center"
+							class="grid grid-cols-6 gap-3 items-center hover:bg-primary-50"
 							:to="item.websiteUrl"
 							external
 						>
