@@ -37,10 +37,9 @@ const moreShowcase = showcase.slice(3)
 					See my bio
 				</NuxtLink>
 			</div>
-			<AppBlurbList />
 		</section>
 		<section>
-			<div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+			<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 pt-8">
 				<div class="space-y-6">
 					<p class="uppercase text-gray-500 dark:text-gray-400">
 						featured work
