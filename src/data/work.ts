@@ -3,7 +3,7 @@ type WorkListTypes = Record<string, any[]>
 const showcase = [
 		{
 			id: 'actifage-lda-actif-for-professionals',
-			name: 'Actifage | Actif for Professionals',
+			name: 'Actif for Professionals',
 			description:
 			'Elder Care Solution with Adaptive Exercises and Facilities Management',
 			websiteUrl: 'https://pro.actif.online/login',
@@ -11,7 +11,7 @@ const showcase = [
 		},
 		{
 			id: 'actifage-lda-actif-for-individuals',
-			name: 'Actifage | Actif for Individuals',
+			name: 'Actif for Individuals',
 			description: 'Elder Care Solution with Adaptive Exercises for Individuals.',
 			websiteUrl: 'https://me.actif.online/login',
 			imageUrl: '/img/actif-individual.webp'
@@ -25,7 +25,7 @@ const showcase = [
 	},
 		{
 		id: 'actifage-lda-actif-online',
-		name: 'Actifage | Actif Online',
+		name: 'Actif Online',
 		websiteUrl: 'https://www.actif.online/',
 		description:
 			'A tech company focusing on empowering older adults through exercise, anytime and everywhere.',
@@ -36,21 +36,21 @@ const all: WorkListTypes = {
 	business: [
 		{
 			id: 'actifage-lda-actif-online',
-			name: 'Actifage | Actif Online',
+			name: 'Actif Online',
 			websiteUrl: 'https://www.actif.online/',
 			description:
 				'A tech company focusing on empowering older adults through exercise, anytime and everywhere.',
 		},
 		{
 			id: 'actifage-lda-actif-for-professionals',
-			name: 'Actifage | Actif for Professionals',
+			name: 'Actif for Professionals',
 			description:
 				'Elder Care Solution with Adaptive Exercises and Facilities Management',
 			websiteUrl: 'https://pro.actif.online/login',
 		},
 		{
 			id: 'actifage-lda-actif-for-individuals',
-			name: 'Actifage | Actif for Individuals',
+			name: 'Actif for Individuals',
 			description:
 				'Elder Care Solution with Adaptive Exercises for Individuals.',
 			websiteUrl: 'https://me.actif.online/login',
