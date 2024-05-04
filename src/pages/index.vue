@@ -42,15 +42,17 @@ const moreShowcase = showcase.slice(3)
 		<section>
 			<div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
 				<div class="space-y-6">
-					<p class="uppercase">featured work</p>
+					<p class="uppercase text-gray-500 dark:text-gray-400">
+						featured work
+					</p>
 					<div v-for="item in threeShowcase" :key="item.id">
 						<NuxtLink
-							class="grid grid-cols-6 gap-3 items-center hover:bg-primary-50"
+							class="grid grid-cols-6 gap-3 items-center hover:bg-primary-50 p-2 rounded-md"
 							:to="item.websiteUrl"
 							external
 						>
 							<NuxtImg
-								class="object-cover col-span-2 object-center w-full h-16 rounded-md"
+								class="object-cover object-center col-span-2 w-full h-16 rounded-md"
 								:src="item.imageUrl"
 								:alt="item.name"
 							/>
