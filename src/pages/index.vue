@@ -74,4 +74,3 @@ const moreShowcase = showcase.slice(3)
 		</section>
 	</div>
 </template>
-<!-- TODO: Add smooth transition into page -->
