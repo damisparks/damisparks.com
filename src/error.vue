@@ -11,6 +11,9 @@ const handleError = () => clearError({ redirect: '/' })
 				src="/images/photo-1545972154-9bb223aac798.webp"
 				format="webp"
 				loading="lazy"
+				alt="car on road with tire at the back"
+				width="1525"
+				height="1235"
 				class="absolute inset-0 -z-10 h-full w-full object-cover object-top"
 			/>
 		</figure>
