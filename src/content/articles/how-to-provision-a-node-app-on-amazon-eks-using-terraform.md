@@ -252,7 +252,7 @@ terraform init
 
 The following will be output in your console. Your output may vary. However, this was my output at the time of writing.
 
-<img width="706" height="372" src="/img/terraform-init-output.png" alt="terraform init output">
+<img width="706" height="372" src="/images/terraform-init-output.png" alt="terraform init output">
 
 Next, we run the terraform plan command
 
@@ -266,7 +266,7 @@ terraform plan
 
 The following will be output in your console. Your output may vary. However, this was my output at the time of writing.
 
-<img width="706" height="372" src="/img/terraform-plan.png" alt="terraform plan">
+<img width="706" height="372" src="/images/terraform-plan.png" alt="terraform plan">
 
 Next, we will apply our terraform configuration
 
@@ -289,7 +289,7 @@ To view the AWS EKS Cluster information, type this command into your terminal:
 kubectl cluster-info
 ```
 
-<img width="706" height="372" src="/img/kubectl-cluster-info.png" alt="terraform plan">
+<img width="706" height="372" src="/images/kubectl-cluster-info.png" alt="terraform plan">
 
 Next, we will talk about how to visualise the resources using the AWS Management Console.
 

@@ -7,21 +7,21 @@ const showcase = [
 			description:
 			'Elder Care Solution with Adaptive Exercises and Facilities Management',
 			websiteUrl: 'https://pro.actif.online/login',
-			imageUrl: '/img/actif-pro.webp'
+			imageUrl: '/images/actif-pro.webp'
 		},
 		{
 			id: 'actifage-lda-actif-for-individuals',
 			name: 'Actif for Individuals',
 			description: 'Elder Care Solution with Adaptive Exercises for Individuals.',
 			websiteUrl: 'https://me.actif.online/login',
-			imageUrl: '/img/actif-individual.webp'
+			imageUrl: '/images/actif-individual.webp'
 	},
 	{
 		name: 'Photoweb | Izzy',
 		websiteUrl: 'http://photoweb.fr/',
 		description:
 			'Photoweb is a French company that offers a wide range of photo products.',
-		imageUrl: '/img/photoweb.webp',
+		imageUrl: '/images/photoweb.webp',
 	},
 		{
 		id: 'actifage-lda-actif-online',
@@ -29,7 +29,7 @@ const showcase = [
 		websiteUrl: 'https://www.actif.online/',
 		description:
 			'A tech company focusing on empowering older adults through exercise, anytime and everywhere.',
-		imageUrl: '/img/actif-main.webp',
+		imageUrl: '/images/actif-main.webp',
 		},
 ]
 const all: WorkListTypes = {
