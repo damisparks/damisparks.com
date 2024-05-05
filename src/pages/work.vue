@@ -16,17 +16,15 @@ definePageMeta({
 		<section>
 			<AppTopBlurb>
 				<AppBlurb>
-					My main focus is on building scalable digital products and digital
+					Committed to building scalable digital products and digital
 					experiences — currently working at Tricentis.
 				</AppBlurb>
 			</AppTopBlurb>
 		</section>
-		<section>
-			<p
-				class="text-center font-montserrat font-medium text-xl leading-7 lg:leading-8 lg:text-2xl py-8"
-			>
-				✨ Things I&#39;ve built trying to put my dent in the universe 🔨
-			</p>
+		<section class="py-8 text-center">
+			<AppHeadlineFluid class="py-8">
+				Things I&#39;ve built trying to put my dent in the universe.
+			</AppHeadlineFluid>
 		</section>
 		<section class="max-w-5xl mx-auto">
 			<div
@@ -34,30 +32,11 @@ definePageMeta({
 				:style="{ '--enter-stage': keyIdx + 1 }"
 				slide-enter
 			>
-				<div
-					class="select-none relative h-20 pointer-events-none slide-enter"
-					:style="{
-						'--enter-stage': keyIdx - 2,
-						'--enter-step': '60ms',
-					}"
-					:id="slug(key)"
-				>
-					<span
-						:style="{
-							'-webkit-text-stroke': 'var(--text-stroke-color)',
-							'-webkit-text-stroke-width': '1.5px',
-							color: 'transparent',
-						}"
-						class="text-[4em] capitalize absolute font-firasans font-medium left-4 top-0 leading-[1em] opacity-35 dark:opacity-20"
-					>
-						{{ key }}
-					</span>
-				</div>
 				<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
 					<NuxtLink
 						v-for="item in all[key]"
 						:key="item.name"
-						class="p-4 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-900 col-span-1"
+						class="p-4 rounded-lg hover:bg-primary-50 dark:hover:bg-primary-500/40 col-span-1"
 						:to="item.websiteUrl"
 						external
 					>
