@@ -51,6 +51,7 @@ export default defineNuxtConfig({
 	srcDir: 'src',
 	eslint: {
 		config: {
+			// TODO: Review the rules and update the config.
 			stylistic: true,
 		},
 	},
