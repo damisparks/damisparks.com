@@ -57,12 +57,9 @@ export default defineNuxtConfig({
 	// https://image.nuxt.com/get-started/configuration
 	image: {
 		quality: 80,
-		// domains: ['images.unsplash.com'],
+		domains: ['images.unsplash.com'],
 		alias: {
 			unsplash: 'https://images.unsplash.com',
-		},
-		imgix: {
-			baseUrl: 'https://images.unsplash.com',
 		},
 	},
 
