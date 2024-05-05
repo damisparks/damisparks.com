@@ -7,32 +7,33 @@ export default defineNuxtConfig({
 			crawlLinks: true,
 			routes: ['/sitemap.xml'],
 		},
-		// hooks: {
-    //   'prerender:generate' (route) {
-    //     if (route.fileName)
-    //       route.fileName = route.fileName.replace(
-    //         /(\.\w{3})\/index.html$/,
-    //         '$1',
-    //       )
+		hooks: {
+      'prerender:generate' (route) {
+        if (route.fileName)
+          route.fileName = route.fileName.replace(
+            /(\.\w{3})\/index.html$/,
+            '$1',
+          )
 
-    //     if (route.fileName?.endsWith('.html') && route.contents) {
-    //       route.contents = route.contents.replace(/(src|href|srcset)="\/_ipx[^"]+"/g, r => r.replaceAll('//', '/'))
-    //     }
+        if (route.fileName?.endsWith('.html') && route.contents) {
+          route.contents = route.contents.replace(/(src|href|srcset)="\/_ipx[^"]+"/g, r => r.replaceAll('//', '/'))
+        }
 
-    //     if (route.error) {
-    //       console.error(route.route, route.error, route)
-    //       process.exit(1)
-    //     }
-    //   },
-		// }
+        if (route.error) {
+          console.error(route.route, route.error, route)
+          process.exit(1)
+        }
+      },
+		}
 	},
 
 	routeRules: {
-		'/projects': { redirect: '/work' }, // 307 (temp redirect)
+		'/projects': { redirect: {to: '/work', statusCode: 301} }, // 307 (temp redirect)
 		'/about': { redirect: {to: '/bio', statusCode: 301}},
 		'/blog': { redirect: { to: '/articles', statusCode: 301 } },
 		'/blog/how-to-provision-a-node-app-on-amazon-eks-using-terraform': { redirect: { to: '/articles/how-to-provision-a-node-app-on-amazon-eks-using-terraform', statusCode: 301 } },
 		'/blog/intro': { redirect: { to: '/articles/intro', statusCode: 301 } },
+		// '/old-page': { redirect: '/new-page' }, // 307 (temp redirect)
 		// '/old-page': { redirect: { to: '/new-page', statusCode: 301 } }, // 301 (perm redirect)
 	},
 	// https://color-mode.nuxtjs.org/
@@ -57,7 +58,7 @@ export default defineNuxtConfig({
 	// https://image.nuxt.com/get-started/configuration
 	image: {
 		quality: 80,
-		domains: ['images.unsplash.com'],
+		domains: ['https://images.unsplash.com', 'https://source.unsplash.com'],
 		alias: {
 			unsplash: 'https://images.unsplash.com',
 		},
