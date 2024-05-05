@@ -58,6 +58,7 @@ export default defineNuxtConfig({
 	// https://image.nuxt.com/get-started/configuration
 	image: {
 		quality: 80,
+		// TODO: Figure out how to make unsplash work on netlify on production.
 		domains: ['https://images.unsplash.com'],
 		alias: {
 			unsplash: 'https://images.unsplash.com',
