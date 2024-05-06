@@ -5,7 +5,7 @@ const moreShowcase = showcase.slice(3)
 </script>
 <template>
 	<div class="space-y-4 slide-enter">
-		<section>
+		<section class="pt-8">
 			<AppTopBlurb>
 				<AppBlurb>
 					Committed to
@@ -19,7 +19,7 @@ const moreShowcase = showcase.slice(3)
 				</AppBlurb>
 			</AppTopBlurb>
 		</section>
-		<section class="py-8 text-center space-y-3">
+		<section class="py-8 text-center space-y-8">
 			<AppHeadlineFluid class="py-8">
 				Digital products. Built with you in mind.
 			</AppHeadlineFluid>
@@ -48,6 +48,7 @@ const moreShowcase = showcase.slice(3)
 						<NuxtLink
 							class="grid grid-cols-6 gap-3 items-center hover:bg-primary-50 dark:hover:bg-primary-500/40 p-2 rounded-md"
 							:to="item.websiteUrl"
+							target="_blank"
 							external
 						>
 							<NuxtImg

@@ -12,9 +12,6 @@ const navClasses = computed(() => [
 	nav.backdrop,
 ])
 
-const github = computed(() =>
-	navigation.socials.find(item => item.name === 'GitHub')
-)
 const navTextClasses = computed(() => [nav.inner.font, nav.inner.textSize])
 </script>
 <template>
@@ -40,9 +37,14 @@ const navTextClasses = computed(() => [nav.inner.font, nav.inner.textSize])
 							{{ item.name }}
 						</NuxtLink>
 					</li>
-					<li>
-						<NuxtLink external :to="github?.href" :title="github?.name">
-							<Icon size="20px" :name="github?.iconKey as string" />
+					<li v-for="item in navigation.socials" :key="item.name">
+						<NuxtLink
+							external
+							target="_blank"
+							:to="item?.href"
+							:title="item.name"
+						>
+							<Icon size="20px" :name="item.iconKey" />
 						</NuxtLink>
 					</li>
 					<li class="flex">
