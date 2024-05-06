@@ -38,6 +38,7 @@ definePageMeta({
 						:key="item.name"
 						class="p-4 rounded-lg hover:bg-primary-50 dark:hover:bg-primary-500/40 col-span-1"
 						:to="item.websiteUrl"
+						target="_blank"
 						external
 					>
 						<div
