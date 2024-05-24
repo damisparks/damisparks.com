@@ -43,7 +43,7 @@ definePageMeta({
               {{ item.name }}
             </div>
             <div
-              class="text-sm font-normal leading-6 text-zinc-500 dark:text-zinc-400"
+              class="text-sm font-normal leading-6 text-zinc-400 dark:text-zinc-400"
             >
               {{ item.description }}
             </div>

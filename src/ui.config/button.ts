@@ -13,7 +13,7 @@ export default {
     },
     gray: {
       solid: 'bg-zinc-500 text-white hover:bg-zinc-600',
-      outlined: 'bg-transparent text-zinc-500 ring-1 ring-inset ring-zinc-500 focus:ring-1 focus:ring-zinc-500 hover:text-zinc-600 hover:border-zinc-600 font-normal',
+      outlined: 'bg-transparent text-zinc-400 ring-1 ring-inset ring-zinc-500 focus:ring-1 focus:ring-zinc-500 hover:text-zinc-600 hover:border-zinc-600 font-normal',
     },
   },
   rounded: 'rounded-md',

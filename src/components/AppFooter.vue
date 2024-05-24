@@ -10,7 +10,7 @@ const year = new Date().getFullYear()
         >
           Let's inspire growth together
         </h3>
-        <p class="mt-2 text-sm leading-6 text-zinc-500">
+        <p class="mt-2 text-sm leading-6 text-zinc-400">
           Feel free to reach out if you're looking for a software engineer, have
           a question or just want to connect 📭
         </p>
@@ -32,9 +32,9 @@ const year = new Date().getFullYear()
         <AppSocials />
       </div>
       <p
-        class="body-compact-small mt-8 text-zinc-500 dark:text-zinc-700 md:order-1 md:mt-0"
+        class="body-compact-small mt-8 text-zinc-400 dark:text-zinc-700 md:order-1 md:mt-0"
       >
-        <span class="text-zinc-500 dark:text-zinc-400">
+        <span class="text-zinc-400 dark:text-zinc-400">
           &copy; Dami Sparks {{ year }} | Software Engineer |
         </span>
         <NuxtLink
