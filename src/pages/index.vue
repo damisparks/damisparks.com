@@ -20,7 +20,10 @@ const moreShowcase = showcase.slice(3)
       </AppTopBlurb>
     </section>
     <section class="py-8 text-center space-y-8">
-      <AppHeadlineFluid class="py-8">
+      <AppHeadlineFluid
+        tag="h2"
+        class="py-8"
+      >
         Digital products. Built with you in mind.
       </AppHeadlineFluid>
       <div class="inline-flex items-center space-x-4">
@@ -57,7 +60,7 @@ const moreShowcase = showcase.slice(3)
               <NuxtImg
                 class="object-cover object-center col-span-2 w-full h-16 rounded-md"
                 :src="item.imageUrl"
-                :alt="item.name"
+                :alt="`Image of ${item.name} product showcase`"
               />
               <div class="col-span-4">
                 {{ item.name }}
@@ -73,6 +76,7 @@ const moreShowcase = showcase.slice(3)
           <NuxtImg
             class="object-cover w-full rounded-md border border-gray-100"
             :src="moreShowcase[0].imageUrl"
+            :alt="`Image of ${moreShowcase[0].name} startup showcase`"
           />
           <p class="py-4 font-normal">
             {{ moreShowcase[0].name }}

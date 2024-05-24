@@ -11,6 +11,7 @@ const props = withDefaults(defineProps<SocialPropsType>(), { iconSize: '20px' })
       external
       :to="nav.href"
       :title="nav.name"
+      :aria-labelledby="nav.name"
     >
       <span class="inline-flex items-center">
         <Icon
@@ -19,8 +20,11 @@ const props = withDefaults(defineProps<SocialPropsType>(), { iconSize: '20px' })
         />
         <span
           v-if="props.showText"
-          class="ml-1 text-zinc-400 hover:text-zinc-500 dark:border-zinc-700"
+          class="ml-1 text-zinc-400 hover:text-zinc-400 dark:border-zinc-700"
         >
+          {{ nav.name }}
+        </span>
+        <span class="sr-only">
           {{ nav.name }}
         </span>
       </span>
