@@ -5,7 +5,7 @@ defineProps<{ date: string }>()
 <template>
   <time
     :datetime="date"
-    class="text-zinc-500 dark:text-zinc-400 text-sm"
+    class="text-zinc-400 dark:text-zinc-400 text-sm"
   >
     {{ formdateDate(date) }}
   </time>
