@@ -19,7 +19,7 @@
 		"@vueuse/nuxt": "10.9.0",
 		"magic-regexp": "0.8.0",
 		"nuxt": "^3.11.1",
-		"sitemap": "7.1.1",
+		"sitemap": "7.1.2",
 		"vue": "^3.4.21",
 		"vue-router": "^4.3.0"
 	},
@@ -28,7 +28,7 @@
 		"@commitlint/config-conventional": "19.2.2",
 		"@nuxt/eslint": "0.3.13",
 		"@nuxtjs/color-mode": "3.4.1",
-		"@nuxtjs/sitemap": "5.1.5",
+		"@nuxtjs/sitemap": "5.2.0",
 		"autoprefixer": "10.4.19",
 		"eslint": "9.3.0",
 		"nuxt-gtag": "2.0.6",
