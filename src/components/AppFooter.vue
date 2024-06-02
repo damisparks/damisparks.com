@@ -10,10 +10,13 @@ const year = new Date().getFullYear()
         >
           Let's inspire growth together
         </h3>
-        <p class="mt-2 text-sm leading-6 text-zinc-400">
+        <AppTypography
+          paragraph
+          class="mt-2 text-sm leading-6"
+        >
           Feel free to reach out if you're looking for a software engineer, have
           a question or just want to connect 📭
-        </p>
+        </AppTypography>
         <p>
           <NuxtLink
             to="mailto:rethinkwithdami@gmail.com"
