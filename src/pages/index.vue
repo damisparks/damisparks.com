@@ -44,9 +44,13 @@ const moreShowcase = showcase.slice(3)
     <section>
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 pt-8">
         <div class="space-y-6">
-          <p class="uppercase text-gray-500 dark:text-gray-400">
+          <AppTypography
+            paragraph
+            muted
+            class="uppercase"
+          >
             featured work
-          </p>
+          </AppTypography>
           <div
             v-for="item in threeShowcase"
             :key="item.id"
@@ -78,9 +82,12 @@ const moreShowcase = showcase.slice(3)
             :src="moreShowcase[0].imageUrl"
             :alt="`Image of ${moreShowcase[0].name} startup showcase`"
           />
-          <p class="py-4 font-normal">
+          <AppTypography
+            paragraph
+            class="py-4"
+          >
             {{ moreShowcase[0].name }}
-          </p>
+          </AppTypography>
         </NuxtLink>
       </div>
     </section>
