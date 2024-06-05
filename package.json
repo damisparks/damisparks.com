@@ -1,7 +1,7 @@
 {
 	"type": "module",
 	"private": true,
-	"packageManager": "pnpm@9.1.4",
+	"packageManager": "pnpm@9.2.0",
 	"scripts": {
 		"build": "nuxt build",
 		"dev": "nuxt dev -o",
@@ -17,7 +17,7 @@
 		"@nuxt/fonts": "0.7.0",
 		"@nuxt/image": "1.7.0",
 		"@tailwindcss/aspect-ratio": "0.4.2",
-		"@vueuse/nuxt": "10.9.0",
+		"@vueuse/nuxt": "10.10.0",
 		"magic-regexp": "0.8.0",
 		"nuxt": "^3.11.1",
 		"sitemap": "8.0.0",
@@ -31,11 +31,11 @@
 		"@nuxtjs/color-mode": "3.4.1",
 		"@nuxtjs/sitemap": "5.2.0",
 		"autoprefixer": "10.4.19",
-		"eslint": "9.3.0",
+		"eslint": "9.4.0",
 		"nuxt-gtag": "2.0.6",
 		"nuxt-icon": "0.6.10",
 		"postcss": "8.4.38",
-		"tailwindcss": "3.4.3",
+		"tailwindcss": "3.4.4",
 		"typescript": "5.4.5"
 	}
 }
