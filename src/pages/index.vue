@@ -80,7 +80,7 @@ const moreShowcase = showcase.slice(3)
           <NuxtImg
             class="object-cover w-full rounded-md border border-gray-100"
             :src="moreShowcase[0].imageUrl"
-            :alt="`Image of ${moreShowcase[0].name} startup showcase`"
+            alt=""
           />
           <AppTypography
             paragraph
