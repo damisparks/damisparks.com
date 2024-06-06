@@ -10,7 +10,7 @@ const props = withDefaults(defineProps<SocialPropsType>(), { iconSize: '20px' })
       :key="nav.name"
       external
       :to="nav.href"
-      :title="nav.name"
+      :title="`Visit ${item.name}`"
     >
       <span class="inline-flex items-center">
         <Icon
