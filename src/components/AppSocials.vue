@@ -11,7 +11,6 @@ const props = withDefaults(defineProps<SocialPropsType>(), { iconSize: '20px' })
       external
       :to="nav.href"
       :title="nav.name"
-      :aria-labelledby="nav.name"
     >
       <span class="inline-flex items-center">
         <Icon
