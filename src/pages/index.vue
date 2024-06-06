@@ -64,7 +64,7 @@ const moreShowcase = showcase.slice(3)
               <NuxtImg
                 class="object-cover object-center col-span-2 w-full h-16 rounded-md"
                 :src="item.imageUrl"
-                :alt="`Image of ${item.name} product showcase`"
+                :alt="`image of ${item.name} product showcase graphic`"
               />
               <div class="col-span-4">
                 {{ item.name }}
