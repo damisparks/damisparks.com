@@ -7,7 +7,7 @@ withDefaults(
     highlights?: number[]
     meta: string | null
   }>(),
-  { code: '', language: null, filename: null, highlights: () => [], meta: null },
+  { code: '', language: null, filename: null, highlights: () => [], meta: null }
 )
 </script>
 <template>

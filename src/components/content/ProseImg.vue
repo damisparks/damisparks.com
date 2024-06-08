@@ -9,7 +9,7 @@ const props = withDefaults(
     width: string | number
     height: string | number
   }>(),
-  { src: '', alt: '', width: undefined, height: undefined },
+  { src: '', alt: '', width: undefined, height: undefined }
 )
 
 const refinedSrc = computed(() => {

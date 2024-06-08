@@ -9,7 +9,7 @@ useHead({
   meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
   bodyAttrs: {
     class: 'flex h-full flex-col bg-white text-zinc-900 dark:text-zinc-300 dark:bg-black font-sans' },
-  htmlAttrs: { lang: 'en', class: 'font-sans h-full antialiased' },
+  htmlAttrs: { lang: 'en', class: 'font-sans h-full antialiased' }
 })
 
 if (import.meta.server) {
@@ -17,7 +17,7 @@ if (import.meta.server) {
     exactly(char.times.any().and(charNotIn('/')))
       .as('path')
       .and(exactly('/').optionally())
-      .at.lineEnd(),
+      .at.lineEnd()
   )
 
   const { path = '/' } = route.fullPath.match(PATH_RE)?.groups ?? {}
@@ -32,7 +32,7 @@ if (import.meta.server) {
     || 'The personal website of Dami Sparks - Freelance Full-Stack Developer, Fractional CTO, Mentor & Technical Writer. He founded Actif, an Age-tech SaaS startup and continues contributing to the European developer community.',
     twitterCard: 'summary_large_image',
     twitterCreator: '@damisparks',
-    twitterSite: '@damisparks',
+    twitterSite: '@damisparks'
   })
 }
 </script>

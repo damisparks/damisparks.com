@@ -6,15 +6,15 @@ export default withNuxt([
       '@stylistic/space-before-function-paren': ['error', 'always'],
       '@stylistic/arrow-parens': ['error', 'as-needed'],
       '@typescript-eslint/no-explicit-any': 'off',
-      '@typescript-eslint/ban-types': 'off',
+      '@typescript-eslint/ban-types': 'off'
       // '@stylistic/no-tabs': 'off',
       // 'vue/block-order': ['error', { order: ['script', 'template', 'style'] }],
-    },
+    }
   },
   {
     files: ['*.config.js'],
     rules: {
-      'no-undef': 'off',
-    },
-  },
+      'no-undef': 'off'
+    }
+  }
 ])

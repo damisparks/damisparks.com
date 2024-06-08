@@ -8,7 +8,7 @@ const navClasses = computed(() => [
   nav.base,
   nav.position,
   nav.background,
-  nav.backdrop,
+  nav.backdrop
 ])
 
 const navTextClasses = computed(() => [nav.inner.font, nav.inner.textSize])

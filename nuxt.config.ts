@@ -5,20 +5,20 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/sitemap.xml'],
+      routes: ['/sitemap.xml']
     },
     hooks: {
       'prerender:generate' (route) {
         if (route.fileName)
           route.fileName = route.fileName.replace(
             /(\.\w{3})\/index.html$/,
-            '$1',
+            '$1'
           )
 
         if (route.fileName?.endsWith('.html') && route.contents) {
           route.contents = route.contents.replace(
             /(src|href|srcset)="\/_ipx[^"]+"/g,
-            r => r.replaceAll('//', '/'),
+            r => r.replaceAll('//', '/')
           )
         }
 
@@ -26,8 +26,8 @@ export default defineNuxtConfig({
           console.error(route.route, route.error, route)
           process.exit(1)
         }
-      },
-    },
+      }
+    }
   },
 
   routeRules: {
@@ -37,30 +37,32 @@ export default defineNuxtConfig({
     '/blog/how-to-provision-a-node-app-on-amazon-eks-using-terraform': {
       redirect: {
         to: '/articles/how-to-provision-a-node-app-on-amazon-eks-using-terraform',
-        statusCode: 301,
-      },
+        statusCode: 301
+      }
     },
-    '/blog/intro': { redirect: { to: '/articles/intro', statusCode: 301 } },
+    '/blog/intro': { redirect: { to: '/articles/intro', statusCode: 301 } }
     // '/old-page': { redirect: '/new-page' }, // 307 (temp redirect)
     // '/old-page': { redirect: { to: '/new-page', statusCode: 301 } }, // 301 (perm redirect)
   },
   // https://color-mode.nuxtjs.org/
   colorMode: {
-    classSuffix: '',
+    classSuffix: ''
   },
   css: ['~/assets/css/main.css'],
   // https://tailwindcss.com/docs/guides/nuxtjs
   postcss: {
     plugins: {
       tailwindcss: {},
-      autoprefixer: {},
-    },
+      autoprefixer: {}
+    }
   },
   srcDir: 'src',
   eslint: {
     config: {
-      stylistic: true,
-    },
+      stylistic: {
+        commaDangle: 'never'
+      }
+    }
   },
 
   // https://image.nuxt.com/get-started/configuration
@@ -69,8 +71,8 @@ export default defineNuxtConfig({
     // TODO: Figure out how to make unsplash work on netlify on production.
     domains: ['https://images.unsplash.com'],
     alias: {
-      unsplash: 'https://images.unsplash.com',
-    },
+      unsplash: 'https://images.unsplash.com'
+    }
   },
 
   // https://github.com/nuxt/fonts
@@ -78,9 +80,9 @@ export default defineNuxtConfig({
     google: {
       families: [
         { name: 'Inter', weight: ['300', '400', '500'] },
-        { name: 'Montserrat', weight: ['300', '400', '500'] },
-      ],
-    },
+        { name: 'Montserrat', weight: ['300', '400', '500'] }
+      ]
+    }
   },
 
   // https://content.nuxt.com/get-started/installation
@@ -89,13 +91,13 @@ export default defineNuxtConfig({
       preload: ['zsh', 'hcl', 'yaml'],
       theme: {
         default: 'one-dark-pro',
-        dark: 'one-dark-pro',
-      },
-    },
+        dark: 'one-dark-pro'
+      }
+    }
   },
 
   runtimeConfig: {
-    publicGtagId: '',
+    publicGtagId: ''
   },
 
   // https://nuxt.com/docs/guide/directory-structure/composables
@@ -103,8 +105,8 @@ export default defineNuxtConfig({
     dirs: [
       // Scan top-level modules
       'composables',
-      'composables/**',
-    ],
+      'composables/**'
+    ]
   },
 
   modules: [
@@ -116,6 +118,6 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@vueuse/nuxt',
     '@nuxtjs/sitemap',
-    'magic-regexp/nuxt',
-  ],
+    'magic-regexp/nuxt'
+  ]
 })

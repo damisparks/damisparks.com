@@ -3,27 +3,27 @@ export default {
     {
       iconKey: 'uil:github',
       href: 'https://www.github.com/damisparks',
-      name: 'GitHub',
+      name: 'GitHub'
     },
     {
       iconKey: 'uil:linkedin',
       href: 'https://www.linkedin.com/in/damisparks',
-      name: 'LinkedIn',
+      name: 'LinkedIn'
     },
     {
       iconKey: 'ri:twitter-x-fill',
       href: 'https://www.twitter.com/DamiSparks',
-      name: 'Twitter',
-    },
+      name: 'Twitter'
+    }
   ],
   navItems: [
     {
       name: 'Work',
-      href: '/work',
+      href: '/work'
     },
     {
       name: 'Articles',
-      href: '/articles',
-    },
-  ],
+      href: '/articles'
+    }
+  ]
 }

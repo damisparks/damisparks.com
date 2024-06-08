@@ -7,13 +7,13 @@ export default defineEventHandler(async event => {
   const sitemap = new SitemapStream({
     hostname: process.env.NODE_ENV !== 'development'
       ? 'https://damisparks.com'
-      : 'http://localhost:3000',
+      : 'http://localhost:3000'
   })
 
   for (const doc of docs) {
     sitemap.write({
       url: doc._path,
-      changefreq: 'monthly',
+      changefreq: 'monthly'
     })
   }
   sitemap.end()
