@@ -11,11 +11,11 @@ type TypographyPropsType = {
 const props = withDefaults(defineProps<TypographyPropsType>(), {
   tag: 'span',
   muted: false,
-  paragraph: false,
+  paragraph: false
 })
 
 const typographyClass = computed(() => [
-  props.muted ? typography.muted : '',
+  props.muted ? typography.muted : ''
 ])
 const tag = computed(() => props.paragraph ? 'p' : props.tag)
 

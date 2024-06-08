@@ -18,7 +18,7 @@ const props = withDefaults(defineProps<ButtonPropsTypes>(), {
   size: 'md',
   variant: 'solid',
   type: 'submit',
-  label: '',
+  label: ''
 })
 
 const buttonClasses = computed(() => {
@@ -32,7 +32,7 @@ const buttonClasses = computed(() => {
     props.block ? button.block : button.inline,
     props.disabled ? button.disabled : '',
     button.size[props.size],
-    variant,
+    variant
   ]
 })
 </script>

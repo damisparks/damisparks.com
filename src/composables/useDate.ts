@@ -9,7 +9,7 @@ const formdateDate = (date: string) => {
   const options: Intl.DateTimeFormatOptions = {
     year: 'numeric',
     month: 'long',
-    day: 'numeric',
+    day: 'numeric'
   }
   return new Intl.DateTimeFormat('en-US', options).format(d)
 }

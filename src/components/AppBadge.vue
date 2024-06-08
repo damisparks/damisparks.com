@@ -8,7 +8,7 @@ type BadgePropsTypes = {
 const props = withDefaults(defineProps<BadgePropsTypes>(), {
   color: 'primary',
   variant: 'flat',
-  size: 'sm',
+  size: 'sm'
 })
 const badgeClasses = computed(() => {
   const color = badge.color?.[props.color]
@@ -19,7 +19,7 @@ const badgeClasses = computed(() => {
     badge.rounded,
     badge.font,
     badge.size[props.size],
-    variant.replaceAll('{color}', props.color),
+    variant.replaceAll('{color}', props.color)
   ]
 })
 </script>

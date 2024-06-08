@@ -1,7 +1,7 @@
 <script setup lang="ts">
 definePageMeta({
   title: 'Articles',
-  description: 'The articles I have written',
+  description: 'The articles I have written'
 })
 
 const { data: articles } = useAsyncData('articles', () => {

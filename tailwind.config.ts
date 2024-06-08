@@ -12,45 +12,45 @@ export default {
     `${srcDir}/plugins/**/*.{js,ts}`,
     `${srcDir}/app.vue`,
     `${srcDir}/error.vue`,
-    `${srcDir}/ui.config/**/*.{js,vue,ts}`,
+    `${srcDir}/ui.config/**/*.{js,vue,ts}`
   ],
   darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        ...themeOptions,
-      },
+        ...themeOptions
+      }
     },
     fontFamily: {
       sans: ['Inter', ...defaultTheme.fontFamily.sans],
-      montserrat: ['Montserrat', 'sans-serif', ...defaultTheme.fontFamily.sans],
+      montserrat: ['Montserrat', 'sans-serif', ...defaultTheme.fontFamily.sans]
     },
     fontWeight: {
       light: '300',
       normal: '400',
-      medium: '500',
+      medium: '500'
     },
     borderRadius: {
       xl: `calc(var(--radius) + 4px)`,
       lg: `var(--radius)`,
       md: `calc(var(--radius) - 2px)`,
       sm: 'calc(var(--radius) - 4px)',
-      full: 'calc(9999px)',
-    },
+      full: 'calc(9999px)'
+    }
   },
   /** @type {import('tailwindcss/plugin')} */
   plugins: [
     plugin(({ addComponents }) => {
       addComponents({
         '.body-compact-small': {
-          '@apply text-sm font-normal font-sans leading-4 tracking-[-0.12px]': {},
+          '@apply text-sm font-normal font-sans leading-4 tracking-[-0.12px]': {}
         },
         '.caption': {
-          '@apply text-xs font-normal font-sans tracking-[0.4px]': {},
-        },
+          '@apply text-xs font-normal font-sans tracking-[0.4px]': {}
+        }
       })
     }),
 
-    require('@tailwindcss/aspect-ratio'),
-  ],
+    require('@tailwindcss/aspect-ratio')
+  ]
 } satisfies Config

@@ -9,6 +9,6 @@ export default {
   inner: {
     base: 'flex items-center justify-end space-x-6',
     font: 'font-medium',
-    textSize: 'text-sm',
-  },
+    textSize: 'text-sm'
+  }
 }

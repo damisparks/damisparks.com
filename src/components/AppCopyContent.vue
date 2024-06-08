@@ -5,7 +5,7 @@ defineProps<{ content: string }>()
 const toggleIcon = computed(() =>
   copied.value
     ? 'fluent:clipboard-checkmark-20-regular'
-    : 'fluent:clipboard-20-regular',
+    : 'fluent:clipboard-20-regular'
 )
 </script>
 <template>

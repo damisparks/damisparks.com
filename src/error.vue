@@ -5,7 +5,7 @@ const handleError = () => clearError({ redirect: '/' })
 
 useSeoMeta({
   title: 'Page Not Found',
-  description: 'We can\'t seem to find the page you\'re looking for.',
+  description: 'We can\'t seem to find the page you\'re looking for.'
 })
 </script>
 <template>
