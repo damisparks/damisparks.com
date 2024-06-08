@@ -9,12 +9,12 @@ const moreShowcase = showcase.slice(3)
       <AppTopBlurb>
         <AppBlurb>
           Committed to
-          <span style="color: hsla(217, 89%, 61%, 1)">envisioning</span> ideas
-          and <span style="color: hsla(328, 100%, 54%, 1)">turning</span> them
+          <span class="text-[#475DC9] dark:text-[#5F7BD7]">envisioning</span> ideas
+          and <span class="text-[#C83F49] dark:text-[#E77471]">turning</span> them
           into scalable digital products while
-          <span style="color: hsla(136, 53%, 43%, 1)">igniting</span> a passion
+          <span class="text-[#437C17] dark:text-[#A0D6B4]">igniting</span> a passion
           for coding in
-          <span style="color: hsla(41, 100%, 49%, 1)">others</span> — currently
+          <span class="text-[#BC4E12] dark:text-[#F1811E]">others</span> — currently
           working at Tricentis.
         </AppBlurb>
       </AppTopBlurb>
