@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
-// eslint-disable-next-line vue/require-default-prop
-const props = defineProps({ error: Object as () => NuxtError })
+const props = defineProps<{ error: NuxtError }>()
 const handleError = () => clearError({ redirect: '/' })
-</script>
 
+useSeoMeta({
+  title: 'Page Not Found',
+  description: 'We can\'t seem to find the page you\'re looking for.',
+})
+</script>
 <template>
   <main class="isolate relative min-h-screen">
     <figure>
