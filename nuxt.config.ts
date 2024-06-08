@@ -77,7 +77,7 @@ export default defineNuxtConfig({
   fonts: {
     google: {
       families: [
-        { name: 'Fira Sans', weight: ['300', '400', '500'] },
+        { name: 'Inter', weight: ['300', '400', '500'] },
         { name: 'Montserrat', weight: ['300', '400', '500'] },
       ],
     },

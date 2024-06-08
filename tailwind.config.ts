@@ -22,7 +22,7 @@ export default {
       },
     },
     fontFamily: {
-      firasans: ['Fira Sans', 'sans-serif', ...defaultTheme.fontFamily.sans],
+      sans: ['Inter', ...defaultTheme.fontFamily.sans],
       montserrat: ['Montserrat', 'sans-serif', ...defaultTheme.fontFamily.sans],
     },
     fontWeight: {
@@ -43,10 +43,10 @@ export default {
     plugin(({ addComponents }) => {
       addComponents({
         '.body-compact-small': {
-          '@apply text-sm font-normal font-firasans leading-4 tracking-[-0.12px]': {},
+          '@apply text-sm font-normal font-sans leading-4 tracking-[-0.12px]': {},
         },
         '.caption': {
-          '@apply text-xs font-normal font-firasans tracking-[0.4px]': {},
+          '@apply text-xs font-normal font-sans tracking-[0.4px]': {},
         },
       })
     }),
