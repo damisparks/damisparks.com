@@ -8,8 +8,8 @@ useHead({
       : 'Dami Sparks - Freelance Full-Stack Developer, Mentor, Technical Writer and Fractional CTO',
   meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
   bodyAttrs: {
-    class: 'flex h-full flex-col bg-white text-zinc-900 dark:text-zinc-300 dark:bg-black font-firasans' },
-  htmlAttrs: { lang: 'en', class: 'font-firasans h-full antialiased' },
+    class: 'flex h-full flex-col bg-white text-zinc-900 dark:text-zinc-300 dark:bg-black font-sans' },
+  htmlAttrs: { lang: 'en', class: 'font-sans h-full antialiased' },
 })
 
 if (import.meta.server) {
