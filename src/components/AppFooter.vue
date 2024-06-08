@@ -22,7 +22,7 @@ const year = new Date().getFullYear()
         <AppTypography paragraph>
           <NuxtLink
             to="mailto:rethinkwithdami@gmail.com"
-            class="text-sm text-blue-500 dark:text-blue-400"
+            class="text-sm text-blue-600 dark:text-blue-400"
             external
           >
             rethinkwithdami@gmail.com
