@@ -9,12 +9,12 @@ const moreShowcase = showcase.slice(3)
       <AppTopBlurb>
         <AppBlurb>
           Committed to
-          <span style="color: hsla(217, 89%, 61%, 1)">envisioning</span> ideas
-          and <span style="color: hsla(328, 100%, 54%, 1)">turning</span> them
+          <span class="text-[#475DC9] dark:text-[#5F7BD7]">envisioning</span> ideas
+          and <span class="text-[#C83F49] dark:text-[#E77471]">turning</span> them
           into scalable digital products while
-          <span style="color: hsla(136, 53%, 43%, 1)">igniting</span> a passion
+          <span class="text-[#437C17] dark:text-[#A0D6B4]">igniting</span> a passion
           for coding in
-          <span style="color: hsla(41, 100%, 49%, 1)">others</span> — currently
+          <span class="text-[#BC4E12] dark:text-[#F1811E]">others</span> — currently
           working at Tricentis.
         </AppBlurb>
       </AppTopBlurb>
@@ -28,13 +28,13 @@ const moreShowcase = showcase.slice(3)
       </AppHeadlineFluid>
       <div class="inline-flex items-center space-x-4">
         <NuxtLink
-          class="rounded-md flex bg-primary-500 text-white hover:bg-primary-600 px-4 py-2 font-normal"
+          class="rounded-md flexbg-primary-600 text-white bg-primary-600 dark:hover:bg-primary-700 px-4 py-2 font-normal"
           to="/projects"
         >
           All works
         </NuxtLink>
         <NuxtLink
-          class="rounded-md flex shadow-sm px-4 py-2 bg-transparent text-primary-500 ring-1 ring-inset ring-primary-500 focus:ring-1 focus:ring-primary-500 hover:text-primary-600 hover:border-primary-600 font-normal"
+          class="rounded-md flex shadow-sm px-4 py-2 bg-transparent text-primary-600 ring-1 ring-inset ring-primary-600 focus:ring-1 focus:ring-primary-600 hover:text-primary-700 hover:border-primary-600 font-normal"
           to="/bio"
         >
           See my bio
@@ -44,9 +44,13 @@ const moreShowcase = showcase.slice(3)
     <section>
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 pt-8">
         <div class="space-y-6">
-          <p class="uppercase text-gray-500 dark:text-gray-400">
+          <AppTypography
+            paragraph
+            muted
+            class="uppercase"
+          >
             featured work
-          </p>
+          </AppTypography>
           <div
             v-for="item in threeShowcase"
             :key="item.id"
@@ -60,7 +64,7 @@ const moreShowcase = showcase.slice(3)
               <NuxtImg
                 class="object-cover object-center col-span-2 w-full h-16 rounded-md"
                 :src="item.imageUrl"
-                :alt="`Image of ${item.name} product showcase`"
+                alt=""
               />
               <div class="col-span-4">
                 {{ item.name }}
@@ -76,11 +80,14 @@ const moreShowcase = showcase.slice(3)
           <NuxtImg
             class="object-cover w-full rounded-md border border-gray-100"
             :src="moreShowcase[0].imageUrl"
-            :alt="`Image of ${moreShowcase[0].name} startup showcase`"
+            alt=""
           />
-          <p class="py-4 font-normal">
+          <AppTypography
+            paragraph
+            class="py-4"
+          >
             {{ moreShowcase[0].name }}
-          </p>
+          </AppTypography>
         </NuxtLink>
       </div>
     </section>

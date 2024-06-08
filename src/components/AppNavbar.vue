@@ -47,8 +47,7 @@ const navTextClasses = computed(() => [nav.inner.font, nav.inner.textSize])
               external
               target="_blank"
               :to="item?.href"
-              :title="item.name"
-              :aria-labelledby="item.name"
+              :title="`Visit ${item.name}`"
             >
               <Icon
                 size="20px"

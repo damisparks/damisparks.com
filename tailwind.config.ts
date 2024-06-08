@@ -48,9 +48,6 @@ export default {
         '.caption': {
           '@apply text-xs font-normal font-firasans tracking-[0.4px]': {},
         },
-        '.app-text-content': {
-          '@apply text-zinc-600 dark:text-zinc-400 font-firasans': {},
-        },
       })
     }),
 
