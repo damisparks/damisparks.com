@@ -3,8 +3,8 @@ import navigation from '@/data/navigation'
 const route = useRoute()
 </script>
 <template>
-  <AppContainer class="fixed w-full z-50 bg-zinc-100/50 dark:bg-zinc-800/50 backdrop-saturate-100 backdrop-blur-lg">
-    <nav>
+  <nav class="fixed w-full z-50 bg-zinc-100/50 dark:bg-zinc-800/50 backdrop-saturate-100 backdrop-blur-lg">
+    <AppContainer>
       <div class="flex items-center justify-between">
         <div>
           <NuxtLink
@@ -63,6 +63,6 @@ const route = useRoute()
           </li>
         </ul>
       </div>
-    </nav>
-  </AppContainer>
+    </AppContainer>
+  </nav>
 </template>
