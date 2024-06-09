@@ -1,3 +1,5 @@
+import type INavItem from '@/types/navItem'
+
 export default {
   socials: [
     {
@@ -19,11 +21,13 @@ export default {
   navItems: [
     {
       name: 'Work',
-      href: '/work'
+      href: '/work',
+      iconKey: 'fluent:lightbulb-filament-24-regular'
     },
     {
       name: 'Articles',
-      href: '/articles'
+      href: '/articles',
+      iconKey: 'fluent:document-one-page-24-regular'
     }
-  ]
+  ] satisfies INavItem[]
 }
