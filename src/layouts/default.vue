@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen flex flex-col">
-    <AppNavbar />
+    <AppTopNav />
     <div class="flex-auto mt-12">
       <AppContainer>
         <slot />
