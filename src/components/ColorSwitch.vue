@@ -6,7 +6,7 @@ const colorMode = useColorMode()
     role="button"
     aria-label="Change site theme"
     type="button"
-    class="bg-zinc-300/80 dark:bg-zinc-800 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-1 focus:ring-zinc-600 focus:ring-offset-1"
+    class="bg-zinc-300/80 dark:bg-zinc-800 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-1 focus:ring-zinc-300 focus:ring-offset-1"
     @click="
       colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
     "
