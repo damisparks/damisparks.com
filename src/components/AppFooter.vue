@@ -13,7 +13,7 @@ const year = new Date().getFullYear()
         </AppTypography>
         <AppTypography
           paragraph
-          muted
+          variant="muted"
           class="mt-2 text-sm leading-6"
         >
           Feel free to reach out if you're looking for a software engineer, have
@@ -36,12 +36,12 @@ const year = new Date().getFullYear()
       <div class="flex md:order-2">
         <AppSocials />
       </div>
-      <AppTypography
-        muted
-        class="body-compact-small mt-8 md:order-1 md:mt-0"
+      <div
+        class="body-compact-small mt-8 md:order-1 md:mt-0 text-[12px] leading-[16px]"
       >
         <AppTypography
           tag="span"
+          variant="secondary"
         >
           &copy; Dami Sparks {{ year }} | Software Engineer |
         </AppTypography>
@@ -49,9 +49,14 @@ const year = new Date().getFullYear()
           to="https://creativecommons.org/licenses/by-sa/4.0/"
           class="hover:underline"
         >
-          CC BY-SA 4.0
+          <AppTypography
+            tag="span"
+            variant="secondary"
+          >
+            CC BY-SA 4.0
+          </AppTypography>
         </NuxtLink>
-      </AppTypography>
+      </div>
     </div>
   </footer>
 </template>

@@ -1,0 +1,33 @@
+---
+title: "Tiny is Effective (Introduction)"
+description: Make it stick. Unlock the secrets to lasting habits with insights from BJ Fogg's "Tiny Habits. Learn how habit changes lead to big results.
+date: 2024-06-09
+tags:
+  - books
+image: images/blog/tiny-is-effective.png
+---
+
+# Tiny is Effective: Introduction
+
+In a world where we are trying to learn new habits or shape the existing ones, it is imperative to understand what makes habits stick.
+
+I started reading more about habits, how the brain works, etc..
+Hence, I started reading [BJ Fogg's Tiny Habits](https://tinyhabits.com). **I will share** my thoughts as I read it, page by page. Here is a quick summary. You can find the full article on my [medium](https://medium.com/@damisparks/tiny-is-effective-introduction-2235d704dab6).
+
+## Keynotes
+
+Three keys to designing a successful habit:
+
+- Stop judging yourself
+- Break aspirations into tiny behaviours
+- Embrace mistakes as discoveries
+
+Ways to create a lasting habit:
+
+- Have an epiphany
+- Change your environment
+- Change habits in a tiny way (less than 3 seconds)
+
+**New words.**
+
+- **Information-Action Fallacy** (having information does not mean you change your behaviour)

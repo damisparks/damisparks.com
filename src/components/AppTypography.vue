@@ -4,26 +4,24 @@ import typography from '@/ui.config/typography'
 type TypographyTagType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
 type TypographyPropsType = {
   tag?: TypographyTagType
-  muted?: boolean
   paragraph?: boolean
+  variant?: keyof typeof typography.variants
 }
 
 const props = withDefaults(defineProps<TypographyPropsType>(), {
   tag: 'span',
-  muted: false,
-  paragraph: false
+  paragraph: false,
+  variant: 'default'
 })
 
-const typographyClass = computed(() => [
-  props.muted ? typography.muted : ''
-])
+const typographyVariant = computed(() => typography.variants[props.variant])
 const tag = computed(() => props.paragraph ? 'p' : props.tag)
 
 </script>
 <template>
   <component
     :is="tag"
-    :class="typographyClass"
+    :class="typographyVariant"
   >
     <slot />
   </component>
