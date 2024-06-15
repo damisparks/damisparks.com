@@ -46,7 +46,7 @@ const moreShowcase = showcase.slice(3)
         <div class="space-y-6">
           <AppTypography
             paragraph
-            muted
+            variant="muted"
             class="uppercase"
           >
             featured work

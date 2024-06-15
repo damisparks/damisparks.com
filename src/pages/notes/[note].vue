@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const route = useRoute()
 
-const slug = route.params.article
-if (!slug) navigateTo('/blog')
+const slug = route.params.note
+if (!slug) navigateTo('/notes')
 
 const path = computed(() =>
   route.path.replace(/(index)?\.json$/, '').replace(/\/$/, '')

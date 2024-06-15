@@ -1,10 +1,10 @@
 ---
 title: A short intro to my blog
-date: '2023-07-27T19:26:17.833Z'
+date: "2023-07-27T19:26:17.833Z"
 tags:
   - personal
 description: It has been a while since I worked on my blog. Now, I have made it a goal to get back to it.
-cover: /unsplash/photo-1538121915146-1dedb4191b21
+image: images/blog/sparks-notes-intro.png
 ---
 
 # A short intro to my blog
