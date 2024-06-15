@@ -40,9 +40,15 @@ export default defineNuxtConfig({
         statusCode: 301
       }
     },
-    '/blog/intro': { redirect: { to: '/articles/intro', statusCode: 301 } }
-    // '/old-page': { redirect: '/new-page' }, // 307 (temp redirect)
-    // '/old-page': { redirect: { to: '/new-page', statusCode: 301 } }, // 301 (perm redirect)
+    '/blog/intro': { redirect: { to: '/notes/intro', statusCode: 301 } },
+    '/articles': { redirect: { to: '/notes', statusCode: 301 } },
+    '/articles/how-to-provision-a-node-app-on-amazon-eks-using-terraform': {
+      redirect: {
+        to: '/notes/how-to-provision-a-node-app-on-amazon-eks-using-terraform',
+        statusCode: 301
+      }
+    },
+    '/articles/intro': { redirect: { to: '/notes/intro', statusCode: 301 } }
   },
   // https://color-mode.nuxtjs.org/
   colorMode: {
@@ -56,7 +62,7 @@ export default defineNuxtConfig({
       autoprefixer: {}
     }
   },
-  srcDir: 'src',
+  srcDir: 'src/',
   eslint: {
     config: {
       stylistic: {
@@ -67,12 +73,7 @@ export default defineNuxtConfig({
 
   // https://image.nuxt.com/get-started/configuration
   image: {
-    quality: 80,
-    // TODO: Figure out how to make unsplash work on netlify on production.
-    domains: ['https://images.unsplash.com'],
-    alias: {
-      unsplash: 'https://images.unsplash.com'
-    }
+    quality: 80
   },
 
   // https://github.com/nuxt/fonts
@@ -98,15 +99,6 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     publicGtagId: ''
-  },
-
-  // https://nuxt.com/docs/guide/directory-structure/composables
-  imports: {
-    dirs: [
-      // Scan top-level modules
-      'composables',
-      'composables/**'
-    ]
   },
 
   modules: [

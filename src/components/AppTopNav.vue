@@ -3,7 +3,7 @@ import navigation from '@/data/navigation'
 const route = useRoute()
 </script>
 <template>
-  <nav class="fixed w-full z-50 bg-zinc-100/50 dark:bg-zinc-800/50 backdrop-saturate-100 backdrop-blur-lg">
+  <nav class="fixed w-full z-50 bg-zinc-100/50 dark:bg-zinc-800/50 backdrop-saturate-100 backdrop-blur-lg h-12 max-h-12">
     <AppContainer>
       <div class="flex items-center justify-between">
         <div>
@@ -17,29 +17,22 @@ const route = useRoute()
           <li
             v-for="item in navigation.navItems"
             :key="item.name"
-            class="hover:bg-zinc-200/80 dark:hover:bg-zinc-800 text-sm sm:text-base text-gray-600 dark:text-gray-300 rounded-full leading-6 px-1.5 py-1"
+            class="hover:bg-zinc-200/80 dark:hover:bg-zinc-800 text-gray-600 dark:text-gray-300 rounded-full text-[12px] leading-3 p-2"
           >
             <NuxtLink
               :to="item.href"
               :class="[
                 route.path === item.href ? 'font-medium' : '',
-                'flex items-center justify-center'
+                'flex items-center justify-center '
               ]"
             >
-              <Icon
-                size="24px"
-                :name="item.iconKey"
-                class="leading-6"
-              />
-              <span class="ml-1">
-                {{ item.name }}
-              </span>
+              {{ item.name }}
             </NuxtLink>
           </li>
           <li
             v-for="item in navigation.socials"
             :key="item.name"
-            class="leading-6 px-3 hidden sm:flex"
+            class="leading-3 px-3 hidden sm:flex"
           >
             <NuxtLink
               external
@@ -49,7 +42,7 @@ const route = useRoute()
             >
               <span class="p-1 rounded-full inline-flex hover:bg-zinc-200/80 dark:hover:bg-zinc-800">
                 <Icon
-                  size="24px"
+                  size="20px"
                   :name="item.iconKey"
                 />
               </span>

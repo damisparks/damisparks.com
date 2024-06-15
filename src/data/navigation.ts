@@ -25,9 +25,9 @@ export default {
       iconKey: 'fluent:lightbulb-filament-24-regular'
     },
     {
-      name: 'Articles',
-      href: '/articles',
-      iconKey: 'fluent:document-one-page-24-regular'
+      name: 'Notes',
+      href: '/notes',
+      iconKey: 'fluent:notepad-24-regular'
     }
   ] satisfies INavItem[]
 }
