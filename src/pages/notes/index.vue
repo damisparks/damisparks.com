@@ -11,7 +11,7 @@ useSeoMeta({
   ogDescription: description,
   ogTitle: title
 })
-defineOgImageComponent('Notes')
+defineOgImageComponent('Note')
 
 await fetchNotes()
 </script>
