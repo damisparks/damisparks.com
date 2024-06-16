@@ -52,7 +52,8 @@ export default defineNuxtConfig({
   },
   // https://color-mode.nuxtjs.org/
   colorMode: {
-    classSuffix: ''
+    classSuffix: '',
+    preference: 'dark'
   },
   css: ['~/assets/css/main.css'],
   // https://tailwindcss.com/docs/guides/nuxtjs
@@ -110,6 +111,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@vueuse/nuxt',
     '@nuxtjs/sitemap',
-    'magic-regexp/nuxt'
+    'magic-regexp/nuxt',
+    'nuxt-og-image'
   ]
 })
