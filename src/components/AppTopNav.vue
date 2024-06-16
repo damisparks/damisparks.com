@@ -22,7 +22,7 @@ const route = useRoute()
             <NuxtLink
               :to="item.href"
               :class="[
-                route.path === item.href ? 'font-medium' : '',
+                route.path === item.href ? 'font-medium text-primary-600' : '',
                 'flex items-center justify-center '
               ]"
             >
