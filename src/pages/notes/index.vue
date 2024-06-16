@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { formatDateByLocale } from '@/utils'
+
 const { notes, fetchNotes } = useNote()
 
 const title = 'The Sparks Notes'
@@ -10,9 +11,11 @@ useSeoMeta({
   ogDescription: description,
   ogTitle: title
 })
+defineOgImageComponent('Notes')
 
 await fetchNotes()
 </script>
+
 <template>
   <div
     class="space-y-12 py-8"
@@ -60,7 +63,7 @@ await fetchNotes()
             variant="muted"
             class="text-sm"
           >
-            <time>{{ formatDateByLocale(note.date,'en') }} </time>
+            <time>{{ formatDateByLocale(note.date, 'en') }} </time>
           </AppTypography>
         </template>
       </DsStoryCard>
