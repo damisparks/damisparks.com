@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import badge from '@/ui.config/badge'
+
 type BadgePropsTypes = {
   color?: keyof typeof badge.color
   variant?: keyof typeof badge.variant
@@ -23,6 +24,7 @@ const badgeClasses = computed(() => {
   ]
 })
 </script>
+
 <template>
   <span :class="badgeClasses"><slot /></span>
 </template>

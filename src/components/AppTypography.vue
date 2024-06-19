@@ -16,8 +16,8 @@ const props = withDefaults(defineProps<TypographyPropsType>(), {
 
 const typographyVariant = computed(() => typography.variants[props.variant])
 const tag = computed(() => props.paragraph ? 'p' : props.tag)
-
 </script>
+
 <template>
   <component
     :is="tag"

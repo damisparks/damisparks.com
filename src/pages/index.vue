@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { showcase } from '@/data/work'
+
 const threeShowcase = showcase.slice(0, 3)
 const moreShowcase = showcase.slice(3)
 </script>
+
 <template>
   <div class="space-y-4 slide-enter">
     <section class="pt-8">

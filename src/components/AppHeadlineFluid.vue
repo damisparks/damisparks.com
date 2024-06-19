@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 type FluidHeadlineTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 withDefaults(defineProps<{ tag?: FluidHeadlineTags }>(), { tag: 'h3' })
 </script>
