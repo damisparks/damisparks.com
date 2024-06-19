@@ -44,8 +44,7 @@ useSeoMeta({
 
 if (note.value.image) {
   defineOgImage({ url: note.value.image })
-}
-else {
+} else {
   defineOgImageComponent('Note', {
     title: note.value.title,
     description: note.value.description }

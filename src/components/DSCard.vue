@@ -31,6 +31,7 @@ const footerClasses = computed(() => [
   card.footer.background
 ])
 </script>
+
 <template>
   <component
     :is="props.as"

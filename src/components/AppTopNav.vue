@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import navigation from '@/data/navigation'
+
 const route = useRoute()
 </script>
+
 <template>
   <nav class="fixed w-full z-50 bg-zinc-100/50 dark:bg-zinc-800/50 backdrop-saturate-100 backdrop-blur-lg h-12 max-h-12">
     <AppContainer>

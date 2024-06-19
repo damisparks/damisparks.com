@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import storycard from '~/ui.config/storycard'
+
 type HrefTargetType = '_blank' | '_self' | '_parent' | '_top'
 type StoryCardProps = {
   to: string
@@ -29,6 +30,7 @@ const titleClasses = computed(() => [
   storycard.title
 ])
 </script>
+
 <template>
   <div :class="storyCardClasses">
     <div

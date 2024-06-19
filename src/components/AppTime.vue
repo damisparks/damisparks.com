@@ -2,6 +2,7 @@
 const { formdateDate } = useDate()
 defineProps<{ date: string }>()
 </script>
+
 <template>
   <time
     :datetime="date"
