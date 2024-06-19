@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { all } from '@/data/work'
+
 definePageMeta({
   title: 'Work',
   description: 'Things I\'ve built or collaborated on trying to put my dent in the universe.'
 })
 </script>
+
 <template>
   <div class="space-y-12">
     <section>

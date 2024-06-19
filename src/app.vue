@@ -36,6 +36,7 @@ if (import.meta.server) {
   })
 }
 </script>
+
 <template>
   <div id="app">
     <NuxtLayout>

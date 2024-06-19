@@ -12,8 +12,7 @@ export const useNote = () => {
         .sort({ date: -1 })
         .find()
       notes.value = (data as Notes[]).filter(note => note._path !== '/notes')
-    }
-    catch (e) {
+    } catch (e) {
       notes.value = []
       return e
     }

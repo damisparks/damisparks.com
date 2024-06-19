@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const year = new Date().getFullYear()
 </script>
+
 <template>
   <footer class="pt-16 pb-8">
     <div class="lg:flex lg:items-center lg:justify-between">

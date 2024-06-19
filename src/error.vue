@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
+
 const props = defineProps<{ error: NuxtError }>()
 const handleError = () => clearError({ redirect: '/' })
 
@@ -8,6 +9,7 @@ useSeoMeta({
   description: 'We can\'t seem to find the page you\'re looking for.'
 })
 </script>
+
 <template>
   <main class="isolate relative min-h-screen">
     <figure>
