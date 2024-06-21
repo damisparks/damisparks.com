@@ -40,7 +40,7 @@ await fetchNotes()
     </div>
 
     <DSGrid>
-      <DsStoryCard
+      <DSNoteCard
         v-for="(note, index) in notes"
         :key="index"
         :to="note._path || ''"
@@ -66,7 +66,7 @@ await fetchNotes()
             <time>{{ formatDateByLocale(note.date, 'en') }} </time>
           </AppTypography>
         </template>
-      </DsStoryCard>
+      </DSNoteCard>
     </DSGrid>
   </div>
 </template>
