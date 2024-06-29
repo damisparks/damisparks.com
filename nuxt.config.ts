@@ -1,8 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  future: {
-    compatibilityVersion: 4
-  },
+  // TODO _ figure out how to use this so it does not break the generate build
+  // future: {
+  //   compatibilityVersion: 4
+  // },
   devtools: { enabled: true },
   // https://content.nuxtjs.org/guide/recipes/sitemap
   nitro: {
