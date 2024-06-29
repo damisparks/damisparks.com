@@ -19,7 +19,7 @@
 		"@tailwindcss/aspect-ratio": "0.4.2",
 		"@vueuse/nuxt": "10.11.0",
 		"magic-regexp": "0.8.0",
-		"nuxt": "^3.11.1",
+		"nuxt": "^3.12.2",
 		"nuxt-og-image": "3.0.0-rc.54",
 		"sitemap": "8.0.0",
 		"vue": "^3.4.21",
