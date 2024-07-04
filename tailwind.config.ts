@@ -1,19 +1,19 @@
 import type { Config } from 'tailwindcss'
 import defaultTheme from 'tailwindcss/defaultTheme'
 import plugin from 'tailwindcss/plugin'
-import themeOptions from './src/theme'
+import themeOptions from './app/theme'
 
-const srcDir: string = './src'
+const appDir: string = './app'
 
 export default {
   content: [
-    `${srcDir}/components/**/*.{js,vue,ts}`,
-    `${srcDir}/layouts/**/*.vue`,
-    `${srcDir}/pages/**/*.vue`,
-    `${srcDir}/plugins/**/*.{js,ts}`,
-    `${srcDir}/app.vue`,
-    `${srcDir}/error.vue`,
-    `${srcDir}/ui.config/**/*.{js,vue,ts}`
+    `${appDir}/components/**/*.{js,vue,ts}`,
+    `${appDir}/layouts/**/*.vue`,
+    `${appDir}/pages/**/*.vue`,
+    `${appDir}/plugins/**/*.{js,ts}`,
+    `${appDir}/app.vue`,
+    `${appDir}/error.vue`,
+    `${appDir}/ui.config/**/*.{js,vue,ts}`
   ],
   darkMode: 'class',
   theme: {
