@@ -4,6 +4,20 @@ export default defineNuxtConfig({
     compatibilityVersion: 4
   },
   devtools: { enabled: true },
+
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/fonts',
+    'nuxt-icon',
+    '@nuxtjs/color-mode',
+    '@nuxt/content',
+    '@nuxt/image',
+    '@vueuse/nuxt',
+    '@nuxtjs/sitemap',
+    'magic-regexp/nuxt',
+    'nuxt-og-image'
+  ],
+
   // https://content.nuxtjs.org/guide/recipes/sitemap
   nitro: {
     prerender: {
@@ -81,12 +95,10 @@ export default defineNuxtConfig({
 
   // https://github.com/nuxt/fonts
   fonts: {
-    google: {
-      families: [
-        { name: 'Inter', weight: ['300', '400', '500'] },
-        { name: 'Montserrat', weight: ['300', '400', '500'] }
-      ]
-    }
+    families: [
+      { name: 'Inter', provider: 'google' },
+      { name: 'Montserrat', provider: 'google' }
+    ]
   },
 
   // https://content.nuxt.com/get-started/installation
@@ -105,18 +117,5 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     publicGtagId: ''
-  },
-
-  modules: [
-    '@nuxt/eslint',
-    '@nuxt/fonts',
-    'nuxt-icon',
-    '@nuxtjs/color-mode',
-    '@nuxt/content',
-    '@nuxt/image',
-    '@vueuse/nuxt',
-    '@nuxtjs/sitemap',
-    'magic-regexp/nuxt',
-    'nuxt-og-image'
-  ]
+  }
 })
