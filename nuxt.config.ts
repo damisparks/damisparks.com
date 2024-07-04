@@ -1,9 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  // TODO _ figure out how to use this so it does not break the generate build
-  // future: {
-  //   compatibilityVersion: 4
-  // },
+  future: {
+    compatibilityVersion: 4
+  },
   devtools: { enabled: true },
   // https://content.nuxtjs.org/guide/recipes/sitemap
   nitro: {
@@ -67,7 +66,6 @@ export default defineNuxtConfig({
       autoprefixer: {}
     }
   },
-  srcDir: 'src/',
   eslint: {
     config: {
       stylistic: {
