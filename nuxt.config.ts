@@ -93,6 +93,9 @@ export default defineNuxtConfig({
 
   // https://content.nuxt.com/get-started/installation
   content: {
+    navigation: {
+      fields: ['titleTemplate']
+    },
     highlight: {
       preload: ['zsh', 'hcl', 'yaml'],
       theme: {
