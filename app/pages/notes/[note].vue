@@ -62,5 +62,7 @@ useHead({
 </script>
 
 <template>
-  <ContentRenderer :value="note!" />
+  <NoteIsland>
+    <ContentRenderer :value="note!" />
+  </NoteIsland>
 </template>
