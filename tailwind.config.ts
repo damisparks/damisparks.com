@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 import defaultTheme from 'tailwindcss/defaultTheme'
 import plugin from 'tailwindcss/plugin'
+import typography from '@tailwindcss/typography'
 import themeOptions from './app/theme'
 
 const appDir: string = './app'
@@ -24,7 +25,8 @@ export default {
     },
     fontFamily: {
       sans: ['Inter', ...defaultTheme.fontFamily.sans],
-      montserrat: ['Montserrat', 'sans-serif', ...defaultTheme.fontFamily.sans]
+      montserrat: ['Montserrat', 'sans-serif', ...defaultTheme.fontFamily.sans],
+      dmsans: ['DM Sans', ...defaultTheme.fontFamily.sans]
     },
     fontWeight: {
       light: '300',
@@ -52,6 +54,7 @@ export default {
       })
     }),
 
-    require('@tailwindcss/aspect-ratio')
+    require('@tailwindcss/aspect-ratio'),
+    typography()
   ]
 } satisfies Config
