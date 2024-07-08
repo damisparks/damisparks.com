@@ -110,8 +110,8 @@ export default defineNuxtConfig({
     highlight: {
       preload: ['zsh', 'hcl', 'yaml'],
       theme: {
-        default: 'one-dark-pro',
-        dark: 'one-dark-pro'
+        dark: 'github-dark',
+        default: 'github-light'
       }
     }
   },
