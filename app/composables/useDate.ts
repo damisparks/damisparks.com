@@ -11,7 +11,7 @@ const formdateDate = (date: string) => {
     month: 'long',
     day: 'numeric'
   }
-  return new Intl.DateTimeFormat('en-US', options).format(d)
+  return new Intl.DateTimeFormat('en-GB', options).format(d)
 }
 
 export function useDate () {
