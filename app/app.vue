@@ -39,6 +39,7 @@ if (import.meta.server) {
 
 <template>
   <div id="app">
+    <!-- TODO :  Using <NuxtLayout> inside app.vue will cause unwanted layout shifting in your application. Consider removing <NuxtLayout> from app.vue and using it in your pages. -->
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

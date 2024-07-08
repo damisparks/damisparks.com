@@ -6,7 +6,7 @@ import themeOptions from './app/theme'
 
 const appDir: string = './app'
 
-export default {
+export default <Partial<Config>>{
   content: [
     `${appDir}/components/**/*.{js,vue,ts}`,
     `${appDir}/layouts/**/*.vue`,
@@ -56,5 +56,9 @@ export default {
 
     require('@tailwindcss/aspect-ratio'),
     typography()
+    // See https://github.com/tailwindlabs/tailwindcss/discussions/12496
+    // plugin(function ({ addVariant }) {
+    //   addVariant('prose-inline-code', '&.prose :where(:not(pre)>code):not(:where([class~="not-prose"] *))')
+    // })
   ]
-} satisfies Config
+}

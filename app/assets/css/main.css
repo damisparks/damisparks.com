@@ -38,17 +38,12 @@
 	font-variant-position: normal;
 	font-variation-settings: normal;
 	text-rendering: optimizeLegibility;
-	--text-stroke-color: #aaa;
+	/* --text-stroke-color: #aaa; */
 }
 
 a:not([href]) {
 	opacity: 0.5;
 	pointer-events: none;
-}
-
-p + p,
-p + blockquote {
-	@apply mt-4;
 }
 
 @keyframes slide-enter {
@@ -138,6 +133,7 @@ p + blockquote {
 	}
 }
 
+/* TODO: Implement later. */
 /* .polkadot {
 	--dot-bg: white;
 	--dot-color: black;
