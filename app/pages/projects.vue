@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { all } from '@/data/work'
+import { all } from '@/data/projects'
 
 definePageMeta({
-  title: 'Work',
-  description: 'Things I\'ve built or collaborated on trying to put my dent in the universe.'
+  title: 'Projects',
+  description: 'Things that I created or collaborated on trying to put my dent in the universe.'
 })
 </script>
 
@@ -19,7 +19,7 @@ definePageMeta({
     </section>
     <section class="py-8 text-center">
       <AppHeadlineFluid class="py-8">
-        Things I&#39;ve built trying to put my dent in the universe.
+        Things that I created trying to put my dent in the universe.
       </AppHeadlineFluid>
     </section>
     <section class="max-w-5xl mx-auto">

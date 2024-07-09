@@ -48,7 +48,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/projects': { redirect: { to: '/work', statusCode: 301 } }, // 307 (temp redirect)
+    '/work': { redirect: { to: '/projects', statusCode: 301 } },
     '/about': { redirect: { to: '/bio', statusCode: 301 } },
     '/blog': { redirect: { to: '/articles', statusCode: 301 } },
     '/blog/how-to-provision-a-node-app-on-amazon-eks-using-terraform': {
