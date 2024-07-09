@@ -2,9 +2,8 @@
 import { formatDateByLocale } from '@/utils'
 
 const { notes, fetchNotes } = useNote()
-
 const title = 'The Sparks Notes'
-const description = 'My notes, articles, quick reads, book summaries including personal reflections and thoughts.'
+const description = 'Notes, articles, quick reads, book summaries, and personal reflections on topics close to my heart.'
 useSeoMeta({
   title,
   description,
@@ -25,15 +24,12 @@ await fetchNotes()
         tag="h1"
         class="text-3xl font-medium tracking-tight sm:text-4xl"
       >
-        <Icon
-          name="fluent:notepad-24-regular"
-          class="mr-2"
-        />
         <span>The Sparks Notes</span>
       </AppTypography>
       <AppTypography
-        class="mt-2 text-lg leading-8"
         variant="secondary"
+        paragraph
+        class="mt-2 text-lg leading-8"
       >
         {{ description }}
       </AppTypography>
