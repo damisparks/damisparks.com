@@ -1,4 +1,4 @@
-type WorkListTypes = Record<string, any[]>
+type ProjectListTypes = Record<string, any[]>
 
 const showcase = [
   {
@@ -29,7 +29,7 @@ const showcase = [
     imageUrl: '/images/actif-main.webp'
   }
 ]
-const all: WorkListTypes = {
+const all: ProjectListTypes = {
   'business': [
     {
       id: 'actifage-lda-actif-online',

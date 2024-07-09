@@ -20,8 +20,8 @@ export default {
   ],
   navItems: [
     {
-      name: 'Work',
-      href: '/work',
+      name: 'Projects',
+      href: '/projects',
       iconKey: 'fluent:lightbulb-filament-24-regular'
     },
     {

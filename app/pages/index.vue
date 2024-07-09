@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { showcase } from '@/data/work'
+import { showcase } from '@/data/projects'
 
 const threeShowcase = showcase.slice(0, 3)
 const moreShowcase = showcase.slice(3)
@@ -75,6 +75,7 @@ const moreShowcase = showcase.slice(3)
           </div>
         </div>
         <NuxtLink
+          v-if="moreShowcase[0]"
           :to="moreShowcase[0].websiteUrl"
           external
           class="h-fit"
@@ -88,7 +89,7 @@ const moreShowcase = showcase.slice(3)
             paragraph
             class="py-4"
           >
-            {{ moreShowcase[0].name }}
+            {{ moreShowcase[0]?.name }}
           </AppTypography>
         </NuxtLink>
       </div>
