@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { all } from '@/data/projects'
 
-const title = 'Projects'
-const description = 'Things that I created or collaborated on trying to put my dent in the universe.'
-definePageMeta({
-  title: title,
-  description: description
+const title = ref('Projects')
+const description = ref('Things that I created or collaborated on trying to put my dent in the universe.')
+useSeoMeta({
+  title,
+  description,
+  ogDescription: description,
+  ogTitle: title
 })
 </script>
 
