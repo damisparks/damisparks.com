@@ -1,26 +1,30 @@
 <script setup lang="ts">
 import { all } from '@/data/projects'
 
+const title = 'Projects'
+const description = 'Things that I created or collaborated on trying to put my dent in the universe.'
 definePageMeta({
-  title: 'Projects',
-  description: 'Things that I created or collaborated on trying to put my dent in the universe.'
+  title: title,
+  description: description
 })
 </script>
 
 <template>
-  <div class="space-y-12">
-    <section>
-      <AppTopBlurb>
-        <AppBlurb>
-          Committed to building scalable digital products and digital
-          experiences — currently working at Tricentis.
-        </AppBlurb>
-      </AppTopBlurb>
-    </section>
-    <section class="py-8 text-center">
-      <AppHeadlineFluid class="py-8">
-        Things that I created trying to put my dent in the universe.
-      </AppHeadlineFluid>
+  <div class="space-y-12 py-8">
+    <section class=" text-center">
+      <AppTypography
+        tag="h1"
+        class="text-3xl font-medium tracking-tight sm:text-4xl"
+      >
+        <span>{{ title }}</span>
+      </AppTypography>
+      <AppTypography
+        variant="secondary"
+        paragraph
+        class="mt-2 text-lg leading-8"
+      >
+        {{ description }}
+      </AppTypography>
     </section>
     <section class="max-w-5xl mx-auto">
       <div
