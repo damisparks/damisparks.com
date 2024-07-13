@@ -17,7 +17,7 @@ await fetchNotes()
 
 <template>
   <div
-    class="space-y-12 py-8"
+    class="space-y-12 py-12"
   >
     <div>
       <AppTypography
