@@ -63,7 +63,7 @@ useSeoMeta({
           <AppTypography
             paragraph
             variant="muted"
-            class="pointer-events-none block text-sm font-medium"
+            class="pointer-events-none block text-sm"
           >
             {{ item.description }}
           </AppTypography>
