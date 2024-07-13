@@ -46,12 +46,13 @@ useSeoMeta({
               alt=""
               class="pointer-events-none object-cover group-hover:opacity-75"
             >
-            <button
-              type="button"
+            <NuxtLink
+              :to="item.websiteUrl"
+              target="_blank"
               class="absolute inset-0 focus:outline-none"
             >
               <span class="sr-only">View details for {{ item.name }}</span>
-            </button>
+            </NuxtLink>
           </div>
           <AppTypography
             paragraph
