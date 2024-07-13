@@ -1,11 +1,14 @@
 <script setup lang="ts">
 const route = useRoute()
+
+const description = (route.meta.description as string)
+  || 'The personal website of Dami Sparks - JS/TS Engineer, Design System Engineer, Fractional CTO & Mentor. He founded Actif, an Age-tech SaaS startup and continues contributing to the European developer community.'
 useHead({
   title: () => (route.meta.title as string) || '',
   titleTemplate: title =>
     title
       ? `${title} - Dami Sparks`
-      : 'Dami Sparks - Freelance Full-Stack Developer, Mentor, Technical Writer and Fractional CTO',
+      : 'Dami Sparks - JS/TS Engineer, Design System Engineer, Fractional CTO & Mentor',
   meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
   bodyAttrs: {
     class: 'flex h-full flex-col bg-white text-zinc-900 dark:text-zinc-300 dark:bg-black font-sans' },
@@ -26,10 +29,8 @@ if (import.meta.server) {
   useServerSeoMeta({
     ogUrl: url,
     ogTitle: (route.meta.title as string) || 'Dami Sparks',
-    description: (route.meta.description as string)
-    || 'The personal website of Dami Sparks - Freelance Full-Stack Developer, Fractional CTO, Mentor & Technical Writer.He founded Actif, an Age-tech SaaS startup and continues contributing to the European developer community.',
-    ogDescription: (route.meta.description as string)
-    || 'The personal website of Dami Sparks - Freelance Full-Stack Developer, Fractional CTO, Mentor & Technical Writer. He founded Actif, an Age-tech SaaS startup and continues contributing to the European developer community.',
+    description,
+    ogDescription: description,
     twitterCard: 'summary_large_image',
     twitterCreator: '@damisparks',
     twitterSite: '@damisparks'

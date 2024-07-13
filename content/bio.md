@@ -1,6 +1,6 @@
 ---
 title: Bio
-description: Dami is a Fractional CTO | Passionate Open Source Enthusiast | Vue.js & Nuxt Fullstack Developer | Mentor | Technical Writer
+description: Dami is a Fractional CTO | Passionate Open Source Enthusiast | Vue.js & Nuxt Fullstack Developer & Mentor
 ---
 
 ## Hi there 👋🏾, I'm Dami
