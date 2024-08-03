@@ -5,7 +5,7 @@ const route = useRoute()
 </script>
 
 <template>
-  <nav class="fixed w-full z-50 bg-zinc-100/50 dark:bg-zinc-800/50 backdrop-saturate-100 backdrop-blur-lg h-12 max-h-12">
+  <nav class="fixed w-full z-50 bg-white/70 dark:bg-[#161617]/70 backdrop-saturate-150 backdrop-blur-lg h-12 max-h-12">
     <AppContainer>
       <div class="flex items-center justify-between">
         <div>
