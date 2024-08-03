@@ -31,16 +31,16 @@ useSeoMeta({
     <section class="max-w-5xl mx-auto">
       <ul
         role="list"
-        class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8"
+        class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8"
       >
         <li
           v-for="(item, idx) in all"
           :key="item.name"
           :style="{ '--enter-stage': idx + 1 }"
           slide-enter
-          class="relative shadow-lg rounded-lg p-2"
+          class="relative shadow-lg rounded-lg bg-white dark:bg-[#161617]"
         >
-          <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-zinc-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-zinc-100">
+          <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-t-lg focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-zinc-100">
             <img
               :src="item.imageUrl"
               alt=""
@@ -56,14 +56,14 @@ useSeoMeta({
           </div>
           <AppTypography
             paragraph
-            class="pointer-events-none mt-2 block truncate text-sm font-medium"
+            class="pointer-events-none mt-2 block truncate text-lg font-medium px-2"
           >
             {{ item.name }}
           </AppTypography>
           <AppTypography
             paragraph
             variant="muted"
-            class="pointer-events-none block text-sm"
+            class="pointer-events-none block text-sm line-clamp-2 mt-1 px-2 pb-2"
           >
             {{ item.description }}
           </AppTypography>
