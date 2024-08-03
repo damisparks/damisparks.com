@@ -13,7 +13,7 @@ useSeoMeta({
 
 <template>
   <div class="space-y-12 py-12">
-    <section class="text-center">
+    <section>
       <AppTypography
         tag="h1"
         class="text-3xl font-medium tracking-tight sm:text-4xl"
