@@ -17,7 +17,7 @@
 		"@nuxt/fonts": "^0.7.1",
 		"@nuxt/image": "^1.7.0",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
-		"@vueuse/nuxt": "^10.11.0",
+		"@vueuse/nuxt": "^11.0.0",
 		"magic-regexp": "^0.8.0",
 		"nuxt": "^3.12.2",
 		"nuxt-og-image": "^3.0.0-rc.56",
