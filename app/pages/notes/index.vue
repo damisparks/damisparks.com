@@ -22,7 +22,7 @@ await fetchNotes()
     <div>
       <AppTypography
         tag="h1"
-        class="text-3xl font-medium tracking-tight sm:text-4xl"
+        class="text-3xl font-nunito font-light tracking-tight sm:text-4xl"
       >
         <span>The Sparks Notes</span>
       </AppTypography>

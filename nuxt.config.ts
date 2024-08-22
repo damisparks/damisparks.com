@@ -96,9 +96,9 @@ export default defineNuxtConfig({
   // https://github.com/nuxt/fonts
   fonts: {
     families: [
-      { name: 'Inter', provider: 'google' },
-      { name: 'Montserrat', provider: 'google' },
-      { name: 'DM Sans', provider: 'google' }
+      { name: 'DM Sans', provider: 'google' },
+      { name: 'PT Sans', provider: 'google' },
+      { name: 'Nunito', provider: 'google' }
     ]
   },
 
