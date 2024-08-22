@@ -11,8 +11,8 @@ useHead({
       : 'Dami Sparks - JS/TS Engineer, Design System Engineer, Fractional CTO & Mentor',
   meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
   bodyAttrs: {
-    class: 'flex h-full flex-col bg-[#fafafc] text-zinc-900 dark:text-zinc-300 dark:bg-black font-sans' },
-  htmlAttrs: { lang: 'en', class: 'font-sans h-full antialiased' }
+    class: 'flex h-full flex-col bg-[#fafafc] text-zinc-900 dark:text-zinc-300 dark:bg-black font-ptsans font-normal' },
+  htmlAttrs: { lang: 'en', class: 'font-ptsans h-full antialiased' }
 })
 
 if (import.meta.server) {

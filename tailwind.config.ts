@@ -24,9 +24,9 @@ export default <Partial<Config>>{
       }
     },
     fontFamily: {
-      sans: ['Inter', ...defaultTheme.fontFamily.sans],
-      montserrat: ['Montserrat', 'sans-serif', ...defaultTheme.fontFamily.sans],
-      dmsans: ['DM Sans', ...defaultTheme.fontFamily.sans]
+      nunito: ['Nunito', ...defaultTheme.fontFamily.sans],
+      dmsans: ['DM Sans', ...defaultTheme.fontFamily.sans],
+      ptsans: ['PT Sans', ...defaultTheme.fontFamily.sans]
     },
     fontWeight: {
       light: '300',
@@ -46,10 +46,10 @@ export default <Partial<Config>>{
     plugin(({ addComponents }) => {
       addComponents({
         '.body-compact-small': {
-          '@apply text-sm font-normal font-sans leading-4 tracking-[-0.12px]': {}
+          '@apply text-sm font-normal font-ptsans leading-4 tracking-[-0.12px]': {}
         },
         '.caption': {
-          '@apply text-xs font-normal font-sans tracking-[0.4px]': {}
+          '@apply text-xs font-normal font-ptsans tracking-[0.4px]': {}
         }
       })
     }),
