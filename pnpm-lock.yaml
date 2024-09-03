@@ -67,8 +67,8 @@ importers:
         specifier: ^9.6.0
         version: 9.9.1(jiti@1.21.6)
       nuxt-gtag:
-        specifier: ^2.0.6
-        version: 2.1.0(magicast@0.3.5)(rollup@4.21.2)
+        specifier: ^3.0.0
+        version: 3.0.1(magicast@0.3.5)(rollup@4.21.2)
       nuxt-icon:
         specifier: ^0.6.10
         version: 0.6.10(magicast@0.3.5)(rollup@4.21.2)(vite@5.4.2(@types/node@22.5.2)(sass@1.77.6)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))
@@ -3845,8 +3845,8 @@ packages:
     engines: {node: ^16.10.0 || >=18.0.0}
     hasBin: true
 
-  nuxt-gtag@2.1.0:
-    resolution: {integrity: sha512-06ES+hgMs5l98bHmsLyltbJXfVr1LAkm/5gwcncdNkz96+D0fVA+RhecIp06iDQXF+YPBE2xAgB4G5PnUn8drA==}
+  nuxt-gtag@3.0.1:
+    resolution: {integrity: sha512-dfDeL8JwvwdCddlSBXqofEVdoONVZ5yqztqoiUs+4fEL+QfAAHtK+3MaLyEVO4keZuiyVQs6XPUJyR7afTVXNg==}
 
   nuxt-icon@0.6.10:
     resolution: {integrity: sha512-S9zHVA66ox4ZSpMWvCjqKZC4ZogC0s2z3vZs+M4D95YXGPEXwxDZu+insMKvkbe8+k7gvEmtTk0eq3KusKlxiw==}
@@ -6676,7 +6676,7 @@ snapshots:
 
   '@nuxtjs/mdc@0.8.3(magicast@0.3.5)(rollup@4.21.2)':
     dependencies:
-      '@nuxt/kit': 3.12.4(magicast@0.3.5)(rollup@4.21.2)
+      '@nuxt/kit': 3.13.0(magicast@0.3.5)(rollup@4.21.2)
       '@shikijs/transformers': 1.12.1
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.4
@@ -7444,7 +7444,7 @@ snapshots:
 
   '@vueuse/nuxt@10.11.1(magicast@0.3.5)(nuxt@3.13.0(@parcel/watcher@2.4.1)(@types/node@22.5.2)(encoding@0.1.13)(eslint@9.9.1(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.2)(sass@1.77.6)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.2(@types/node@22.5.2)(sass@1.77.6)(terser@5.31.6)))(rollup@4.21.2)(vue@3.4.38(typescript@5.5.4))':
     dependencies:
-      '@nuxt/kit': 3.12.4(magicast@0.3.5)(rollup@4.21.2)
+      '@nuxt/kit': 3.13.0(magicast@0.3.5)(rollup@4.21.2)
       '@vueuse/core': 10.11.1(vue@3.4.38(typescript@5.5.4))
       '@vueuse/metadata': 10.11.1
       local-pkg: 0.5.0
@@ -9950,9 +9950,9 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  nuxt-gtag@2.1.0(magicast@0.3.5)(rollup@4.21.2):
+  nuxt-gtag@3.0.1(magicast@0.3.5)(rollup@4.21.2):
     dependencies:
-      '@nuxt/kit': 3.12.4(magicast@0.3.5)(rollup@4.21.2)
+      '@nuxt/kit': 3.13.0(magicast@0.3.5)(rollup@4.21.2)
       defu: 6.1.4
       pathe: 1.1.2
       ufo: 1.5.4
