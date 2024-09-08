@@ -16,8 +16,7 @@ const moreShowcase = showcase.slice(3)
           into scalable digital products while
           <span class="text-[#437C17] dark:text-[#A0D6B4]">igniting</span> a passion
           for coding in
-          <span class="text-[#BC4E12] dark:text-[#F1811E]">others</span> — currently
-          working at Tricentis.
+          <span class="text-[#BC4E12] dark:text-[#F1811E]">others</span>
         </AppBlurb>
       </AppTopBlurb>
     </section>
