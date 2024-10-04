@@ -53,7 +53,7 @@ export default <Partial<Config>>{
         }
       })
     }),
-
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     require('@tailwindcss/aspect-ratio'),
     typography()
   ]
