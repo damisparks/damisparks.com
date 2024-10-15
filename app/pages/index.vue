@@ -28,18 +28,17 @@ const moreShowcase = showcase.slice(3)
         Digital products. Built with you in mind.
       </AppHeadlineFluid>
       <div class="inline-flex items-center space-x-4">
-        <NuxtLink
-          class="rounded-md flexbg-primary-600 text-white bg-primary-600 dark:hover:bg-primary-700 px-4 py-2 font-normal"
-          to="/projects"
-        >
-          All works
-        </NuxtLink>
-        <NuxtLink
-          class="rounded-md flex shadow-sm px-4 py-2 bg-transparent text-primary-600 ring-1 ring-inset ring-primary-600 focus:ring-1 focus:ring-primary-600 hover:text-primary-700 hover:border-primary-600 font-normal"
+        <UButton
+          variant="outline"
           to="/bio"
         >
           See my bio
-        </NuxtLink>
+        </UButton>
+        <UButton
+          to="/projects"
+        >
+          All works
+        </UButton>
       </div>
     </section>
     <section>
