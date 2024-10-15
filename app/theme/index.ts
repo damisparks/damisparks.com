@@ -24,7 +24,7 @@ const COLOR_783516 = '#783516'
 const COLOR_411809 = '#411809'
 
 export default {
-  primary: {
+  'royal-blue': {
     50: COLOR_F2F5fC,
     100: COLOR_E1E8F8,
     200: COLOR_CAD6F3,
