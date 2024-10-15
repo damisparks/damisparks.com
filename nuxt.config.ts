@@ -15,7 +15,8 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/sitemap',
     'magic-regexp/nuxt',
-    'nuxt-og-image'
+    'nuxt-og-image',
+    '@nuxt/ui'
   ],
 
   // https://content.nuxtjs.org/guide/recipes/sitemap
