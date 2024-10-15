@@ -9,7 +9,6 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/fonts',
     'nuxt-icon',
-    '@nuxtjs/color-mode',
     '@nuxt/content',
     '@nuxt/image',
     '@vueuse/nuxt',
