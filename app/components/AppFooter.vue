@@ -3,12 +3,12 @@ const year = new Date().getFullYear()
 </script>
 
 <template>
-  <footer class="pt-16 pb-8">
+  <footer class="pb-8 pt-16">
     <div class="lg:flex lg:items-center lg:justify-between">
       <div class="max-w-md">
         <AppTypography
           tag="h3"
-          class="text-base font-nunito leading-6"
+          class="font-nunito text-base leading-6"
         >
           Let's inspire growth together
         </AppTypography>
@@ -38,7 +38,7 @@ const year = new Date().getFullYear()
         <AppSocials />
       </div>
       <div
-        class="body-compact-small mt-8 md:order-1 md:mt-0 text-[12px] leading-[16px]"
+        class="body-compact-small mt-8 text-[12px] leading-[16px] md:order-1 md:mt-0"
       >
         <AppTypography
           tag="span"

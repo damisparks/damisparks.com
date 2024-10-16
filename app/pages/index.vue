@@ -6,7 +6,7 @@ const moreShowcase = showcase.slice(3)
 </script>
 
 <template>
-  <div class="space-y-4 slide-enter">
+  <div class="slide-enter space-y-4">
     <section class="pt-8">
       <AppTopBlurb>
         <AppBlurb>
@@ -20,7 +20,7 @@ const moreShowcase = showcase.slice(3)
         </AppBlurb>
       </AppTopBlurb>
     </section>
-    <section class="py-8 text-center space-y-8">
+    <section class="space-y-8 py-8 text-center">
       <AppHeadlineFluid
         tag="h2"
         class="py-8"
@@ -29,13 +29,13 @@ const moreShowcase = showcase.slice(3)
       </AppHeadlineFluid>
       <div class="inline-flex items-center space-x-4">
         <NuxtLink
-          class="rounded-md flexbg-primary-600 text-white bg-primary-600 dark:hover:bg-primary-700 px-4 py-2 font-normal"
+          class="flexbg-primary-600 rounded-md bg-primary-600 px-4 py-2 font-normal text-white dark:hover:bg-primary-700"
           to="/projects"
         >
           All works
         </NuxtLink>
         <NuxtLink
-          class="rounded-md flex shadow-sm px-4 py-2 bg-transparent text-primary-600 ring-1 ring-inset ring-primary-600 focus:ring-1 focus:ring-primary-600 hover:text-primary-700 hover:border-primary-600 font-normal"
+          class="flex rounded-md bg-transparent px-4 py-2 font-normal text-primary-600 shadow-sm ring-1 ring-inset ring-primary-600 hover:border-primary-600 hover:text-primary-700 focus:ring-1 focus:ring-primary-600"
           to="/bio"
         >
           See my bio
@@ -43,7 +43,7 @@ const moreShowcase = showcase.slice(3)
       </div>
     </section>
     <section>
-      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 pt-8">
+      <div class="grid grid-cols-1 gap-8 pt-8 sm:grid-cols-2">
         <div class="space-y-6">
           <AppTypography
             paragraph
@@ -57,13 +57,13 @@ const moreShowcase = showcase.slice(3)
             :key="item.id"
           >
             <NuxtLink
-              class="grid grid-cols-6 gap-3 items-center hover:bg-primary-50 dark:hover:bg-primary-500/40 p-2 rounded-md"
+              class="grid grid-cols-6 items-center gap-3 rounded-md p-2 hover:bg-primary-50 dark:hover:bg-primary-500/40"
               :to="item.websiteUrl"
               target="_blank"
               external
             >
               <NuxtImg
-                class="object-cover object-center col-span-2 w-full h-16 rounded-md"
+                class="col-span-2 h-16 w-full rounded-md object-cover object-center"
                 :src="item.imageUrl"
                 alt=""
               />
@@ -80,7 +80,7 @@ const moreShowcase = showcase.slice(3)
           class="h-fit"
         >
           <NuxtImg
-            class="object-cover w-full rounded-md border border-gray-100"
+            class="w-full rounded-md border border-gray-100 object-cover"
             :src="moreShowcase[0].imageUrl"
             alt=""
           />

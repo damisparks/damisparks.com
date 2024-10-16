@@ -2,7 +2,7 @@
 import typography from '@/ui.config/typography'
 
 type TypographyTagType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
-type TypographyPropsType = {
+interface TypographyPropsType {
   tag?: TypographyTagType
   paragraph?: boolean
   variant?: keyof typeof typography.variants
@@ -11,7 +11,7 @@ type TypographyPropsType = {
 const props = withDefaults(defineProps<TypographyPropsType>(), {
   tag: 'span',
   paragraph: false,
-  variant: 'default'
+  variant: 'default',
 })
 
 const typographyVariant = computed(() => typography.variants[props.variant])
