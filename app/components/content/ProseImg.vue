@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import { computed, useRuntimeConfig } from '#imports'
 import { withBase } from 'ufo'
-import { useRuntimeConfig, computed } from '#imports'
 
 const props = withDefaults(
   defineProps<{
@@ -9,7 +9,7 @@ const props = withDefaults(
     width: string | number
     height: string | number
   }>(),
-  { src: '', alt: '', width: undefined, height: undefined }
+  { src: '', alt: '', width: undefined, height: undefined },
 )
 
 const refinedSrc = computed(() => {
@@ -21,13 +21,13 @@ const refinedSrc = computed(() => {
 </script>
 
 <template>
-  <div class="group rounded-[10px] block overflow-clip">
+  <div class="group block text-clip rounded-[10px]">
     <img
       :src="refinedSrc"
       :alt="alt"
       :width="width"
       :height="height"
-      class="pointer-events-none w-full h-full object-cover group-hover:opacity-75 rounded-md shadow"
+      class="pointer-events-none size-full rounded-md object-cover shadow group-hover:opacity-75"
     >
   </div>
 </template>

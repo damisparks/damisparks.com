@@ -4,15 +4,17 @@ export const useNote = () => {
   const notes = useState<Notes[]>('notes', () => [])
 
   // fetch notes
-  async function fetchNotes () {
-    if (notes.value.length) return
+  async function fetchNotes() {
+    if (notes.value.length)
+      return
     try {
       const data = await queryContent<Notes>('/notes')
         .where({ _extension: 'md' })
         .sort({ date: -1 })
         .find()
       notes.value = (data as Notes[]).filter(note => note._path !== '/notes')
-    } catch (e) {
+    }
+    catch (e) {
       notes.value = []
       return e
     }
@@ -20,6 +22,6 @@ export const useNote = () => {
 
   return {
     notes,
-    fetchNotes
+    fetchNotes,
   }
 }

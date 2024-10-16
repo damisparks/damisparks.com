@@ -4,16 +4,17 @@
  * @returns A formatted date string in the format "Mon DD, YYYY", or an empty string if the input date is falsy.
  */
 const formdateDate = (date: string) => {
-  if (!date) new Error('Invalid date format')
+  if (!date)
+    new Error('Invalid date format')
   const d = new Date(date)
   const options: Intl.DateTimeFormatOptions = {
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
   }
   return new Intl.DateTimeFormat('en-GB', options).format(d)
 }
 
-export function useDate () {
+export function useDate() {
   return { formdateDate }
 }
