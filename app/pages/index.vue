@@ -29,7 +29,7 @@ const moreShowcase = showcase.slice(3)
       </AppHeadlineFluid>
       <div class="inline-flex items-center space-x-4">
         <NuxtLink
-          class="flexbg-primary-600 rounded-md bg-primary-600 px-4 py-2 font-normal text-white dark:hover:bg-primary-700"
+          class="flex rounded-md bg-primary-600 px-4 py-2 font-normal text-white dark:hover:bg-primary-700"
           to="/projects"
         >
           All works

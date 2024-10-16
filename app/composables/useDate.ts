@@ -5,7 +5,7 @@
  */
 const formdateDate = (date: string) => {
   if (!date)
-    new Error('Invalid date format')
+    throw new Error('Invalid date format')
   const d = new Date(date)
   const options: Intl.DateTimeFormatOptions = {
     year: 'numeric',
