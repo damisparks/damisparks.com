@@ -7,7 +7,7 @@ useSeoMeta({
   title,
   description,
   ogDescription: description,
-  ogTitle: title
+  ogTitle: title,
 })
 </script>
 
@@ -16,7 +16,7 @@ useSeoMeta({
     <section>
       <AppTypography
         tag="h1"
-        class="text-3xl font-nunito	font-light tracking-tight sm:text-4xl"
+        class="font-nunito text-3xl	font-light tracking-tight sm:text-4xl"
       >
         <span>{{ title }}</span>
       </AppTypography>
@@ -28,7 +28,7 @@ useSeoMeta({
         {{ description }}
       </AppTypography>
     </section>
-    <section class="max-w-5xl mx-auto">
+    <section class="mx-auto max-w-5xl">
       <ul
         role="list"
         class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8"
@@ -38,7 +38,7 @@ useSeoMeta({
           :key="item.name"
           :style="{ '--enter-stage': idx + 1 }"
           slide-enter
-          class="relative shadow-lg rounded-lg bg-white dark:bg-[#161617]"
+          class="relative rounded-lg bg-white shadow-lg dark:bg-[#161617]"
         >
           <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-t-lg focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-zinc-100">
             <img
@@ -56,14 +56,14 @@ useSeoMeta({
           </div>
           <AppTypography
             paragraph
-            class="pointer-events-none mt-2 block truncate text-lg font-medium px-2"
+            class="pointer-events-none mt-2 block truncate px-2 text-lg font-medium"
           >
             {{ item.name }}
           </AppTypography>
           <AppTypography
             paragraph
             variant="muted"
-            class="pointer-events-none block text-sm line-clamp-2 mt-1 px-2 pb-2"
+            class="pointer-events-none mt-1 line-clamp-2 block px-2 pb-2 text-sm"
           >
             {{ item.description }}
           </AppTypography>

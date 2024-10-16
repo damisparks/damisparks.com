@@ -5,7 +5,7 @@ const route = useRoute()
 </script>
 
 <template>
-  <nav class="fixed w-full z-50 bg-white/70 dark:bg-[#161617]/70 backdrop-saturate-150 backdrop-blur-lg h-12 max-h-12">
+  <nav class="fixed z-50 h-12 max-h-12 w-full bg-white/70 backdrop-blur-lg backdrop-saturate-150 dark:bg-[#161617]/70">
     <AppContainer>
       <div class="flex items-center justify-between">
         <div>
@@ -15,17 +15,17 @@ const route = useRoute()
             <AppLogoWord />
           </NuxtLink>
         </div>
-        <ul class="flex items-center my-2">
+        <ul class="my-2 flex items-center">
           <li
             v-for="item in navigation.navItems"
             :key="item.name"
-            class="hover:bg-zinc-200/80 dark:hover:bg-zinc-800 text-gray-600 dark:text-gray-300 rounded-full text-[12px] leading-3 p-2"
+            class="rounded-full p-2 text-[12px] leading-3 text-gray-600 hover:bg-zinc-200/80 dark:text-gray-300 dark:hover:bg-zinc-800"
           >
             <NuxtLink
               :to="item.href"
+              class="flex items-center justify-center "
               :class="[
                 route.path === item.href ? 'font-medium text-primary-600' : '',
-                'flex items-center justify-center '
               ]"
             >
               {{ item.name }}
@@ -34,7 +34,7 @@ const route = useRoute()
           <li
             v-for="item in navigation.socials"
             :key="item.name"
-            class="leading-3 px-3 hidden sm:flex"
+            class="hidden px-3 leading-3 sm:flex"
           >
             <NuxtLink
               external
@@ -42,7 +42,7 @@ const route = useRoute()
               :to="item?.href"
               :title="`Visit ${item.name}`"
             >
-              <span class="p-1 rounded-full inline-flex hover:bg-zinc-200/80 dark:hover:bg-zinc-800">
+              <span class="inline-flex rounded-full p-1 hover:bg-zinc-200/80 dark:hover:bg-zinc-800">
                 <Icon
                   size="20px"
                   :name="item.iconKey"
@@ -53,7 +53,7 @@ const route = useRoute()
               </span>
             </NuxtLink>
           </li>
-          <li class="inline-flex ml-2 sm:ml-0">
+          <li class="ml-2 inline-flex sm:ml-0">
             <ColorSwitch />
           </li>
         </ul>

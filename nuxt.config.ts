@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   future: {
-    compatibilityVersion: 4
+    compatibilityVersion: 4,
   },
   devtools: { enabled: true },
 
@@ -15,27 +15,28 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/sitemap',
     'magic-regexp/nuxt',
-    'nuxt-og-image'
+    'nuxt-og-image',
   ],
 
   // https://content.nuxtjs.org/guide/recipes/sitemap
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/sitemap.xml', '/']
+      routes: ['/sitemap.xml', '/'],
     },
     hooks: {
-      'prerender:generate' (route) {
-        if (route.fileName)
+      'prerender:generate': function (route) {
+        if (route.fileName) {
           route.fileName = route.fileName.replace(
             /(\.\w{3})\/index.html$/,
-            '$1'
+            '$1',
           )
+        }
 
         if (route.fileName?.endsWith('.html') && route.contents) {
           route.contents = route.contents.replace(
             /(src|href|srcset)="\/_ipx[^"]+"/g,
-            r => r.replaceAll('//', '/')
+            r => r.replaceAll('//', '/'),
           )
         }
 
@@ -43,8 +44,8 @@ export default defineNuxtConfig({
           console.error(route.route, route.error, route)
           process.exit(1)
         }
-      }
-    }
+      },
+    },
   },
 
   routeRules: {
@@ -54,43 +55,41 @@ export default defineNuxtConfig({
     '/blog/how-to-provision-a-node-app-on-amazon-eks-using-terraform': {
       redirect: {
         to: '/articles/how-to-provision-a-node-app-on-amazon-eks-using-terraform',
-        statusCode: 301
-      }
+        statusCode: 301,
+      },
     },
     '/blog/intro': { redirect: { to: '/notes/intro', statusCode: 301 } },
     '/articles': { redirect: { to: '/notes', statusCode: 301 } },
     '/articles/how-to-provision-a-node-app-on-amazon-eks-using-terraform': {
       redirect: {
         to: '/notes/how-to-provision-a-node-app-on-amazon-eks-using-terraform',
-        statusCode: 301
-      }
+        statusCode: 301,
+      },
     },
-    '/articles/intro': { redirect: { to: '/notes/intro', statusCode: 301 } }
+    '/articles/intro': { redirect: { to: '/notes/intro', statusCode: 301 } },
   },
   // https://color-mode.nuxtjs.org/
   colorMode: {
     classSuffix: '',
-    preference: 'dark'
+    preference: 'dark',
   },
   css: ['~/assets/css/main.css'],
   // https://tailwindcss.com/docs/guides/nuxtjs
   postcss: {
     plugins: {
       tailwindcss: {},
-      autoprefixer: {}
-    }
+      autoprefixer: {},
+    },
   },
   eslint: {
     config: {
-      stylistic: {
-        commaDangle: 'never'
-      }
-    }
+      standalone: false,
+    },
   },
 
   // https://image.nuxt.com/get-started/configuration
   image: {
-    quality: 80
+    quality: 80,
   },
 
   // https://github.com/nuxt/fonts
@@ -98,25 +97,25 @@ export default defineNuxtConfig({
     families: [
       { name: 'DM Sans', provider: 'google' },
       { name: 'PT Sans', provider: 'google' },
-      { name: 'Nunito', provider: 'google' }
-    ]
+      { name: 'Nunito', provider: 'google' },
+    ],
   },
 
   // https://content.nuxt.com/get-started/installation
   content: {
     navigation: {
-      fields: ['titleTemplate']
+      fields: ['titleTemplate'],
     },
     highlight: {
       preload: ['zsh', 'hcl', 'yaml'],
       theme: {
         dark: 'github-dark',
-        default: 'github-light'
-      }
-    }
+        default: 'github-light',
+      },
+    },
   },
 
   runtimeConfig: {
-    publicGtagId: ''
-  }
+    publicGtagId: '',
+  },
 })

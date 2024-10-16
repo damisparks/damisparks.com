@@ -2,7 +2,7 @@
 import storycard from '~/ui.config/storycard'
 
 type HrefTargetType = '_blank' | '_self' | '_parent' | '_top'
-type StoryCardProps = {
+interface StoryCardProps {
   to: string
   title: string
   description?: string
@@ -10,7 +10,7 @@ type StoryCardProps = {
 }
 const props = withDefaults(defineProps<StoryCardProps>(), {
   description: '',
-  target: '_self'
+  target: '_self',
 })
 
 const storyCardClasses = computed(() => [
@@ -18,16 +18,16 @@ const storyCardClasses = computed(() => [
   storycard.ring,
   storycard.rounded,
   storycard.base,
-  storycard.shadow
+  storycard.shadow,
 ])
 
 const bodyClasses = computed(() => [
   storycard.body,
-  storycard.padding
+  storycard.padding,
 ])
 
 const titleClasses = computed(() => [
-  storycard.title
+  storycard.title,
 ])
 </script>
 
@@ -47,7 +47,7 @@ const titleClasses = computed(() => [
           paragraph
           :class="titleClasses"
           variant="default"
-          class="text-lg truncate"
+          class="truncate text-lg"
         >
           {{ props.title }}
         </AppTypography>
@@ -59,7 +59,7 @@ const titleClasses = computed(() => [
       <AppTypography
         paragraph
         variant="secondary"
-        class="mt-1 text-sm line-clamp-2"
+        class="mt-1 line-clamp-2 text-sm"
       >
         {{ props.description }}
       </AppTypography>

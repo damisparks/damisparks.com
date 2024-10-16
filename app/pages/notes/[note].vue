@@ -3,16 +3,17 @@ import type Notes from '~/types/notes'
 
 const route = useRoute()
 const slug = route.params.note
-if (!slug) navigateTo('/notes')
+if (!slug)
+  navigateTo('/notes')
 
 const path = computed(() =>
-  route.path.replace(/(index)?\.json$/, '').replace(/\/$/, '')
+  route.path.replace(/(index)?\.json$/, '').replace(/\/$/, ''),
 )
 const { data: note } = await useAsyncData(
   path.value,
   () =>
     ((import.meta.server || import.meta.dev) as true)
-    && queryContent<Notes>(path.value).where({ _path: route.path }).findOne()
+    && queryContent<Notes>(path.value).where({ _path: route.path }).findOne(),
 )
 
 if (!note.value) {
@@ -21,7 +22,7 @@ if (!note.value) {
 
 useSeoMeta({
   title: note.value.head?.title || note.value.title,
-  description: note.value.head?.description || note.value.description
+  description: note.value.head?.description || note.value.description,
 })
 
 route.meta.title = note.value.title
@@ -39,25 +40,26 @@ useSeoMeta({
   twitterTitle: '[twitter:title]',
   twitterDescription: '[twitter:description]',
   twitterImage: '[twitter:image]',
-  twitterCard: 'summary'
+  twitterCard: 'summary',
 })
 
 if (note.value.image) {
   defineOgImage({ url: note.value.image })
-} else {
+}
+else {
   defineOgImageComponent('Note', {
     title: note.value.title,
-    description: note.value.description }
-  )
+    description: note.value.description,
+  })
 }
 useHead({
   link: [
     {
       rel: 'icon',
       type: 'image/ico',
-      href: '/favicon.ico'
-    }
-  ]
+      href: '/favicon.ico',
+    },
+  ],
 })
 </script>
 

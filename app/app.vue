@@ -11,8 +11,9 @@ useHead({
       : 'Dami Sparks - JS/TS Engineer, Design System Engineer, Fractional CTO & Mentor',
   meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
   bodyAttrs: {
-    class: 'flex h-full flex-col bg-[#fafafc] text-zinc-900 dark:text-zinc-300 dark:bg-black font-ptsans font-normal' },
-  htmlAttrs: { lang: 'en', class: 'font-ptsans h-full antialiased' }
+    class: 'flex h-full flex-col bg-[#fafafc] text-zinc-900 dark:text-zinc-300 dark:bg-black font-ptsans font-normal',
+  },
+  htmlAttrs: { lang: 'en', class: 'font-ptsans h-full antialiased' },
 })
 
 if (import.meta.server) {
@@ -20,7 +21,7 @@ if (import.meta.server) {
     exactly(char.times.any().and(charNotIn('/')))
       .as('path')
       .and(exactly('/').optionally())
-      .at.lineEnd()
+      .at.lineEnd(),
   )
 
   const { path = '/' } = route.fullPath.match(PATH_RE)?.groups ?? {}
@@ -33,7 +34,7 @@ if (import.meta.server) {
     ogDescription: description,
     twitterCard: 'summary_large_image',
     twitterCreator: '@damisparks',
-    twitterSite: '@damisparks'
+    twitterSite: '@damisparks',
   })
 }
 </script>
