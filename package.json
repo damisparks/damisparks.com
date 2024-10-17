@@ -1,44 +1,44 @@
 {
-	"type": "module",
-	"private": true,
-	"packageManager": "pnpm@9.12.1",
-	"scripts": {
-		"build": "nuxt build",
-		"dev": "nuxt dev -o",
-		"generate": "nuxt generate",
-		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare",
-		"lint": "eslint .",
-		"lint:fix": "eslint . --fix"
-	},
-	"dependencies": {
-		"@nuxt/content": "^2.13.2",
-		"@nuxt/fonts": "^0.10.0",
-		"@nuxt/image": "^1.8.1",
-		"@tailwindcss/aspect-ratio": "^0.4.2",
-		"@vueuse/nuxt": "^11.1.0",
-		"magic-regexp": "^0.8.0",
-		"nuxt": "^3.13.2",
-		"nuxt-og-image": "^3.0.4",
-		"sitemap": "^8.0.0",
-		"vue": "^3.5.11",
-		"vue-router": "^4.4.5"
-	},
-	"devDependencies": {
-		"@commitlint/cli": "^19.5.0",
-		"@commitlint/config-conventional": "^19.5.0",
-		"@damisparks/eslint-config": "file:damisparks-eslint-config-1.0.0.tgz",
-		"@nuxt/eslint": "^0.6.0",
-		"@nuxtjs/color-mode": "^3.5.1",
-		"@nuxtjs/sitemap": "^6.1.1",
-		"@tailwindcss/typography": "^0.5.15",
-		"autoprefixer": "^10.4.20",
-		"eslint": "^9.12.0",
-		"eslint-plugin-format": "^0.1.2",
-		"nuxt-gtag": "^3.0.1",
-		"nuxt-icon": "^0.6.10",
-		"postcss": "^8.4.47",
-		"tailwindcss": "^3.4.13",
-		"typescript": "^5.6.2"
-	}
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.12.1",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev -o",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@nuxt/content": "^2.13.2",
+    "@nuxt/fonts": "^0.10.0",
+    "@nuxt/image": "^1.8.1",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@vueuse/nuxt": "^11.1.0",
+    "magic-regexp": "^0.8.0",
+    "nuxt": "^3.13.2",
+    "nuxt-og-image": "^3.0.4",
+    "sitemap": "^8.0.0",
+    "vue": "^3.5.11",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@damisparks/eslint-config": "file:damisparks-eslint-config-1.0.0.tgz",
+    "@nuxt/eslint": "^0.6.0",
+    "@nuxtjs/color-mode": "^3.5.1",
+    "@nuxtjs/sitemap": "^6.1.1",
+    "@tailwindcss/typography": "^0.5.15",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.12.0",
+    "eslint-plugin-format": "^0.1.2",
+    "nuxt-gtag": "^3.0.1",
+    "nuxt-icon": "^0.6.10",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.2"
+  }
 }
