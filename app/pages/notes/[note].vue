@@ -3,8 +3,9 @@ import type Notes from '~/types/notes'
 
 const route = useRoute()
 const slug = route.params.note
-if (!slug)
+if (!slug) {
   navigateTo('/notes')
+}
 
 const path = computed(() =>
   route.path.replace(/(index)?\.json$/, '').replace(/\/$/, ''),
@@ -45,8 +46,7 @@ useSeoMeta({
 
 if (note.value.image) {
   defineOgImage({ url: note.value.image })
-}
-else {
+} else {
   defineOgImageComponent('Note', {
     title: note.value.title,
     description: note.value.description,
