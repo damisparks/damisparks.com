@@ -5,7 +5,9 @@ export const useNote = () => {
 
   // fetch notes
   async function fetchNotes () {
-    if (notes.value.length) return
+    if (notes.value.length) {
+      return
+    }
     try {
       const data = await queryContent<Notes>('/notes')
         .where({ _extension: 'md' })
@@ -20,6 +22,6 @@ export const useNote = () => {
 
   return {
     notes,
-    fetchNotes
+    fetchNotes,
   }
 }

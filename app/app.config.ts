@@ -5,9 +5,9 @@ export default defineAppConfig({
     button: {
       color: {
         primary: {
-          solid: 'bg-primary-500 text-white hover:bg-primary-600 dark:hover:bg-primary-500/40 font-normal'
-        }
-      }
-    }
-  }
+          solid: 'bg-primary-500 text-white hover:bg-primary-600 dark:hover:bg-primary-500/40 font-normal',
+        },
+      },
+    },
+  },
 })

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-type NotePropType = {
+interface NotePropType {
   title: string
   description: string
 }
@@ -8,10 +8,10 @@ defineProps<NotePropType>()
 
 <template>
   <div
-    class="h-full w-full flex flex-col justify-center bg-[#020420]"
+    class="flex size-full flex-col justify-center bg-[#020420]"
   >
     <svg
-      class="absolute top-0 right-0"
+      class="absolute right-0 top-0"
       width="629"
       height="593"
       viewBox="0 0 1200 630"
@@ -52,12 +52,12 @@ defineProps<NotePropType>()
       </defs>
     </svg>
     <div class="w-[700px] pl-[100px]">
-      <h1 class="m-0 text-[75px] font-medium mb-4 text-white flex items-center">
+      <h1 class="m-0 mb-4 flex items-center text-[75px] font-medium text-white">
         <span>{{ title }}</span>
       </h1>
       <p
         v-if="description"
-        class="text-[32px] text-[#E4E4E7] leading-tight"
+        class="text-[32px] leading-tight text-[#E4E4E7]"
       >
         {{ description.slice(0, 200) }}
       </p>

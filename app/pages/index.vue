@@ -6,7 +6,7 @@ const moreShowcase = showcase.slice(3)
 </script>
 
 <template>
-  <div class="space-y-4 slide-enter">
+  <div class="slide-enter space-y-4">
     <section class="pt-8">
       <AppTopBlurb>
         <AppBlurb>
@@ -20,49 +20,34 @@ const moreShowcase = showcase.slice(3)
         </AppBlurb>
       </AppTopBlurb>
     </section>
-    <section class="py-8 text-center space-y-8">
-      <AppHeadlineFluid
-        tag="h2"
-        class="py-8"
-      >
+    <section class="space-y-8 py-8 text-center">
+      <AppHeadlineFluid tag="h2" class="py-8">
         Digital products. Built with you in mind.
       </AppHeadlineFluid>
       <div class="inline-flex items-center space-x-4">
-        <UButton
-          variant="outline"
-          to="/bio"
-        >
+        <UButton variant="outline" to="/bio">
           See my bio
         </UButton>
-        <UButton
-          to="/projects"
-        >
+        <UButton to="/projects">
           All works
         </UButton>
       </div>
     </section>
     <section>
-      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 pt-8">
+      <div class="grid grid-cols-1 gap-8 pt-8 sm:grid-cols-2">
         <div class="space-y-6">
-          <AppTypography
-            paragraph
-            variant="muted"
-            class="uppercase"
-          >
+          <AppTypography paragraph variant="muted" class="uppercase">
             featured work
           </AppTypography>
-          <div
-            v-for="item in threeShowcase"
-            :key="item.id"
-          >
+          <div v-for="item in threeShowcase" :key="item.id">
             <NuxtLink
-              class="grid grid-cols-6 gap-3 items-center hover:bg-primary-50 dark:hover:bg-primary-500/40 p-2 rounded-md"
+              class="hover:bg-primary-50 dark:hover:bg-primary-500/40 grid grid-cols-6 items-center gap-3 rounded-md p-2"
               :to="item.websiteUrl"
               target="_blank"
               external
             >
               <NuxtImg
-                class="object-cover object-center col-span-2 w-full h-16 rounded-md"
+                class="col-span-2 h-16 w-full rounded-md object-cover object-center"
                 :src="item.imageUrl"
                 alt=""
               />
@@ -79,14 +64,11 @@ const moreShowcase = showcase.slice(3)
           class="h-fit"
         >
           <NuxtImg
-            class="object-cover w-full rounded-md border border-gray-100"
+            class="w-full rounded-md border border-gray-100 object-cover"
             :src="moreShowcase[0].imageUrl"
             alt=""
           />
-          <AppTypography
-            paragraph
-            class="py-4"
-          >
+          <AppTypography paragraph class="py-4">
             {{ moreShowcase[0]?.name }}
           </AppTypography>
         </NuxtLink>

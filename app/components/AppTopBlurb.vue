@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-2xl mx-auto flex sm:justify-center mt-9">
+  <div class="mx-auto mt-9 flex max-w-2xl sm:justify-center">
     <slot />
   </div>
 </template>

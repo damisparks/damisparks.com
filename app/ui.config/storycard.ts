@@ -8,6 +8,6 @@ export default {
   body: 'flex-1',
   padding: 'px-4 py-5 sm:p-6',
   footer: {
-    padding: 'px-4 pb-4 sm:px-6'
-  }
+    padding: 'px-4 pb-4 sm:px-6',
+  },
 }
