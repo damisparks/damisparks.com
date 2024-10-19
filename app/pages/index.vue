@@ -41,33 +41,19 @@ const moreShowcase = showcase.slice(3)
           </AppTypography>
           <div v-for="item in threeShowcase" :key="item.id">
             <NuxtLink
-              class="hover:bg-primary-50 dark:hover:bg-primary-500/40 grid grid-cols-6 items-center gap-3 rounded-md p-2"
-              :to="item.websiteUrl"
-              target="_blank"
-              external
-            >
-              <NuxtImg
-                class="col-span-2 h-16 w-full rounded-md object-cover object-center"
-                :src="item.imageUrl"
-                alt=""
-              />
+              class="grid grid-cols-6 items-center gap-3 rounded-md p-2 hover:bg-primary-50 dark:hover:bg-primary-500/40"
+              :to="item.websiteUrl" target="_blank" external>
+              <NuxtImg class="col-span-2 h-16 w-full rounded-md object-cover object-center" :src="item.imageUrl"
+                alt="" />
               <div class="col-span-4">
                 {{ item.name }}
               </div>
             </NuxtLink>
           </div>
         </div>
-        <NuxtLink
-          v-if="moreShowcase[0]"
-          :to="moreShowcase[0].websiteUrl"
-          external
-          class="h-fit"
-        >
-          <NuxtImg
-            class="w-full rounded-md border border-gray-100 object-cover"
-            :src="moreShowcase[0].imageUrl"
-            alt=""
-          />
+        <NuxtLink v-if="moreShowcase[0]" :to="moreShowcase[0].websiteUrl" external class="h-fit">
+          <NuxtImg class="w-full rounded-md border border-gray-100 object-cover" :src="moreShowcase[0].imageUrl"
+            alt="" />
           <AppTypography paragraph class="py-4">
             {{ moreShowcase[0]?.name }}
           </AppTypography>
