@@ -22,6 +22,7 @@ const COLOR_BC4E12 = '#BC4E12'
 const COLOR_953e17 = '#953e17'
 const COLOR_783516 = '#783516'
 const COLOR_411809 = '#411809'
+const COLOR_21254A = '#21254A'
 
 export default {
   'royal-blue': {
@@ -35,6 +36,7 @@ export default {
     700: COLOR_3D4BB8,
     800: COLOR_373F96,
     900: COLOR_303878,
+    950: COLOR_21254A,
   },
   'accent': {
     50: COLOR_FEF8EE,
