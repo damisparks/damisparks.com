@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import navigation from '@/data/navigation'
 
-type SocialPropsType = { iconSize?: string, showText?: boolean }
+interface SocialPropsType { iconSize?: string, showText?: boolean }
 const props = withDefaults(defineProps<SocialPropsType>(), { iconSize: '20px' })
 </script>
 
@@ -13,7 +13,7 @@ const props = withDefaults(defineProps<SocialPropsType>(), { iconSize: '20px' })
       external
       :to="nav.href"
       :title="`Visit ${nav.name}`"
-			:aria-label="`Dami Sparks on ${nav.name}`"
+      :aria-label="`Dami Sparks on ${nav.name}`"
     >
       <span class="inline-flex items-center">
         <Icon

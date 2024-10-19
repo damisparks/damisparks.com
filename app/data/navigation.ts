@@ -5,24 +5,24 @@ export default {
     {
       iconKey: 'i-simple-icons-github',
       href: 'https://www.github.com/damisparks',
-      name: 'GitHub'
+      name: 'GitHub',
     },
     {
       iconKey: 'i-simple-icons-x',
       href: 'https://www.twitter.com/DamiSparks',
-			name: 'X'
-    }
+      name: 'X',
+    },
   ],
   navItems: [
     {
       name: 'Projects',
       href: '/projects',
-      iconKey: 'fluent:lightbulb-filament-24-regular'
+      iconKey: 'fluent:lightbulb-filament-24-regular',
     },
     {
       name: 'Notes',
       href: '/notes',
-      iconKey: 'fluent:notepad-24-regular'
-    }
-  ] satisfies INavItem[]
+      iconKey: 'fluent:notepad-24-regular',
+    },
+  ] satisfies INavItem[],
 }

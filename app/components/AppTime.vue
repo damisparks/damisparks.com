@@ -1,12 +1,12 @@
 <script setup lang="ts">
-const { formdateDate } = useDate()
 defineProps<{ date: string }>()
+const { formdateDate } = useDate()
 </script>
 
 <template>
   <time
     :datetime="date"
-    class="text-zinc-400 dark:text-zinc-400 text-sm"
+    class="text-sm text-zinc-400 dark:text-zinc-400"
   >
     {{ formdateDate(date) }}
   </time>

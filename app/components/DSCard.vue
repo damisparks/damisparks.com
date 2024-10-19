@@ -1,34 +1,34 @@
 <script setup lang="ts">
 import card from '@/ui.config/card'
 
-type CardPropsType = { as?: string }
+interface CardPropsType { as?: string }
+const props = withDefaults(defineProps<CardPropsType>(), { as: 'div' })
+
 const cardClasses = computed(() => [
   card.background,
   card.base,
   card.shadow,
   card.rounded,
   card.ring,
-  card.divider
+  card.divider,
 ])
-
-const props = withDefaults(defineProps<CardPropsType>(), { as: 'div' })
 
 const headerClasses = computed(() => [
   card.header.base,
   card.header.padding,
-  card.header.background
+  card.header.background,
 ])
 
 const bodyClasses = computed(() => [
   card.body.background,
   card.body.padding,
-  card.body.base
+  card.body.base,
 ])
 
 const footerClasses = computed(() => [
   card.footer.base,
   card.footer.padding,
-  card.footer.background
+  card.footer.background,
 ])
 </script>
 

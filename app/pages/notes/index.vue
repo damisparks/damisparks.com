@@ -8,7 +8,7 @@ useSeoMeta({
   title,
   description,
   ogDescription: description,
-  ogTitle: title
+  ogTitle: title,
 })
 defineOgImageComponent('Note')
 
@@ -22,7 +22,7 @@ await fetchNotes()
     <div>
       <AppTypography
         tag="h1"
-        class="text-3xl font-nunito font-light tracking-tight sm:text-4xl"
+        class="font-nunito text-3xl font-light tracking-tight sm:text-4xl"
       >
         <span>The Sparks Notes</span>
       </AppTypography>
@@ -48,7 +48,7 @@ await fetchNotes()
             :src="note.image"
             :alt="note.title || ''"
             :loading="index === 0 ? 'eager' : 'lazy'"
-            class="object-cover object-top w-full h-full"
+            class="size-full object-cover object-top"
             width="384"
             height="192"
           />

@@ -34,9 +34,9 @@ export default {
     600: COLOR_475DC9,
     700: COLOR_3D4BB8,
     800: COLOR_373F96,
-    900: COLOR_303878
+    900: COLOR_303878,
   },
-  accent: {
+  'accent': {
     50: COLOR_FEF8EE,
     100: COLOR_FEEFD6,
     200: COLOR_FBDCAD,
@@ -47,6 +47,6 @@ export default {
     700: COLOR_BC4E12,
     800: COLOR_953e17,
     900: COLOR_783516,
-    950: COLOR_411809
-  }
+    950: COLOR_411809,
+  },
 }

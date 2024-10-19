@@ -8,6 +8,6 @@ export const formatDateByLocale = (dt: Date, locale: string) => {
   return new Date(dt).toLocaleDateString(locale, {
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
   })
 }

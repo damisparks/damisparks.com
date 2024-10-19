@@ -8,16 +8,16 @@ export default {
   body: {
     base: '',
     background: '',
-    padding: 'px-4 py-5 sm:p-6'
+    padding: 'px-4 py-5 sm:p-6',
   },
   header: {
     base: '',
     background: '',
-    padding: 'px-4 py-5 sm:px-6'
+    padding: 'px-4 py-5 sm:px-6',
   },
   footer: {
     base: '',
     background: '',
-    padding: 'px-4 py-4 sm:px-6'
-  }
+    padding: 'px-4 py-4 sm:px-6',
+  },
 }
