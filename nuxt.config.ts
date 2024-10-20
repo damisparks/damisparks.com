@@ -9,13 +9,13 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/fonts',
     'nuxt-icon',
-    '@nuxtjs/color-mode',
     '@nuxt/content',
     '@nuxt/image',
     '@vueuse/nuxt',
     '@nuxtjs/sitemap',
     'magic-regexp/nuxt',
     'nuxt-og-image',
+    '@nuxt/ui',
   ],
 
   // https://content.nuxtjs.org/guide/recipes/sitemap

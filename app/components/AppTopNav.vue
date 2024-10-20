@@ -9,9 +9,7 @@ const route = useRoute()
     <AppContainer>
       <div class="flex items-center justify-between">
         <div>
-          <NuxtLink
-            to="/"
-          >
+          <NuxtLink to="/">
             <AppLogoWord />
           </NuxtLink>
         </div>
@@ -19,23 +17,18 @@ const route = useRoute()
           <li
             v-for="item in navigation.navItems"
             :key="item.name"
-            class="rounded-full p-2 text-[12px] leading-3 text-gray-600 hover:bg-zinc-200/80 dark:text-gray-300 dark:hover:bg-zinc-800"
           >
             <NuxtLink
               :to="item.href"
-              class="flex items-center justify-center "
+              class="flex items-center justify-center rounded-full p-2 font-nunito text-[12px] leading-3 hover:bg-zinc-200/80 dark:hover:bg-zinc-800"
               :class="[
-                route.path === item.href ? 'font-medium text-primary-600' : '',
+                route.path === item.href ? 'text-primary-600 dark:text-primary-300 font-medium' : 'font-normal text-gray-600 dark:text-gray-300',
               ]"
             >
               {{ item.name }}
             </NuxtLink>
           </li>
-          <li
-            v-for="item in navigation.socials"
-            :key="item.name"
-            class="hidden px-3 leading-3 sm:flex"
-          >
+          <li v-for="item in navigation.socials" :key="item.name" class="hidden px-3 leading-3 sm:flex">
             <NuxtLink
               external
               target="_blank"
@@ -43,10 +36,7 @@ const route = useRoute()
               :title="`Visit ${item.name}`"
             >
               <span class="inline-flex rounded-full p-1 hover:bg-zinc-200/80 dark:hover:bg-zinc-800">
-                <Icon
-                  size="20px"
-                  :name="item.iconKey"
-                />
+                <Icon size="20px" :name="item.iconKey" />
               </span>
               <span class="sr-only">
                 {{ item.name }}
