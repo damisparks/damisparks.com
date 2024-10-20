@@ -121,4 +121,9 @@ export default defineNuxtConfig({
       siteUrl: '',
     },
   },
+
+  site: {
+    // production URL
+    url: 'https://damisparks.com',
+  },
 })
