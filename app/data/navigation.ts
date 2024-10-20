@@ -16,12 +16,12 @@ export default {
   navItems: [
     {
       name: 'Projects',
-      href: '/projects',
+      href: 'projects',
       iconKey: 'fluent:lightbulb-filament-24-regular',
     },
     {
       name: 'Notes',
-      href: '/notes',
+      href: 'notes',
       iconKey: 'fluent:notepad-24-regular',
     },
   ] satisfies INavItem[],

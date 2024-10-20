@@ -25,7 +25,7 @@ const COLOR_411809 = '#411809'
 const COLOR_21254A = '#21254A'
 
 export default {
-  primary: {
+  'primary': {
     50: COLOR_F2F5fC,
     100: COLOR_E1E8F8,
     200: COLOR_CAD6F3,
@@ -38,7 +38,21 @@ export default {
     900: COLOR_303878,
     950: COLOR_21254A,
   },
-  accent: {
+  // Used in the app.config.ts for the primary color in Nuxt UI
+  'royal-blue': {
+    50: COLOR_F2F5fC,
+    100: COLOR_E1E8F8,
+    200: COLOR_CAD6F3,
+    300: COLOR_A5BCEB,
+    400: COLOR_7A99E0,
+    500: COLOR_5F7BD7,
+    600: COLOR_475DC9,
+    700: COLOR_3D4BB8,
+    800: COLOR_373F96,
+    900: COLOR_303878,
+    950: COLOR_21254A,
+  },
+  'accent': {
     50: COLOR_FEF8EE,
     100: COLOR_FEEFD6,
     200: COLOR_FBDCAD,
