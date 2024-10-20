@@ -117,5 +117,8 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     publicGtagId: '',
+    public: {
+      siteUrl: '',
+    },
   },
 })
