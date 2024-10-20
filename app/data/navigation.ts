@@ -3,14 +3,14 @@ import type INavItem from '@/types/navItem'
 export default {
   socials: [
     {
-      iconKey: 'uil:github',
+      iconKey: 'i-simple-icons-github',
       href: 'https://www.github.com/damisparks',
       name: 'GitHub',
     },
     {
-      iconKey: 'ri:twitter-x-fill',
+      iconKey: 'i-simple-icons-x',
       href: 'https://www.twitter.com/DamiSparks',
-      name: 'Twitter',
+      name: 'X',
     },
   ],
   navItems: [

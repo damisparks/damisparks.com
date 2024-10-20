@@ -13,6 +13,7 @@ const props = withDefaults(defineProps<SocialPropsType>(), { iconSize: '20px' })
       external
       :to="nav.href"
       :title="`Visit ${nav.name}`"
+      :aria-label="`Dami Sparks on ${nav.name}`"
     >
       <span class="inline-flex items-center">
         <Icon

@@ -21,43 +21,27 @@ const moreShowcase = showcase.slice(3)
       </AppTopBlurb>
     </section>
     <section class="space-y-8 py-8 text-center">
-      <AppHeadlineFluid
-        tag="h2"
-        class="py-8"
-      >
+      <AppHeadlineFluid tag="h2" class="py-8">
         Digital products. Built with you in mind.
       </AppHeadlineFluid>
       <div class="inline-flex items-center space-x-4">
-        <NuxtLink
-          class="flex rounded-md bg-primary-600 px-4 py-2 font-normal text-white dark:hover:bg-primary-700"
-          to="/projects"
-        >
-          All works
-        </NuxtLink>
-        <NuxtLink
-          class="flex rounded-md bg-transparent px-4 py-2 font-normal text-primary-600 shadow-sm ring-1 ring-inset ring-primary-600 hover:border-primary-600 hover:text-primary-700 focus:ring-1 focus:ring-primary-600"
-          to="/bio"
-        >
+        <UButton variant="outline" to="/bio">
           See my bio
-        </NuxtLink>
+        </UButton>
+        <UButton to="/projects">
+          All works
+        </UButton>
       </div>
     </section>
     <section>
       <div class="grid grid-cols-1 gap-8 pt-8 sm:grid-cols-2">
         <div class="space-y-6">
-          <AppTypography
-            paragraph
-            variant="muted"
-            class="uppercase"
-          >
+          <AppTypography paragraph variant="muted" class="uppercase">
             featured work
           </AppTypography>
-          <div
-            v-for="item in threeShowcase"
-            :key="item.id"
-          >
+          <div v-for="item in threeShowcase" :key="item.id">
             <NuxtLink
-              class="grid grid-cols-6 items-center gap-3 rounded-md p-2 hover:bg-primary-50 dark:hover:bg-primary-500/40"
+              class="hover:bg-primary-50 dark:hover:bg-primary-500/40 grid grid-cols-6 items-center gap-3 rounded-md p-2"
               :to="item.websiteUrl"
               target="_blank"
               external
@@ -84,10 +68,7 @@ const moreShowcase = showcase.slice(3)
             :src="moreShowcase[0].imageUrl"
             alt=""
           />
-          <AppTypography
-            paragraph
-            class="py-4"
-          >
+          <AppTypography paragraph class="py-4">
             {{ moreShowcase[0]?.name }}
           </AppTypography>
         </NuxtLink>

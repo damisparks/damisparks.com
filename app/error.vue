@@ -28,14 +28,16 @@ useSeoMeta({
         <h1 class="font-nunito text-4xl leading-8 text-white">
           {{ props.error?.statusCode }}.
         </h1>
-        <p class="text-white/70 dark:text-gray-400">
+        <p class="text-white/70 dark:text-gray-200">
           We can't seem to find the page you're looking for.
         </p>
-        <AppButton
+        <UButton
+          color="primary"
           type="button"
-          label="Go Home"
           @click="handleError"
-        />
+        >
+          Go Home
+        </UButton>
       </div>
     </div>
   </main>
