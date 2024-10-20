@@ -19,7 +19,7 @@ const route = useRoute()
               :to="item.href"
               class="flex items-center justify-center rounded-full p-2 font-nunito text-[12px] leading-3 hover:bg-zinc-200/80 dark:hover:bg-zinc-800"
               :class="[
-                route.path === item.href ? 'font-medium text-primary-600 dark:text-primary-300' : 'font-normal text-gray-600 dark:text-gray-300',
+                route.name === item.href ? 'font-medium text-primary-600 dark:text-primary-300' : 'font-normal text-gray-600 dark:text-gray-300',
               ]"
             >
               {{ item.name }}
