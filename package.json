@@ -20,7 +20,7 @@
     "@vueuse/nuxt": "^11.1.0",
     "magic-regexp": "^0.8.0",
     "nuxt": "^3.13.2",
-    "nuxt-og-image": "^3.0.4",
+    "nuxt-og-image": "^4.0.0",
     "sitemap": "^8.0.0",
     "vue": "^3.5.11",
     "vue-router": "^4.4.5"
