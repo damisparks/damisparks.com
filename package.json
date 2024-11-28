@@ -34,12 +34,17 @@
     "@nuxtjs/sitemap": "^7.0.0",
     "eslint": "^9.12.0",
     "eslint-plugin-format": "^0.1.2",
+    "lint-staged": "^15.2.10",
     "nuxt-gtag": "^3.0.1",
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.6.2",
     "vue-tsc": "^2.1.10"
   },
   "simple-git-hooks": {
-    "commit-msg": "npx commitlint --edit $1"
+    "commit-msg": "npx commitlint --edit $1",
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,mjs,vue}": ["eslint"]
   }
 }
