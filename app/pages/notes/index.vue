@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { formatDateByLocale } from '@/utils'
-
 const { notes, fetchNotes } = useNote()
 const title = 'The Sparks Notes'
 const description = 'Notes, articles, quick reads, book summaries, and personal reflections on topics close to my heart.'

@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
+
   devtools: { enabled: true },
 
   modules: [
@@ -67,12 +68,15 @@ export default defineNuxtConfig({
     },
     '/articles/intro': { redirect: { to: '/notes/intro', statusCode: 301 } },
   },
+
   // https://color-mode.nuxtjs.org/
   colorMode: {
     classSuffix: '',
     preference: 'dark',
   },
+
   css: ['~/assets/css/main.css'],
+
   // https://tailwindcss.com/docs/guides/nuxtjs
   postcss: {
     plugins: {
@@ -80,6 +84,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
   eslint: {
     config: {
       standalone: false,
@@ -125,4 +130,6 @@ export default defineNuxtConfig({
     // production URL
     url: 'https://damisparks.com',
   },
+
+  compatibilityDate: '2024-12-09',
 })
