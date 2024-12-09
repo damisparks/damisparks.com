@@ -1,6 +1,5 @@
 <script setup lang="ts">
 defineProps<{ date: string }>()
-const { formdateDate } = useDate()
 </script>
 
 <template>
