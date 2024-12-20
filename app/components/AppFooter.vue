@@ -8,7 +8,7 @@ const year = new Date().getFullYear()
       <div class="max-w-md">
         <AppTypography
           tag="h3"
-          class="font-nunito text-base leading-6"
+          class="font-worksans font-medium"
         >
           Let's inspire growth together
         </AppTypography>
