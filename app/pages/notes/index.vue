@@ -22,14 +22,14 @@ await fetchNotes()
     <div>
       <AppTypography
         tag="h1"
-        class="font-nunito text-3xl font-light tracking-tight sm:text-4xl"
+        class="text-3xl font-medium tracking-tight"
       >
         <span>The Sparks Notes</span>
       </AppTypography>
       <AppTypography
         variant="secondary"
         paragraph
-        class="mt-2 text-lg leading-8"
+        class="mt-2"
       >
         {{ description }}
       </AppTypography>

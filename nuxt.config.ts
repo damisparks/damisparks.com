@@ -95,8 +95,7 @@ export default defineNuxtConfig({
   fonts: {
     families: [
       { name: 'DM Sans', provider: 'google' },
-      { name: 'PT Sans', provider: 'google' },
-      { name: 'Nunito', provider: 'google' },
+      { name: 'Work Sans', provider: 'google' },
     ],
   },
 
