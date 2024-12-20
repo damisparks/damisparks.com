@@ -1,5 +1,7 @@
 **[damisparks.com](http://damisparks.com)**
 
+![Portfolio Social Preview](./public/preview.webp)
+
 This is the code and content for my personal website, built in [Nuxt](https://nuxt.com/).
 
 > **NOTE**
