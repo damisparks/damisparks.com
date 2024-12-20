@@ -1,6 +1,6 @@
 <template>
   <h1
-    class="text-center font-nunito text-xl font-light leading-7 lg:text-[28px] lg:leading-9"
+    class="text-center text-xl/7 tracking-normal"
   >
     <slot />
   </h1>
