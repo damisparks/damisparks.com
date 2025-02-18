@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type Notes from '~/types/notes'
-
 const route = useRoute()
 const slug = route.params.note
 if (!slug) {
@@ -14,22 +12,18 @@ const { data: note } = await useAsyncData(
   path.value,
   () =>
     ((import.meta.server || import.meta.dev) as true)
-    && queryContent<Notes>(path.value).where({ _path: route.path }).findOne(),
+    && queryCollection('notes').path(path.value).select('title', 'date', 'tags', 'image', 'description').first(),
 )
 
 if (!note.value) {
   throw createError({ statusCode: 404, statusMessage: 'Note not found', fatal: true })
 }
 
-useSeoMeta({
-  title: note.value.head?.title || note.value.title,
-  description: note.value.head?.description || note.value.description,
-})
+const { title, description, image } = note.value
+
+useSeoMeta({ title, description })
 
 route.meta.title = note.value.title
-
-const title = note.value.head?.title || note.value.title
-const description = note.value.head?.description || note.value.description
 useSeoMeta({
   titleTemplate: '%s · Sparks Notes',
   title,
@@ -45,12 +39,9 @@ useSeoMeta({
 })
 
 if (note.value.image) {
-  defineOgImage({ url: note.value.image })
+  defineOgImage({ url: image })
 } else {
-  defineOgImageComponent('Note', {
-    title: note.value.title,
-    description: note.value.description,
-  })
+  defineOgImageComponent('Note', { title, description })
 }
 useHead({
   link: [
@@ -65,6 +56,6 @@ useHead({
 
 <template>
   <NoteIsland>
-    <ContentRenderer :value="note!" />
+    <ContentRenderer v-if="note" :value="note" />
   </NoteIsland>
 </template>

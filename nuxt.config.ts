@@ -106,14 +106,13 @@ export default defineNuxtConfig({
 
   // https://content.nuxt.com/get-started/installation
   content: {
-    navigation: {
-      fields: ['titleTemplate'],
-    },
-    highlight: {
-      preload: ['zsh', 'hcl', 'yaml'],
-      theme: {
-        dark: 'github-dark',
-        default: 'github-light',
+    watch: { enabled: true },
+    build: {
+      markdown: {
+        highlight: {
+          preload: ['zsh', 'hcl', 'yaml'],
+          theme: { dark: 'monokai', default: 'github-light' },
+        },
       },
     },
   },
