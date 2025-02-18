@@ -10,10 +10,11 @@ export default defineContentConfig({
       type: 'page',
       source: 'notes/*.md',
       schema: z.object({
-        description: z.string(),
-        tags: z.array(z.string()),
+        title: z.string(),
         date: z.date(),
+        tags: z.array(z.string()),
         image: z.string(),
+        description: z.string(),
       }),
     }),
   },
