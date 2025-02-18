@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const { notes, fetchNotes } = useNote()
 const title = 'The Sparks Notes'
 const description = 'Notes, articles, quick reads, book summaries, and personal reflections on topics close to my heart.'
 useSeoMeta({
@@ -10,7 +9,12 @@ useSeoMeta({
 })
 defineOgImageComponent('Note')
 
-await fetchNotes()
+const notes = await queryCollection('notes')
+  .select('title', 'description', 'image', 'date', 'path')
+  .all()
+  .then((res) => {
+    return res.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  })
 </script>
 
 <template>
@@ -35,16 +39,16 @@ await fetchNotes()
 
     <DSGrid>
       <DSNoteCard
-        v-for="(note, index) in notes"
+        v-for="({ path, title, image, date }, index) in notes"
         :key="index"
-        :to="note._path || ''"
-        :title="note.title || ''"
-        :description="note.description || ''"
+        :to="path"
+        :title="title"
+        :description="description"
       >
         <template #header>
           <NuxtImg
-            :src="note.image"
-            :alt="note.title || ''"
+            :src="image"
+            :alt="title"
             :loading="index === 0 ? 'eager' : 'lazy'"
             class="size-full object-cover object-top"
             width="384"
@@ -57,7 +61,7 @@ await fetchNotes()
             variant="muted"
             class="text-sm"
           >
-            <time>{{ formatDateByLocale(note.date, 'en') }} </time>
+            <time>{{ formatDateByLocale(date, 'en') }} </time>
           </AppTypography>
         </template>
       </DSNoteCard>
