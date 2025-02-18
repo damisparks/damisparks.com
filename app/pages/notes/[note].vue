@@ -12,7 +12,7 @@ const { data: note } = await useAsyncData(
   path.value,
   () =>
     ((import.meta.server || import.meta.dev) as true)
-    && queryCollection('notes').path(path.value).select('title', 'date', 'tags', 'image', 'description').first(),
+    && queryCollection('notes').path(path.value).first(),
 )
 
 if (!note.value) {
