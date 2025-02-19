@@ -1,27 +1,25 @@
 <script setup lang="ts">
-const title = 'Bio'
-const description = 'A little about me.'
-useSeoMeta({
-  title,
-  description,
-  ogDescription: description,
-  ogTitle: title,
-})
-
 const { data: bio } = await useAsyncData(
   'bio',
   () =>
     ((import.meta.server || import.meta.dev) as true)
-    && queryContent('bio').findOne(),
+    && queryCollection('page').first(),
 )
 
 if (!bio.value) {
   throw createError({ statusCode: 404, statusMessage: 'Bio not found', fatal: true })
 }
+
+useSeoMeta({
+  title: bio.value.title,
+  description: bio.value.description,
+  ogDescription: bio.value.description,
+  ogTitle: bio.value.title,
+})
 </script>
 
 <template>
   <NoteIsland>
-    <ContentRenderer :value="bio!" />
+    <ContentRenderer v-if="bio" :value="bio" />
   </NoteIsland>
 </template>

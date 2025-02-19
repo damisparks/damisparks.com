@@ -9,10 +9,10 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/fonts',
+    '@nuxtjs/sitemap',
     '@nuxt/content',
     '@nuxt/image',
     '@vueuse/nuxt',
-    '@nuxtjs/sitemap',
     'magic-regexp/nuxt',
     'nuxt-og-image',
     '@nuxt/ui',

@@ -3,9 +3,9 @@ title: Bio
 description: Dami is a Fractional CTO | Passionate Open Source Enthusiast | Vue.js & Nuxt Fullstack Developer & Mentor
 ---
 
-## Hi there 👋🏾, I'm Dami
+## a brief bio
 
-He founded [Actif](https://www.actif.online/), an Age-tech SaaS startup and continues contributing to the European developer community.
+Dami founded [Actif](https://www.actif.online/), an Age-tech SaaS startup and continues contributing to the European developer community.
 
 He aims to craft solid and scalable digital products while helping others find their passion for coding. He is all about combining innovative development and critical thinking to make ideas a reality.
 
