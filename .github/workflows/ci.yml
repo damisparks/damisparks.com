@@ -1,37 +1,49 @@
 name: CI
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
-  check:
-    name: Check with Node.js v${{ matrix.node }} and ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: ['22']
+  eslint:
+    name: ESLint 🧹
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Enable Corepack
-        run: corepack enable
-
-      - name: Prepare Corepack
-        run: corepack prepare pnpm@9.15.4 --activate
-
-      - name: Setup Node.js v${{ matrix.node }}
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - run: npm i -g --force corepack && corepack enable
+      - uses: actions/setup-node@v4
         with:
-          node-version: lts/*
+          node-version: latest
           cache: pnpm
-
-      - name: 📦 Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: ESLint check
-        run: pnpm lint
-
-      - name: Typecheck
-        run: pnpm typecheck
-
-      - name: Building for production 🛠️
-        run: pnpm run build
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm nuxi prepare
+      - run: pnpm lint
+  typecheck:
+    name: Typecheck ✅
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm i -g --force corepack && corepack enable
+      - uses: actions/setup-node@v4
+        with:
+          node-version: latest
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm nuxi prepare
+      - run: pnpm typecheck
+  build:
+    name: Building for production 🛠️
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm i -g --force corepack && corepack enable
+      - uses: actions/setup-node@v4
+        with:
+          node-version: latest
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm nuxi prepare
+      - run: pnpm build
