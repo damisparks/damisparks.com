@@ -16,7 +16,7 @@ jobs:
         run: corepack enable
 
       - name: Prepare Corepack
-        run: corepack prepare pnpm@10.4.1 --activate
+        run: corepack prepare pnpm@9.15.4 --activate
 
       - name: Setup Node.js v${{ matrix.node }}
         uses: actions/setup-node@v4
