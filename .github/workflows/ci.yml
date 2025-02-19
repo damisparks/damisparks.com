@@ -13,6 +13,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Enable Corepack
         run: corepack enable
+      - name: Prepare Corepack
+        run: corepack prepare pnpm@9.15.4 --activate
       - name: Setup Node.js v${{ matrix.node }}
         uses: actions/setup-node@v4
         with:
