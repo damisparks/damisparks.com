@@ -7,22 +7,31 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: ['18']
+        node: ['22']
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+
       - name: Enable Corepack
         run: corepack enable
-      - name: Prepare Corepack
-        run: corepack prepare pnpm@9.15.4 --activate
+
+      # - name: Prepare Corepack
+      #   run: corepack prepare pnpm@9.15.4 --activate
+
       - name: Setup Node.js v${{ matrix.node }}
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node }}
-          check-latest: true
+          node-version: lts/*
+          cache: "pnpm"
+
       - name: 📦 Install dependencies
         run: pnpm install --frozen-lockfile
+
       - name: ESLint check
         run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
+
       - name: Building for production 🛠️
         run: pnpm run build
