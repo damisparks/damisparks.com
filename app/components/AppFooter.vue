@@ -20,15 +20,6 @@ const year = new Date().getFullYear()
           Feel free to reach out if you're looking for a software engineer, have
           a question or just want to connect 📭
         </AppTypography>
-        <AppTypography paragraph>
-          <NuxtLink
-            to="mailto:rethinkwithdami@gmail.com"
-            class="text-sm text-blue-600 dark:text-blue-400"
-            external
-          >
-            rethinkwithdami@gmail.com
-          </NuxtLink>
-        </AppTypography>
       </div>
     </div>
     <div
