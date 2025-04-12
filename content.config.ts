@@ -17,5 +17,13 @@ export default defineContentConfig({
         description: z.string(),
       }),
     }),
+    bio: defineCollection({
+      type: 'page',
+      source: 'bio.md',
+      schema: z.object({
+        title: z.string(),
+        description: z.string(),
+      }),
+    }),
   },
 })
