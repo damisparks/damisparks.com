@@ -77,16 +77,6 @@ export default defineNuxtConfig({
     preference: 'dark',
   },
 
-  css: ['~/assets/css/main.css'],
-
-  // https://tailwindcss.com/docs/guides/nuxtjs
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
-
   eslint: {
     config: {
       standalone: false,
@@ -102,7 +92,7 @@ export default defineNuxtConfig({
   fonts: {
     families: [
       { name: 'DM Sans', provider: 'google' },
-      { name: 'Work Sans', provider: 'google' },
+      { name: 'Noto Sans', provider: 'google' },
     ],
   },
 

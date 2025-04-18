@@ -25,7 +25,7 @@ useSeoMeta({
     </figure>
     <div class="mx-auto max-w-7xl px-6 py-32 text-center sm:py-40 lg:px-8">
       <div class="space-y-4">
-        <h1 class="font-worksans text-4xl leading-8 text-white">
+        <h1 class="font-notosans text-4xl leading-8 text-white">
           {{ props.error?.statusCode }}.
         </h1>
         <p class="text-white/70 dark:text-gray-200">
