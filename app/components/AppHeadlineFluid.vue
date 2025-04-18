@@ -6,7 +6,7 @@ withDefaults(defineProps<{ tag?: FluidHeadlineTags }>(), { tag: 'h3' })
 <template>
   <component
     :is="tag"
-    class="font-worksans text-[5vw] leading-[1.2em] tracking-[-.5px] sm:text-[3vw] lg:text-[28px] lg:leading-[36px]"
+    class="font-notosans text-[5vw] leading-[1.2em] tracking-[-.5px] sm:text-[3vw] lg:text-[28px] lg:leading-[36px]"
   >
     <slot />
   </component>

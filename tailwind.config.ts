@@ -25,7 +25,7 @@ export default <Partial<Config>>{
     },
     fontFamily: {
       dmsans: ['DM Sans', ...defaultTheme.fontFamily.sans],
-      worksans: ['Work Sans', ...defaultTheme.fontFamily.serif],
+      notosans: ['Noto Sans', ...defaultTheme.fontFamily.serif],
     },
     fontWeight: {
       light: '300',
@@ -45,10 +45,10 @@ export default <Partial<Config>>{
     plugin(({ addComponents }) => {
       addComponents({
         '.body-compact-small': {
-          '@apply text-sm font-normal font-worksans leading-4 tracking-[-0.12px]': {},
+          '@apply text-sm font-normal font-notosans leading-4 tracking-[-0.12px]': {},
         },
         '.caption': {
-          '@apply text-xs font-normal font-worksans tracking-[0.4px]': {},
+          '@apply text-xs font-normal font-notosans tracking-[0.4px]': {},
         },
       })
     }),

@@ -17,7 +17,7 @@ const route = useRoute()
           <li v-for="item in navigation.navItems" :key="item.name">
             <NuxtLink
               :to="item.href"
-              class="flex items-center justify-center rounded-full p-2 font-worksans text-[12px] capitalize leading-3 hover:bg-zinc-200/80 dark:hover:bg-zinc-800"
+              class="flex items-center justify-center rounded-full p-2 font-notosans text-[12px] capitalize leading-3 hover:bg-zinc-200/80 dark:hover:bg-zinc-800"
               :class="[
                 route.name === item.name ? 'font-medium text-primary-600 dark:text-primary-300' : 'font-normal text-gray-600 dark:text-gray-300',
               ]"
