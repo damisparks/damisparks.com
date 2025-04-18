@@ -18,6 +18,8 @@ export default defineNuxtConfig({
     '@nuxt/ui',
   ],
 
+  css: ['~/assets/css/main.css'],
+
   // https://content.nuxtjs.org/guide/recipes/sitemap
   nitro: {
     prerender: {
