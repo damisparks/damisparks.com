@@ -1,38 +1,29 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-@layer base {
+@theme static {
+  --font-notosans: 'Noto Sans', serif;
+  --font-dmsans: 'DM Sans', sans-serif;
+
+  --color-royalblue-50: #F2F5fC;
+  --color-royalblue-100: #E1E8F8;
+  --color-royalblue-200: #CAD6F3;
+  --color-royalblue-300: #A5BCEB;
+  --color-royalblue-400: #7A99E0;
+  --color-royalblue-500: #5F7BD7;
+  --color-royalblue-600: #475DC9;
+  --color-royalblue-700: #3D4BB8;
+  --color-royalblue-800: #373F96;
+  --color-royalblue-900: #303878;
+  --color-royalblue-950: #21254A;
+}
+
+
+/* @layer base {
   :root {
     --radius: 0.5rem;
   }
-}
-
-@layer {
-  html,
-  body {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
-  }
-}
-
-:root {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: normal;
-  font-kerning: auto;
-  font-optical-sizing: auto;
-  font-palette: normal;
-  font-stretch: 100%;
-  font-style: normal;
-  font-variant-caps: normal;
-  font-variant-east-asian: normal;
-  font-variant-ligatures: normal;
-  font-variant-numeric: normal;
-  font-variation-settings: normal;
-  text-rendering: optimizeLegibility;
-  /* --text-stroke-color: #aaa; */
-}
+} */
 
 a:not([href]) {
   opacity: 0.5;
