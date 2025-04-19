@@ -1,6 +1,6 @@
-import { damisparks, tailwind, vue } from '@damisparks/eslint-config'
+import { damisparks, vue } from '@damisparks/eslint-config'
 
 // @ts-check
 import withNuxt from './.nuxt/eslint.config.mjs'
 
-export default withNuxt(damisparks({}, vue, tailwind))
+export default withNuxt(damisparks({}, vue))
