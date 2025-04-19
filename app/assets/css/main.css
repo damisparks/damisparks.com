@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+@plugin "@tailwindcss/typography";
 
 @theme static {
   --font-notosans: 'Noto Sans', serif;
@@ -17,13 +18,6 @@
   --color-royalblue-900: #303878;
   --color-royalblue-950: #21254A;
 }
-
-
-/* @layer base {
-  :root {
-    --radius: 0.5rem;
-  }
-} */
 
 a:not([href]) {
   opacity: 0.5;
