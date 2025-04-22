@@ -19,38 +19,6 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-
-  // TODO Remove commented code
-  // https://content.nuxtjs.org/guide/recipes/sitemap
-  // nitro: {
-  //   prerender: {
-  //     crawlLinks: true,
-  //     routes: ['/sitemap.xml', '/'],
-  //   },
-  //   hooks: {
-  //     'prerender:generate': function (route) {
-  //       if (route.fileName) {
-  //         route.fileName = route.fileName.replace(
-  //           /(\.\w{3})\/index.html$/,
-  //           '$1',
-  //         )
-  //       }
-
-  //       if (route.fileName?.endsWith('.html') && route.contents) {
-  //         route.contents = route.contents.replace(
-  //           /(src|href|srcset)="\/_ipx[^"]+"/g,
-  //           r => r.replaceAll('//', '/'),
-  //         )
-  //       }
-
-  //       if (route.error) {
-  //         console.error(route.route, route.error, route)
-  //         process.exit(1)
-  //       }
-  //     },
-  //   },
-  // },
-
   routeRules: {
     '/work': { redirect: { to: '/projects', statusCode: 301 } },
     '/about': { redirect: { to: '/bio', statusCode: 301 } },
