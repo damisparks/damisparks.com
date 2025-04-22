@@ -5,6 +5,9 @@
 @theme static {
   --font-notosans: 'Noto Sans', serif;
   --font-dmsans: 'DM Sans', sans-serif;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
 
   --color-royalblue-50: #F2F5fC;
   --color-royalblue-100: #E1E8F8;

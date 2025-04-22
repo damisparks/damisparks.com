@@ -29,7 +29,7 @@ const year = new Date().getFullYear()
         <AppSocials />
       </div>
       <div
-        class="body-compact-small mt-8 text-[12px] leading-[16px] md:order-1 md:mt-0"
+        class="mt-8 text-[12px] leading-[16px] md:order-1 md:mt-0"
       >
         <AppTypography
           tag="span"
