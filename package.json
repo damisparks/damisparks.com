@@ -26,7 +26,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
-    "@damisparks/eslint-config": "^1.0.0",
+    "@damisparks/eslint-config": "^1.1.0",
     "@iconify-json/fluent": "^1.2.19",
     "@iconify-json/simple-icons": "^1.2.13",
     "@nuxt/eslint": "1.3.0",
