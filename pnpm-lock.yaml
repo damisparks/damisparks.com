@@ -32,12 +32,6 @@ importers:
       nuxt-og-image:
         specifier: ^5.1.2
         version: 5.1.2(@unhead/vue@2.0.8(vue@3.5.13(typescript@5.8.3)))(magicast@0.3.5)(unstorage@1.15.0(@netlify/blobs@8.2.0)(db0@0.3.2(better-sqlite3@11.9.1))(ioredis@5.6.1))(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))
-      vue:
-        specifier: ^3.5.13
-        version: 3.5.13(typescript@5.8.3)
-      vue-router:
-        specifier: ^4.4.5
-        version: 4.5.0(vue@3.5.13(typescript@5.8.3))
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.5.0
@@ -78,6 +72,9 @@ importers:
       typescript:
         specifier: ^5.6.3
         version: 5.8.3
+      vue:
+        specifier: ^3.5.13
+        version: 3.5.13(typescript@5.8.3)
       vue-tsc:
         specifier: ^2.1.10
         version: 2.2.10(typescript@5.8.3)
