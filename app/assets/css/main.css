@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "@nuxt/ui";
+@import 'tailwindcss';
+@import '@nuxt/ui';
 @plugin "@tailwindcss/typography";
 
 @theme static {
@@ -9,17 +9,17 @@
   --font-weight-normal: 400;
   --font-weight-medium: 500;
 
-  --color-royalblue-50: #F2F5fC;
-  --color-royalblue-100: #E1E8F8;
-  --color-royalblue-200: #CAD6F3;
-  --color-royalblue-300: #A5BCEB;
-  --color-royalblue-400: #7A99E0;
-  --color-royalblue-500: #5F7BD7;
-  --color-royalblue-600: #475DC9;
-  --color-royalblue-700: #3D4BB8;
-  --color-royalblue-800: #373F96;
+  --color-royalblue-50: #f2f5fc;
+  --color-royalblue-100: #e1e8f8;
+  --color-royalblue-200: #cad6f3;
+  --color-royalblue-300: #a5bceb;
+  --color-royalblue-400: #7a99e0;
+  --color-royalblue-500: #5f7bd7;
+  --color-royalblue-600: #475dc9;
+  --color-royalblue-700: #3d4bb8;
+  --color-royalblue-800: #373f96;
   --color-royalblue-900: #303878;
-  --color-royalblue-950: #21254A;
+  --color-royalblue-950: #21254a;
 }
 
 a:not([href]) {
