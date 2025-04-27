@@ -7,7 +7,7 @@ export default defineContentConfig({
       asOgImageCollection({
         type: 'page',
         source: '**/*.md',
-      })
+      }),
     ),
     page: defineCollection({
       source: '*.md',

@@ -40,8 +40,8 @@ importers:
         specifier: ^19.5.0
         version: 19.8.0
       '@damisparks/eslint-config':
-        specifier: ^1.1.0
-        version: 1.1.0(@typescript-eslint/utils@8.30.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-sfc@3.5.13)(eslint-plugin-format@1.0.1(eslint@9.25.1(jiti@2.4.2)))(eslint-plugin-tailwindcss@3.18.0(tailwindcss@4.1.4))(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
+        specifier: ^2.0.0
+        version: 2.0.0(@typescript-eslint/utils@8.30.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-sfc@3.5.13)(eslint-plugin-format@1.0.1(eslint@9.25.1(jiti@2.4.2)))(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
       '@iconify-json/fluent':
         specifier: ^1.2.19
         version: 1.2.19
@@ -357,13 +357,8 @@ packages:
   '@dabh/diagnostics@2.0.3':
     resolution: {integrity: sha512-hrlQOIi7hAfzsMqlGSFyVucrx38O+j6wiGOf//H2ecvIEqYN4ADBSS2iLMh5UFyDunCNniUIPk/q3riFv45xRA==}
 
-  '@damisparks/eslint-config@1.1.0':
-    resolution: {integrity: sha512-mm6LQWeE78meiJSoq3xB8EFyFRrbBd1Hl1C8FUQO2OEOF6N9XprpY1DqbLaDXTb7pfGeBqWxGwoGjPPhpbWL0Q==}
-    peerDependencies:
-      eslint-plugin-tailwindcss: ^3.18.0
-    peerDependenciesMeta:
-      eslint-plugin-tailwindcss:
-        optional: true
+  '@damisparks/eslint-config@2.0.0':
+    resolution: {integrity: sha512-lbQ/4o9JCXmBGE0adq6m2ofhzQor2bOFQMQwrjt+qVucxscWPy7p4prR8R/s1w+TPfsJVg2XCFuyhVZMbxN3zA==}
 
   '@dependents/detective-less@4.1.0':
     resolution: {integrity: sha512-KrkT6qO5NxqNfy68sBl6CTSoJ4SNDIS5iQArkibhlbGU4LaDukZ3q2HIkh8aUKDio6o4itU4xDR7t82Y2eP1Bg==}
@@ -3277,12 +3272,6 @@ packages:
     engines: {node: ^18 || >=20}
     peerDependencies:
       eslint: '>=8.44.0'
-
-  eslint-plugin-tailwindcss@3.18.0:
-    resolution: {integrity: sha512-PQDU4ZMzFH0eb2DrfHPpbgo87Zgg2EXSMOj1NSfzdZm+aJzpuwGerfowMIaVehSREEa0idbf/eoNYAOHSJoDAQ==}
-    engines: {node: '>=18.12.0'}
-    peerDependencies:
-      tailwindcss: ^3.4.0
 
   eslint-plugin-toml@0.12.0:
     resolution: {integrity: sha512-+/wVObA9DVhwZB1nG83D2OAQRrcQZXy+drqUnFJKymqnmbnbfg/UPmEMCKrJNcEboUGxUjYrJlgy+/Y930mURQ==}
@@ -6962,11 +6951,9 @@ snapshots:
       enabled: 2.0.0
       kuler: 2.0.0
 
-  '@damisparks/eslint-config@1.1.0(@typescript-eslint/utils@8.30.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-sfc@3.5.13)(eslint-plugin-format@1.0.1(eslint@9.25.1(jiti@2.4.2)))(eslint-plugin-tailwindcss@3.18.0(tailwindcss@4.1.4))(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)':
+  '@damisparks/eslint-config@2.0.0(@typescript-eslint/utils@8.30.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-sfc@3.5.13)(eslint-plugin-format@1.0.1(eslint@9.25.1(jiti@2.4.2)))(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)':
     dependencies:
       '@antfu/eslint-config': 4.12.0(@typescript-eslint/utils@8.30.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-sfc@3.5.13)(eslint-plugin-format@1.0.1(eslint@9.25.1(jiti@2.4.2)))(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
-    optionalDependencies:
-      eslint-plugin-tailwindcss: 3.18.0(tailwindcss@4.1.4)
     transitivePeerDependencies:
       - '@eslint-react/eslint-plugin'
       - '@eslint/json'
@@ -10298,13 +10285,6 @@ snapshots:
       refa: 0.12.1
       regexp-ast-analysis: 0.7.1
       scslre: 0.3.0
-
-  eslint-plugin-tailwindcss@3.18.0(tailwindcss@4.1.4):
-    dependencies:
-      fast-glob: 3.3.3
-      postcss: 8.5.3
-      tailwindcss: 4.1.4
-    optional: true
 
   eslint-plugin-toml@0.12.0(eslint@9.25.1(jiti@2.4.2)):
     dependencies:
