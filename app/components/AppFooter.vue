@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { navItems } from '@/data/navigation'
+
 const year = new Date().getFullYear()
 </script>
 
@@ -22,33 +24,27 @@ const year = new Date().getFullYear()
         </AppTypography>
       </div>
     </div>
-    <div
-      class="mt-8 border-t border-zinc-900/10 pt-8 md:flex md:items-center md:justify-between"
-    >
-      <div class="flex md:order-2">
-        <AppSocials />
-      </div>
-      <div
-        class="mt-8 text-[12px] leading-[16px] md:order-1 md:mt-0"
-      >
-        <AppTypography
-          tag="span"
-          variant="secondary"
-        >
-          &copy; Dami Sparks {{ year }} | Software Engineer |
-        </AppTypography>
+    <div class="mt-8 flex flex-col items-center justify-between gap-6 pt-8 md:flex-row">
+      <div class="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
         <NuxtLink
-          to="https://creativecommons.org/licenses/by-sa/4.0/"
-          class="hover:underline"
+          v-for="item in navItems"
+          :key="item.name"
+          :to="item.href"
+          class="capitalize transition hover:underline hover:underline-offset-4"
         >
-          <AppTypography
-            tag="span"
-            variant="secondary"
-          >
-            CC BY-SA 4.0
-          </AppTypography>
+          {{ item.name }}
         </NuxtLink>
       </div>
+      <AppSocials />
+    </div>
+    <div class="mt-8 flex items-center justify-center border-t border-zinc-900/10 pt-4">
+      <AppTypography
+        tag="span"
+        variant="muted"
+        class="text-xs"
+      >
+        Copyright &copy; {{ year }} Dami Sparks. All rights reserved.
+      </AppTypography>
     </div>
   </footer>
 </template>
