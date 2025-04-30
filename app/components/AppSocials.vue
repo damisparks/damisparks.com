@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import navigation from '@/data/navigation'
+import { socials } from '@/data/navigation'
 
 interface SocialPropsType { iconSize?: string, showText?: boolean }
 const props = withDefaults(defineProps<SocialPropsType>(), { iconSize: '20px' })
@@ -8,7 +8,7 @@ const props = withDefaults(defineProps<SocialPropsType>(), { iconSize: '20px' })
 <template>
   <div class="space-x-6">
     <NuxtLink
-      v-for="nav in navigation.socials"
+      v-for="nav in socials"
       :key="nav.name"
       external
       :to="nav.href"

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import navigation from '@/data/navigation'
+import { navItems, socials } from '@/data/navigation'
 
 const route = useRoute()
 </script>
@@ -14,10 +14,10 @@ const route = useRoute()
           </NuxtLink>
         </div>
         <ul class="my-2 flex items-center">
-          <li v-for="item in navigation.navItems" :key="item.name">
+          <li v-for="item in navItems" :key="item.name">
             <NuxtLink
               :to="item.href"
-              class="flex items-center justify-center rounded-full p-2 font-notosans text-[12px] capitalize leading-3 hover:bg-zinc-200/80 dark:hover:bg-zinc-800"
+              class="flex items-center justify-center rounded-md p-2 font-notosans text-[12px] capitalize leading-3 hover:bg-zinc-200/80 dark:hover:bg-zinc-800"
               :class="[
                 route.name === item.name ? 'font-medium text-primary-600 dark:text-primary-300' : 'font-normal text-gray-600 dark:text-gray-300',
               ]"
@@ -25,14 +25,14 @@ const route = useRoute()
               {{ item.name }}
             </NuxtLink>
           </li>
-          <li v-for="item in navigation.socials" :key="item.name" class="hidden px-3 leading-3 sm:flex">
+          <li v-for="item in socials" :key="item.name" class="hidden px-3 leading-3 sm:flex">
             <NuxtLink
               external
               target="_blank"
               :to="item?.href"
               :title="`Visit ${item.name}`"
             >
-              <span class="inline-flex rounded-full p-1 hover:bg-zinc-200/80 dark:hover:bg-zinc-800">
+              <span class="inline-flex rounded-md p-1 hover:bg-zinc-200/80 dark:hover:bg-zinc-800">
                 <Icon size="20px" :name="item.iconKey" />
               </span>
               <span class="sr-only">
