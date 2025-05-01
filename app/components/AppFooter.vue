@@ -5,7 +5,7 @@ const year = new Date().getFullYear()
 </script>
 
 <template>
-  <footer class="pb-8 pt-16">
+  <footer class="pb-4 pt-16">
     <div class="lg:flex lg:items-center lg:justify-between">
       <div class="max-w-md">
         <AppTypography
