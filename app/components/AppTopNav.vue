@@ -13,13 +13,13 @@ const route = useRoute()
             <AppLogoWord />
           </NuxtLink>
         </div>
-        <ul class="my-2 flex items-center">
+        <ul class="my-2 flex items-center text-sm">
           <li v-for="item in navItems" :key="item.name">
             <NuxtLink
               :to="item.href"
-              class="flex items-center justify-center rounded-md p-2 font-notosans text-[12px] capitalize leading-3 hover:bg-zinc-200/80 dark:hover:bg-zinc-800"
+              class="transition flex items-center font-medium justify-center rounded-md p-2 font-notosans capitalize hover:bg-zinc-200/80 dark:hover:bg-zinc-800"
               :class="[
-                route.name === item.name ? 'font-medium text-primary-600 dark:text-primary-300' : 'font-normal text-gray-600 dark:text-gray-300',
+                route.name === item.name ? 'text-primary-600 dark:text-primary-300' : 'text-gray-600 dark:text-gray-300',
               ]"
             >
               {{ item.name }}
