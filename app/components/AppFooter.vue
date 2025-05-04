@@ -12,15 +12,15 @@ const year = new Date().getFullYear()
           tag="h3"
           class="font-notosans font-medium"
         >
-          Let's inspire growth together
+          Questions or collaboration ideas?
         </AppTypography>
         <AppTypography
           paragraph
-          variant="muted"
+          variant="secondary"
           class="mt-2 text-sm leading-6"
         >
-          Feel free to reach out if you're looking for a software engineer, have
-          a question or just want to connect 📭
+          I'd love to hear from you! Contact me with any <strong>questions</strong> about my work,
+          <strong>collaboration ideas</strong>, <strong>mentoring</strong> or <strong>project opportunities</strong>.
         </AppTypography>
       </div>
     </div>

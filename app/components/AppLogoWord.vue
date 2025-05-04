@@ -1,5 +1,5 @@
 <template>
-  <AppTypography class="text-sm font-medium" variant="secondary">
+  <AppTypography class="text-sm font-semibold">
     Dami Sparks
   </AppTypography>
 </template>

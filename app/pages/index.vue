@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { socials } from '@/data/navigation'
 import { showcase } from '@/data/projects'
 
 const threeShowcase = showcase.slice(0, 3)
@@ -8,29 +9,31 @@ const moreShowcase = showcase.slice(3)
 <template>
   <div class="slide-enter space-y-4">
     <section class="pt-8">
-      <AppTopBlurb>
-        <AppBlurb>
-          Committed to
-          <span class="text-[#475DC9] dark:text-[#5F7BD7]">envisioning</span> ideas
-          and <span class="text-[#C83F49] dark:text-[#E77471]">turning</span> them
-          into scalable digital products while
-          <span class="text-[#437C17] dark:text-[#A0D6B4]">igniting</span> a passion
-          for coding in
-          <span class="text-[#BC4E12] dark:text-[#F1811E]">others</span>
-        </AppBlurb>
-      </AppTopBlurb>
-    </section>
-    <section class="space-y-8 py-8 text-center">
-      <AppHeadlineFluid tag="h2" class="py-8">
-        Digital products. Built with you in mind.
-      </AppHeadlineFluid>
-      <div class="inline-flex items-center space-x-4">
-        <UButton variant="outline" to="/bio">
-          See my bio
-        </UButton>
-        <UButton to="/projects">
-          All works
-        </UButton>
+      <div class="max-w-2xl space-y-6">
+        <AppTypography
+          class="text-4xl font-medium tracking-tight sm:text-5xl font-dmsans"
+          tag="h1"
+        >
+          <span class="text-royalblue-800 dark:text-royalblue-400">
+            Software engineer, mentor, and designer engineer.
+          </span>
+        </AppTypography>
+        <AppTypography paragraph variant="secondary" class="mt-6 text-zinc-600 dark:text-zinc-400">
+          I am Dami, a software engineer, mentor and design engineer based in Europe. I craft performant web apps with great user experiences while igniting a passion for coding in others.
+        </AppTypography>
+        <div class="mt-6 flex gap-6">
+          <NuxtLink
+            v-for="nav in socials"
+            :key="nav.name"
+            external
+            :to="nav.href"
+            :title="`Visit ${nav.name}`"
+            :aria-label="`Dami Sparks on ${nav.name}`"
+            class="transform content-center items-center rounded-full transition-all hover:scale-110 hover:rotate-[-4deg] text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 hover:dark:text-zinc-200"
+          >
+            <Icon :name="nav.iconKey" class="size-5" />
+          </NuxtLink>
+        </div>
       </div>
     </section>
     <section>
