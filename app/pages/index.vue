@@ -90,10 +90,10 @@ if (!featuredNote) {
 
         <div class="space-y-4">
           <AppTypography tag="h2" class="text-5xl font-medium">
-            <span class="text-royalblue-800 dark:text-royalblue-400">I take notes</span>
+            <span class="text-royalblue-800 dark:text-royalblue-400">I write</span>
           </AppTypography>
           <AppTypography paragraph variant="secondary" class="text-lg">
-            About design, frontend dev, learning and life.
+            About design, web dev, learning and life.
           </AppTypography>
           <UButton
             to="/notes"
