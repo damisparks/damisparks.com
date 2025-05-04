@@ -16,9 +16,9 @@ useSeoMeta({
     <section>
       <AppTypography
         tag="h1"
-        class="text-3xl font-medium tracking-tight sm:text-4xl"
+        class="text-4xl font-medium tracking-tight font-dmsans"
       >
-        <span>{{ title }}</span>
+        {{ title }}
       </AppTypography>
       <AppTypography
         variant="secondary"

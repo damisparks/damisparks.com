@@ -2,13 +2,13 @@
 const route = useRoute()
 
 const description = (route.meta.description as string)
-  || 'The personal website of Dami Sparks - JS/TS Engineer, Design System Engineer, Fractional CTO & Mentor. He founded Actif, an Age-tech SaaS startup and continues contributing to the European developer community.'
+  || 'The personal website of Dami Sparks - JS/TS Software Engineer, Design Engineer & Mentor. He founded Actif, an Age-tech SaaS startup and continues contributing to the European developer community.'
 useHead({
   title: () => (route.meta.title as string) || '',
   titleTemplate: title =>
     title
       ? `${title} - Dami Sparks`
-      : 'Dami Sparks - JS/TS Engineer, Design System Engineer, Fractional CTO & Mentor',
+      : 'Dami Sparks - JS/TS Software Engineer, Design Engineer & Mentor',
   meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
   bodyAttrs: {
     class: 'flex h-full flex-col bg-zinc-100 text-zinc-900 dark:text-zinc-300 dark:bg-black font-notosans font-normal',
