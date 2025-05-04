@@ -1,14 +1,6 @@
-interface ProjectItemTypes {
-  id: string
-  name: string
-  description: string
-  websiteUrl: string
-  imageUrl: string
-  type?: 'open-source' | 'commercial' | 'personal'
-  featured?: boolean
-}
+import type { ProjectItem } from '@/types'
 
-const projects: ProjectItemTypes[] = [
+const projects: ProjectItem[] = [
   {
     id: 'actifage-lda-actif-for-professionals',
     name: 'Actif for Professionals',

@@ -20,12 +20,29 @@ if (!featuredNote) {
           tag="h1"
         >
           <span class="text-royalblue-800 dark:text-royalblue-400">
-            Software engineer, mentor, and designer engineer.
+            Software engineer, design engineer, founder and mentor.
           </span>
         </AppTypography>
         <AppTypography paragraph variant="secondary" class="mt-6 text-zinc-600 dark:text-zinc-400">
           I am Dami, a software engineer, mentor and design engineer based in Europe.
-          I craft performant web apps with great user experiences while igniting a passion for coding in others.
+          I craft performant web apps with great user experiences while igniting a passion for coding in others. <NuxtLink to="/about" class="font-medium relative inline-block text-royalblue-600 dark:text-royalblue-400 hover:text-royalblue-800 dark:hover:text-royalblue-300 transition-colors duration-200">
+            <span class="relative inline-block">More about Dami
+              <svg
+                class="absolute -bottom-1 w-full"
+                height="3"
+                viewBox="0 0 100 3"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M0,2 Q50,0 100,2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  class="text-royalblue-600 dark:text-royalblue-400"
+                />
+              </svg>
+            </span>
+          </NuxtLink>
         </AppTypography>
         <div class="flex gap-6 mt-6">
           <NuxtLink
