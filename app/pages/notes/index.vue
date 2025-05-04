@@ -24,7 +24,7 @@ const notes = await queryCollection('notes')
     <div>
       <AppTypography
         tag="h1"
-        class="text-3xl font-medium tracking-tight"
+        class="text-4xl font-medium tracking-tight font-dmsans"
       >
         <span>The Sparks Notes</span>
       </AppTypography>

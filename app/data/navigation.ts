@@ -16,17 +16,27 @@ export const socials = [
     href: 'https://www.linkedin.com/in/damisparks',
     name: 'LinkedIn',
   },
+  {
+    iconKey: 'simple-icons:medium',
+    href: 'https://medium.com/@damisparks',
+    name: 'Medium',
+  },
+  {
+    iconKey: 'simple-icons:devdotto',
+    href: 'https://dev.to/damisparks',
+    name: 'Dev.to',
+  },
 ] satisfies INavItem[]
 
 export const navItems = [
   {
     name: 'projects',
     href: '/projects',
-    iconKey: 'fluent:lightbulb-filament-24-regular',
+    iconKey: 'i-simple-icons-project-diagram',
   },
   {
     name: 'notes',
     href: '/notes',
-    iconKey: 'fluent:notepad-24-regular',
+    iconKey: 'i-simple-icons-notepad',
   },
 ] satisfies INavItem[]
