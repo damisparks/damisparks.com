@@ -1,6 +1,6 @@
-import type INavItem from '@/types/navItem'
+import type { NavItem } from '@/types'
 
-export const socials = [
+export const socials: NavItem[] = [
   {
     iconKey: 'i-simple-icons-github',
     href: 'https://www.github.com/damisparks',
@@ -26,9 +26,9 @@ export const socials = [
     href: 'https://dev.to/damisparks',
     name: 'Dev.to',
   },
-] satisfies INavItem[]
+]
 
-export const navItems = [
+export const navItems: NavItem[] = [
   {
     name: 'projects',
     href: '/projects',
@@ -39,4 +39,4 @@ export const navItems = [
     href: '/notes',
     iconKey: 'i-simple-icons-notepad',
   },
-] satisfies INavItem[]
+]
