@@ -1,13 +1,18 @@
 <script setup lang="ts">
 import { socials } from '@/data/navigation'
-import { showcase } from '@/data/projects'
+import projects from '@/data/projects'
 
-const threeShowcase = showcase.slice(0, 3)
-const moreShowcase = showcase.slice(3)
+const galleryImages = projects.slice(0, 7).map(project => ({ src: project.imageUrl, alt: project.name }))
+
+const featuredNote = await queryCollection('notes').where('title', 'LIKE', '%Tiny is Effective%').first()
+
+if (!featuredNote) {
+  throw createError({ statusCode: 404, statusMessage: 'Note not found', fatal: true })
+}
 </script>
 
 <template>
-  <div class="slide-enter space-y-4">
+  <div class="slide-enter">
     <section class="pt-8">
       <div class="max-w-2xl space-y-6">
         <AppTypography
@@ -19,9 +24,10 @@ const moreShowcase = showcase.slice(3)
           </span>
         </AppTypography>
         <AppTypography paragraph variant="secondary" class="mt-6 text-zinc-600 dark:text-zinc-400">
-          I am Dami, a software engineer, mentor and design engineer based in Europe. I craft performant web apps with great user experiences while igniting a passion for coding in others.
+          I am Dami, a software engineer, mentor and design engineer based in Europe.
+          I craft performant web apps with great user experiences while igniting a passion for coding in others.
         </AppTypography>
-        <div class="mt-6 flex gap-6">
+        <div class="flex gap-6 mt-6">
           <NuxtLink
             v-for="nav in socials"
             :key="nav.name"
@@ -34,47 +40,71 @@ const moreShowcase = showcase.slice(3)
             <Icon :name="nav.iconKey" class="size-5" />
           </NuxtLink>
         </div>
+        <AvailabilityBadge class="mt-4" />
       </div>
     </section>
-    <section>
-      <div class="grid grid-cols-1 gap-8 pt-8 sm:grid-cols-2">
-        <div class="space-y-6">
-          <AppTypography paragraph variant="muted" class="uppercase">
-            featured work
-          </AppTypography>
-          <div v-for="item in threeShowcase" :key="item.id">
-            <NuxtLink
-              class="grid grid-cols-6 items-center gap-3 rounded-md p-2 hover:bg-primary-50 dark:hover:bg-primary-500/40"
-              :to="item.websiteUrl"
-              target="_blank"
-              external
-            >
-              <NuxtImg
-                class="col-span-2 h-16 w-full rounded-md object-cover object-center"
-                :src="item.imageUrl"
-                alt=""
-              />
-              <div class="col-span-4">
-                {{ item.name }}
-              </div>
-            </NuxtLink>
-          </div>
-        </div>
-        <NuxtLink
-          v-if="moreShowcase[0]"
-          :to="moreShowcase[0].websiteUrl"
-          external
-          class="h-fit"
+    <ProjectImageGallery :images="galleryImages" class="mt-16" />
+    <section class="mt-32">
+      <AppTypography paragraph variant="secondary" class="uppercase">
+        featured note
+      </AppTypography>
+      <ResponsiveGrid class="mt-6">
+        <DSNoteCard
+          :title="featuredNote.title"
+          :description="featuredNote.description"
+          :image="featuredNote.image"
+          :to="featuredNote.path"
         >
-          <NuxtImg
-            class="w-full rounded-md border border-gray-100 object-cover"
-            :src="moreShowcase[0].imageUrl"
-            alt=""
-          />
-          <AppTypography paragraph class="py-4">
-            {{ moreShowcase[0]?.name }}
+          <template #header>
+            <NuxtImg
+              :src="featuredNote.image"
+              :alt="featuredNote.title"
+              class="size-full object-cover object-top"
+              width="384"
+              height="192"
+            />
+          </template>
+        </DSNoteCard>
+      </ResponsiveGrid>
+    </section>
+
+    <section class="my-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="space-y-4">
+          <AppTypography tag="h2" class="text-5xl font-medium">
+            <span class="text-royalblue-800 dark:text-royalblue-400">I build &amp; design</span>
           </AppTypography>
-        </NuxtLink>
+          <AppTypography paragraph variant="secondary" class="text-lg">
+            Open source projects, web apps and experimentals.
+          </AppTypography>
+          <UButton
+            to="/projects"
+            variant="outline"
+            class="mt-8"
+            size="lg"
+          >
+            SEE MY WORK
+            <Icon name="heroicons:arrow-right" class="ml-2" />
+          </UButton>
+        </div>
+
+        <div class="space-y-4">
+          <AppTypography tag="h2" class="text-5xl font-medium">
+            <span class="text-royalblue-800 dark:text-royalblue-400">I take notes</span>
+          </AppTypography>
+          <AppTypography paragraph variant="secondary" class="text-lg">
+            About design, frontend dev, learning and life.
+          </AppTypography>
+          <UButton
+            to="/notes"
+            variant="outline"
+            class="mt-8"
+            size="lg"
+          >
+            READ MY NOTES
+            <Icon name="heroicons:arrow-right" class="ml-2" />
+          </UButton>
+        </div>
       </div>
     </section>
   </div>

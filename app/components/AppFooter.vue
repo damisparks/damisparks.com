@@ -19,8 +19,11 @@ const year = new Date().getFullYear()
           variant="secondary"
           class="mt-2 text-sm leading-6"
         >
-          I'd love to hear from you! Contact me with any <strong>questions</strong> about my work,
-          <strong>collaboration ideas</strong>, <strong>mentoring</strong> or <strong>project opportunities</strong>.
+          Got <strong>questions</strong> about my work,
+          <strong>collaboration</strong>,
+          or
+          <strong>project ideas</strong>
+          <strong>mentoring</strong>? Go ahead. I'd love to hear from you!
         </AppTypography>
       </div>
     </div>

@@ -37,7 +37,7 @@ const notes = await queryCollection('notes')
       </AppTypography>
     </div>
 
-    <DSGrid>
+    <ResponsiveGrid>
       <DSNoteCard
         v-for="({ path, title, image, date }, index) in notes"
         :key="index"
@@ -65,6 +65,6 @@ const notes = await queryCollection('notes')
           </AppTypography>
         </template>
       </DSNoteCard>
-    </DSGrid>
+    </ResponsiveGrid>
   </div>
 </template>
