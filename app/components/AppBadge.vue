@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import badge from '@/ui.config/badge'
+import badge from '~/config/badge'
 
 interface BadgePropsTypes {
   color?: keyof typeof badge.color
