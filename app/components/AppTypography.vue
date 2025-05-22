@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import typography from '@/ui.config/typography'
+import typography from '~/config/typography'
 
 type TypographyTagType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
 interface TypographyPropsType {

@@ -61,30 +61,6 @@ if (!featuredNote) {
       </div>
     </section>
     <ProjectImageGallery :images="galleryImages" class="mt-16" />
-    <section class="mt-32">
-      <AppTypography paragraph variant="secondary" class="uppercase">
-        featured note
-      </AppTypography>
-      <ResponsiveGrid class="mt-6">
-        <DSNoteCard
-          :title="featuredNote.title"
-          :description="featuredNote.description"
-          :image="featuredNote.image"
-          :to="featuredNote.path"
-        >
-          <template #header>
-            <NuxtImg
-              :src="featuredNote.image"
-              :alt="featuredNote.title"
-              class="size-full object-cover object-top"
-              width="384"
-              height="192"
-            />
-          </template>
-        </DSNoteCard>
-      </ResponsiveGrid>
-    </section>
-
     <section class="my-16">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div class="space-y-4">
