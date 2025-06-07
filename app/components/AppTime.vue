@@ -7,6 +7,6 @@ defineProps<{ date: string }>()
     :datetime="date"
     class="text-sm text-zinc-400 dark:text-zinc-400"
   >
-    {{ formdateDate(date) }}
+    {{ formatDate(date) }}
   </time>
 </template>
