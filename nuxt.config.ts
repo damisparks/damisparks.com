@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@vueuse/nuxt',
     'nuxt-og-image',
+    'motion-v/nuxt',
   ],
 
   css: ['~/assets/css/main.css'],

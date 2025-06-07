@@ -22,6 +22,10 @@
   --color-royalblue-950: #21254a;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 a:not([href]) {
   opacity: 0.5;
   pointer-events: none;

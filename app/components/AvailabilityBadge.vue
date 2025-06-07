@@ -1,6 +1,16 @@
 <template>
-  <UBadge color="neutral" variant="subtle" class="items-center">
-    <div class="size-3 bg-green-500 rounded-full mr-2 animate-pulse" />
-    <span>Available for Freelance · Mentorship · Writing</span>
-  </UBadge>
+  <UButton
+    label="Available for new projects."
+    class="gap-2"
+    color="success"
+    variant="ghost"
+  >
+    <template #leading>
+      <span class="relative flex size-2">
+        <span
+          class="absolute inline-flex size-full rounded-full opacity-75 bg-success animate-ping"
+        />
+      </span>
+    </template>
+  </UButton>
 </template>
