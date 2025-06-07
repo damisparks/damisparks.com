@@ -1,15 +1,7 @@
 <template>
-  <div class="flex h-screen flex-col">
-    <AppTopNav />
-    <div class="mt-12 flex-auto">
-      <AppContainer>
-        <slot />
-      </AppContainer>
-    </div>
-    <div>
-      <AppContainer>
-        <AppFooter />
-      </AppContainer>
-    </div>
-  </div>
+  <AppContainer class="sm:border-x border-default pt-10">
+    <AppFloatingNav :links="navLinks" />
+    <slot />
+    <AppFooter />
+  </AppContainer>
 </template>

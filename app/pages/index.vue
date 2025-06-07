@@ -13,38 +13,93 @@ if (!featuredNote) {
 
 <template>
   <div class="slide-enter">
-    <section class="pt-8">
-      <div class="max-w-2xl space-y-6">
-        <AppTypography
-          class="text-4xl font-medium tracking-tight sm:text-5xl font-dmsans"
-          tag="h1"
+    <section class="pt-20">
+      <div class="max-w-4xl space-y-8 mx-auto">
+        <Motion
+          :initial="{
+            scale: 1.1,
+            opacity: 0,
+            filter: 'blur(20px)',
+          }"
+          :animate="{
+            scale: 1,
+            opacity: 1,
+            filter: 'blur(0px)',
+          }"
+          :transition="{
+            duration: 0.6,
+            delay: 0.1,
+          }"
         >
-          <span class="text-royalblue-800 dark:text-royalblue-400">
-            Software engineer, design engineer, founder and mentor.
-          </span>
-        </AppTypography>
-        <AppTypography paragraph variant="secondary" class="mt-6 text-zinc-600 dark:text-zinc-400">
-          I am Dami, a software engineer, mentor and design engineer based in Europe.
-          I craft performant web apps with great user experiences while igniting a passion for coding in others. <NuxtLink to="/about" class="font-medium relative inline-block text-royalblue-600 dark:text-royalblue-400 hover:text-royalblue-800 dark:hover:text-royalblue-300 transition-colors duration-200">
-            <span class="relative inline-block">More about Dami
-              <svg
-                class="absolute -bottom-1 w-full"
-                height="3"
-                viewBox="0 0 100 3"
-                preserveAspectRatio="none"
-              >
-                <path
-                  d="M0,2 Q50,0 100,2"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  fill="none"
-                  class="text-royalblue-600 dark:text-royalblue-400"
-                />
-              </svg>
+          <AppTypography class="text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl font-dmsans text-center" tag="h1">
+            <span class="text-royalblue-800 dark:text-royalblue-400">
+              Software engineer, design engineer, founder and mentor.
             </span>
-          </NuxtLink>
-        </AppTypography>
-        <div class="flex gap-6 mt-6">
+          </AppTypography>
+        </Motion>
+        <Motion
+          :initial="{
+            scale: 1.1,
+            opacity: 0,
+            filter: 'blur(20px)',
+          }"
+          :animate="{
+            scale: 1,
+            opacity: 1,
+            filter: 'blur(0px)',
+          }"
+          :transition="{
+            duration: 0.6,
+            delay: 0.3,
+          }"
+        >
+          <AppTypography paragraph variant="secondary" class="text-zinc-600 dark:text-zinc-400 text-center sm:text-lg">
+            I craft performant web apps with great user experiences while igniting a passion for coding in others.
+            <NuxtLink
+              to="/about"
+              class="font-medium relative inline-block text-royalblue-600 dark:text-royalblue-400 hover:text-royalblue-800 dark:hover:text-royalblue-300 transition-colors duration-200"
+            >
+              <span class="relative inline-block">
+                More about Dami
+                <svg
+                  class="absolute -bottom-1 w-full"
+                  height="3"
+                  viewBox="0 0 100 3"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M0,2 Q50,0 100,2"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                    class="text-royalblue-600 dark:text-royalblue-400"
+                  />
+                </svg>
+              </span>
+            </NuxtLink>
+          </AppTypography>
+        </Motion>
+        <div class="flex justify-center">
+          <Motion
+            :initial="{
+              scale: 1.1,
+              opacity: 0,
+              filter: 'blur(20px)',
+            }"
+            :animate="{
+              scale: 1,
+              opacity: 1,
+              filter: 'blur(0px)',
+            }"
+            :transition="{
+              duration: 0.6,
+              delay: 0.5,
+            }"
+          >
+            <AvailabilityBadge />
+          </Motion>
+        </div>
+        <div class="flex gap-6 justify-center items-center">
           <NuxtLink
             v-for="nav in socials"
             :key="nav.name"
@@ -54,10 +109,9 @@ if (!featuredNote) {
             :aria-label="`Dami Sparks on ${nav.name}`"
             class="transform content-center items-center rounded-full transition-all hover:scale-110 hover:rotate-[-4deg] text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 hover:dark:text-zinc-200"
           >
-            <Icon :name="nav.iconKey" class="size-5" />
+            <Icon :name="nav.iconKey || ''" class="size-5" />
           </NuxtLink>
         </div>
-        <AvailabilityBadge class="mt-4" />
       </div>
     </section>
     <ProjectImageGallery :images="galleryImages" class="mt-16" />

@@ -22,8 +22,7 @@ const year = new Date().getFullYear()
           Got <strong>questions</strong> about my work,
           <strong>collaboration</strong>,
           or
-          <strong>project ideas</strong>
-          <strong>mentoring</strong>? Go ahead. I'd love to hear from you!
+          <strong>project ideas</strong>, <strong>mentoring</strong>? Go ahead. I'd love to hear from you!
         </AppTypography>
       </div>
     </div>

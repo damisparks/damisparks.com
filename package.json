@@ -20,6 +20,7 @@
     "@nuxt/ui": "^3.0.2",
     "@vueuse/nuxt": "^13.0.0",
     "magic-regexp": "^0.10.0",
+    "motion-v": "^1.2.0",
     "nuxt": "^3.17.5",
     "nuxt-og-image": "^5.1.2"
   },
@@ -44,14 +45,19 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "better-sqlite3",
-      "esbuild",
       "sharp",
       "@tailwindcss/oxide",
       "unrs-resolver",
-      "vue-demi",
-      "@parcel/watcher",
       "simple-git-hooks"
+    ],
+    "ignoredBuiltDependencies": [
+      "vue-demi",
+      "esbuild",
+      "@parcel/watcher"
     ]
+  },
+  "resolutions": {
+    "unimport": "4.1.1"
   },
   "simple-git-hooks": {
     "commit-msg": "npx commitlint --edit $1",
