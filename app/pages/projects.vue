@@ -3,7 +3,7 @@ import type { ProjectType } from '@/types'
 import projects from '@/data/projects'
 
 const title = 'Projects'
-const description = 'Things that I created or collaborated on trying to put my dent in the universe.'
+const description = 'Things that I created or collaborated on.'
 useSeoMeta({
   title,
   description,
@@ -41,17 +41,25 @@ const setBadgeText = (type: ProjectType) => {
 
 <template>
   <div class="space-y-12 py-12">
+    <!-- Delivering Aspirations, Mentoring Individuals. -->
+
     <section>
       <AppTypography
         tag="h1"
-        class="text-4xl font-medium tracking-tight font-dmsans"
+        class="text-4xl sm:text-5xl font-medium tracking-tight font-dmsans"
       >
-        {{ title }}
+        <span class="text-royalblue-800 dark:text-royalblue-400">
+          Delivering Aspirations,
+        </span>
+        <br>
+        <span class="text-royalblue-800 dark:text-royalblue-400">
+          Mentoring Individuals.
+        </span>
       </AppTypography>
       <AppTypography
         variant="secondary"
         paragraph
-        class="mt-2"
+        class="mt-4"
       >
         {{ description }}
       </AppTypography>
