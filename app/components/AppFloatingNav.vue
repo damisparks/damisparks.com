@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
 
-defineProps<{
-  links: NavigationMenuItem[]
-}>()
+defineProps<{ links: NavigationMenuItem[] }>()
 </script>
 
 <template>

@@ -3,12 +3,6 @@ import { socials } from '@/data/navigation'
 import projects from '@/data/projects'
 
 const galleryImages = projects.slice(0, 7).map(project => ({ src: project.imageUrl, alt: project.name }))
-
-const featuredNote = await queryCollection('notes').where('title', 'LIKE', '%Tiny is Effective%').first()
-
-if (!featuredNote) {
-  throw createError({ statusCode: 404, statusMessage: 'Note not found', fatal: true })
-}
 </script>
 
 <template>
