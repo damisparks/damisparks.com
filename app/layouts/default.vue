@@ -1,7 +1,12 @@
 <template>
-  <AppContainer class="sm:border-x border-default pt-10 bg-white dark:bg-black">
+  <div class="flex flex-col min-h-screen">
     <AppFloatingNav :links="navLinks" />
-    <slot />
-    <AppFooter />
-  </AppContainer>
+    <PagePaper />
+    <AppContainer class="py-24 sm:py-32 mt-12 flex-auto">
+      <slot />
+    </AppContainer>
+    <AppContainer>
+      <AppFooter />
+    </AppContainer>
+  </div>
 </template>
