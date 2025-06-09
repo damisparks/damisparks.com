@@ -40,9 +40,7 @@ const setBadgeText = (type: ProjectType) => {
 </script>
 
 <template>
-  <div class="space-y-12 py-12">
-    <!-- Delivering Aspirations, Mentoring Individuals. -->
-
+  <div class="space-y-12">
     <section>
       <AppTypography
         tag="h1"
