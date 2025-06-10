@@ -24,10 +24,8 @@ const galleryImages = projects.slice(0, 7).map(project => ({ src: project.imageU
           delay: 0.1,
         }"
       >
-        <AppTypography class="text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl font-dmsans text-center" tag="h1">
-          <span class="text-royalblue-800 dark:text-royalblue-400">
-            Software engineer, design engineer, founder and mentor.
-          </span>
+        <AppTypography class="text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl font-dmsans text-center text-pretty" tag="h1">
+          <AppTitle label="Software engineer, design engineer, founder and mentor." />
         </AppTypography>
       </Motion>
       <Motion
