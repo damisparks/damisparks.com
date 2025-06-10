@@ -44,15 +44,11 @@ const setBadgeText = (type: ProjectType) => {
     <section>
       <AppTypography
         tag="h1"
-        class="text-4xl sm:text-5xl font-medium tracking-tight font-dmsans"
+        class="text-4xl sm:text-5xl font-medium tracking-tight font-dmsans text-pretty"
       >
-        <span class="text-royalblue-800 dark:text-royalblue-400">
-          Delivering Aspirations,
-        </span>
+        <AppTitle label="Delivering Aspirations," />
         <br>
-        <span class="text-royalblue-800 dark:text-royalblue-400">
-          Mentoring Individuals.
-        </span>
+        <AppTitle label="Mentoring Individuals." />
       </AppTypography>
       <AppTypography
         variant="secondary"
