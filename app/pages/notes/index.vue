@@ -41,24 +41,42 @@ const notes = await queryCollection('notes')
 
     <section>
       <div class="grid border-t border-zinc-200 dark:border-zinc-500">
-        <div
+        <Motion
           v-for="(note, index) in notes"
           :key="index"
+          :initial="{ opacity: 0, transform: 'translateY(10px)' }"
+          :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
+          :transition="{ delay: 0.2 * index }"
+          :in-view-options="{ once: true }"
           class="py-8 border-b border-zinc-200 dark:border-zinc-500"
         >
-          <NoteCard
-            :label="note.tags[0] as NoteTag"
-            :title="note.title"
-            :description="note.description"
-            :to="note.path"
-          >
+          <NoteCard>
+            <template #content>
+              <NoteBadge :label="note.tags[0] as NoteTag" class="mb-2" />
+              <NuxtLink :to="note.path">
+                <NoteTitle :label="note.title" />
+              </NuxtLink>
+              <AppTypography
+                variant="muted"
+                paragraph
+                class="mt-1"
+              >
+                {{ note.description }}
+              </AppTypography>
+              <time
+                :datetime="note.date"
+                class="mt-2 text-sm text-zinc-500 dark:text-zinc-500 block"
+              >
+                {{ formatDateByLocale(note.date) }}
+              </time>
+            </template>
             <template #media>
               <NuxtLink :to="note.path">
                 <NoteAvatar :src="note.image" :alt="note.title" />
               </NuxtLink>
             </template>
           </NoteCard>
-        </div>
+        </Motion>
       </div>
     </section>
   </div>
