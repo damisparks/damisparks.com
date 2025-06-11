@@ -39,7 +39,7 @@ const year = new Date().getFullYear()
       </div>
       <AppSocials />
     </div>
-    <div class="mt-8 flex items-center justify-center border-t border-zinc-900/10 pt-4">
+    <div class="mt-8 flex items-center justify-center border-t border-zinc-200 dark:border-zinc-500 pt-4">
       <AppTypography
         tag="span"
         variant="muted"
