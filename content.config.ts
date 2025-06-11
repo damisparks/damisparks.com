@@ -18,7 +18,7 @@ export default defineContentConfig({
       source: 'notes/*.md',
       schema: z.object({
         title: z.string(),
-        date: z.date(),
+        date: z.string(),
         tags: z.array(z.string()),
         image: z.string(),
         description: z.string(),

@@ -5,7 +5,8 @@
  */
 export default function formatDate (date: string) {
   if (!date) {
-    throw new Error('Invalid date format')
+    console.error('Invalid date format', date)
+    return ''
   }
   const d = new Date(date)
   const options: Intl.DateTimeFormatOptions = {
