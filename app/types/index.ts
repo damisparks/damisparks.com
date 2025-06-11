@@ -15,3 +15,5 @@ export interface ProjectItem {
 }
 
 export type ProjectType = 'open-source' | 'commercial' | 'personal'
+
+export type NoteTag = 'cloud' | 'typescript' | 'vue' | 'nuxt' | 'personal' | 'books'

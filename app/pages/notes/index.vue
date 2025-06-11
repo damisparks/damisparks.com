@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import type { NoteTag } from '@/types'
+
 const title = 'The Sparks Notes'
-const description = 'Notes, articles, quick reads, book summaries, and personal reflections on topics close to my heart.'
+const description = 'My thoughts on topics close to my heart.'
 useSeoMeta({
   title,
   description,
@@ -10,7 +12,7 @@ useSeoMeta({
 defineOgImageComponent('Note')
 
 const notes = await queryCollection('notes')
-  .select('title', 'description', 'image', 'date', 'path')
+  .select('title', 'description', 'image', 'date', 'path', 'tags')
   .all()
   .then((res) => {
     return res.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
@@ -19,14 +21,14 @@ const notes = await queryCollection('notes')
 
 <template>
   <div
-    class="space-y-12 py-12"
+    class="space-y-12"
   >
-    <div>
+    <div class="mx-auto max-w-2xl lg:mx-0">
       <AppTypography
-        tag="h1"
-        class="text-4xl font-medium tracking-tight font-dmsans"
+        paragraph
+        class="text-4xl font-medium tracking-tight font-dmsans text-pretty"
       >
-        <span>The Sparks Notes</span>
+        <AppTitle label="The Sparks Notes" />
       </AppTypography>
       <AppTypography
         variant="secondary"
@@ -37,34 +39,27 @@ const notes = await queryCollection('notes')
       </AppTypography>
     </div>
 
-    <ResponsiveGrid>
-      <DSNoteCard
-        v-for="({ path, title, image, date }, index) in notes"
-        :key="index"
-        :to="path"
-        :title="title"
-        :description="description"
-      >
-        <template #header>
-          <NuxtImg
-            :src="image"
-            :alt="title"
-            :loading="index === 0 ? 'eager' : 'lazy'"
-            class="size-full object-cover object-top"
-            width="384"
-            height="192"
-          />
-        </template>
-        <template #footer>
-          <AppTypography
-            tag="span"
-            variant="muted"
-            class="text-sm"
+    <section>
+      <div class="grid border-t border-zinc-200 dark:border-zinc-500">
+        <div
+          v-for="(note, index) in notes"
+          :key="index"
+          class="py-8 border-b border-zinc-200 dark:border-zinc-500"
+        >
+          <NoteCard
+            :label="note.tags[0] as NoteTag"
+            :title="note.title"
+            :description="note.description"
+            :to="note.path"
           >
-            <time>{{ formatDateByLocale(date, 'en') }} </time>
-          </AppTypography>
-        </template>
-      </DSNoteCard>
-    </ResponsiveGrid>
+            <template #media>
+              <NuxtLink :to="note.path">
+                <NoteAvatar :src="note.image" :alt="note.title" />
+              </NuxtLink>
+            </template>
+          </NoteCard>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
