@@ -20,21 +20,28 @@ const filteredProjects = computed(() => {
 })
 
 const setBadgeColor = (type: ProjectType) => {
-  if (type === 'open-source') {
-    return 'neutral'
+  switch (type) {
+    case 'open-source':
+      return 'neutral'
+    case 'commercial':
+      return 'secondary'
+    case 'personal':
+      return 'primary'
+    default:
+      return 'neutral'
   }
-  if (type === 'commercial') {
-    return 'secondary'
-  }
-  if (type === 'personal') {
-    return 'primary'
-  }
-  return 'neutral'
 }
 
 const setBadgeText = (type: ProjectType) => {
-  if (type === 'open-source') {
-    return 'Open Source'
+  switch (type) {
+    case 'open-source':
+      return 'Open Source'
+    case 'commercial':
+      return 'Commercial'
+    case 'personal':
+      return 'Personal'
+    default:
+      return 'Unknown'
   }
 }
 </script>
@@ -90,55 +97,33 @@ const setBadgeText = (type: ProjectType) => {
       </UButton>
     </div>
 
-    <section class="mx-auto max-w-5xl">
-      <ul
-        role="list"
-        class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8"
-      >
+    <section class="mx-auto max-w-5xl mt-12">
+      <ul role="list" class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8">
         <li
-          v-for="(item, idx) in filteredProjects"
+          v-for="(item) in filteredProjects"
           :key="item.name"
-          :style="{ '--enter-stage': idx + 1 }"
-          slide-enter
-          class="relative rounded-lg bg-white shadow-lg dark:bg-[#161617]"
+          class="relative"
         >
-          <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-t-lg focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-zinc-100">
-            <img
+          <NuxtLink
+            :to="item.websiteUrl"
+            target="_blank"
+            class="block"
+          >
+            <ProjectImage
               :src="item.imageUrl"
-              alt=""
-              class="pointer-events-none object-cover group-hover:opacity-75"
-            >
-            <NuxtLink
-              :to="item.websiteUrl"
-              target="_blank"
-              class="absolute inset-0 focus:outline-none"
-            >
-              <span class="sr-only">View details for {{ item.name }}</span>
-            </NuxtLink>
-          </div>
-          <div class="px-2 py-2">
-            <div class="flex items-center justify-between">
-              <AppTypography
-                paragraph
-                class="pointer-events-none block truncate text-lg font-medium"
-              >
-                {{ item.name }}
-              </AppTypography>
-              <UBadge
-                :color="setBadgeColor(item.type)"
-                :label="setBadgeText(item.type)"
-                variant="soft"
-                class="uppercase rounded-full"
-              />
-            </div>
-            <AppTypography
-              paragraph
-              variant="muted"
-              class="pointer-events-none mt-1 line-clamp-2 block text-sm"
-            >
-              {{ item.description }}
-            </AppTypography>
-          </div>
+              :alt="item.name"
+            />
+          </NuxtLink>
+          <ProjectDetails
+            :label="item.name"
+            :description="item.description"
+          />
+          <UBadge
+            class="mt-2"
+            :color="setBadgeColor(item.type)"
+            :label="setBadgeText(item.type)"
+            variant="soft"
+          />
         </li>
       </ul>
     </section>
