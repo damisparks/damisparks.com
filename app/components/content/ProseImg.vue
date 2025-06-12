@@ -5,9 +5,9 @@ import { withBase } from 'ufo'
 const props = withDefaults(
   defineProps<{
     src?: string
-    alt: string
-    width: string | number
-    height: string | number
+    alt?: string
+    width?: string | number
+    height?: string | number
   }>(),
   { src: '', alt: '', width: undefined, height: undefined },
 )
