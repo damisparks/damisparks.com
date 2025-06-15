@@ -10,7 +10,7 @@ defineProps<{ links: NavigationMenuItem[] }>()
       :items="links"
       variant="link"
       color="neutral"
-      class="bg-muted/80 backdrop-blur-sm rounded-full px-2 sm:px-4 border border-muted/50 shadow-lg shadow-neutral-950/5"
+      class="backdrop-blur-xl bg-zinc-100/75 dark:bg-zinc-800/75 rounded-full px-2 sm:px-4 border border-muted/50 shadow-xl shadow-neutral-950/5"
       :ui="{
         link: 'px-2 py-1',
         linkLeadingIcon: 'hidden',
