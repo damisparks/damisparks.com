@@ -99,10 +99,14 @@ const setBadgeText = (type: ProjectType) => {
 
     <section class="mx-auto max-w-5xl mt-12">
       <ul role="list" class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8">
-        <li
-          v-for="(item) in filteredProjects"
+        <Motion
+          v-for="(item, index) in filteredProjects"
           :key="item.name"
           class="relative"
+          :initial="{ opacity: 0, transform: 'translateY(10px)' }"
+          :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
+          :transition="{ delay: 0.2 * index }"
+          :in-view-options="{ once: true }"
         >
           <NuxtLink
             :to="item.websiteUrl"
@@ -124,7 +128,7 @@ const setBadgeText = (type: ProjectType) => {
             :label="setBadgeText(item.type)"
             variant="soft"
           />
-        </li>
+        </Motion>
       </ul>
     </section>
   </div>
