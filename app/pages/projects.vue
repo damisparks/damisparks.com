@@ -117,11 +117,11 @@ const setBadgeText = (type: ProjectType) => {
               :src="item.imageUrl"
               :alt="item.name"
             />
+            <ProjectDetails
+              :label="item.name"
+              :description="item.description"
+            />
           </NuxtLink>
-          <ProjectDetails
-            :label="item.name"
-            :description="item.description"
-          />
           <UBadge
             class="mt-2"
             :color="setBadgeColor(item.type)"

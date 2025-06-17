@@ -40,7 +40,7 @@ const notes = await queryCollection('notes')
     </div>
 
     <section>
-      <div class="grid border-t border-zinc-200 dark:border-zinc-500">
+      <div class="grid border-t border-zinc-200 dark:border-zinc-600 ">
         <Motion
           v-for="(note, index) in notes"
           :key="index"
@@ -48,21 +48,21 @@ const notes = await queryCollection('notes')
           :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
           :transition="{ delay: 0.2 * index }"
           :in-view-options="{ once: true }"
-          class="py-8 border-b border-zinc-200 dark:border-zinc-500"
+          class="py-8 border-b border-zinc-200 dark:border-zinc-600"
         >
           <NoteCard>
             <template #content>
               <NoteBadge :label="note.tags[0] as NoteTag" class="mb-2" />
               <NuxtLink :to="note.path">
                 <NoteTitle :label="note.title" />
+                <AppTypography
+                  variant="muted"
+                  paragraph
+                  class="mt-1"
+                >
+                  {{ note.description }}
+                </AppTypography>
               </NuxtLink>
-              <AppTypography
-                variant="muted"
-                paragraph
-                class="mt-1"
-              >
-                {{ note.description }}
-              </AppTypography>
               <time
                 :datetime="note.date"
                 class="mt-2 text-sm text-zinc-500 dark:text-zinc-500 block"
