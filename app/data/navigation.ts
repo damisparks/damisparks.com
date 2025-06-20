@@ -21,11 +21,6 @@ export const socials: NavItem[] = [
     href: 'https://medium.com/@damisparks',
     name: 'Medium',
   },
-  {
-    iconKey: 'simple-icons:devdotto',
-    href: 'https://dev.to/damisparks',
-    name: 'Dev.to',
-  },
 ]
 
 export const navItems: NavItem[] = [
