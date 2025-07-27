@@ -1,6 +1,6 @@
 <template>
-  <div class="flex">
-    <div class="mr-4 shrink-0">
+  <div class="sm:flex">
+    <div class="mb-4 shrink-0 sm:mr-4 sm:mb-0">
       <slot name="media" />
     </div>
     <div v-if="$slots.content">

@@ -27,7 +27,7 @@ const setNoteTagColor = (label: NoteTag): NoteTagColor => {
 <template>
   <UBadge
     :color="setNoteTagColor(props.label)"
-    :label="props.label"
+    :label="`#${props.label}`"
     variant="soft"
     class="uppercase font-semibold"
   />
