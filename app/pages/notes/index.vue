@@ -52,7 +52,7 @@ const notes = await queryCollection('notes')
         >
           <NoteCard>
             <template #content>
-              <NoteBadge :label="note.tags[0] as NoteTag" class="mb-2" />
+              <NoteBadge :label="`${note.tags[0]}` as NoteTag" class="mb-2" />
               <NuxtLink :to="note.path">
                 <NoteTitle :label="note.title" />
                 <AppTypography
