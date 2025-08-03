@@ -2,7 +2,7 @@
 import { socials } from '@/data/navigation'
 
 interface SocialPropsType { iconSize?: string }
-const props = withDefaults(defineProps<SocialPropsType>(), { iconSize: '20px' })
+const props = withDefaults(defineProps<SocialPropsType>(), { iconSize: '24px' })
 </script>
 
 <template>
@@ -19,7 +19,7 @@ const props = withDefaults(defineProps<SocialPropsType>(), { iconSize: '20px' })
       <Icon
         :name="nav.iconKey || ''"
         :size="props.iconSize"
-        class="size-4"
+        class="size-6"
       />
     </NuxtLink>
   </div>
