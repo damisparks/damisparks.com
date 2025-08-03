@@ -2,6 +2,7 @@
   <UButton
     label="Available for new projects."
     class="gap-2"
+    size="lg"
     color="success"
     variant="ghost"
   >

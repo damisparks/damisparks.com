@@ -109,10 +109,10 @@ const galleryImages = projects.slice(0, 7).map(project => ({ src: project.imageU
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div class="space-y-4">
           <AppTypography tag="h2" class="text-5xl font-medium">
-            <span class="text-royalblue-800 dark:text-royalblue-400">I build &amp; design</span>
+            <span class="text-royalblue-800 dark:text-royalblue-400">I build</span>
           </AppTypography>
           <AppTypography paragraph variant="secondary" class="text-lg">
-            Open source projects, web apps and experimentals.
+            Open source tools, web apps, and odd little experiments.
           </AppTypography>
           <UButton
             to="/projects"
@@ -130,7 +130,7 @@ const galleryImages = projects.slice(0, 7).map(project => ({ src: project.imageU
             <span class="text-royalblue-800 dark:text-royalblue-400">I write</span>
           </AppTypography>
           <AppTypography paragraph variant="secondary" class="text-lg">
-            About design, web dev, learning and life.
+            To share what I learn. I find it soothing.
           </AppTypography>
           <UButton
             to="/notes"
