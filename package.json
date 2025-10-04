@@ -23,7 +23,7 @@
     "better-sqlite3": "^12.4.1",
     "magic-regexp": "^0.10.0",
     "motion-v": "^1.2.0",
-    "nuxt": "^3.17.5",
+    "nuxt": "^4.0.0",
     "nuxt-og-image": "^5.1.2"
   },
   "devDependencies": {
