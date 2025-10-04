@@ -85,8 +85,8 @@ importers:
         specifier: ^16.0.0
         version: 16.2.3
       nuxt-gtag:
-        specifier: ^3.0.1
-        version: 3.0.3(magicast@0.3.5)
+        specifier: ^4.0.0
+        version: 4.0.0(magicast@0.3.5)
       simple-git-hooks:
         specifier: ^2.11.1
         version: 2.13.1
@@ -4659,8 +4659,8 @@ packages:
     resolution: {integrity: sha512-RaL6bHJujuZmw/G+uNWAHYktf3k4hdlBIy+FqudXji42IefrJKdSMkh5ixyhsfEHWsuTYGKxD2NU3sq990KGrQ==}
     hasBin: true
 
-  nuxt-gtag@3.0.3:
-    resolution: {integrity: sha512-1XZc9I3DiF2GC07P7uQOlGN4v1cbnLwWHaQUIlayp4pg0h7wOrna5Nl733/2rXq7ktPL3fT8NBJR7OsV9BtJRA==}
+  nuxt-gtag@4.0.0:
+    resolution: {integrity: sha512-7Mz8d3Cbrp2WsskJmzTsxO5lYpX7oVLsmsMQPInM+r0/8aGM1LnDnQYdFtTO+j7fsVhMuCa+XZyNrH43EKNfHA==}
 
   nuxt-og-image@5.1.11:
     resolution: {integrity: sha512-LnioM0JsfrSYPo/4TgPBu+ncI6QNCejs0FVu/f/SLeygwrh3senm9MvlBi1tldE1AU0J7030uO8UekOlvFPPXQ==}
@@ -11734,9 +11734,9 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  nuxt-gtag@3.0.3(magicast@0.3.5):
+  nuxt-gtag@4.0.0(magicast@0.3.5):
     dependencies:
-      '@nuxt/kit': 3.19.2(magicast@0.3.5)
+      '@nuxt/kit': 4.1.2(magicast@0.3.5)
       defu: 6.1.4
       pathe: 2.0.3
       ufo: 1.6.1
