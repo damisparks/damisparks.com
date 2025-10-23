@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.18.2",
+  "packageManager": "pnpm@10.19.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev -o",
@@ -63,7 +63,7 @@
     ]
   },
   "resolutions": {
-    "unimport": "5.4.1"
+    "unimport": "5.5.0"
   },
   "simple-git-hooks": {
     "commit-msg": "npx commitlint --edit $1",
