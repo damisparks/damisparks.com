@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.28.1",
+  "packageManager": "pnpm@10.32.1+sha512.a706938f0e89ac1456b6563eab4edf1d1faf3368d1191fc5c59790e96dc918e4456ab2e67d613de1043d2e8c81f87303e6b40d4ffeca9df15ef1ad567348f2be",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev -o",
@@ -15,38 +15,38 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@nuxt/content": "^3.1.1",
-    "@nuxt/fonts": "^0.12.0",
+    "@nuxt/content": "^3.12.0",
+    "@nuxt/fonts": "^0.14.0",
     "@nuxt/image": "^2.0.0",
-    "@nuxt/ui": "^4.0.0",
-    "@vueuse/nuxt": "^14.0.0",
-    "better-sqlite3": "^12.4.1",
-    "magic-regexp": "^0.10.0",
+    "@nuxt/ui": "^4.5.1",
+    "@vueuse/nuxt": "^14.2.1",
+    "better-sqlite3": "^12.6.2",
+    "magic-regexp": "^0.11.0",
     "motion-v": "^2.0.0",
-    "nuxt": "^4.0.0",
-    "nuxt-og-image": "^5.1.2"
+    "nuxt": "^4.3.1",
+    "nuxt-og-image": "^5.1.13"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.0.0",
-    "@commitlint/config-conventional": "^20.0.0",
+    "@commitlint/cli": "^20.4.3",
+    "@commitlint/config-conventional": "^20.4.3",
     "@damisparks/eslint-config": "^2.0.0",
     "@iconify-json/heroicons": "^1.2.2",
-    "@iconify-json/lucide": "^1.2.39",
-    "@iconify-json/simple-icons": "^1.2.13",
-    "@nuxt/eslint": "1.12.1",
+    "@iconify-json/lucide": "^1.2.96",
+    "@iconify-json/simple-icons": "^1.2.73",
+    "@nuxt/eslint": "1.15.2",
     "@nuxt/test-utils": "^3.19.2",
     "@tailwindcss/typography": "^0.5.16",
     "@vue/test-utils": "^2.4.6",
     "eslint": "^9.12.0",
     "eslint-plugin-format": "^1.0.0",
-    "happy-dom": "^20.0.0",
-    "lint-staged": "^16.0.0",
+    "happy-dom": "^20.8.3",
+    "lint-staged": "^16.3.3",
     "nuxt-gtag": "^4.0.0",
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.6.3",
-    "vitest": "^4.0.0",
-    "vue": "^3.5.13",
-    "vue-tsc": "^3.0.0"
+    "vitest": "^4.0.18",
+    "vue": "^3.5.30",
+    "vue-tsc": "^3.2.5"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
@@ -63,7 +63,7 @@
     ]
   },
   "resolutions": {
-    "unimport": "6.0.1"
+    "unimport": "5.6.0"
   },
   "simple-git-hooks": {
     "commit-msg": "npx commitlint --edit $1",
