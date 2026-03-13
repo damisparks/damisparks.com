@@ -34,7 +34,7 @@
     "@iconify-json/lucide": "^1.2.96",
     "@iconify-json/simple-icons": "^1.2.73",
     "@nuxt/eslint": "1.15.2",
-    "@nuxt/test-utils": "^3.19.2",
+    "@nuxt/test-utils": "^4.0.0",
     "@tailwindcss/typography": "^0.5.16",
     "@vue/test-utils": "^2.4.6",
     "eslint": "^9.12.0",
