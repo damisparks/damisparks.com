@@ -63,7 +63,7 @@
     ]
   },
   "resolutions": {
-    "unimport": "5.6.0"
+    "unimport": "5.7.0"
   },
   "simple-git-hooks": {
     "commit-msg": "npx commitlint --edit $1",
