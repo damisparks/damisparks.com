@@ -24,7 +24,7 @@
     "magic-regexp": "^0.11.0",
     "motion-v": "^2.0.0",
     "nuxt": "^4.4.2",
-    "nuxt-og-image": "^5.1.13"
+    "nuxt-og-image": "^6.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.4.3",
